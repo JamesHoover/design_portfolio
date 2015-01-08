@@ -1,0 +1,46 @@
+/* 
+** pages.css
+** Stylesheet for pages in design_porfolio rails app
+** Author: James Hoover
+** Created: Jan 07 2015
+*/
+
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* navbar styling */
+.navbar  li {
+  display: inline;
+}
+
+.navbar a:link {
+  text-decoration: none;
+}
+
+/* TODO: fix. doesnt seem to be working */
+.navbar a:visited {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  color: orange;
+}
+
+/* basic HTML elements styling */
+body {
+  position: relative;
+  min-height: 100%;
+  top: 0px;
+}
+h1 {
+}
+
