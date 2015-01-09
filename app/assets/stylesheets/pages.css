@@ -13,7 +13,10 @@
 }
 
 /* navbar styling */
-.navbar  li {
+.navbar {
+  border: 1px solid black;
+}
+.navbar  ul, li {
   display: inline;
 }
 
@@ -40,7 +43,19 @@ body {
   position: relative;
   min-height: 100%;
   top: 0px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-weight: 100;
+  background-color: #eeeeee;
 }
 h1 {
+}
+
+/* header styling */
+.header {
+
+}
+
+.container {
+  background-color: white;
 }
 
