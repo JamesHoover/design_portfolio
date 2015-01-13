@@ -6,7 +6,16 @@ class PagesController < ApplicationController
   def about
   end
 
+  def contact
+  end
+
+	def sites
+  end
+
   def photography
+  end
+
+  def art
   end
 
 end

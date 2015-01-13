@@ -31,11 +31,11 @@
 }
 
 nav {
-  border: 1px solid black;
 }
 
 ul, li {
-  list-style-type: none;
+  /* Removed right now for styling purposes */
+  /* list-style-type: none; */
 }
 
 nav a:link {
@@ -55,12 +55,13 @@ nav a:hover {
 nav a:active {
   color: orange;
 }
-
+.worknav li {
+  display: inline;
+}
 /* header styling */
 .header {
   margin-top: 10%;
 }
-
 
 /* basic HTML elements styling */
 body {
@@ -70,13 +71,8 @@ body {
 
 }
 h1 {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 46px;
-}
-
-.work li{
-  display: inline;
 }
 
 .container {

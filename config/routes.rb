@@ -11,6 +11,8 @@ DesignPortfolio::Application.routes.draw do
   get '/work' => 'pages#work'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
+  get '/work/sites' => 'pages#sites'
+  get '/work/art' => 'pages#art'
   get '/work/photography' => 'pages#photography'
 
   
