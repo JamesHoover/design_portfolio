@@ -8,8 +8,12 @@ DesignPortfolio::Application.routes.draw do
   root 'pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  get '/work' => 'pages#work'
   get '/about' => 'pages#about'
-  get '/photography' => 'pages#photography'
+  get '/contact' => 'pages#contact'
+  get '/work/photography' => 'pages#photography'
+
+  
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

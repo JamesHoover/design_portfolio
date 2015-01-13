@@ -7,55 +7,79 @@
 
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* navbar styling */
-.navbar {
+/* nav styling */
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: auto;
+  }
+  .header {
+    clear: left;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+  nav {
+  }
+}
+
+nav {
   border: 1px solid black;
 }
-.navbar  ul, li {
-  display: inline;
+
+ul, li {
+  list-style-type: none;
 }
 
-.navbar a:link {
+nav a:link {
   text-decoration: none;
 }
 
 /* TODO: fix. doesnt seem to be working */
-.navbar a:visited {
+nav a:visited {
     text-decoration: none;
 }
 
-.navbar a:hover {
+nav a:hover {
   color: red;
   text-decoration: underline;
 }
 
-.navbar a:active {
+nav a:active {
   color: orange;
 }
+
+/* header styling */
+.header {
+  margin-top: 10%;
+}
+
 
 /* basic HTML elements styling */
 body {
   position: relative;
   min-height: 100%;
   top: 0px;
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-weight: 100;
-  background-color: #eeeeee;
+
 }
 h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 46px;
 }
 
-/* header styling */
-.header {
-
+.work li{
+  display: inline;
 }
 
 .container {
-  background-color: white;
+
 }
 
