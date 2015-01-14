@@ -11,56 +11,88 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+* {
+}
 
 /* nav styling */
 @media screen and (min-width:600px) {
-  nav {
-    float: left;
-    width: auto;
+  .topnav  {
   }
-  .header {
+  .container_header {
     clear: left;
   }
 }
 @media screen and (max-width:599px) {
-  nav li {
-    display: inline;
+  .topnav  li {
+
   }
-  nav {
+  .topnav  {
   }
 }
 
-nav {
+.topnav {
+}
+
+.topnav li{
+  display: inline;  
 }
 
 ul, li {
   /* Removed right now for styling purposes */
-  /* list-style-type: none; */
+  list-style-type: none;
 }
 
-nav a:link {
+.topnav a:link {
   text-decoration: none;
+  padding-right: 1em;
 }
 
 /* TODO: fix. doesnt seem to be working */
-nav a:visited {
+.topnav a:visited {
     text-decoration: none;
 }
 
-nav a:hover {
+.topnav a:hover {
   color: red;
   text-decoration: underline;
 }
 
-nav a:active {
+.topnav a:active {
   color: orange;
 }
+
+.navlink_home {
+  padding-right: 5em;
+}
+
 .worknav li {
   display: inline;
 }
+
+.navbox {
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbox li {
+  float: left;
+  padding: 1em;
+}
+
+.navbox p {
+  width: 150px;
+}
 /* header styling */
-.header {
-  margin-top: 10%;
+.container_home_header {
+  display: inline-block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_body {
+  width: 1220px;
+  margin: auto;
 }
 
 /* basic HTML elements styling */
@@ -68,14 +100,12 @@ body {
   position: relative;
   min-height: 100%;
   top: 0px;
-
+  margin: 0px;
 }
 h1 {
   font-weight: 700;
   font-size: 46px;
 }
 
-.container {
 
-}
 
