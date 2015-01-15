@@ -8,9 +8,16 @@
   </head>
   <body>
       <nav class="topnav">
-        <ul>
+        <ul id="drop_menu">
           <li class="navlink_home"><%= link_to "Home", '/' %></li>
-          <li><%= link_to "Work", '/work/sites' %></li>
+          <li>
+            <%= link_to "Work", '/work/sites' %>
+            <ul>
+              <li><%= link_to "Sites", '/work/sites' %></li>
+              <li><%= link_to "Art", '/work/art' %></li>
+              <li><%= link_to "Photograhy", '/work/photography' %></li>
+            </ul>
+          </li>
           <li><%= link_to "About", '/about' %></li>
           <li><%= link_to "Contact", '/contact' %></li>
         </ul>

@@ -19,7 +19,6 @@
   .topnav  {
   }
   .container_header {
-    clear: left;
   }
 }
 @media screen and (max-width:599px) {
@@ -30,21 +29,42 @@
   }
 }
 
-.topnav {
+nav.topnav {
+
 }
 
 .topnav li{
-  display: inline;  
+  float: left;
+
+}
+/* Dropdown menu */
+/* TODO: Fix so hovering doesnt move other menu links */
+ul#drop_menu ul {
+    padding:0px;
+}
+ul#drop_menu li {
+  position:relative;
+  list-style-type:none;
+  float: left;
+}
+ul#drop_menu li > ul {
+  display: none;
+}
+ul#drop_menu li:hover > ul {
+  display:block;
 }
 
 ul, li {
-  /* Removed right now for styling purposes */
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .topnav a:link {
+  /*
   text-decoration: none;
   padding-right: 1em;
+  */
 }
 
 /* TODO: fix. doesnt seem to be working */
@@ -61,50 +81,80 @@ ul, li {
   color: orange;
 }
 
-.navlink_home {
+nav.topnav ul li > ul{
+  /*
   padding-right: 5em;
+  */
+  display: none;
 }
 
-.worknav li {
-  display: inline;
+nav.topnav ul li:hover > ul{
+  /*
+  padding-right: 5em;
+  */
+  display: block;
 }
 
 .navbox {
+  /*
   width: 50%;
   margin-left: 0;
   margin-right: 0;
+  */
 }
 .navbox li {
+  /*
   float: left;
   padding: 1em;
+  */
 }
 
 .navbox p {
+  /*
   width: 150px;
+  */
 }
 /* header styling */
 .container_home_header {
+  /*
   display: inline-block;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  */
+  /*
+  width: 61.8%%;
+  margin: 0 auto;
+  */
+  text-align: center;
+  padding-top: 6.18%;
+  padding-bottom: 12.36%;
+}
+.container_home_navbox {
+  text-align: center;
+}
+.container_home_navbox li {
+  float: left;
+  width: 33.33%;
+}
+
+.container_home_navbox p {
+  display: block;
 }
 
 .container_body {
-  width: 1220px;
-  margin: auto;
+  padding-top: 6.18%;
 }
+.container_worknav {
 
-/* basic HTML elements styling */
+}
+/* HTML elements styling */
 body {
-  position: relative;
-  min-height: 100%;
-  top: 0px;
-  margin: 0px;
+  width: 61.8%%;
+  margin: 0 auto;
+
 }
 h1 {
-  font-weight: 700;
-  font-size: 46px;
 }
 
 
