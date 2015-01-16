@@ -14,37 +14,47 @@
 * {
 }
 
-/* nav styling */
-@media screen and (min-width:600px) {
+/* NAVIGATION BAR */
+
+/* styling based on screen size */
+@media screen and (min-width:700px) {
   .topnav  {
   }
   .container_header {
   }
+  nav.topnav ul {
+  width: 50%;
 }
-@media screen and (max-width:599px) {
+}
+@media screen and (max-width:699px) {
   .topnav  li {
 
   }
   .topnav  {
   }
+  nav.topnav ul {
+  width: 100%;
+}
 }
 
 nav.topnav {
-
+  padding-top: 1em;
 }
 
-.topnav li{
+nav.topnav li{
   float: left;
-
+  width: 25%;
 }
+
+
 /* Dropdown menu */
 /* TODO: Fix so hovering doesnt move other menu links */
+/*
 ul#drop_menu ul {
     padding:0px;
 }
 ul#drop_menu li {
   position:relative;
-  list-style-type:none;
   float: left;
 }
 ul#drop_menu li > ul {
@@ -54,47 +64,53 @@ ul#drop_menu li:hover > ul {
   display:block;
 }
 
-ul, li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+ul#drop_menu li > ul > li {
+  float: left;
 }
-
-.topnav a:link {
-  /*
+*/
+nav.topnav a:link {
   text-decoration: none;
-  padding-right: 1em;
-  */
 }
 
 /* TODO: fix. doesnt seem to be working */
-.topnav a:visited {
-    text-decoration: none;
+nav.topnav a:visited {
+  text-decoration: none;
 }
 
-.topnav a:hover {
+nav.topnav a:hover {
   color: red;
   text-decoration: underline;
 }
 
-.topnav a:active {
+nav.topnav a:active {
   color: orange;
 }
 
+/* DROPDOWN MENU */
+/* TODO: FIX overlap on smaller screen size */
 nav.topnav ul li > ul{
-  /*
-  padding-right: 5em;
-  */
-  display: none;
-}
-
-nav.topnav ul li:hover > ul{
-  /*
-  padding-right: 5em;
-  */
   display: block;
+  position: absolute;
+  width:12%;
+}
+nav.topnav ul li:hover > ul{
+  display: block;
+  position: absolute;
+  width: auto;
+}
+#drop_menu li {
+  width: auto;
+  clear: left;
+  width: auto;
 }
 
+.home_icon {
+  display: block;
+  width: 0;
+  margin: 0;
+}
+
+/* HOME PAGE NAVIGATION BOX */
 .navbox {
   /*
   width: 50%;
@@ -108,13 +124,13 @@ nav.topnav ul li:hover > ul{
   padding: 1em;
   */
 }
-
 .navbox p {
   /*
   width: 150px;
   */
 }
-/* header styling */
+
+/* CONTAINERS */
 .container_home_header {
   /*
   display: inline-block;
@@ -137,25 +153,54 @@ nav.topnav ul li:hover > ul{
   float: left;
   width: 33.33%;
 }
-
 .container_home_navbox p {
   display: block;
 }
-
 .container_body {
   padding-top: 6.18%;
+  width: 66.6%;
 }
-.container_worknav {
+div.container_worknav ul{
+  width: 66.6%;
+}
+div.container_worknav li{
+  float: left;
+  width: 20%;
+}
 
+/* TODO: The positioning needs to be fixed as well as the black background. */
+div.about_img p {
+  position: relative; 
+  bottom: 200px; 
+  width: 100%;
+  color: white;
 }
-/* HTML elements styling */
+div.about_img p { 
+   color: white; 
+   font: bold 24px/24px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   width: auto;
+}
+
+/* HTML ELEMENTS */
 body {
-  width: 61.8%%;
+  width: 61.8%;
   margin: 0 auto;
 
 }
+
 h1 {
+  margin-top: 0;
 }
 
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
 
 
