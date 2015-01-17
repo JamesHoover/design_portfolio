@@ -167,24 +167,50 @@ div.container_worknav li{
   float: left;
   width: 20%;
 }
-
-/* TODO: The positioning needs to be fixed as well as the black background. */
-div.about_img p {
-  position: relative; 
-  bottom: 200px; 
-  width: 100%;
+div.about_img {
+  margin: 0px;
+  width: 490px;
+  height: 326px;
+  float: left;
+  background: url("DSCF2236.jpg");
+  background-size: cover;
+  position: relative;
+}
+div.about_img h4{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
   color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
 }
-div.about_img p { 
-   color: white; 
-   font: bold 24px/24px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
-   width: auto;
+/* TODO: The positioning needs to be fixed as well as the black background.
+div.about_img {
+ width: 100%;
+ height: 100%;
+}
+div.about_img img {
+  width: 100%;
+  height: 100%;
+}
+div.about_img h4 {
+  position: relative;
+  bottom: 250px;
+  margin: 0;
+  padding: 10px;
+  width: 100%; 
 }
 
+div.about_img span {
+  color: white; 
+  letter-spacing: 0px;  
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3px;
+}
+*/
 /* HTML ELEMENTS */
 body {
   width: 61.8%;
