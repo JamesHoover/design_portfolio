@@ -6,19 +6,7 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-      <nav class="topnav">
-        <ul>
-          <li class="navlink_home"><%= link_to "Home", '/' %></li>
-          <li><%= link_to "Work/", '/work/sites' %></li>
-          <li><%= link_to "About", '/about' %></li>
-          <li><%= link_to "Contact", '/contact' %></li>
-        </ul>
-      </nav>
-    <div class="container_body">
-      <%= yield %>
-    </div>
-  </body>
+  <%= yield %>
 </html>
 
 

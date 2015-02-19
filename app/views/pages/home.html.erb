@@ -1,12 +1,22 @@
-<div class="container_home_header">
-  <h1>James Hoover</h1>
-  <h2>UI/UX Design Porfolio</h2>
-  <h4>Seattle, WA</h4>
-</div>
-<div class="container_home_navbox">
-  <ul>
-    <li id="work_nav_id"><%= link_to "My Work", '/work/sites' %><p>Experience my work.</p></li>
-    <li id="about_nav_id"><%= link_to "About Me", '/about' %><p>Learn what I do and what I like.</p></li>
-    <li id="contact_nav_id"><%= link_to "Work With Me", '/contact' %><p>Send me a quick message.</p></li>
-  </ul>
-</div>
+<body class="homepage_background">
+  <nav class="topnav">
+    <ul>
+      <li class="navlink_home"><%= link_to "Home", '/' %></li>
+      <li><%= link_to "Work/", '/work/sites' %></li>
+      <li><%= link_to "About", '/about' %></li>
+      <li><%= link_to "Contact", '/contact' %></li>
+    </ul>
+  </nav>
+  <div class="container homepage">
+    <div class="home_header">
+      <h1>James Hoover</h1>
+      <h2>UI/UX Design Porfolio</h2>
+      <h4>Designer. Artist. Engineer. Crafter.</h4>
+    </div>
+    <div class="home_navbox">
+        <div class="work_navbox"><%= link_to "My Work", '/work/sites' %><p class="bottom_left">Work.</p></div>
+        <div class="about_navbox"><%= link_to "About Me", '/about' %><p>About.</p></div>
+        <div class="contact_navbox"><%= link_to "Work With Me", '/contact' %><p>Contact.</p></div>
+    </div>
+  </div>
+</body>
