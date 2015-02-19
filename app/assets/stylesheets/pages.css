@@ -1,4 +1,5 @@
 html { 
+-webkit-font-smoothing: antialiased;
 
 }
 .homepage_background {
@@ -8,29 +9,50 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/*** LINKS ***/
+/* unvisited link */
+a:link {color: black;}
+/* visited link */
+a:visited {color: black;}
+/* mouse over link */
+a:hover {color: red;}
+/* selected link */
+a:active {color: red;}
+
 /*** NAVIGATION BAR ***/
 .topnav {
+  position: fixed;
+  width: 100%;
   background-color: white;
 }
 .topnav li{
+  padding: 0 25px;
   display: inline-block;
+}
+.topnav ul {
+  max-width: 400px;
 }
 
 /*** HOME PAGE ***/
-.home_header {
+.home_banner {
   border: 1px solid black;
-  background-color: white;
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background-color:rgba(0,0,0,0.5);
 }
 
-.home_navbox {
-
+.home_navbox a{
+  padding: 0 10px;
 }
 .home_navbox div{
+  position: relative;
   width: 250px;
   height: 154.5px;
   display: inline-block;
   border: 1px solid black;
-  background-color: white;
+  background-color:rgba(255,255,255,0.62);
 }
 
 /*** General styling for container ***/
@@ -38,3 +60,30 @@ html {
 
 }
 
+/*** POSITIONING ***/
+.bottom_left {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.bottom-right {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.center {
+  margin: 0 auto;
+}
+.center_middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.top_third {
+  position: absolute;
+  top: 38.2%;
+  transform: translate(0, -50%);
+}
