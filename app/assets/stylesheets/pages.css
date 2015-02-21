@@ -2,6 +2,7 @@ html {
 -webkit-font-smoothing: antialiased;
 
 }
+/*** Appended to homepage body tag ***/
 .homepage_background {
   background: url(DSCF2236.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -19,12 +20,16 @@ a:visited {color: black;}
 a:hover {color: red;}
 /* selected link */
 a:active {color: red;}
+/* current link */
+a.active {color: red;}
 
-/*** NAVIGATION BAR ***/
+
+/*** UNIQUE CONTENT ***/
+
+/*** Navigation Bar ***/
 .topnav {
-  position: fixed;
-  width: 100%;
   background-color: white;
+  border-bottom: 1px solid black;
 }
 .topnav li{
   padding: 0 25px;
@@ -34,7 +39,7 @@ a:active {color: red;}
   max-width: 400px;
 }
 
-/*** HOME PAGE ***/
+/*** Home Page ***/
 .home_banner {
   border: 1px solid black;
   width: 100%;
@@ -51,16 +56,18 @@ a:active {color: red;}
   width: 250px;
   height: 154.5px;
   display: inline-block;
-  border: 1px solid black;
-  background-color:rgba(255,255,255,0.62);
+  border: 1px outset white;
+  border-radius: 3px;
+  background-color:white;
 }
 
-/*** General styling for container ***/
+
+/*** GENERAL STYLING ***/
+
 .container {
 
 }
-
-/*** POSITIONING ***/
+/*** Positioning ***/
 .bottom_left {
   left: 0;
   bottom: 0;
@@ -71,19 +78,21 @@ a:active {color: red;}
   bottom: 0;
   position: absolute;
 }
-.center {
-  margin: 0 auto;
-}
-.center_middle {
+
+.center_horizontal_text {text-align: center;}
+
+.center_horizontal_block {margin: 0 auto;}
+
+.center_vertical {
   position: absolute;
   top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 .top_third {
   position: absolute;
   top: 38.2%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
 }
+/*** Size ***/
+.full_width {width: 100%;}

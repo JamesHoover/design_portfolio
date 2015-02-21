@@ -1,22 +1,26 @@
 <body>
-  <nav class="topnav">
-    <ul>
-      <li class="navlink_home"><%= link_to "Home", '/' %></li>
+  <nav class="topnav full_width">
+    <ul class="center_horizontal_block">
+      <li><%= link_to "Home", '/' %></li>
       <li><%= link_to "Work/", '/work/sites' %></li>
-      <li><%= link_to "About", '/about' %></li>
+      <li><%= link_to "About", '/about', :class => "active" %></li>
       <li><%= link_to "Contact", '/contact' %></li>
     </ul>
   </nav>
   <div class="container_header">
   	<h1>About Me:</h1>
-    <div class="about_img">
-      <%= image_tag("placeholder.png") %>
+    <div>
+      <div class="about_img">
+        <%= image_tag("me.jpg") %>
+      </div>
+      <div class="about_text">
         <h4><span>Name: James<br></span></h4>
         <h4><span>Email:<a href="mailto:jamesfhoover@gmail.com">jamesfhoover@gmail.com</a></span></h4>
         <h4><span>Location: Seattle, WA</span> </h4>
         <h4><span>Degree: Computer Science</span> </h4>
         <h4><span>Profession: Software Developer</span></h4>
         <h4><span>Desired profession: UI/UX Designer</span></h4>
+      </div>
     </div>
   </div>
 </body>

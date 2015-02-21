@@ -1,7 +1,7 @@
 <body class="homepage_background">
-  <nav class="topnav">
-    <ul class="center">
-      <li class="navlink_home"><%= link_to "Home", '/' %></li>
+  <nav class="topnav full_width">
+    <ul class="center_horizontal_block">
+      <li><%= link_to "Home", '/', :class => "active" %></li>
       <li><%= link_to "Work/", '/work/sites' %></li>
       <li><%= link_to "About", '/about' %></li>
       <li><%= link_to "Contact", '/contact' %></li>
@@ -13,10 +13,12 @@
       <h2>UI/UX Design Porfolio</h2>
       <h4>Designer. Artist. Engineer. Crafter.</h4>
     </div>
-    <div class="home_navbox center_middle">
-      <a href="/work/sites"><div><p class="bottom_left">Work.</p></div></a>
-      <a href="/about"><div><p class="bottom_left">About.</p></div></a>
-      <a href="/contact"><div><p class="bottom_left">Contact.</p></div></a>
+    <div class="center_vertical full_width">
+      <div class="home_navbox center_horizontal_text">
+        <a href="/work/sites"><div><p class="bottom_left">Work.</p></div></a>
+        <a href="/about"><div><p class="bottom_left">About.</p></div></a>
+        <a href="/contact"><div><p class="bottom_left">Contact.</p></div></a>
+      </div>
     </div>
   </div>
 </body>
