@@ -1,6 +1,6 @@
 <body class="homepage_background">
   <nav class="topnav full_width">
-    <ul class="center_horizontal_block">
+    <ul class="center_vertical">
       <li><%= link_to "Home", '/', :class => "active" %></li>
       <li><%= link_to "Work/", '/work/sites' %></li>
       <li><%= link_to "About", '/about' %></li>
@@ -8,16 +8,16 @@
     </ul>
   </nav>
   <div class="container homepage">
-    <div class="home_banner top_third">
-      <h1>James Hoover</h1>
-      <h2>UI/UX Design Porfolio</h2>
-      <h4>Designer. Artist. Engineer. Crafter.</h4>
-    </div>
-    <div class="center_vertical full_width">
+    <div class="home_banner">
+      <div class="home_banner_content center_horizontal_block">
+        <h1>James Hoover</h1>
+        <h2>UI/UX Design Porfolio</h2>
+        <h4>Designer. Artist. Engineer. Crafter.</h4>
+      </div>
       <div class="home_navbox center_horizontal_text">
-        <a href="/work/sites"><div><p class="bottom_left">Work.</p></div></a>
-        <a href="/about"><div><p class="bottom_left">About.</p></div></a>
-        <a href="/contact"><div><p class="bottom_left">Contact.</p></div></a>
+        <a href="/work/sites"><div class="home_navbox_content work_bkgrd"><p class="bottom_left">Work.</p></div></a>
+        <a href="/about"><div class="home_navbox_content about_bkgrd"><p class="bottom_left">About.</p></div></a>
+        <a href="/contact"><div class="home_navbox_content contact_bkgrd"><p class="bottom_left">Contact.</p></div></a>
       </div>
     </div>
   </div>

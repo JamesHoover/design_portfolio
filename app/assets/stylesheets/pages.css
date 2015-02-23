@@ -1,14 +1,15 @@
 html { 
 -webkit-font-smoothing: antialiased;
-
+  font-family: "Georgia";
 }
 /*** Appended to homepage body tag ***/
-.homepage_background {
-  background: url(DSCF2236.jpg) no-repeat center center fixed; 
+.homepage_background { 
+  background: url(DSCF2236.jpg) center center no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; 
+  background-color: #DFD5E6;
 }
 
 /*** LINKS ***/
@@ -17,66 +18,116 @@ a:link {color: black;}
 /* visited link */
 a:visited {color: black;}
 /* mouse over link */
-a:hover {color: red;}
+a:hover {color: red; text-decoration: underline;}
 /* selected link */
 a:active {color: red;}
 /* current link */
-a.active {color: red;}
+a.active {color: red; text-decoration: underline;}
 
 
 /*** UNIQUE CONTENT ***/
 
 /*** Navigation Bar ***/
 .topnav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
   background-color: white;
   border-bottom: 1px solid black;
+  height: 40px;
 }
 .topnav li{
-  padding: 0 25px;
+  font-size: 20px;
   display: inline-block;
+  padding-right: 75px;
 }
-.topnav ul {
-  max-width: 400px;
-}
+.topnav ul {max-width: 600px;}
 
 /*** Home Page ***/
 .home_banner {
+  display: inline-block;
   border: 1px solid black;
   width: 100%;
+  height: auto;
+  margin-top: 100px;
   padding: 50px 0;
   color: white;
   background-color:rgba(0,0,0,0.5);
 }
 
-.home_navbox a{
-  padding: 0 10px;
+.home_banner_content {max-width: 700px;padding-bottom: 50px;}
+.home_banner_content h1 {font-size: 110px;}
+.home_banner_content h2 {font-size: 55px;}
+.home_banner_content h4 {font-size: 28px;}
+
+.home_navbox {
+  width: 100%;
 }
-.home_navbox div{
+.home_navbox_content {
   position: relative;
-  width: 250px;
-  height: 154.5px;
   display: inline-block;
-  border: 1px outset white;
-  border-radius: 3px;
+  width: 225px;
+  height: 139.1px;
+  font-size: 40px;
+  border: 1px solid white;
+  border-radius: 2px;
   background-color:white;
+  margin-right: 20px;
+}
+.home_navbox_content p {
+  width: 100%;
+  left: 0;
+  background-color:rgba(255,255,255,.5);
 }
 
-
+.work_bkgrd {
+  background: url(desk.jpg) no-repeat ; 
+  background-size: cover;
+}
+.about_bkgrd {
+  background: url(me.jpg) no-repeat; 
+  background-size: cover;
+}
+.contact_bkgrd {
+  background: url(http://www.apug.com/portals/0/Images/Contact.jpg) no-repeat; 
+  background-size: cover;
+}
+/*** SCREEN SIZE ***//*
+@media screen and (min-width:800px) {
+  .home_navbox div {
+    width: 225px;
+    height: 139.1px;
+  }
+}
+@media screen and (max-width:799px) {
+  .home_navbox div {
+    width: 125px;
+    height: 77.3px;
+  }
+}
+*/
 /*** GENERAL STYLING ***/
 
 .container {
 
 }
+
 /*** Positioning ***/
+.bottom_middle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .bottom_left {
+  position: absolute;
   left: 0;
   bottom: 0;
-  position: absolute;
 }
 .bottom-right {
+  position: absolute;
   right: 0;
   bottom: 0;
-  position: absolute;
 }
 
 .center_horizontal_text {text-align: center;}
@@ -85,14 +136,7 @@ a.active {color: red;}
 
 .center_vertical {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.top_third {
-  position: absolute;
-  top: 38.2%;
-  transform: translateY(-50%);
-}
-/*** Size ***/
-.full_width {width: 100%;}
