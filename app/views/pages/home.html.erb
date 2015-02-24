@@ -1,23 +1,24 @@
-<body class="homepage_background">
-  <nav class="topnav full_width">
-    <ul class="center_vertical">
-      <li><%= link_to "Home", '/', :class => "active" %></li>
-      <li><%= link_to "Work/", '/work/sites' %></li>
-      <li><%= link_to "About", '/about' %></li>
-      <li><%= link_to "Contact", '/contact' %></li>
+<body id="homepage_background">
+  <nav id="topnav" class="container full_width">
+    <ul class="margin_left bottom">
+      <li><%= link_to "Home", '/', :class => "active"%></li>
+      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work" %></li>
+      <li><%= link_to "About", '/about', :id => "nav_about" %></li>
+      <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
     </ul>
   </nav>
-  <div class="container homepage">
-    <div class="home_banner">
-      <div class="home_banner_content center_horizontal_block">
+  <div id="topnav_clear"></div>
+  <div class="container">
+    <div id="home_banner">
+      <div id="home_banner_content" class="margin_left">
         <h1>James Hoover</h1>
-        <h2>UI/UX Design Porfolio</h2>
+        <h2>UX/UI Design Porfolio</h2>
         <h4>Designer. Artist. Engineer. Crafter.</h4>
       </div>
-      <div class="home_navbox center_horizontal_text">
-        <a href="/work/sites"><div class="home_navbox_content work_bkgrd"><p class="bottom_left">Work.</p></div></a>
-        <a href="/about"><div class="home_navbox_content about_bkgrd"><p class="bottom_left">About.</p></div></a>
-        <a href="/contact"><div class="home_navbox_content contact_bkgrd"><p class="bottom_left">Contact.</p></div></a>
+      <div id="home_navicons" class="margin_left">
+        <a class="navicon_link" href="/work/sites"><div id="work_bkgrd" class="home_navicons_content"><h4 class="bottom_left">Work.</p></div></a>
+        <a class="navicon_link" href="/about"><div id="about_bkgrd" class="home_navicons_content"><h4 class="bottom_left">About.</p></div></a>
+        <a class="navicon_link" href="/contact"><div id="contact_bkgrd" class="home_navicons_content"><h4 class="bottom_left">Contact.</p></div></a>
       </div>
     </div>
   </div>

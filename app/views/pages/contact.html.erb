@@ -1,14 +1,20 @@
 <body>
-  <nav class="topnav full_width">
-    <ul class="center_horizontal_text center_horizontal_block center_vertical">
+  <nav id="topnav" class="container full_width">
+    <ul class="margin_left bottom">
       <li><%= link_to "Home", '/' %></li>
       <li><%= link_to "Work/", '/work/sites' %></li>
       <li><%= link_to "About", '/about' %></li>
       <li><%= link_to "Contact", '/contact', :class => "active" %></li>
     </ul>
   </nav>
-  <div class="container_header">
-    <h1>Contact Me:</h1>
+  <div id="topnav_clear"></div>
+  <div id="side_info">
+    <h1>James Hoover</h1>
+    <h2>UX/UI Design Porfolio</h2>
+    <h4>Designer. Artist. Engineer. Crafter.</h4>
+  </div>
+  <div class="container contact_page">
+    <h1 id="location">Contact Me:</h1>
     <h4><a href="mailto:jamesfhoover@gmail.com">jamesfhoover@gmail.com</a></h4>
     <p>
       I am always looking for more design work.

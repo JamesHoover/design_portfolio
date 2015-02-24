@@ -1,14 +1,20 @@
 <body>
-  <nav class="topnav full_width">
-    <ul class="center_horizontal_text center_horizontal_block center_vertical">
+  <nav id="topnav" class="container full_width">
+    <ul class="margin_left bottom">
       <li><%= link_to "Home", '/' %></li>
       <li><%= link_to "Work/", '/work/sites' %></li>
       <li><%= link_to "About", '/about', :class => "active" %></li>
       <li><%= link_to "Contact", '/contact' %></li>
     </ul>
   </nav>
-  <div class="container_header">
-  	<h1>About Me:</h1>
+  <div id="topnav_clear"></div>
+  <div id="side_info">
+    <h1>James Hoover</h1>
+    <h2>UX/UI Design Porfolio</h2>
+    <h4>Designer. Artist. Engineer. Crafter.</h4>
+  </div>
+  <div class="container about_page">
+  	<h1 id="location">About Me:</h1>
     <div>
       <div class="about_img">
         <%= image_tag("me.jpg") %>
