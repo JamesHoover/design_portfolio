@@ -2,23 +2,29 @@
   <nav id="topnav" class="container full_width">
     <ul class="margin_left bottom">
       <li><%= link_to "Home", '/' %></li>
-      <li><%= link_to "Work/", '/work/sites' %></li>
-      <li><%= link_to "About", '/about' %></li>
-      <li><%= link_to "Contact", '/contact', :class => "active" %></li>
+      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work" %></li>
+      <li><%= link_to "About", '/about', :id => "nav_about" %></li>
+      <li><%= link_to "Contact", '/contact', :id => "nav_contact", :class => "active" %></li>
     </ul>
   </nav>
   <div id="topnav_clear"></div>
-  <div id="side_info">
-    <h1>James Hoover</h1>
-    <h2>UX/UI Design Porfolio</h2>
-    <h4>Designer. Artist. Engineer. Crafter.</h4>
-  </div>
   <div class="container contact_page">
+    <a href="/">
+      <div id="sml_site_info">
+        <img src="/assets/me.jpg" width="48" height="48" id="logo">
+        <p>
+          <h4>James Hoover</h4>
+          <h4 class="subtext">UX/UI Design Porfolio</h4>
+          <h4 class="subtext">Designer. Artist. Engineer. Crafter.</h4>
+        </p>
+        </div>
+    </a>
     <h1 id="location">Contact Me:</h1>
-    <h4><a href="mailto:jamesfhoover@gmail.com">jamesfhoover@gmail.com</a></h4>
-    <p>
-      I am always looking for more design work.
-      If you're interested in my work, have a question, or just want to say hi, please <a href="mailto:jamesfhoover@gmail.com">get in touch via email.</a><br><br>
-    </p>
+    <div id="contact_page_content">
+      <h4 class="email_big"><a href="mailto:jamesfhoover@gmail.com">jamesfhoover@gmail.com</a></h4>
+      <p>I am always looking for more design work.
+        If you're interested in my work, have a question, or just want to say hi, please <a href="mailto:jamesfhoover@gmail.com" class="inline_link">get in touch via email.</a>
+      </p>
+    </div>
   </div>
 </body>

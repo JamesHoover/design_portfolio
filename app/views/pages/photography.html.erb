@@ -2,18 +2,23 @@
   <nav id="topnav" class="container full_width">
     <ul class="margin_left bottom">
       <li><%= link_to "Home", '/' %></li>
-      <li><%= link_to "Work/", '/work/sites', :class => "active" %></li>
-      <li><%= link_to "About", '/about' %></li>
-      <li><%= link_to "Contact", '/contact' %></li>
+      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work", :class => "active" %></li>
+      <li><%= link_to "About", '/about', :id => "nav_about" %></li>
+      <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
     </ul>
   </nav>
   <div id="topnav_clear"></div>
-  <div id="side_info">
-    <h1>James Hoover</h1>
-    <h2>UX/UI Design Porfolio</h2>
-    <h4>Designer. Artist. Engineer. Crafter.</h4>
-  </div>
   <div class="container work_page">
+    <a href="/">
+      <div id="sml_site_info">
+        <img src="/assets/me.jpg" width="48" height="48" id="logo">
+        <p>
+          <h4>James Hoover</h4>
+          <h4 class="subtext">UX/UI Design Porfolio</h4>
+          <h4 class="subtext">Designer. Artist. Engineer. Crafter.</h4>
+        </p>
+        </div>
+    </a>
     <h1 id="location">My Work:</h1>
     <nav id="worknav">
       <ul>

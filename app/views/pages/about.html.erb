@@ -2,30 +2,39 @@
   <nav id="topnav" class="container full_width">
     <ul class="margin_left bottom">
       <li><%= link_to "Home", '/' %></li>
-      <li><%= link_to "Work/", '/work/sites' %></li>
-      <li><%= link_to "About", '/about', :class => "active" %></li>
-      <li><%= link_to "Contact", '/contact' %></li>
+      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work" %></li>
+      <li><%= link_to "About", '/about', :id => "nav_about", :class => "active" %></li>
+      <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
     </ul>
   </nav>
   <div id="topnav_clear"></div>
-  <div id="side_info">
-    <h1>James Hoover</h1>
-    <h2>UX/UI Design Porfolio</h2>
-    <h4>Designer. Artist. Engineer. Crafter.</h4>
-  </div>
   <div class="container about_page">
+    <a href="/">
+      <div id="sml_site_info">
+        <img src="/assets/me.jpg" width="48" height="48" id="logo">
+        <p>
+          <h4>James Hoover</h4>
+          <h4 class="subtext">UX/UI Design Porfolio</h4>
+          <h4 class="subtext">Designer. Artist. Engineer. Crafter.</h4>
+        </p>
+        </div>
+    </a>
   	<h1 id="location">About Me:</h1>
-    <div>
-      <div class="about_img">
+    <div class="about_page_content">
+      <div id="about_img">
         <%= image_tag("me.jpg") %>
+        <div id="about_img_text" class="bottom_left">
+          <h4><span class="uppercase bold">Name:</span> James Hoover<br></h4>
+          <h4><span class="uppercase bold">Email:</span><a href="mailto:jamesfhoover@gmail.com" class="inline_link"> jamesfhoover@gmail.com</a></h4>
+          <h4><span class="uppercase bold">Location:</span> Seattle, WA </h4>
+          <h4><span class="uppercase bold">Degree:</span> BS Computer Science</h4>
+          <h4><span class="uppercase bold">Profession:</span> Software Developer</h4>
+          <h4><span class="uppercase bold">Future Profession:</span> UX/UI Designer</h4>
+        </div>
       </div>
-      <div class="about_text">
-        <h4><span>Name: James<br></span></h4>
-        <h4><span>Email:<a href="mailto:jamesfhoover@gmail.com">jamesfhoover@gmail.com</a></span></h4>
-        <h4><span>Location: Seattle, WA</span> </h4>
-        <h4><span>Degree: Computer Science</span> </h4>
-        <h4><span>Profession: Software Developer</span></h4>
-        <h4><span>Desired profession: UI/UX Designer</span></h4>
+      <div id="about_p">
+        <p>My name is James Hoover. Born and raised in Seattle, WA. Studied computer science at the University of Gonzaga. Been a software dev for 2.5 years. I love it but it lacks the visual creativity that I crave. I have always been passionate about the visual arts. Drawing, painting, sculpting from day one. I am also into crafting and building. Combining those disciplines into one, add a little psychology and architecture, and you get UX, the perfect fit for me.
+        </p>
       </div>
     </div>
   </div>
