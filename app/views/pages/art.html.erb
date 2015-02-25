@@ -1,7 +1,7 @@
 <body>
   <nav id="topnav" class="container full_width">
     <ul class="margin_left bottom">     
-      <li><%= link_to "Home", '/' %></li>
+      <li><%= link_to "Home", '/', :id =>"nav_home" %></li>
       <li><%= link_to "Work/", '/work/sites', :id =>"nav_work", :class => "active" %></li>
       <li><%= link_to "About", '/about', :id => "nav_about" %></li>
       <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
@@ -13,7 +13,7 @@
       <div id="sml_site_info">
         <img src="/assets/me.jpg" width="48" height="48" id="logo">
         <p>
-          <h4>James Hoover</h4>
+          <h3>James Hoover</h3>
           <h4 class="subtext">UX/UI Design Porfolio</h4>
           <h4 class="subtext">Designer. Artist. Engineer. Crafter.</h4>
         </p>
