@@ -24,35 +24,21 @@ a:visited {color: black;}
 a:hover {color: #14CC9A; text-decoration: underline;}
 /* selected link */
 a:active {color: #14CC9A;}
+
 /* current link in topnav */
-a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #BABABA}
-#nav_home:hover {
-  color: #14CC9A;
-}
-#nav_home.active {
-  color: #14CC9A;
-}
-#nav_work:hover {
-  color: #FF8080;
-}
-#nav_work.active {
-  color: #FF8080;
-}
-#nav_about:hover {
-  color: #FFFF80;
-}
-#nav_about.active {
-  color: #FFFF80;
-}
-#nav_contact:hover {
-  color: #8080FF;
-}
-#nav_contact.active {
-  color: #8080FF;
-}
+a.active {color: #14CC9A; text-decoration: underline; font-weight: bold;}
+
+#nav_home:hover {color: #14CC9A;}
+#nav_home.active {color: #14CC9A;}
+#nav_work:hover {color: #FF8080;}
+#nav_work.active {color: #FF8080;}
+#nav_about:hover {color: #FFFF80;}
+#nav_about.active {color: #FFFF80;}
+#nav_contact:hover {color: #8080FF;}
+#nav_contact.active {color: #8080FF;}
+
 
 /*** UNIQUE PAGE CONTENT ***/
-
 /*** Navigation Bar ***/
 #topnav {
   position: fixed;
@@ -84,6 +70,7 @@ a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #
     margin-right: 20px;
   }
 }
+
 /*** Home Page ***/
 #home_page {
   display: inline-block;
@@ -97,9 +84,7 @@ a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #
 #home_page_content h2 {font-size: 50px; color: #999999}
 #home_page_content h4 {font-size: 25px; color: #999999}
 
-#home_navicons {
-  width: 100%;
-}
+#home_navicons {width: 100%;}
 .home_navicons_content {
   position: relative;
   display: inline-block;
@@ -111,12 +96,10 @@ a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #
   margin-right: 20px;
   margin-top: 10px;
 }
-.navicon_link div:hover{
-  color: white;
-}
-.navicon_link:hover {
-  opacity: .7;
-}
+.navicon_link div:hover{color: white;}
+.navicon_link {opacity: .8;}
+.navicon_link:hover {opacity: 1;}
+
 #work_bkgrd {
   background: url(http://www.newtlabs.co.uk/media/macbook-sketchpad-camera-desk.jpg) no-repeat; 
   background-size: cover;
@@ -148,25 +131,19 @@ a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #
 /*** Small Site Info ***/
 #sml_site_info {
   display: inline-block;
-  width: 330px;
+  width: 260px;
   margin-bottom: 50px;
 }
-#sml_site_info img {
-  margin-right: 5px;
-}
-#sml_site_info:hover img{
-  opacity: .8;
-}
-#sml_site_info:hover h4{
-  opacity: .5;
-}
-#sml_site_info:hover h3{
-  color: black;
-  opacity: .5;
-}
-#logo {float: left;}
+#sml_site_info img {margin-right: 5px;}
+#sml_site_info img{opacity: .7;}
+#sml_site_info:hover img{opacity: 1;}
+#sml_site_info h4{opacity: .4;}
+#sml_site_info:hover h4{opacity: 1;}
+#sml_site_info h3{opacity: .4;}
+#sml_site_info:hover h3{color: black; opacity: 1;}
+.logo {float: left;}
 
-/*** Work Page ***/
+/*** Work Pages (Sites, Art, Photography) ***/
 #work_page {}
 #worknav {
   margin-bottom: 25px;
@@ -181,35 +158,54 @@ a.active {color: #14CC9A; text-decoration: underline; text-shadow: 1px 1px 0px #
   display: inline-block;
   margin-right: 25px;
 }
-#work_location {
+.work_location {
   font-size: 32px;
   margin-bottom: 10px;
 }
+
+.img_container {
+  width: 100%;
+}
+.img_thumb {
+  width: 300px;
+  display: inline-block;
+  float: left;
+}
+.img_thumb img{
+  display: inline-block;
+  width: 300px;
+}
+
 /*** About Page ***/
 #about_page {}
 #about_img {
   position: relative;
   float: left;
   margin-right: 0;
+  width: 449px;
+  height: 555px;
+  background: url(me.jpg) no-repeat; 
+  background-size: cover;
 }
 #about_img_text {
   font-size: 21px;
   color: white;
   padding: 3px;
 }
-#about_p {}
+#about_p p{padding-bottom: 10px;}
 
 /*** Contact Page ***/
 #contact_page_content {}
 
 /*** GENERAL STYLING ***/
-#location {
+.location {
   font-size: 42px;
   border-bottom: 1px solid #BABABA;
   margin-bottom: 10px;
 }
 
 a.inline_link {color: #14CC9A;}
+.inline_header { font-size: 21px;}
 
 .email_big {font-size: 21px; margin-bottom: 10px;}
 .email_big a {color: #14CC9A;}
@@ -226,12 +222,6 @@ a.inline_link {color: #14CC9A;}
     padding-left: 10%;
     padding-right: 10%;
   }
-}
-
-.thumb_display img {
-  display: inline-block;
-  width: 30%;
-  height: 30%;
 }
 
 .subtext {color: #999999;}
