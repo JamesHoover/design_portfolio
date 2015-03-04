@@ -2,21 +2,26 @@
   <nav id="topnav" class="container full_width">
     <ul class="margin_left bottom">
       <li><%= link_to "Home", '/', :id =>"nav_home" %></li>
-      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work", :class => "active" %></li>
+      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work", :class => "active" %>
+        <ul class="sub_topnav">
+          <li>sites</li>
+          <li>art</li>
+          <li>photos</li>
+        </ul>
+      </li>
       <li><%= link_to "About", '/about', :id => "nav_about" %></li>
       <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
     </ul>
   </nav>
-  <div id="topnav_clear"></div>
+  <div class="topnav_clear"></div>
   <div class="container work_page">
     <a href="/">
       <div id="sml_site_info">
         <img src="/assets/me.jpg" width="48" height="48" class="logo">
-        <p>
+        
           <h3>James Hoover</h3>
           <h4 class="subtext">UX/UI Design Porfolio</h4>
-          <h4 class="subtext">Designer. Engineer. Artist.</h4>
-        </p>
+        
         </div>
     </a>
     <h1 class="location bold">My Work:</h1>
@@ -32,4 +37,5 @@
       <p>These are sites I designed and build from scratch. They display my knowledge of design, usability, and programming.</p>
     </div>
   </div>
+  <div class="footer"><h1 id="copy">&copy; James Hoover - 2015</h1></div>
 </body>
