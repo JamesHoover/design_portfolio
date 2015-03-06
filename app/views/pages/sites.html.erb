@@ -8,16 +8,16 @@
       </div>
     </a>
     <ul class="uppercase">
-      <li><%= link_to "Home", '/', :id =>"nav_home" %></li>
-      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work", :class => "active" %>
+      <li><%= link_to "Home", '/', :class =>"link_home" %></li>
+      <li><%= link_to "Work/", '/work/sites', :class =>"link_work active" %>
         <ul class="sub_topnav">
-          <li class="capitalize"><%= link_to "Sites", '/work/sites', :class => "active" %></li>
-          <li class="capitalize"><%= link_to "Art", '/work/art' %></li>
-          <li class="capitalize"><%= link_to "Photograhy", '/work/photography' %></li>
+          <li class="capitalize"><%= link_to "/Sites", '/work/sites', :class =>"link_work active" %></li>
+          <li class="capitalize"><%= link_to "/Art", '/work/art', :class =>"link_work" %></li>
+          <li class="capitalize"><%= link_to "/Photograhy", '/work/photography', :class =>"link_work" %></li>
         </ul>
       </li>
-      <li><%= link_to "About", '/about', :id => "nav_about" %></li>
-      <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
+      <li><%= link_to "About", '/about', :class => "link_about" %></li>
+      <li><%= link_to "Contact", '/contact', :class => "link_contact" %></li>
     </ul>
   </nav>
   <div class="topnav_clear"></div>
@@ -26,9 +26,9 @@
     <h1 class="location bold uppercase">My Work:</h1>
     <nav id="worknav">
       <ul>
-      	<li><%= link_to "Sites", '/work/sites', :class => "active" %></li>
-      	<li><%= link_to "Art", '/work/art' %></li>
-        <li><%= link_to "Photograhy", '/work/photography' %></li>
+      	<li><%= link_to "Sites", '/work/sites', :class => "link_work active" %></li>
+      	<li><%= link_to "Art", '/work/art', :class =>"link_work" %></li>
+        <li><%= link_to "Photograhy", '/work/photography', :class =>"link_work" %></li>
       </ul>
     </nav>
     <div>

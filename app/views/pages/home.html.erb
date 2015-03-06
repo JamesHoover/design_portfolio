@@ -8,24 +8,25 @@
       </div>
     </a>
     <ul class="uppercase">
-      <li><%= link_to "Home", '/', :id =>"nav_home", :class => "active"%></li>
-      <li><%= link_to "Work/", '/work/sites', :id =>"nav_work" %>
+      <li><%= link_to "Home", '/', :class => "link_home active"%></li>
+      <li><%= link_to "Work/", '/work/sites', :class =>"link_work" %>
         <ul class="sub_topnav_hidden">
-          <li class="capitalize"><%= link_to "Sites", '/work/sites', :class => "active" %></li>
-          <li class="capitalize"><%= link_to "Art", '/work/art' %></li>
-          <li class="capitalize"><%= link_to "Photograhy", '/work/photography' %></li>
+          <li class="capitalize"><%= link_to "/Sites", '/work/sites', :class =>"link_work" %></li>
+          <li class="capitalize"><%= link_to "/Art", '/work/art', :class =>"link_work" %></li>
+          <li class="capitalize"><%= link_to "/Photograhy", '/work/photography', :class =>"link_work" %></li>
         </ul>
       </li>
-      <li><%= link_to "About", '/about', :id => "nav_about" %></li>
-      <li><%= link_to "Contact", '/contact', :id => "nav_contact" %></li>
+      <li><%= link_to "About", '/about', :class => "link_about" %></li>
+      <li><%= link_to "Contact", '/contact', :class => "link_contact" %></li>
     </ul>
   </nav>
   <div class="topnav_clear"></div>
   <div class="spacer"></div>
   <div class="container">
     <div id="home_page">
-      <div id="home_page_content" class="margin_left">
-        <h1>James Hoover</h1>
+      <div id="home_page_content">
+        <h1 class="uppercase">James</h1>
+        <h1 class="uppercase">Hoover</h1>
         <h2 class="center_horizontal_text">UX/UI Design Porfolio</h2>
         <h4 class="center_horizontal_text">Designer. Engineer. Artist.</h4>
       </div>

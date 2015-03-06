@@ -1,3 +1,16 @@
+/* 
+** pages.css
+** Stylesheet for www.jameshooverdesign.com
+** Author: James Hoover
+** Copyright: 2015
+*/
+
+/** TODO:
+**  sticky footer
+**  design a logo
+**  add hover effect to photo page
+**  
+*/
 html { 
 -webkit-font-smoothing: antialiased;
   font-family: 'Quicksand', 'Poiret One', 'p22-underground', 'p22-underground', 'Open Sans', arial, sans-serif, futura;
@@ -5,14 +18,6 @@ html {
 }
 p {
   font-family: 'Karla', sans-serif;
-}
-/*** Appended to homepage body tag ***/
-#homepage_background { 
-  /*background: url(DSCF2236.jpg) center center no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */ 
 }
 
 /*** LINKS ***/
@@ -28,14 +33,14 @@ a:active {color: #14CC9A;}
 /* current link in topnav */
 a.active {color: #14CC9A; text-decoration: underline; font-weight: bold;}
 
-#nav_home:hover {color: #14CC9A;}
-#nav_home.active {color: #14CC9A;}
-#nav_work:hover {color: #FF8080;}
-#nav_work.active {color: #FF8080;}
-#nav_about:hover {color: #FFFF80;}
-#nav_about.active {color: #FFFF80;}
-#nav_contact:hover {color: #8080FF;}
-#nav_contact.active {color: #8080FF;}
+.link_home:hover {color: #14CC9A;}
+.link_home.active {color: #14CC9A;}
+.link_work:hover {color: #FF8080;}
+.link_work.active {color: #FF8080;}
+.link_about:hover {color: #FFFF80;}
+.link_about.active {color: #FFFF80;}
+.link_contact:hover {color: #8080FF;}
+.link_contact.active {color: #8080FF;}
 
 /*** UNIQUE PAGE CONTENT ***/
 /*** Navigation Bar ***/
@@ -47,7 +52,7 @@ a.active {color: #14CC9A; text-decoration: underline; font-weight: bold;}
   left: 0;
   z-index: 1050;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #EAECEA;
 }
 .topnav > ul {
@@ -57,33 +62,30 @@ a.active {color: #14CC9A; text-decoration: underline; font-weight: bold;}
 .topnav li {
   font-size: 18px;
   display: inline-block;
-  margin-right: 75px;
+  margin-right: 100px;
 }
+/*** subnav on Work ***/
 .sub_topnav {
   display: inline-block;
   position: fixed;
+  width: 270px;
 }
 ul.sub_topnav {
-  padding-top:10px;
+  padding-top: 15px;
   padding-left: 5px;
+  padding-bottom: 20px;
 }
 .sub_topnav li {
   font-size: 16px;
   margin-right: 25px;
 }
 /*** subnav hidden on non work pages **/
-.sub_topnav_hidden {
-
-}
 .topnav li ul.sub_topnav_hidden {
   display: none;
   position: fixed;
-  width: 250px;
+  width: 270px;
 }
-.topnav li:hover ul.sub_topnav_hidden {
-display: inline-block;
-}
-
+.topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
 ul.sub_topnav_hidden {
   padding-top: 15px;
   padding-left: 5px;
@@ -95,10 +97,7 @@ ul.sub_topnav_hidden {
 }
 
 /*** Small Site Info ***/
-.logo {
-  display: inline-block;
-  width: 200px;
-}
+.logo {display: inline-block;width: 200px;}
 .logo img {margin-right: 5px;}
 .logo img{opacity: .7;}
 .logo:hover img{opacity: 1;}
@@ -123,14 +122,10 @@ ul.sub_topnav_hidden {
 
 /*** Screen Size topnav spacing ***/
 @media screen and (min-width:600px) {
-  #topnav li {
-    margin-right: 75px;
-  }
+  #topnav li {margin-right: 75px;}
 }
 @media screen and (max-width:599px) {
-  #topnav li {
-    margin-right: 20px;
-  }
+  #topnav li {margin-right: 20px;}
 }
 
 /*** Home Page ***/
@@ -155,11 +150,14 @@ ul.sub_topnav_hidden {
   width: 185px;
   font-size: 28px;
   box-shadow:10px 10px 1px #D9D9D9;
+  color: white;
   background-color:white;
   margin-right: 60px;
   margin-top: 10px;
 }
-.navicon_link div:hover{color: white;}
+.home_navicons_content h4 { padding-left: 3px;
+}
+.navicon_link div:hover{color: black;}
 .navicon_link {opacity: .8;}
 .navicon_link:hover {opacity: 1;}
 
@@ -211,10 +209,9 @@ ul.sub_topnav_hidden {
   font-size: 32px;
   margin-bottom: 10px;
 }
+/*
+.img_container {width: 100%;}
 
-.img_container {
-  width: 100%;
-}
 .img_thumb {
   width: 300px;
   display: inline-block;
@@ -223,6 +220,28 @@ ul.sub_topnav_hidden {
 .img_thumb img{
   display: inline-block;
   width: 300px;
+}
+*/
+.img_container {
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+  column-count: 2;
+  column-gap: 10px;
+  width: 100%; 
+  margin-right: 10px;
+}
+
+.img_thumb img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.img_thumb:hover img {
+  opacity:0.5;
 }
 
 /*** About Page ***/
@@ -243,8 +262,12 @@ ul.sub_topnav_hidden {
 }
 #about_p p{padding-bottom: 10px;}
 
+a.yellow {color: #FFFF80;}
+
 /*** Contact Page ***/
 #contact_page_content {}
+
+a.blue {color: #8080FF;}
 
 /*** GENERAL STYLING ***/
 .location {
@@ -254,11 +277,11 @@ ul.sub_topnav_hidden {
   margin-bottom: 10px;
 }
 
-a.inline_link {color: #14CC9A;}
+
 .inline_header { font-size: 21px;}
 
 .email_big {font-size: 21px; margin-bottom: 10px;}
-.email_big a {color: #14CC9A;}
+.email_big a {color: #8080FF;}
 
 /*** Screen Size Side Padding ***/
 @media screen and (min-width:950px) {
@@ -283,7 +306,7 @@ a.inline_link {color: #14CC9A;}
 
 .last_element {margin-right: 0;}
 
-.topnav_clear {height: 60px; width: 100%;}
+.topnav_clear {height: 70px; width: 100%;}
 .spacer {height: 150px; width: 100%;}
 .inline_block {display: inline-block;}
 
@@ -291,10 +314,7 @@ a.inline_link {color: #14CC9A;}
 /*** Positioning ***/
 .float_right {float: right;}
 
-.bottom {
-  position: absolute;
-  bottom: 10%;
-}
+.bottom {position: absolute;bottom: 10%;}
 .bottom_left {
   position: absolute;
   left: 0;
