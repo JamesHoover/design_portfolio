@@ -7,6 +7,7 @@
         <h4 class="subtext">Design Porfolio</h4>
       </div>
     </a>
+    <div class="nav_spacer_top"></div>
     <ul class="uppercase">
       <li><%= link_to "Home", '/', :class =>"link_home" %></li>
       <li><%= link_to "Work/", '/work/sites', :class =>"link_work" %>
@@ -17,8 +18,9 @@
         </ul>
       </li>
       <li><%= link_to "About", '/about', :class => "link_about" %></li>
-      <li><%= link_to "Contact", '/contact', :class => "link_contact active"  %></li>
+      <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_contact active"  %></li>
     </ul>
+    <div class="nav_spacer_bottom"></div>
   </nav>
   <div class="topnav_clear"></div>
   <div class="spacer"></div>
