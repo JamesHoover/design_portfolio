@@ -13,7 +13,7 @@
 **  border bottom on li's
 **  navicons colored transparent overlay on hover
 **  about page blur behind text over img
-**  fix the photo columns...the margins and whatnot are off
+**  fix the photo columns...thin line at bottom
 */
 html { 
   -webkit-font-smoothing: antialiased!important;
@@ -35,16 +35,16 @@ a:hover {color: #14CC9A; text-decoration: underline;}
 a:active {color: #14CC9A;}
 
 /* current link in topnav */
-a.active {color: #14CC9A; text-decoration: underline; font-weight: bold;}
+a.active {color: #14CC9A; font-weight: bold;}
 
-.link_home:hover {color: #14CC9A;}
-.link_home.active {color: #14CC9A;}
-.link_work:hover {color: #FF8080;}
-.link_work.active {color: #FF8080;}
-.link_about:hover {color: #FFFF80;}
-.link_about.active {color: #FFFF80;}
-.link_contact:hover {color: #8080FF;}
-.link_contact.active {color: #8080FF;}
+.link_home:hover {color: #14CC9A; border-bottom: 3px solid #14CC9A; text-decoration: none;}
+.link_home.active {color: #14CC9A; border-bottom: 3px solid #14CC9A;}
+.link_work:hover {color: #FF8080; border-bottom: 3px solid #FF8080; text-decoration: none;}
+.link_work.active {color: #FF8080; border-bottom: 3px solid #FF8080;}
+.link_about:hover {color: #FFFF80; border-bottom: 3px solid #FFFF80; text-decoration: none;}
+.link_about.active {color: #FFFF80; border-bottom: 3px solid #FFFF80;}
+.link_contact:hover {color: #8080FF; border-bottom: 3px solid #8080FF; text-decoration: none;}
+.link_contact.active {color: #8080FF; border-bottom: 3px solid #8080FF;}
 
 /*** UNIQUE PAGE CONTENT ***/
 /*** Navigation Bar ***/
@@ -90,6 +90,7 @@ ul.sub_topnav {
   width: 270px;
 }
 .topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
+
 ul.sub_topnav_hidden {
   padding-top: 15px;
   padding-left: 5px;
@@ -100,12 +101,12 @@ ul.sub_topnav_hidden {
   margin-right: 25px;
 }
 .nav_spacer_top {
-  width: 100%; height: 20px;
+  width: 100%; height: 40px;
 }
 .nav_spacer_bottom {
-  width: 100%; height: 35px;
+  width: 100%; height: 40px;
 }
-.topnav_clear {height: 130px; width: 100%;}
+.topnav_clear {height: 150px; width: 100%;}
 
 
 /*** Small Site Info ***/
@@ -244,25 +245,42 @@ ul.sub_topnav_hidden {
   width: 300px;
 }
 */
-.img_container {
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-  column-count: 2;
-  column-gap: 10px;
-  width: 100%; 
-  margin-right: 10px;
-}
 
-.img_thumb img {
-  height: auto;
+/*** Photography ***/
+@media screen and (min-width:1100px) {
+  .img_container {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3;
+  }
+}
+@media screen and (max-width:1099px) {
+  .img_container {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+}
+@media screen and (max-width:700px) {
+  .img_container {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1;
+  }
+}
+div.img_thumb {
+  display: inline-block;
   width: 100%;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  height: 100%;
+  margin-bottom: 15px;
+}
+.img_thumb img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
-.img_thumb:hover img {-webkit-filter: blur(5px); filter: blur(5px);}
+.img_thumb:hover > img {-webkit-filter: blur(1px); filter: blur(1px);}
 
 /*** About Page ***/
 #about_page {}
@@ -307,10 +325,11 @@ a.blue {color: #8080FF;}
 .email_big a {color: #8080FF;}
 
 /*** Screen Size Side Padding ***/
+/*** NOT USED ***/
 @media screen and (min-width:950px) {
   .container {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media screen and (max-width:949px) {
