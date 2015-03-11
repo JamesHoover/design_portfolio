@@ -128,11 +128,12 @@ ul.sub_topnav_hidden {
 
 /*** Footer ***/
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 /*** Screen Size topnav spacing ***/
 @media screen and (min-width:600px) {
