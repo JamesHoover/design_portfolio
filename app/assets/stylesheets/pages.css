@@ -363,7 +363,8 @@ div.img_thumb {
 
 ul > li.last_element {margin-right: 0;}
 
-.spacer {height: 10%; width: 100%;}
+.spacer {height: 50px; width: 100%;}
+.home_spacer {height: 30px; width: 100%;}
 .inline_block {display: inline-block;}
 
 
