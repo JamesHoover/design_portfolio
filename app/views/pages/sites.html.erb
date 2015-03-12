@@ -1,41 +1,43 @@
 <body>
-  <nav class="topnav container full_width">
-    <a href="/" class="logo_link">
-      <div class="logo">
-        <img src="/assets/me.jpg" class="logo_img">
-        <h3>James Hoover</h3>
-        <h4 class="subtext">Design Porfolio</h4>
-      </div>
-    </a>
-    <ul class="uppercase">
-      <li><%= link_to "Home", '/', :class =>"link_green green_border" %></li>
-      <li><%= link_to "Work /", '/work/sites', :class => "link_red red_border active" %>
-        <ul class="sub_topnav">
-          <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class =>"link_red active" %></li>
-          <li class="capitalize"><%= link_to "/ Art", '/work/art', :class =>"link_red" %></li>
-          <li class="capitalize"><%= link_to "/ Photograhy", '/work/photography', :class =>"link_red" %></li>
-        </ul>
-      </li>
-      <li><%= link_to "About", '/about', :class => "link_yellow yellow_border" %></li>
-      <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
-    </ul>
-    <div class="nav_spacer"></div>
-  </nav>
-  <div class="topnav_clear"></div>
-  <div class="spacer"></div>
-  <div class="container work_page">
-    <h1 class="location bold uppercase">My Work:</h1>
-    <nav id="worknav">
-      <ul>
-      	<li><%= link_to "Sites", '/work/sites', :class => "link_red active" %></li>
-      	<li><%= link_to "Art", '/work/art', :class => "link_red" %></li>
-        <li><%= link_to "Photograhy", '/work/photography', :class => "link_red" %></li>
+  <div class="wrapper">
+    <nav class="topnav container full_width">
+      <a href="/" class="logo_link">
+        <div class="logo">
+          <img src="/assets/me.jpg" class="logo_img">
+          <h3>James Hoover</h3>
+          <h4 class="subtext">Design Porfolio</h4>
+        </div>
+      </a>
+      <ul class="uppercase">
+        <li><%= link_to "Home", '/', :class =>"link_green green_border" %></li>
+        <li><%= link_to "Work /", '/work/sites', :class => "link_red red_border active" %>
+          <ul class="sub_topnav">
+            <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class =>"link_red active" %></li>
+            <li class="capitalize"><%= link_to "/ Art", '/work/art', :class =>"link_red" %></li>
+            <li class="capitalize"><%= link_to "/ Photograhy", '/work/photography', :class =>"link_red" %></li>
+          </ul>
+        </li>
+        <li><%= link_to "About", '/about', :class => "link_yellow yellow_border" %></li>
+        <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
       </ul>
+      <div class="nav_spacer"></div>
     </nav>
-    <div>
-      <h2 class="work_location uppercase">Sites</h2>
-      <p>These are sites I designed and built. They display my knowledge of design, usability, and programming.</p>
+    <div class="topnav_clear"></div>
+    <div class="spacer"></div>
+    <div class="container work_page">
+      <h1 class="location bold uppercase">My Work:</h1>
+      <nav id="worknav">
+        <ul>
+        	<li><%= link_to "Sites", '/work/sites', :class => "link_red active" %></li>
+        	<li><%= link_to "Art", '/work/art', :class => "link_red" %></li>
+          <li><%= link_to "Photograhy", '/work/photography', :class => "link_red" %></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="work_location uppercase">Sites</h2>
+        <p>These are sites I designed and built. They display my knowledge of design, usability, and programming.</p>
+      </div>
     </div>
   </div>
-  <div class="footer"><h1 id="copy">&copy;2015 - James Hoover</h1></div>
+  <div class="footer push center_horizontal_text"><h4 id="copy">&copy;2015 - James Hoover</h4></div>
 </body>
