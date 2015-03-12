@@ -130,7 +130,6 @@ ul.sub_topnav_hidden {
 .footer {
   position: absolute;
   bottom: 0;
-  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -147,15 +146,15 @@ ul.sub_topnav_hidden {
 #home_page {
   display: inline-block;
   width: 100%;
-  max-width: 750px;
+  max-width: 900px;
   min-width: 750px;
   height: auto;
   color: black;
 }
 #home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
 #home_page_content {padding-bottom: 50px;}
-#home_page_content h1 {font-size: 100px; text-shadow: 4px 4px 0px #D9D9D9}
-#home_page_content h2 {font-size: 50px; color: #999999}
+#home_page_content h1 {font-size: 90px; text-shadow: 4px 4px 0px #D9D9D9}
+#home_page_content h2 {font-size: 45px; color: #999999}
 #home_page_content h4 {font-size: 25px; color: #999999}
 
 #home_navicons {width: 100%;}
@@ -274,6 +273,7 @@ div.img_thumb {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+  box-shadow:10px 10px 1px #D9D9D9;
 }
 .img_thumb img {
   display: inline-block;
@@ -281,7 +281,7 @@ div.img_thumb {
   height: 100%;
 }
 
-.img_thumb:hover > img {-webkit-filter: blur(1px); filter: blur(1px);}
+.img_thumb:hover > img {}
 
 /*** About Page ***/
 #about_page {}
