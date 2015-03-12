@@ -30,21 +30,37 @@ a:link {color: black; text-decoration: none;}
 /* visited link */
 a:visited {color: black;}
 /* mouse over link */
-a:hover {color: #14CC9A; text-decoration: underline;}
+a:hover {text-decoration: underline;}
 /* selected link */
-a:active {color: #14CC9A;}
+a:active {}
 
 /* current link in topnav */
-a.active {color: #14CC9A;}
+a.active {text-decoration: underline;}
 
-.link_home:hover {color: #14CC9A; border-bottom: 3px solid #14CC9A; text-decoration: none;}
-.link_home.active {color: #14CC9A; border-bottom: 3px solid #14CC9A;}
-.link_work:hover {color: #FF8080; border-bottom: 3px solid #FF8080; text-decoration: none;}
-.link_work.active {color: #FF8080; border-bottom: 3px solid #FF8080;}
-.link_about:hover {color: #FFFF80; border-bottom: 3px solid #FFFF80; text-decoration: none;}
-.link_about.active {color: #FFFF80; border-bottom: 3px solid #FFFF80;}
-.link_contact:hover {color: #8080FF; border-bottom: 3px solid #8080FF; text-decoration: none;}
-.link_contact.active {color: #8080FF; border-bottom: 3px solid #8080FF;}
+/*** link color ***/
+.link_green:hover {color: #14CC9A;}
+.link_green.active {color: #14CC9A;}
+.link_red:hover {color: #FF8080;}
+.link_red.active {color: #FF8080;}
+.link_yellow:hover {color: #FFFF80;}
+.link_yellow.active {color: #FFFF80;}
+.link_blue:hover {color: #8080FF;}
+.link_blue.active {color: #8080FF;}
+
+/*** always colored ***/
+a.blue {color: #8080FF;}
+a.yellow {color: #FFFF80;}
+
+
+/*** bottom border on links ***/
+.green_border:hover {border-bottom: 3px solid #14CC9A; text-decoration: none;}
+.green_border.active {border-bottom: 3px solid #14CC9A; text-decoration: none;}
+.red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
+.red_border.active {border-bottom: 3px solid #FF8080; text-decoration: none;}
+.yellow_border:hover {border-bottom: 3px solid #FFFF80; text-decoration: none;}
+.yellow_border.active {border-bottom: 3px solid #FFFF80; text-decoration: none;}
+.blue_border:hover {border-bottom: 3px solid #8080FF; text-decoration: none;}
+.blue_border.active {border-bottom: 3px solid #8080FF; text-decoration: none;}
 
 /*** UNIQUE PAGE CONTENT ***/
 /*** Navigation Bar ***/
@@ -61,7 +77,7 @@ a.active {color: #14CC9A;}
 }
 .topnav > ul {
   display: inline-block;
-  min-width: 600px;
+  width: 700px;
 }
 .topnav li {
   font-size: 18px;
@@ -74,12 +90,13 @@ a.active {color: #14CC9A;}
   position: fixed;
   width: 270px;
 }
-ul.sub_topnav {
+ul.sub_topnav, ul.sub_topnav_hidden {
   padding-top: 15px;
   padding-left: 5px;
   padding-bottom: 20px;
+  white-space: nowrap;
 }
-.sub_topnav li {
+.sub_topnav li, .sub_topnav_hidden li {
   font-size: 16px;
   margin-right: 25px;
 }
@@ -91,39 +108,28 @@ ul.sub_topnav {
 }
 .topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
 
-ul.sub_topnav_hidden {
-  padding-top: 15px;
-  padding-left: 5px;
-  padding-bottom: 20px;
-}
-.sub_topnav_hidden li {
-  font-size: 16px;
-  margin-right: 25px;
-}
-.nav_spacer_top {
-  width: 100%; height: 40px;
-}
-.nav_spacer_bottom {
-  width: 100%; height: 40px;
-}
+.nav_spacer {width: 100%; height: 40px;}
 .topnav_clear {height: 80px; width: 100%;}
 
 
 /*** Small Site Info ***/
 .logo_link {
   display: inline-block;
-  width: auto;
+  width: 175px;
   margin-right: 50px;
 }
-.logo {display: inline-block; width: 175px;}
+.logo {width: auto; white-space: nowrap;}
+.logo_img {float: left; width: 40px; height: 40px; }
+
 .logo img {margin-right: 5px;}
 .logo img{opacity: .7;}
-.logo:hover img{opacity: 1;}
-.logo h4{opacity: .4;}
-.logo:hover h4{opacity: 1; text-decoration: none}
 .logo h3{opacity: .4;}
-.logo:hover h3{color: black; opacity: 1; text-decoration: none}
-.logo_img {float: left; width: 40px; height: 40px; }
+.logo h4{opacity: .4;}
+
+a.logo_link:hover {text-decoration: none;}
+a.logo_link:hover img {opacity: 1;}
+a.logo_link:hover h3 {opacity: 1; color: black;}
+a.logo_link:hover h4 {opacity: 1;}
 
 
 /*** Footer ***/
@@ -305,12 +311,9 @@ div.img_thumb {
   padding-bottom: 10px;
 }
 
-a.yellow {color: #FFFF80;}
-
 /*** Contact Page ***/
 #contact_page_content {}
 
-a.blue {color: #8080FF;}
 
 
 /*** GENERAL STYLING ***/
@@ -324,7 +327,6 @@ a.blue {color: #8080FF;}
 .inline_header { font-size: 21px;}
 
 .email_big {font-size: 21px; margin-bottom: 10px;}
-.email_big a {color: #8080FF;}
 
 /*** Screen Size Side Padding ***/
 /*** NOT USED ***/

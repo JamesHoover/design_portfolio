@@ -8,18 +8,18 @@
       </div>
     </a>
     <ul class="uppercase">
-      <li><%= link_to "Home", '/', :class =>"link_home" %></li>
-      <li><%= link_to "Work/", '/work/sites', :class => "link_work active" %>
+      <li><%= link_to "Home", '/', :class =>"link_green green_border" %></li>
+      <li><%= link_to "Work /", '/work/sites', :class => "link_red red_border active" %>
         <ul class="sub_topnav">
-          <li class="capitalize"><%= link_to "/Sites", '/work/sites', :class =>"link_work" %></li>
-          <li class="capitalize"><%= link_to "/Art", '/work/art', :class =>"link_work active" %></li>
-          <li class="capitalize"><%= link_to "/Photograhy", '/work/photography', :class =>"link_work" %></li>
+          <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class =>"link_red" %></li>
+          <li class="capitalize"><%= link_to "/ Art", '/work/art', :class =>"link_red active" %></li>
+          <li class="capitalize"><%= link_to "/ Photograhy", '/work/photography', :class =>"link_red" %></li>
         </ul>
       </li>
-      <li><%= link_to "About", '/about', :class => "link_about" %></li>
-      <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_contact" %></li>
+      <li><%= link_to "About", '/about', :class => "link_yellow yellow_border" %></li>
+      <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
     </ul>
-    <div class="nav_spacer_bottom"></div>
+    <div class="nav_spacer"></div>
   </nav>
   <div class="topnav_clear"></div>
   <div class="spacer"></div>
@@ -27,9 +27,9 @@
     <h1 class="location bold uppercase">My Work:</h1>
     <nav id="worknav">
       <ul>
-      	<li><%= link_to "Sites", '/work/sites', :class => "link_work" %></li>
-      	<li><%= link_to "Art", '/work/art', :class => "link_work active" %></li>
-        <li><%= link_to "Photograhy", '/work/photography', :class => "link_work" %></li>
+      	<li><%= link_to "Sites", '/work/sites', :class => "link_red" %></li>
+      	<li><%= link_to "Art", '/work/art', :class => "link_red active" %></li>
+        <li><%= link_to "Photograhy", '/work/photography', :class => "link_red" %></li>
       </ul>
     </nav>
     <div>
