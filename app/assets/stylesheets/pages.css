@@ -13,6 +13,7 @@
 **  about page blur behind text over img
 **  fix the photo columns...thin line at bottom
 */
+
 html { 
   -webkit-font-smoothing: antialiased!important;
   font-family: 'Quicksand', 'Poiret One', 'Dosis', 'p22-underground', 'p22-underground', 'Open Sans', arial, sans-serif, futura;
@@ -24,6 +25,8 @@ html, body {
 p {
   font-family: 'Karla', sans-serif;
 }
+
+/*** UNIQUE PAGE CONTENT ***/
 
 /*** LINKS ***/
 /* unvisited link */
@@ -43,14 +46,13 @@ a.active {text-decoration: underline;}
 .link_green.active {color: #14CC9A;}
 .link_red:hover {color: #FF8080;}
 .link_red.active {color: #FF8080;}
-.link_yellow:hover {color: #FFFF80;}
-.link_yellow.active {color: #FFFF80;}
 .link_blue:hover {color: #8080FF;}
 .link_blue.active {color: #8080FF;}
 
 /*** always colored ***/
 a.blue {color: #8080FF;}
 a.yellow {color: #FFFF80;}
+a.green {color: #14CC9A;}
 
 
 /*** bottom border on links ***/
@@ -58,17 +60,15 @@ a.yellow {color: #FFFF80;}
 .green_border.active {border-bottom: 3px solid #14CC9A; text-decoration: none;}
 .red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
 .red_border.active {border-bottom: 3px solid #FF8080; text-decoration: none;}
-.yellow_border:hover {border-bottom: 3px solid #FFFF80; text-decoration: none;}
-.yellow_border.active {border-bottom: 3px solid #FFFF80; text-decoration: none;}
+.black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
+.black_border.active {border-bottom: 3px solid black; text-decoration: none;}
 .blue_border:hover {border-bottom: 3px solid #8080FF; text-decoration: none;}
 .blue_border.active {border-bottom: 3px solid #8080FF; text-decoration: none;}
 
-/*** UNIQUE PAGE CONTENT ***/
 /*** Navigation Bar ***/
 .topnav {
   position: fixed;
   display: inline-block;
-  float: right;
   top: 0;
   left: 0;
   z-index: 1050;
@@ -76,10 +76,7 @@ a.yellow {color: #FFFF80;}
   height: auto;
   background-color: #EAECEA;
 }
-.topnav > ul {
-  display: inline-block;
-  width: 700px;
-}
+.topnav > ul {display: inline-block; width: 700px;}
 .topnav li {
   font-size: 18px;
   display: inline-block;
@@ -101,7 +98,7 @@ ul.sub_topnav, ul.sub_topnav_hidden {
   font-size: 16px;
   margin-right: 25px;
 }
-/*** subnav hidden on non work pages **/
+/*** subnav hover only on non work pages **/
 .topnav li ul.sub_topnav_hidden {
   display: none;
   position: fixed;
@@ -109,15 +106,14 @@ ul.sub_topnav, ul.sub_topnav_hidden {
 }
 .topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
 
-.nav_spacer {width: 100%; height: 40px;}
 .topnav_clear {height: 80px; width: 100%;}
+.nav_spacer {width: 100%; height: 40px;}
 
-
-/*** Small Site Info ***/
+/*** Logo ***/
 .logo_link {
   display: inline-block;
   width: 175px;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 .logo {width: auto; white-space: nowrap;}
 .logo_img {float: left; width: 40px; height: 40px; }
@@ -133,21 +129,14 @@ a.logo_link:hover h3 {opacity: 1; color: black;}
 a.logo_link:hover h4 {opacity: 1;}
 
 
-/*** Footer ***/
+/*** Sticky Footer ***/
+/*** wraps inside entire body ***/
 .wrapper {
   min-height: 100%;
   margin: 0 auto -25px;
 }
 .footer, .push {
   height: 25px; /* .push must be the same height as .footer */
-}
-
-/*** Screen Size topnav spacing ***/
-@media screen and (min-width:600px) {
-  #topnav li {margin-right: 75px;}
-}
-@media screen and (max-width:599px) {
-  #topnav li {margin-right: 20px;}
 }
 
 /*** Home Page ***/
@@ -283,9 +272,7 @@ div.img_thumb {
   height: 100%;
   margin-bottom: 15px;
 }
-.img_thumb > h4 {
-
-}
+.img_thumb > h4 {}
 .img_thumb img {
   display: inline-block;
   width: 100%;
@@ -293,7 +280,7 @@ div.img_thumb {
   box-shadow: 5px 5px 1px #D9D9D9;
 }
 
-.img_thumb:hover > img {}
+.img_thumb:hover > img {background-color: rgba(0,0,0,.5);}
 .img_text {
   color: white;
   padding: 5px 5px;
