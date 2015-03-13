@@ -76,7 +76,12 @@ a.green {color: #14CC9A;}
   height: auto;
   background-color: #EAECEA;
 }
-.topnav > ul {display: inline-block; width: 700px;}
+.topnav > ul {display: inline-block;
+  width: auto;
+  padding: 10px 50px;
+  border-top: 1px solid #BABABA;
+  border-bottom: 1px solid #BABABA;
+}
 .topnav li {
   font-size: 18px;
   display: inline-block;
@@ -115,7 +120,7 @@ ul.sub_topnav, ul.sub_topnav_hidden {
   width: 175px;
   margin-right: 100px;
 }
-.logo {width: auto; white-space: nowrap;}
+.logo {width: auto; white-space: nowrap; padding-top: 5px;}
 .logo_img {float: left; width: 40px; height: 40px; }
 
 .logo img {margin-right: 5px;}
@@ -137,6 +142,9 @@ a.logo_link:hover h4 {opacity: 1;}
 }
 .footer, .push {
   height: 25px; /* .push must be the same height as .footer */
+}
+.footer {
+  border-top: 1px solid #BABABA;
 }
 
 /*** Home Page ***/
@@ -244,6 +252,7 @@ a.logo_link:hover h4 {opacity: 1;}
 */
 
 /*** Photography ***/
+/*** these column are janky ***/
 @media screen and (min-width:1100px) {
   .img_container {
     -webkit-columns: 3;
@@ -291,28 +300,30 @@ div.img_thumb {
 
 /*** About Page ***/
 #about_page {}
-#about_img {
-  position: relative;
-  float: left;
-  margin-right: 0;
-  width: 449px;
-  height: 555px;
-  background: url(me.jpg) no-repeat; 
-  background-size: cover;
+#about_img img {
+  display: inline-block;
 }
 #about_img_text {
+  position: relative;
+  top: 0;
   font-size: 21px;
   color: white;
   padding: 3px;
 }
 #about_p p{
+  display: inline-block;
+  clear: right;
   min-width: 500px;
   padding-bottom: 10px;
 }
 
 /*** Contact Page ***/
 #contact_page_content {}
-
+#contact_img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 
 
 /*** GENERAL STYLING ***/
@@ -323,7 +334,7 @@ div.img_thumb {
   margin-bottom: 10px;
 }
 
-.inline_header { font-size: 21px;}
+.inline_header {font-size: 21px;}
 
 .email_big {font-size: 21px; margin-bottom: 10px;}
 
