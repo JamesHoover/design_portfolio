@@ -120,13 +120,18 @@ ul.sub_topnav, ul.sub_topnav_hidden {
   width: 175px;
   margin-right: 100px;
 }
-.logo {width: auto; white-space: nowrap; padding-top: 5px;}
+.logo {
+  width: auto;
+  white-space:
+  nowrap;
+  padding-top: 5px;
+}
 .logo_img {float: left; width: 40px; height: 40px; }
 
 .logo img {margin-right: 5px;}
-.logo img{opacity: .7;}
-.logo h3{opacity: .4;}
-.logo h4{opacity: .4;}
+.logo img{opacity: .5;}
+.logo h3{opacity: .5;}
+.logo h4{opacity: .5;}
 
 a.logo_link:hover {text-decoration: none;}
 a.logo_link:hover img {opacity: 1;}
@@ -153,14 +158,15 @@ a.logo_link:hover h4 {opacity: 1;}
   width: 100%;
   max-width: 900px;
   min-width: 750px;
+  margin-left: 20%;
   height: auto;
   color: black;
 }
-#home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
+.home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
 #home_page_content {padding-bottom: 50px;}
 #home_page_content h1 {font-size: 90px; text-shadow: 4px 4px 0px #D9D9D9}
-#home_page_content h2 {font-size: 45px; color: #999999}
-#home_page_content h4 {font-size: 25px; color: #999999}
+#home_page_content h2 {font-size: 45px; color: #999999; padding-left: 10%;}
+#home_page_content h4 {font-size: 25px; color: #999999; padding-left: 20%;}
 
 #home_navicons {width: 100%;}
 .home_navicons_content {
@@ -170,22 +176,24 @@ a.logo_link:hover h4 {opacity: 1;}
   width: 185px;
   font-size: 28px;
   box-shadow:10px 10px 1px #D9D9D9;
-  color: white;
   background-color:white;
   margin-right: 60px;
   margin-top: 10px;
+
+  -webkit-transition: opacity .75s ease, color .75s ease;
+  -moz-transition: opacity .75s ease, color .75s ease;
+  -o-transition: opacity .75s ease, color .75s ease;
+  transition: opacity .75s ease, color .75s ease;
+  opacity: .8;
+  color: white;
 }
 .home_navicons_content h4 { padding-left: 3px;}
 .navicon_link div:hover{
   color: black;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-}
-.navicon_link {opacity: .8;}
-.navicon_link:hover {
   opacity: 1;
-  transition: all .5s;
-  -webkit-transition: all .5s;
+}
+
+.navicon_link:hover {
 }
 
 #work_bkgrd {
@@ -299,20 +307,20 @@ div.img_thumb {
 }
 
 /*** About Page ***/
-#about_page {}
-#about_img img {
+#about_page { height: 100%;}
+#about_img {
+  position: relative;
   display: inline-block;
 }
 #about_img_text {
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   font-size: 21px;
   color: white;
   padding: 3px;
 }
-#about_p p{
-  display: inline-block;
-  clear: right;
+#about_p {
+  max-width: 600px;
   min-width: 500px;
   padding-bottom: 10px;
 }
@@ -339,18 +347,9 @@ div.img_thumb {
 .email_big {font-size: 21px; margin-bottom: 10px;}
 
 /*** Screen Size Side Padding ***/
-/*** NOT USED ***/
-@media screen and (min-width:950px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-@media screen and (max-width:949px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .subtext {color: #999999;}
