@@ -6,12 +6,13 @@
 */
 
 /** TODO:
+**  fix navbar so it doesnt get fucked on resize
 **  design a logo
-**  add hover effect to photo page
 **  Learn transitions
 **  navicons colored transparent overlay on hover
 **  about page blur behind text over img
-**  fix the photo columns...thin line at bottom
+**  fix the photo columns...probably just dont use columns...
+**  Document/comment your code
 */
 
 html { 
@@ -50,9 +51,9 @@ a.active {text-decoration: underline;}
 .link_blue.active {color: #8080FF;}
 
 /*** always colored ***/
-a.blue {color: #8080FF;}
-a.yellow {color: #FFFF80;}
+a.red {color: #FF8080;}
 a.green {color: #14CC9A;}
+a.blue {color: #8080FF;}
 
 
 /*** bottom border on links ***/
