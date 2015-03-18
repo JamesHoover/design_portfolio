@@ -138,20 +138,6 @@ a.logo_link:hover img {opacity: 1;}
 a.logo_link:hover h3 {opacity: 1; color: black;}
 a.logo_link:hover h4 {opacity: 1;}
 
-
-/*** Sticky Footer ***/
-/*** wraps inside entire body ***/
-.wrapper {
-  min-height: 100%;
-  margin: 0 auto -25px;
-}
-.footer, .push {
-  height: 25px; /* .push must be the same height as .footer */
-}
-.footer {
-  border-top: 1px solid #BABABA;
-}
-
 /*** Home Page ***/
 #home_page {
   display: inline-block;
@@ -333,6 +319,24 @@ div.img_thumb {
   height: 100%;
 }
 
+/*** Sticky Footer ***/
+/*** wraps inside entire body ***/
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -25px;
+}
+.footer, .push {
+  height: 25px; /* .push must be the same height as .footer */
+}
+.footer {
+}
+
+#footer_break {
+  width: 100px;
+  margin-top: 10px;
+  padding-bottom: 20px; 
+  border-top: 1px solid #BABABA;
+}
 
 /*** GENERAL STYLING ***/
 .location {
