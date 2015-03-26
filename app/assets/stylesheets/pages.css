@@ -238,6 +238,12 @@ a.logo_link:hover h4 {opacity: 1;}
   font-size: 32px;
   margin-bottom: 10px;
 }
+/*** Sites ***/
+.site_block_container {}
+.site_block {
+
+}
+.site_block_break {width: 100%; height: 50px;}
 /*
 .img_container {width: 100%;}
 
