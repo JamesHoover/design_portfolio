@@ -21,6 +21,8 @@
 **  Social media icons for contact page
 */
 
+/*** TOP RIGHT BOTTOM LEFT ***/
+
 html { 
   -webkit-font-smoothing: antialiased!important;
   font-family: 'Quicksand', 'Poiret One', 'Dosis', 'p22-underground', 'p22-underground', 'Open Sans', arial, sans-serif, futura;
@@ -93,29 +95,28 @@ a.blue {color: #8080FF;}
 .topnav li {
   display: inline-block;
   font-size: 18px;
-  display: inline-block;
 }
 /*** subnav on Work ***/
 .sub_topnav {
   display: inline-block;
-  position: fixed;
-  width: 270px;
+  position: fixed;  
+  width: auto;
 }
 ul.sub_topnav, ul.sub_topnav_hidden {
   padding-top: 15px;
-  padding-left: 5px;
+  padding-left: 20px;
   padding-bottom: 20px;
-  white-space: nowrap;
 }
-.sub_topnav li, .sub_topnav_hidden li {
+ul.sub_topnav li, ul.sub_topnav_hidden li {
   font-size: 16px;
-  margin-right: 25px;
+  margin-right: 0;
 }
 /*** subnav hover only on non work pages **/
 .topnav li ul.sub_topnav_hidden {
   display: none;
   position: fixed;
-  width: 270px;
+  width: auto;
+  padding-right: 25px;
 }
 .topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
 
@@ -359,6 +360,7 @@ div.img_thumb:hover h4.img_text {
 }
 .icon_tray div {}
 
+/*** social media icons ***/
 #tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .5;}
 #tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
 
