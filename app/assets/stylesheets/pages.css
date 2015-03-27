@@ -6,7 +6,6 @@
 */
 
 /** TODO:
-**  fix navbar so it doesnt get fucked on resize
 **  design a logo
 **  Learn transitions
 **  navicons colored transparent overlay on hover
@@ -19,6 +18,7 @@
 **  Take pictures of artwork
 **  Take photo of self for About page
 **  Choose/take pic for contact page
+**  Social media icons for contact page
 */
 
 html { 
@@ -121,20 +121,14 @@ ul.sub_topnav, ul.sub_topnav_hidden {
 
 /*** topnav spacing on screen resize ***/
 @media screen and (min-width: 800px) {
-  .topnav li {
-    margin-right: 100px;
-  }
+  .topnav li {margin-right: 100px;}
 }
 @media screen and (max-width: 799px) {
-  .topnav li {
-    margin-right: 50px;
-  }
+  .topnav li {margin-right: 50px;}
 }
 @media screen and (max-width: 599px) {
-  .topnav li {
-    margin-right: 10px;
-  }
-  .topnav > ul { padding: 10px 0px;}
+  .topnav li {margin-right: 10px;}
+  .topnav > ul {padding: 10px 0px;}
 }
 
 .topnav_clear {height: 85px; width: 100%;}
@@ -259,10 +253,9 @@ a.logo_link:hover h4 {opacity: 1;}
 }
 /*** Sites ***/
 .site_block_container {}
-.site_block {
+.site_block h2 {font-size: 24px; width:50%;border-bottom: 1px solid #BABABA;}
+.site_block img {width: 100%;}
 
-}
-.site_block_break {width: 100%; height: 50px;}
 /*
 .img_container {width: 100%;}
 
@@ -364,6 +357,19 @@ div.img_thumb:hover h4.img_text {
   width: 100%;
   height: 100%;
 }
+.icon_tray div {}
+
+#tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .5;}
+#tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
+
+#facebook_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Facebook.svg) no-repeat; opacity: .5;}
+#facebook_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Facebook.svg) no-repeat; opacity: 1;}
+
+#flickr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Flickr.svg) no-repeat; opacity: .5;}
+#flickr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Flickr.svg) no-repeat; opacity: 1;}
+
+#instagram_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: .5;}
+#instagram_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: 1;}
 
 /*** Sticky Footer ***/
 /*** wraps inside entire body ***/
@@ -410,7 +416,10 @@ div.img_thumb:hover h4.img_text {
 
 ul > li.last_element {margin-right: 0;}
 
-.spacer {height: 50px; width: 100%;}
+.spacer_10 {height: 10px; width: 100%;}
+.spacer_25 {height: 25px; width: 100%;}
+.spacer_50 {height: 50px; width: 100%;}
+
 .home_spacer {height: 30px; width: 100%;}
 .inline_block {display: inline-block;}
 
