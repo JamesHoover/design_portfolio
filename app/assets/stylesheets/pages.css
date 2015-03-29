@@ -249,8 +249,10 @@ a.logo_link:hover h4 {opacity: 1;}
 }
 
 .work_location {
+  width: 75%;
   font-size: 32px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #BABABA;
 }
 /*** Sites ***/
 .site_block_container {}
