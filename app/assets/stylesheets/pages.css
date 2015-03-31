@@ -25,7 +25,7 @@
 
 html { 
   -webkit-font-smoothing: antialiased!important;
-  font-family: 'Quicksand', 'Poiret One', 'Dosis', 'p22-underground', 'p22-underground', 'Open Sans', arial, sans-serif, futura;
+  font-family: 'Quicksand', 'Poiret One', 'Dosis', 'Open Sans', sans-serif, futura;
   background-color: #EAECEA;
 }
 html, body {
@@ -93,10 +93,8 @@ a.blue {color: #8080FF;}
   border-top: 1px solid #BABABA;
   border-bottom: 1px solid #BABABA;
 }
-.topnav li {
-  display: inline-block;
-  font-size: 18px;
-}
+.topnav li {display: inline-block; font-size: 18px;}
+
 /*** subnav on Work ***/
 .sub_topnav {
   display: inline-block;
@@ -108,10 +106,7 @@ ul.sub_topnav, ul.sub_topnav_hidden {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-ul.sub_topnav li, ul.sub_topnav_hidden li {
-  font-size: 16px;
-  margin-right: 0;
-}
+ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 /*** subnav hover only on non work pages **/
 .topnav li ul.sub_topnav_hidden {
   display: none;
@@ -196,16 +191,13 @@ a.logo_link:hover h4 {opacity: 1;}
   color: white;
 }
 .home_navicons_content h4 { padding-left: 3px;}
-.navicon_link div:hover{
-  color: black;
-  opacity: 1;
-}
+.navicon_link div:hover{opacity: 1; color: black;}
 
 .navicon_link:hover {
 }
 
 #work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;}
-#about_bkgrd {background: url(me.jpg) no-repeat; background-size: cover;}
+#about_bkgrd {background: url(meBW.jpg) no-repeat; background-size: cover;}
 #contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;}
 
 #work_bkgrd h4 {
@@ -266,36 +258,13 @@ a.logo_link:hover h4 {opacity: 1;}
 */
 
 /*** Photography ***/
-/*** these column are janky ***/
-@media screen and (min-width: 1100px) {
-  .img_container {
-    -webkit-columns: 3;
-       -moz-columns: 3;
-            columns: 3;
-    -webkit-column-break-inside : avoid;
-  }
-}
-@media screen and (max-width: 1099px) {
-  .img_container {
-    -webkit-columns: 2;
-       -moz-columns: 2;
-            columns: 2;
-    -webkit-column-break-inside : avoid;
-  }
-}
-@media screen and (max-width: 700px) {
-  .img_container {
-    -webkit-columns: 1;
-       -moz-columns: 1;
-            columns: 1;
-  }
-}
 div.img_thumb {
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 400px;
   height: 100%;
   margin-bottom: 15px;
+  margin-right: 12px;
 }
 .img_thumb > h4 {}
 .img_thumb img {
@@ -303,6 +272,7 @@ div.img_thumb {
   width: 100%;
   height: 100%;
 }
+div.portrait { width: 178px; height: 267px;}
 
 h4.img_text {
   display: inline-block;
