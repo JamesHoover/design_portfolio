@@ -50,9 +50,10 @@ a:active {}
 /* current link in topnav */
 a.active {text-decoration: underline;}
 
+/* old green: #14CC9A; */
 /*** link color ***/
-.link_green:hover {color: #14CC9A;}
-.link_green.active {color: #14CC9A;}
+.link_green:hover {color: #80FF80;}
+.link_green.active {color: #80FF80;}
 .link_red:hover {color: #FF8080;}
 .link_red.active {color: #FF8080;}
 .link_blue:hover {color: #8080FF;}
@@ -60,13 +61,13 @@ a.active {text-decoration: underline;}
 
 /*** always colored ***/
 a.red {color: #FF8080;}
-a.green {color: #14CC9A;}
+a.green {color: #80FF80;}
 a.blue {color: #8080FF;}
 
 
 /*** bottom border on links ***/
-.green_border:hover {border-bottom: 3px solid #14CC9A; text-decoration: none;}
-.green_border.active {border-bottom: 3px solid #14CC9A; text-decoration: none;}
+.green_border:hover {border-bottom: 3px solid #80FF80; text-decoration: none;}
+.green_border.active {border-bottom: 3px solid #80FF80; text-decoration: none;}
 .red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
 .red_border.active {border-bottom: 3px solid #FF8080; text-decoration: none;}
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
@@ -203,19 +204,10 @@ a.logo_link:hover h4 {opacity: 1;}
 .navicon_link:hover {
 }
 
-#work_bkgrd {
-  background: url(http://www.newtlabs.co.uk/media/macbook-sketchpad-camera-desk.jpg) no-repeat; 
-  background-size: cover;
-}
+#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;}
+#about_bkgrd {background: url(me.jpg) no-repeat; background-size: cover;}
+#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;}
 
-#about_bkgrd {
-  background: url(me.jpg) no-repeat; 
-  background-size: cover;
-}
-#contact_bkgrd {
-  background: url(http://jrtashjian.com/wp-content/uploads/2011/03/2011-03-15_designbook-moleskine-pen.jpg) no-repeat; 
-  background-size: cover;
-}
 #work_bkgrd h4 {
   width: 100%;
   left: 0;
@@ -224,7 +216,7 @@ a.logo_link:hover h4 {opacity: 1;}
 #about_bkgrd h4 {
   width: 100%;
   left: 0;
-  background-color:rgba(255,255,128,.5);
+  background-color:rgba(128,255,128,.5);
 }
 #contact_bkgrd h4 {
   width: 100%;
