@@ -17,7 +17,7 @@
 **  Take photo of self for About page
 **  Choose/take pic for contact page
 **  standardize the font size
-**  Fix about page resizing
+**  Fix about page image text resizing
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -261,11 +261,11 @@ a.logo_link:hover h4 {opacity: 1;}
 */
 
 /*** Photography ***/
-#column_one {
+#photo_column_one {
   float: left;
   width: 48.5%;
 }
-#column_two {
+#photo_column_two {
   float: right;
   width: 48.5%;
 }
@@ -302,17 +302,30 @@ div.img_thumb:hover h4.img_text {
 }
 
 /*** About Page ***/
-#about_page { height: 100%;}
+#about_page {}
+#about_column_one {
+  float: left;
+  width: 33.5%;
+}
+#about_column_two {
+  float: right;
+  width: 63.5%;
+}
 #about_img {
   position: relative;
   display: inline-block;
   width: 100%;
 }
+#about_img img {
+  width: 100%;
+}
 #about_img_text {
   position: absolute;
   bottom: 0;
-  color: white;
+  width: 100%;
   padding: 3px;
+  color: white;
+  font-size: 2em;
 }
 #about_p {
   clear: left;
