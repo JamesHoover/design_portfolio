@@ -9,8 +9,6 @@
 **  design a logo
 **  Learn transitions
 **  navicons colored transparent overlay on hover
-**  about page blur behind text over img
-**  fix the photo columns...probably just dont use columns...
 **  Document/comment your code
 **  Pick/edit photos and upload to flickr
 **  Choose what photos to put on site
@@ -18,8 +16,8 @@
 **  Take pictures of artwork
 **  Take photo of self for About page
 **  Choose/take pic for contact page
-**  Social media icons for contact page
-**  Fix navbar so work nav doesnt extend out
+**  Fix navbar so it doesnt block shit or drop down on resize
+**  standardize the font size
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -34,7 +32,14 @@ html, body {
 }
 p {
   font-family: 'Karla', sans-serif;
+  font-size: 18px;
 }
+/*
+h1 {font-size: 48px;}
+h2 {font-size: 40px;}
+h3 {font-size: 32px;}
+h4 {font-size: 24px;}
+*/
 
 /*** UNIQUE PAGE CONTENT ***/
 
@@ -51,10 +56,10 @@ a:active {}
 /* current link in topnav */
 a.active {text-decoration: underline;}
 
-/* old green: #14CC9A; */
+/* old green: #14CC9A; #80FF80;*/
 /*** link color ***/
-.link_green:hover {color: #80FF80;}
-.link_green.active {color: #80FF80;}
+.link_green:hover {color: #00C400;}
+.link_green.active {color: #00C400;}
 .link_red:hover {color: #FF8080;}
 .link_red.active {color: #FF8080;}
 .link_blue:hover {color: #8080FF;}
@@ -62,13 +67,13 @@ a.active {text-decoration: underline;}
 
 /*** always colored ***/
 a.red {color: #FF8080;}
-a.green {color: #80FF80;}
+a.green {color: #00C400;}
 a.blue {color: #8080FF;}
 
 
 /*** bottom border on links ***/
-.green_border:hover {border-bottom: 3px solid #80FF80; text-decoration: none;}
-.green_border.active {border-bottom: 3px solid #80FF80; text-decoration: none;}
+.green_border:hover {border-bottom: 3px solid #00C400; text-decoration: none;}
+.green_border.active {border-bottom: 3px solid #00C400; text-decoration: none;}
 .red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
 .red_border.active {border-bottom: 3px solid #FF8080; text-decoration: none;}
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
@@ -130,7 +135,7 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 }
 
 .topnav_clear {height: 85px; width: 100%;}
-.nav_spacer {width: 100%; height: 40px;}
+.nav_spacer {width: 100%; height: 60px;}
 
 /*** Logo ***/
 .logo_link {
@@ -197,9 +202,9 @@ a.logo_link:hover h4 {opacity: 1;}
 .navicon_link:hover {
 }
 
-#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;}
-#about_bkgrd {background: url(meBW.jpg) no-repeat; background-size: cover;}
-#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;}
+#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;-webkit-filter: grayscale(100%);}
+#about_bkgrd {background: url(me_selfie.JPG) no-repeat; background-size: cover; -webkit-filter: grayscale(100%);}
+#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;-webkit-filter: grayscale(100%);}
 
 #work_bkgrd h4 {
   width: 100%;
@@ -279,9 +284,6 @@ div.img_thumb {
   width: 100%;
   height: 100%;
 }
-/* make portrait photos same height and scaled width */
-div.portrait { }
-
 h4.img_text {
   display: inline-block;
   position: absolute;
@@ -298,7 +300,6 @@ h4.img_text {
   transition: opacity .75s ease;
   opacity: 0;
 }
-
 div.img_thumb:hover h4.img_text {
   opacity: 1;
 }
@@ -308,6 +309,7 @@ div.img_thumb:hover h4.img_text {
 #about_img {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 #about_img_text {
   position: absolute;
@@ -317,6 +319,7 @@ div.img_thumb:hover h4.img_text {
   padding: 3px;
 }
 #about_p {
+  clear: left;
   max-width: 600px;
   min-width: 500px;
   padding-bottom: 10px;
@@ -353,7 +356,10 @@ div.img_thumb:hover h4.img_text {
 .footer, .push {
   height: 25px; /* .push must be the same height as .footer */
 }
-.footer {
+.footer h4{
+  float: right;
+  padding-right: 10px;
+  font-size: 12px;
 }
 
 /*** GENERAL STYLING ***/
@@ -364,7 +370,7 @@ div.img_thumb:hover h4.img_text {
   margin-bottom: 10px;
 }
 
-.inline_header {font-size: 21px;}
+.inline_header {padding-top: 25px; font-size: 21px;}
 
 .email_big {font-size: 21px; margin-bottom: 10px;}
 
