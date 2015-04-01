@@ -16,8 +16,8 @@
 **  Take pictures of artwork
 **  Take photo of self for About page
 **  Choose/take pic for contact page
-**  Fix navbar so it doesnt block shit or drop down on resize
 **  standardize the font size
+**  Fix about page resizing
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -30,16 +30,15 @@ html {
 html, body {
   height: 100%;
 }
+
+h1 {font-size: 48px;}
+h2 {font-size: 36px;}
+h3 {font-size: 24px;}
+h4 {/* Don't set font, use H4 for special cases */}
 p {
   font-family: 'Karla', sans-serif;
   font-size: 18px;
 }
-/*
-h1 {font-size: 48px;}
-h2 {font-size: 40px;}
-h3 {font-size: 32px;}
-h4 {font-size: 24px;}
-*/
 
 /*** UNIQUE PAGE CONTENT ***/
 
@@ -90,6 +89,7 @@ a.blue {color: #8080FF;}
   z-index: 1050;
   width: 100%;
   height: auto;
+  padding-left: 10%;
   background-color: #EAECEA;
 }
 .topnav > ul {
@@ -134,31 +134,29 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
   .topnav > ul {padding: 10px 0px;}
 }
 
-.topnav_clear {height: 85px; width: 100%;}
+.topnav_clear {height: 100px; width: 100%;}
 .nav_spacer {width: 100%; height: 60px;}
 
 /*** Logo ***/
 .logo_link {
   display: inline-block;
   width: 175px;
-  margin-right: 100px;
+  margin-right: 5%;
 }
 .logo {
   width: auto;
   white-space:
   nowrap;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .logo_img {float: left; width: 40px; height: 40px; }
 
 .logo img {margin-right: 5px;}
 .logo img{opacity: .5;}
-.logo h3{opacity: .5;}
 .logo h4{opacity: .5;}
 
 a.logo_link:hover {text-decoration: none;}
 a.logo_link:hover img {opacity: 1;}
-a.logo_link:hover h3 {opacity: 1; color: black;}
 a.logo_link:hover h4 {opacity: 1;}
 
 /*** Home Page ***/
@@ -183,40 +181,40 @@ a.logo_link:hover h4 {opacity: 1;}
   display: inline-block;
   height: 299.3px;
   width: 185px;
-  font-size: 28px;
-  box-shadow:10px 10px 1px #D9D9D9;
-  background-color:white;
+  box-shadow: 10px 10px 1px #D9D9D9;
+  background-color: white;
   margin-right: 60px;
   margin-top: 10px;
 
-  -webkit-transition: opacity .75s ease, color .75s ease;
-  -moz-transition: opacity .75s ease, color .75s ease;
-  -o-transition: opacity .75s ease, color .75s ease;
-  transition: opacity .75s ease, color .75s ease;
+  -webkit-transition: opacity 1s ease, color 1s ease, -webkit-filter 1s ease;
+  -moz-transition: opacity 1s ease, color 1s ease, -webkit-filter 1s ease;
+  -o-transition: opacity 1s ease, color 1s ease, -webkit-filter 1s ease;
+  transition: opacity 1s ease, color 1s ease, -webkit-filter 1s ease;
   opacity: .7;
-  color: white;
+  color: black;
+  -webkit-filter: grayscale(100%);
 }
-.home_navicons_content h4 { padding-left: 3px;}
-.navicon_link div:hover{opacity: 1; color: black;}
+.home_navicons_content h3 {padding-left: 3px;}
+.navicon_link div:hover{opacity: 1; color: white; -webkit-filter: grayscale(0%);}
 
 .navicon_link:hover {
 }
 
-#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;-webkit-filter: grayscale(100%);}
-#about_bkgrd {background: url(me_selfie.JPG) no-repeat; background-size: cover; -webkit-filter: grayscale(100%);}
-#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;-webkit-filter: grayscale(100%);}
+#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;}
+#about_bkgrd {background: url(me_selfie.JPG) no-repeat; background-size: cover;}
+#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;}
 
-#work_bkgrd h4 {
+#work_bkgrd h3 {
   width: 100%;
   left: 0;
   background-color:rgba(255,128,128,.5);
 }
-#about_bkgrd h4 {
+#about_bkgrd h3 {
   width: 100%;
   left: 0;
   background-color:rgba(128,255,128,.5);
 }
-#contact_bkgrd h4 {
+#contact_bkgrd h3 {
   width: 100%;
   left: 0;
   background-color:rgba(128,128,255,.5);
@@ -240,13 +238,12 @@ a.logo_link:hover h4 {opacity: 1;}
 
 .work_location {
   width: 75%;
-  font-size: 32px;
   margin-bottom: 10px;
   border-bottom: 1px solid #BABABA;
 }
 /*** Sites ***/
 .site_block_container {}
-.site_block h2 {font-size: 24px; width:50%;border-bottom: 1px solid #BABABA;}
+.site_block h3 {width:50%;border-bottom: 1px solid #BABABA;}
 .site_block img {width: 100%;}
 
 /*
@@ -314,7 +311,6 @@ div.img_thumb:hover h4.img_text {
 #about_img_text {
   position: absolute;
   bottom: 0;
-  font-size: 21px;
   color: white;
   padding: 3px;
 }
@@ -364,15 +360,12 @@ div.img_thumb:hover h4.img_text {
 
 /*** GENERAL STYLING ***/
 .location {
-  font-size: 42px;
   border-bottom: 1px solid #BABABA;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.inline_header {padding-top: 25px; font-size: 21px;}
-
-.email_big {font-size: 21px; margin-bottom: 10px;}
+.email_big {font-size: 24px; margin-bottom: 10px;}
 
 /*** Screen Size Side Padding ***/
 .container {
