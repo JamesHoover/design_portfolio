@@ -18,6 +18,11 @@
 **  Choose/take pic for contact page
 **  standardize the font size
 **  Fix about page image text resizing
+**  Create a more professional Tumblr
+**  About page, fix min sizes
+**  Min sizes on photos
+**  Border-bottom navbar?
+**  Fix resize on homepage blocking text
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -86,11 +91,17 @@ a.blue {color: #8080FF;}
   display: inline-block;
   top: 0;
   left: 0;
-  z-index: 1050;
+
   width: 100%;
   height: auto;
   padding-left: 10%;
-  background-color: #EAECEA;
+
+  background-color: rgb(234,236,234);
+  border-bottom: 1px solid #BABABA;
+  z-index: 1050;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: .5;
 }
 .topnav > ul {
   display: inline-block;
@@ -306,6 +317,7 @@ div.img_thumb:hover h4.img_text {
 #about_column_one {
   float: left;
   width: 33.5%;
+  min-width: 350px;
 }
 #about_column_two {
   float: right;
@@ -318,6 +330,7 @@ div.img_thumb:hover h4.img_text {
 }
 #about_img img {
   width: 100%;
+  min-width: 350px;
 }
 #about_img_text {
   position: absolute;
@@ -328,14 +341,11 @@ div.img_thumb:hover h4.img_text {
   font-size: 2em;
 }
 #about_p {
-  clear: left;
-  max-width: 600px;
-  min-width: 500px;
-  padding-bottom: 10px;
 }
 
 /*** Contact Page ***/
-#contact_page_content {}
+#contact_page_content {
+}
 #contact_img {
   display: inline-block;
   width: 100%;
@@ -377,8 +387,15 @@ div.img_thumb:hover h4.img_text {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-
+.paragraph {
+  padding-bottom: 15px;
+  max-width: 900px;
+  min-width: 300px;
+}
 .email_big {font-size: 24px; margin-bottom: 10px;}
+
+/*** Indent ***/
+.indent {margin-left: 15px;}
 
 /*** Screen Size Side Padding ***/
 .container {
