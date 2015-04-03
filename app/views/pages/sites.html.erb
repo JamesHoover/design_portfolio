@@ -16,7 +16,7 @@
           <ul class="sub_topnav">
             <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class => "link_red active" %></li><br>
             <li class="capitalize"><%= link_to "/ Art", '/work/art', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "/ Photograhy", '/work/photography', :class =>"link_red" %></li>
+            <li class="capitalize"><%= link_to "/ Photography", '/work/photography', :class => "link_red" %></li>
           </ul>
         </li>
         <li><%= link_to "About", '/about', :class => "link_green green_border" %></li>
@@ -31,10 +31,10 @@
     <div class="container work_page">
       <h1 class="location bold uppercase">My Work:</h1>
       <nav id="worknav">
-        <ul>
+        <ul class="indent">
         	<li><%= link_to "Sites", '/work/sites', :class => "link_red active" %></li>
         	<li><%= link_to "Art", '/work/art', :class => "link_red" %></li>
-          <li><%= link_to "Photograhy", '/work/photography', :class => "link_red" %></li>
+          <li><%= link_to "Photography", '/work/photography', :class => "link_red" %></li>
         </ul>
       </nav>
       <h2 class="work_location uppercase">Sites</h2>
@@ -42,10 +42,10 @@
       <div class="site_block_container">
         <div class="spacer_25"></div>
         <div class="site_block indent">
-          <h3>O&G MAGNOLIA</h3>
+          <h3 class="bold">O&G MAGNOLIA</h3>
           <div class="spacer_10"></div>
           <p class="paragraph">Insurance/liability & asset management experts.</p>
-          <h4>Site Purpose/Goal:</h4><p class="paragraph">Inform investors/potential investors. Convert users/visitors to sign up/subscribe to the newsletter.</p>
+          <p>Site Purpose/Goal:</p><p class="paragraph">Inform potential/current investors. Convert users/visitors to sign up/subscribe to the newsletter.</p>
           <%= image_tag("sites/ogmagnolia_home.png") %>
           <div class="spacer_50"></div>
           <div class="site_block"></div>
