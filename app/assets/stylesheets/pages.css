@@ -24,6 +24,7 @@
 **  Change Work to Design?
 **  Change font for Navbar?
 **  SEO and Google Analytics
+**  Mess with border-right on text
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -234,8 +235,9 @@ a.logo_link:hover h4 {opacity: 1;}
 .art_block img {width: 100%;}
 
 /*** Photography ***/
-#photo_column_one {float: left; width: 48.5%;}
-#photo_column_two {float: right; width: 48.5%;}
+.img_container {display: inline-block; height: 100%;}
+#photo_column_one {float: left; width: 48.5%; min-width: 300px; margin-right: 15px;}
+#photo_column_two {float: left; width: 48.5%; min-width: 300px;}
 div.img_thumb {
   position: relative;
   display: inline-block;
@@ -243,7 +245,11 @@ div.img_thumb {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-.img_thumb img {display: inline-block; width: 100%; height: 100%;}
+.img_thumb img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 h4.img_text {
   display: inline-block;
   position: absolute;
@@ -263,11 +269,12 @@ h4.img_text {
 div.img_thumb:hover h4.img_text {opacity: 1;}
 
 /*** About Page ***/
-#about_page {}
-#about_column_one {float: left; width: 33.5%; min-width: 350px;}
-#about_column_two {float: right; width: 63.5%;}
-#about_img {position: relative; display: inline-block; width: 100%;}
-#about_img img {width: 100%; min-width: 350px;}
+#about_page {width: 100%; height: 100%;}
+.about_page_content {width: 1000px; height: 100%;}
+#about_column_one {float: left; width: 30%; min-width: 350px;}
+#about_column_two {float: left; width: 60%;}
+#about_img {position: relative; display:inline-block; width: 400px; margin-right: 15px;}
+#about_img img {display:inline-block; width: 100%;}
 #about_img_text {
   position: absolute;
   bottom: 0;
@@ -276,6 +283,9 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   color: white;
 }
 #about_p {
+  display: inline-block;
+  vertical-align:top;
+  width: 550px;
 }
 
 /*** Contact Page ***/
@@ -284,7 +294,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 #contact_img {display: inline-block; width: 100%; height: 100%;}
 .icon_tray div {transition: opacity .5s ease;}
 
-/*** social media icons ***/
+/* social media icons */
 #tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .5;}
 #tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
 
@@ -298,20 +308,20 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 #instagram_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: 1;}
 
 /*** Sticky Footer ***/
-/*** wraps inside entire body ***/
+/* wraps inside entire body */
 .wrapper {min-height: 100%; margin: 0 auto -25px;}
-.footer, .push {height: 25px; /* .push must be the same height as .footer */}
+.footer, .push {height: 25px;} /* .push must be the same height as .footer */
 .footer h4{float: right; padding-right: 10px; font-size: 12px;}
 
 /*** GENERAL STYLING ***/
 .location {border-bottom: 1px solid #BABABA; padding-bottom: 5px; margin-bottom: 10px;}
-.paragraph {padding-bottom: 15px; max-width: 900px; min-width: 300px;}
+.paragraph {padding-bottom: 15px; max-width: 900px; min-width: 350px;}
 .email_big {font-size: 24px; margin-bottom: 10px;}
 
-/*** Indent ***/
+/* Indent */
 .indent {margin-left: 15px;}
 
-/*** Screen Size Side Padding ***/
+/* Screen Size Side Padding */
 .container {padding-left: 10%; padding-right: 10%;}
 
 .subtext {color: #999999;}
@@ -330,7 +340,7 @@ ul > li.last_element {margin-right: 0;}
 .home_spacer {height: 30px; width: 100%;}
 .inline_block {display: inline-block;}
 
-/*** Positioning ***/
+/* Positioning */
 .float_right {float: right;}
 .bottom {position: absolute;bottom: 10%;}
 .bottom_left {position: absolute; left: 0; bottom: 0;}
