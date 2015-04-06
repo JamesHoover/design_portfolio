@@ -7,7 +7,7 @@
 
 /** TODO:
 **  Document/comment your code
-**  design a logo
+**  Design a logo
 **  Navicons colored transparent overlay on hover?
 **  Choose what photos to put on site
 **  Make sample webpages
@@ -16,31 +16,33 @@
 **  Choose/take pic for contact page
 **  Fix about page image text resizing
 **  Create a more professional Tumblr
-**  About page, fix min sizes
+**  About page fix drop down on resize
 **  Min sizes on photos
-**  Border-bottom navbar?
 **  Fix resize on homepage blocking text
 **  Portrait hover text padding top
 **  Open link in new tab
+**  Change Work to Design?
+**  Change font for Navbar?
+**  SEO and Google Analytics
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
 
+/*** HTML Tags ***/
 html { 
   -webkit-font-smoothing: antialiased!important;
-  font-family: 'Quicksand', 'Karla','Dosis', 'Open Sans', 'Poiret One', sans-serif, futura;
+  font-family: 'Quicksand', 'Karla', 'Dosis', 'Open Sans', 'Poiret One', sans-serif, futura;
   background-color: #EAECEA;
 }
-html, body {
-  height: 100%;
-}
-
+html, body {height: 100%;}
 /* Standardize header font size */
 h1 {font-size: 48px;}
 h2 {font-size: 36px;}
 h3 {font-size: 24px;}
-h4 {/* Don't set font for h4, use for special cases */}
+/* Use h4 for special cases */
+h4 {}
 p {font-family: 'Open Sans', 'Karla', sans-serif; font-size: 18px;}
+
 
 /*** UNIQUE PAGE CONTENT ***/
 
@@ -58,7 +60,7 @@ a:active {}
 a.active {text-decoration: underline;}
 
 /* old green: #14CC9A; #80FF80;*/
-/*** link color ***/
+/* link color */
 .link_green:hover {color: #00C400;}
 .link_green.active {color: #00C400;}
 .link_red:hover {color: #FF8080;}
@@ -66,12 +68,12 @@ a.active {text-decoration: underline;}
 .link_blue:hover {color: #8080FF;}
 .link_blue.active {color: #8080FF;}
 
-/*** always colored ***/
+/* always colored */
 a.red {color: #FF8080;}
 a.green {color: #00C400;}
 a.blue {color: #8080FF;}
 
-/*** bottom border on links ***/
+/* bottom border on links */
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
 .black_border.active {border-bottom: 3px solid black; text-decoration: none;}
 .red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
@@ -112,19 +114,11 @@ a.blue {color: #8080FF;}
 }
 .topnav li {display: inline-block; font-size: 18px;}
 
-/*** subnav on Work ***/
-.sub_topnav {
-  display: inline-block;
-  position: fixed;  
-  width: auto;
-}
-ul.sub_topnav, ul.sub_topnav_hidden {
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
+/*** Subnav on Work ***/
+.sub_topnav {display: inline-block; position: fixed; width: auto;}
+ul.sub_topnav, ul.sub_topnav_hidden {padding: 15px 0 20px 20px;}
 ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
-/*** subnav hover only on non work pages **/
+/* subnav hover only on non work pages */
 .topnav li ul.sub_topnav_hidden {
   display: none;
   position: fixed;
@@ -133,7 +127,7 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 }
 .topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
 
-/*** topnav spacing on screen resize ***/
+/* topnav spacing on screen resize */
 @media screen and (min-width: 800px) {
   .topnav li {margin-right: 100px;}
 }
@@ -145,8 +139,9 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
   .topnav > ul {padding: 10px 0px;}
 }
 
+/* space/clear for fixed navbar */
 .topnav_clear {height: 100px; width: 100%;}
-.nav_spacer {width: 100%; height: 60px;}
+.nav_spacer {height: 60px; width: 100%;}
 
 /*** Logo ***/
 .logo_link {display: inline-block; width: 175px; margin-right: 5%;}
@@ -287,7 +282,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 #contact_page_content {
 }
 #contact_img {display: inline-block; width: 100%; height: 100%;}
-.icon_tray div {transition: opacity .75s ease;}
+.icon_tray div {transition: opacity .5s ease;}
 
 /*** social media icons ***/
 #tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .5;}
@@ -334,7 +329,6 @@ ul > li.last_element {margin-right: 0;}
 
 .home_spacer {height: 30px; width: 100%;}
 .inline_block {display: inline-block;}
-
 
 /*** Positioning ***/
 .float_right {float: right;}
