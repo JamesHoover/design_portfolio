@@ -14,7 +14,8 @@
 **  Take pictures of artwork
 **  Take photo of self for About page
 **  Choose/take pic for contact page
-**  Fix about page image text resizing
+**  Fix about page image text resizing (try no padding right so it will drop last second)
+**    (if no padding right works apply to photo page)
 **  Create a more professional Tumblr
 **  About page fix drop down on resize
 **  Min sizes on photos
@@ -25,6 +26,7 @@
 **  Change font for Navbar?
 **  SEO and Google Analytics
 **  Mess with border-right on text
+**  Mess with fancy break and double border
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -110,8 +112,8 @@ a.blue {color: #8080FF;}
   display: inline-block;
   width: 700px;
   padding: 10px 50px;
-  border-top: 1px solid #BABABA;
-  border-bottom: 1px solid #BABABA;
+  border-top: medium double #BABABA;
+  border-bottom: medium double #BABABA;
 }
 .topnav li {display: inline-block; font-size: 18px;}
 
@@ -218,14 +220,15 @@ a.logo_link:hover h4 {opacity: 1;}
 #worknav {
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #BABABA;
+  border-bottom: medium double #BABABA;
 }
 #worknav ul {display: inline-block; font-size: 18px;}
-#worknav li{display: inline-block; margin-right: 25px;}
+#worknav li {display: inline-block; margin-right: 25px;}
 .work_location {width: 75%; margin-bottom: 10px; border-bottom: 1px solid #BABABA;}
 
 /*** Sites ***/
 .site_block_container {}
+.site_block { border-left: 1px solid #BABABA; padding-left: 15px;}
 .site_block h3 {width:50%; border-bottom: 1px solid #BABABA;}
 .site_block img {width: 100%;}
 
@@ -286,6 +289,9 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   display: inline-block;
   vertical-align:top;
   width: 550px;
+  border-left: 1px solid #BABABA;
+  padding-left: 15px;
+
 }
 
 /*** Contact Page ***/
@@ -314,9 +320,10 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .footer h4{float: right; padding-right: 10px; font-size: 12px;}
 
 /*** GENERAL STYLING ***/
-.location {border-bottom: 1px solid #BABABA; padding-bottom: 5px; margin-bottom: 10px;}
+.location {border-bottom: medium double #BABABA; padding-bottom: 5px; margin-bottom: 10px;}
 .paragraph {padding-bottom: 15px; max-width: 900px; min-width: 350px;}
 .email_big {font-size: 24px; margin-bottom: 10px;}
+.fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 
 /* Indent */
 .indent {margin-left: 15px;}
