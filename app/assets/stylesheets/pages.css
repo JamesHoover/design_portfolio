@@ -276,7 +276,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .about_page_content {width: 1000px; height: 100%;}
 #about_column_one {float: left; width: 30%; min-width: 350px;}
 #about_column_two {float: left; width: 60%;}
-#about_img {position: relative; display:inline-block; width: 400px; margin-right: 15px;}
+#about_img {position: relative; display:inline-block; width: 350px; margin-right: 15px;}
 #about_img img {display:inline-block; width: 100%;}
 #about_img_text {
   position: absolute;
@@ -284,6 +284,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   width: 100%;
   padding: 3px;
   color: white;
+  font-size: 18px;
 }
 #about_p {
   display: inline-block;
@@ -301,17 +302,17 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .icon_tray div {transition: opacity .5s ease;}
 
 /* social media icons */
-#tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .5;}
-#tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
-
-#facebook_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Facebook.svg) no-repeat; opacity: .5;}
+#facebook_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Facebook.svg) no-repeat; opacity: .4;}
 #facebook_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Facebook.svg) no-repeat; opacity: 1;}
 
-#flickr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Flickr.svg) no-repeat; opacity: .5;}
+#flickr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Flickr.svg) no-repeat; opacity: .4;}
 #flickr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Flickr.svg) no-repeat; opacity: 1;}
 
-#instagram_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: .5;}
+#instagram_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: .4;}
 #instagram_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Intsagram.svg) no-repeat; opacity: 1;}
+
+#tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .4;}
+#tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
 
 /*** Sticky Footer ***/
 /* wraps inside entire body */
