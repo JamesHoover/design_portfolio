@@ -28,6 +28,8 @@
 **  Mess with border-right on text
 **  Mess with fancy break and double border
 **  Remove unnecessary Google font links
+**  Take new Art photos
+**  Background diagonal split darker grey...flat shadow look
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -180,11 +182,11 @@ a.logo_link:hover h4 {opacity: 1;}
   height: auto;
   color: black;
 }
-.home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
 #home_page_content {padding-bottom: 50px;}
 #home_page_content h1 {font-size: 90px; text-shadow: 4px 4px 0px #D9D9D9}
 #home_page_content h2 {font-size: 45px; color: #999999; padding-left: 10%;}
 #home_page_content h4 {font-size: 25px; color: #999999; padding-left: 20%;}
+.home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
 
 #home_navicons {width: 100%;}
 .home_navicons_content {
@@ -236,7 +238,7 @@ a.logo_link:hover h4 {opacity: 1;}
 /*** Art ***/
 .art_block_container {}
 .art_block h3 {width:50%; border-bottom: 1px solid #BABABA;}
-.art_block img {width: 100%;}
+.art_block img {width: 600px;}
 
 /*** Photography ***/
 .img_container {display: inline-block; height: 100%;}
@@ -322,8 +324,14 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .footer h4{float: right; padding-right: 10px; font-size: 12px;}
 
 /*** GENERAL STYLING ***/
-.location {border-bottom: medium double #BABABA; padding-bottom: 5px; margin-bottom: 10px;}
-.paragraph {padding-bottom: 15px; max-width: 900px; min-width: 350px;}
+.location {
+  text-shadow: 1px 1px 1px #BABABA;
+  border-bottom: medium double #BABABA;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.inline_header {padding-bottom: 5px;}
+.paragraph {padding-bottom: 20px; max-width: 900px; min-width: 350px;}
 .email_big {font-size: 24px; margin-bottom: 10px;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 
