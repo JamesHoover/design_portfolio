@@ -295,13 +295,18 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   width: 550px;
   border-left: 1px solid #BABABA;
   padding-left: 15px;
-
 }
 
 /*** Contact Page ***/
 #contact_page_content {
 }
-#contact_img {display: inline-block; width: 100%; height: 100%;}
+#contact_img {position: relative; display: inline-block; width: 100%; height: 100%;}
+#contact_img_text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 3px;
+}
 .icon_tray div {transition: opacity .5s ease;}
 
 /* social media icons */
@@ -331,7 +336,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   margin-bottom: 10px;
 }
 .inline_header {padding-bottom: 5px;}
-.paragraph {padding-bottom: 20px; max-width: 900px; min-width: 350px;}
+.paragraph {padding-bottom: 25px; max-width: 900px; min-width: 350px;}
 .email_big {font-size: 24px; margin-bottom: 10px;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 
