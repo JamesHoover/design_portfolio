@@ -330,7 +330,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 
 /*** GENERAL STYLING ***/
 .location {
-  text-shadow: 1px 1px 1px #BABABA;
+  text-shadow: 2px 2px 3px #BABABA;
   border-bottom: medium double #BABABA;
   padding-bottom: 5px;
   margin-bottom: 10px;
