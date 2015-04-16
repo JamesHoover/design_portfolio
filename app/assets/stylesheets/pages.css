@@ -337,7 +337,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 }
 .inline_header {padding-bottom: 5px;}
 .paragraph {padding-bottom: 25px; max-width: 900px; min-width: 350px;}
-.email_big {font-size: 24px; margin-bottom: 10px;}
+.email_big {font-size: 24px; margin-top: 20px; margin-bottom: 20px;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 
 /* Indent */
