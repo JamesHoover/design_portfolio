@@ -38,7 +38,7 @@
 html { 
   -webkit-font-smoothing: antialiased!important;
   font-family: 'Quicksand', 'Karla', 'Dosis', 'Open Sans', 'Poiret One', sans-serif, futura;
-  background-color: #EAECEA;
+  background-color: #f7f6f4; /* #EAECEA; */
 }
 html, body {height: 100%;}
 /* Standardize header font size */
@@ -47,7 +47,12 @@ h2 {font-size: 36px;}
 h3 {font-size: 24px;}
 /* Use h4 for special cases */
 h4 {}
-p {font-family: 'Open Sans', 'Karla', sans-serif; font-size: 16px;}
+p {
+  color: #555555;
+  line-height: 1.5em;
+  font-family: 'Open Sans', 'Karla', sans-serif;
+  font-size: 16px;
+}
 
 
 /*** UNIQUE PAGE CONTENT ***/
@@ -74,10 +79,19 @@ a.active {text-decoration: underline;}
 .link_blue:hover {color: #8080FF;}
 .link_blue.active {color: #8080FF;}
 
-/* always colored */
+/* colored links */
 a.red {color: #FF8080;}
 a.green {color: #00C400;}
 a.blue {color: #8080FF;}
+a.red, .green, .blue {background-color: rgba(230,230,230, .7); padding: 2px 4px;
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+}
+a.red:hover {background-color: #FF8080; color: white; text-decoration: none;}
+a.green:hover {background-color: #00C400; color: white; text-decoration: none;}
+a.blue:hover {background-color: #8080FF; color: white; text-decoration: none;}
 
 /* bottom border on links */
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
@@ -104,7 +118,7 @@ a.blue {color: #8080FF;}
   width: 100%;
   height: auto;
   padding-left: 10%;
-  background-color: #EAECEA;
+  background-color: #f7f6f4; /* #EAECEA; */
   border-bottom: 1px solid #BABABA;
   z-index: 1050;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
@@ -310,7 +324,15 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   color: white;
   padding: 3px;
 }
-.icon_tray {clear: both;}
+
+
+/*** Sticky Footer ***/
+/* wraps inside entire body */
+.wrapper {min-height: 80%; margin: 0 auto -10px;}
+.footer, .push {height: 10px;} /* .push must be the same height as .footer */
+.footer h4{margin-top: 15px; color: #555555; font-size: 16px;}
+
+.icon_tray {margin: 0 auto; margin-top: 25px; width: 25%; clear: both; border-top: medium double #BABABA;}
 .icon_tray div {transition: opacity .5s ease;}
 
 /* social media icons */
@@ -326,11 +348,6 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 #tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .4;}
 #tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
 
-/*** Sticky Footer ***/
-/* wraps inside entire body */
-.wrapper {min-height: 100%; margin: 0 auto -25px;}
-.footer, .push {height: 25px;} /* .push must be the same height as .footer */
-.footer h4{float: right; padding-right: 10px; font-size: 12px;}
 
 /*** GENERAL STYLING ***/
 .location {
@@ -343,6 +360,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .paragraph {margin-bottom: 25px; max-width: 900px; min-width: 350px;}
 .email_big {font-size: 24px; margin-top: 20px; margin-bottom: 20px;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
+a.jump_top {margin: 15px;}
 
 /* Indent */
 .indent {margin-left: 15px;}
@@ -350,7 +368,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 /* Screen Size Side Padding */
 .container {padding-left: 10%; padding-right: 10%;}
 
-.subtext {color: #999999;}
+.subtext {color: #555555;}
 .uppercase {text-transform: uppercase;}
 .capitalize {text-transform: capitalize;}
 .bold {font-weight: bold;}
