@@ -196,11 +196,17 @@ a.logo_link:hover h4 {opacity: 1;}
   height: auto;
   color: black;
 }
-#home_page_content {padding-bottom: 50px;}
+/*
+#home_page_content {margin-bottom: 50px;}
 #home_page_content h1 {font-size: 90px; text-shadow: 4px 4px 0px #D9D9D9}
 #home_page_content h2 {font-size: 45px; color: #999999; padding-left: 10%;}
 #home_page_content h4 {font-size: 25px; color: #999999; padding-left: 20%;}
 .home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
+*/
+#home_page_content {margin-top: 25px; margin-bottom: 50px;}
+#home_page_content h2 {color: #999999; padding-top: 10px;}
+#home_page_content h4 {color: #999999; padding-top: 10px; padding-left: 3px;}
+
 
 #home_navicons {width: 100%;}
 .home_navicons_content {
@@ -208,7 +214,7 @@ a.logo_link:hover h4 {opacity: 1;}
   display: inline-block;
   height: 299.3px;
   width: 185px;
-  box-shadow: 10px 10px 1px #D9D9D9;
+  box-shadow: 5px 5px 1px #D9D9D9;
   background-color: white;
   margin-right: 60px;
   margin-top: 10px;
@@ -332,7 +338,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .footer, .push {height: 10px;} /* .push must be the same height as .footer */
 .footer h4{margin-top: 15px; color: #555555; font-size: 16px;}
 
-.icon_tray {margin: 0 auto; margin-top: 25px; width: 25%; clear: both; border-top: medium double #BABABA;}
+.icon_tray {margin: 0 auto; margin-top: 25px; width: 400px; clear: both; border-top: medium double #BABABA;}
 .icon_tray div {transition: opacity .5s ease;}
 
 /* social media icons */
@@ -348,10 +354,12 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 #tumblr_icon {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .4;}
 #tumblr_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
 
+#email_icon {margin-left: 35px; display:inline-block; width: 50px; height:50px; background: url(icons/Mail.svg) no-repeat; opacity: .4;}
+#email_icon:hover {display:inline-block; width: 50px; height:50px; background: url(icons/Mail.svg) no-repeat; opacity: 1;}
+
 
 /*** GENERAL STYLING ***/
 .location {
-  text-shadow: 2px 2px 3px #BABABA;
   border-bottom: medium double #BABABA;
   padding-bottom: 5px;
   margin-bottom: 10px;
