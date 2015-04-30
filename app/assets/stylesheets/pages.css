@@ -31,6 +31,7 @@
 **  About page text needs something to make it stand out
 **  Some sort of 'pop out' on the photos page
 **  Contact page img overlaps on resize.
+**  Art page overlaps on resize.
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -72,7 +73,7 @@ a:active {}
 a.active {text-decoration: underline;}
 
 /* old green: #14CC9A; #80FF80;*/
-/* link color */
+/* link color - makes hover and active link colored (used in nav)*/
 .link_green:hover {color: #00C400;}
 .link_green.active {color: #00C400;}
 .link_red:hover {color: #FF8080;}
@@ -80,7 +81,7 @@ a.active {text-decoration: underline;}
 .link_blue:hover {color: #8080FF;}
 .link_blue.active {color: #8080FF;}
 
-/* colored links */
+/* colored links - gives links on page background and text color with hover change */
 a.red {color: #FF8080;}
 a.green {color: #00C400;}
 a.blue {color: #8080FF;}
@@ -208,7 +209,6 @@ a.logo_link:hover h4 {opacity: 1;}
 #home_page_content h2 {color: #999999; padding-top: 10px;}
 #home_page_content h4 {color: #999999; padding-top: 10px; padding-left: 3px;}
 
-
 #home_navicons {width: 100%;}
 .home_navicons_content {
   position: relative;
@@ -252,15 +252,20 @@ a.logo_link:hover h4 {opacity: 1;}
 
 /*** Sites ***/
 .site_block_container {}
-.site_block { border-left: 1px solid #BABABA; padding-left: 15px;}
+.site_block {border-left: 1px solid #BABABA; padding-left: 15px; padding-top: 4px;}
 .site_block h3 {width:50%; border-bottom: 1px solid #BABABA;}
 .site_block h4 {font-size: 18px;}
-.site_block img {width: 50%;}
+.site_block img {width: 50%; position: relative;}
+a.site_img_link:hover img{ outline: 2px solid #FF8080;}
+.site_title {padding-bottom: 3px;}
 
 /*** Art ***/
 .art_block_container {}
-.art_block h3 {width:50%; border-bottom: 1px solid #BABABA;}
-.art_block img {width: 50%;}
+.art_block {width: 400px; display: inline-block; margin-right: 25%;}
+.art_block h4 {width: 75%; padding-top: 5px; padding-bottom: 40px; border-bottom: 1px solid #BABABA;}
+.art_block img {width: 100%;}
+#art_column_one {float: left; width: 48.5%; min-width: 300px; margin-right: 15px;}
+#art_column_two {float: left; width: 48.5%; min-width: 300px;}
 
 /*** Photography ***/
 .img_container {display: inline-block; height: 100%;}
@@ -297,8 +302,7 @@ h4.img_text {
 div.img_thumb:hover h4.img_text {opacity: 1;}
 
 /*** About Page ***/
-#about_page {width: 100%; height: 100%;}
-.about_page_content {width: 1000px; height: 100%;}
+.about_page {width: 100%; height: 100%;}
 #about_column_one {float: left; width: 30%; min-width: 350px;}
 #about_column_two {float: left; width: 60%;}
 #about_img {position: relative; display:inline-block; width: 350px; margin-right: 15px;}
@@ -320,7 +324,6 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 }
 
 /*** Contact Page ***/
-
 #contact_img {vertical-align: top;  float: right;display: inline-block; width: 50%; height: 100%;}
 #contact_img img { width: 100%; height: 100%;}
 #contact_p {display: inline-block; width: 40%;}
@@ -366,7 +369,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
   margin-bottom: 10px;
 }
 .inline_header {margin-bottom: 5px;}
-.paragraph {margin-bottom: 25px; max-width: 900px; min-width: 350px; text-align: justify;}
+.paragraph {margin-bottom: 25px; max-width: 650px; min-width: 350px; text-align: justify;}
 .email_big {font-size: 24px; margin-top: 20px; margin-bottom: 20px;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 a.jump_top {margin: 15px;}
