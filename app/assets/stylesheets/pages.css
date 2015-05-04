@@ -129,15 +129,16 @@ a.blue:hover {background-color: #8080FF; color: white; text-decoration: none;}
 }
 .topnav > ul {
   display: inline-block;
-  width: 700px;
-  padding: 10px 50px;
+  width: 50%;
+  min-width: 550px;
+  padding: 10px 50px 10px 50px;
   border-top: medium double #BABABA;
   border-bottom: medium double #BABABA;
 }
-.topnav li {display: inline-block; font-size: 18px;}
+.topnav li {display: inline-block; width: 20%; font-size: 18px; margin-right: 25px;}
 
 /*** Subnav on Work ***/
-.sub_topnav {display: inline-block; position: fixed; width: auto;}
+.sub_topnav {display: block; position: fixed; width: auto;}
 ul.sub_topnav, ul.sub_topnav_hidden {padding: 15px 0 20px 20px;}
 ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 /* subnav hover only on non work pages */
@@ -147,20 +148,23 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
   width: auto;
   padding-right: 25px;
 }
-.topnav li:hover ul.sub_topnav_hidden {display: inline-block;}
+.topnav li:hover ul.sub_topnav_hidden {display: block;}
 
-/* topnav spacing on screen resize */
-@media screen and (min-width: 800px) {
-  .topnav li {margin-right: 100px;}
+/* topnav spacing on screen resize */ /*
+@media screen and (min-width: 860px) {
+  .logo_link {display: none;}
+  .logo {display: none;}
+
 }
-@media screen and (max-width: 799px) {
+
+@media screen and (max-width: 1049px) {
   .topnav li {margin-right: 50px;}
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 650px) {
   .topnav li {margin-right: 10px;}
   .topnav > ul {padding: 10px 0px;}
 }
-
+*/
 /* space/clear for fixed navbar */
 .topnav_clear {height: 100px; width: 100%;}
 .nav_spacer {height: 60px; width: 100%;}
@@ -168,9 +172,9 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 /*** Logo ***/
 .logo_link {display: inline-block; width: 175px; margin-right: 5%;}
 .logo {
+  display: block;
   width: auto;
-  white-space:
-  nowrap;
+  white-space:nowrap;
   padding-top: 10px;
 }
 .logo_img {float: left; width: 40px; height: 40px;}
@@ -187,6 +191,16 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 a.logo_link:hover {text-decoration: none;}
 a.logo_link:hover img {opacity: 1;}
 a.logo_link:hover h4 {opacity: 1;}
+
+/* minimize navbar on small screen */
+@media screen and (max-width: 860px) {
+  .logo_link {display: none;}
+  .logo {display: none;}
+  .topnav {padding-left: 0;}
+  .topnav > ul {min-width: 100%; padding: 10px 0px 10px 10px;}
+  .topnav li {margin-right: 10px;}
+}
+
 
 /*** Home Page ***/
 #home_page {
