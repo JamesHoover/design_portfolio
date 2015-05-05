@@ -1,0 +1,52 @@
+<!-- BODY -->
+<body>
+  <div class="wrapper">
+    <!-- NAVBAR -->
+    <nav class="topnav full_width">
+      <a href="/" class="logo_link">
+        <div class="logo">
+          <img src="/assets/meBW.jpg" class="logo_img">
+          <h4>James Hoover</h4>
+          <h4 class="subtext">Design Porfolio</h4>
+        </div>
+      </a>
+      <ul class="uppercase">
+        <li><%= link_to "Home", '/', :class => "black_border active"%></li>
+        <li><%= link_to "Work /", '/work/sites', :class => "link_red red_border" %>
+          <ul class="sub_topnav_hidden">
+            <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class => "link_red" %></li><br>
+            <li class="capitalize"><%= link_to "/ Art", '/work/art', :class => "link_red" %></li><br>
+            <li class="capitalize"><%= link_to "/ Photography", '/work/photography', :class => "link_red" %></li>
+          </ul>
+        </li>
+        <li><%= link_to "About", '/about', :class => "link_green green_border" %></li>
+        <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
+      </ul>
+      <div class="nav_spacer"></div>
+    </nav>
+    <!-- SPACERS -->
+    <div class="topnav_clear"></div>
+    <div class="home_spacer"></div>
+    <!-- HOME_PAGE CONTENT -->
+    <div class="container">
+      <div id="home_page">
+        <div id="home_page_content" class="">
+          <h1 class="uppercase">James Hoover</h1>
+          <h2 class="home_subtitle">UX/UI Design Porfolio</h2>
+          <h4 class="home_subtitle">Designer / Engineer / Artist</h4>
+        </div>
+
+        <div id="home_navicons" class="bold">
+          <a class="navicon_link" href="/work/sites"><div id="work_bkgrd" class="home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
+          <a class="navicon_link" href="/about"><div id="about_bkgrd" class="home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
+          <a class="navicon_link" href="/contact"><div id="contact_bkgrd" class="home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="spacer_25"></div>
+  <div class="footer push float_right">
+    <h4>&copy;2015 - James Hoover</h4>
+  </div>
+</body>
