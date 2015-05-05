@@ -40,7 +40,7 @@
 html { 
   -webkit-font-smoothing: antialiased!important;
   font-family: 'Quicksand', 'Karla', 'Dosis', 'Open Sans', 'Poiret One', sans-serif, futura;
-  background-color: #f7f6f4; /* #EAECEA; */
+  background-color: #F7F6F4; /* #EAECEA; */
 }
 html, body {height: 100%;}
 /* Standardize header font size */
@@ -85,7 +85,9 @@ a.active {text-decoration: underline;}
 a.red {color: #FF8080;}
 a.green {color: #00C400;}
 a.blue {color: #8080FF;}
-a.red, .green, .blue {background-color: rgba(230,230,230, .7); padding: 2px 4px;
+a.red, .green, .blue {
+  padding: 2px 4px;
+  background-color: rgba(230,230,230, .7);
   -webkit-transition: .25s ease;
   -moz-transition: .25s ease;
   -o-transition: .25s ease;
@@ -174,18 +176,15 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 16px; margin-right: 0;}
 .logo {
   display: block;
   width: auto;
-  white-space:nowrap;
+  white-space: nowrap;
   padding-top: 10px;
 }
-.logo_img {float: left; width: 40px; height: 40px;}
+.logo_img {float: left; width: 32px; height: 32px;}
 .logo img {margin-right: 5px;}
 .logo img{opacity: .5;}
 .logo h4{opacity: .5;}
 .logo img, h4 {
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
+
 }
 
 a.logo_link:hover {text-decoration: none;}
