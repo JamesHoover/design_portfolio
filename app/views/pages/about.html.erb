@@ -12,11 +12,11 @@
       </a>
       <ul class="uppercase">
         <li><%= link_to "Home", '/', :class => "black_border" %></li>
-        <li><%= link_to "Work /", '/work/sites', :class => "link_red red_border" %>
+        <li><%= link_to "Work\xC2\xA0/", '/work/sites', :class => "link_red red_border" %>
           <ul class="sub_topnav_hidden">
-            <li class="capitalize"><%= link_to "/ Sites", '/work/sites', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "/ Art", '/work/art', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "/ Photography", '/work/photography', :class => "link_red" %></li>
+            <li class="capitalize"><%= link_to "/\xC2\xA0Sites", '/work/sites', :class => "link_red" %></li><br>
+            <li class="capitalize"><%= link_to "/\xC2\xA0Art", '/work/art', :class => "link_red" %></li><br>
+            <li class="capitalize"><%= link_to "/\xC2\xA0Photography", '/work/photography', :class => "link_red" %></li>
           </ul>
         </li>
         <li><%= link_to "About", '/about', :class => "link_green green_border active" %></li>
@@ -28,7 +28,7 @@
     <div class="topnav_clear"></div>
     <div class="spacer_50"></div>
     <!-- ABOUT_PAGE CONTENT -->
-    <div class="container about_page">
+    <div class="container" id="about_page">
     	<h1 class="location bold uppercase">About Me:</h1>
       <div id="about_img">
         <%= image_tag("james_front.jpg") %>
@@ -54,7 +54,7 @@
         <h3 class="inline_header bold">I am Pursuing</h3>
         <p class="paragraph">A career in the field of user experience design...My personal experience gives me a shared understanding of the world of engineering and design. This puts me in position to bridge the gap between the two industries.</p>
         <div class="spacer_50"></div>
-        <h4>Find out more at: <a href="mailto:jamesfhoover@gmail.com" title="Email" class="green"> jamesfhoover@gmail.com</a></h4>
+        <h4>Find out more at: <div class="spacer_10"></div><a href="mailto:jamesfhoover@gmail.com" title="Email" class="green"> jamesfhoover@gmail.com</a></h4>
       </div>
     </div>
   </div>
