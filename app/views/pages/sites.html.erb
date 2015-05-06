@@ -47,7 +47,7 @@
           <h3 class="site_title bold"><a href="http://www.google.com" title="O&G Magnolia" class="red">O&G MAGNOLIA</a></h3>
           <div class="spacer_10"></div>
           <p class="paragraph">Insurance/liability & asset management experts.</p>
-          <a href="http://www.google.com" title="O&G Magnolia" class="site_img_link"><%= image_tag("sites/ogmagnolia_home.png") %></a>
+          <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "site_img_link",  title: "O&G Magnolia" %>
           <div class="spacer_25"></div>
           <h4>Target Users:</h4><p class="paragraph">Potential/current investors for company. Those curious about Warren Buffet's and other investing strategies.</p>
           <h4>Site Purpose/Goal:</h4><p class="paragraph">Inform potential/current investors about company and strategy. Convert users/visitors to sign up/subscribe to the newsletter.</p>
@@ -60,7 +60,7 @@
           <h3 class="site_title bold"><a href="http://www.awakewomen.net/" title="AWAKE Women" class="red">AWAKE Women</a></h3>
           <div class="spacer_10"></div>
           <p class="paragraph">Alliance of Women Achieving Knowledge and Excellence</p>
-          <a href="http://www.awakewomen.net/" title="AWAKE Women" class="site_img_link"><%= image_tag("sites/Purple-Space.jpg") %></a>
+          <%= link_to image_tag("sites/Purple-Space.jpg"), image_path("sites/Purple-Space.jpg"), class: "site_img_link",  title: "AWAKE Women" %>
           <div class="spacer_25"></div>
           <h4>Target Users:</h4><p class="paragraph">Professional women. Non-profit for connecting professional women. Women who are a part of the organization and want to find details of upcoming events. Opportunities to help. Women who want to find out more about the organization and become members.</p>
           <h4>Site Purpose/Goal:</h4><p class="paragraph">Inform users about non-profit. Show upcoming and past events. Get people to contribute organization, funding, events, work. Get people to sign up as members.</p>
@@ -73,20 +73,20 @@
           <h3 class="site_title bold"><a href="http://www.youtube.com/" title="YouTube" class="red">YouTube</a></h3>
           <div class="spacer_10"></div>
           <p class="paragraph">Hosts user-generated videos. Includes network and professional content.</p>
-          <a href="http://www.youtube.com/" title="YouTube" class="site_img_link"><%= image_tag("sites/youtube_home.png") %></a>
+          <%= link_to image_tag("sites/youtube_home.png"), image_path("sites/youtube_home.png"), class: "site_img_link",  title: "YouTube" %>
           <div class="spacer_25"></div>
           <h4>Target Users:</h4><p class="paragraph">People who want to share and view content.</p>
           <h4>Site Purpose/Goal:</h4><p class="paragraph">Allows users to upload, view, and share videos, and make use of Adobe Flash Video and HTML5 technology to display a wide variety of user-generated and corporate media video.</p>
           <h4>My Involvement:</h4><p class="paragraph">Built the whole damn thing.</p>
         </div>
-        
+
       </div>
     </div>
   </div>
   <div class="spacer_50"></div>
   <!-- FOOTER -->
   <div class="footer push center_horizontal_text">
-    <h4>/ <a href="#top" title="Top">Jump to top</a> /</h4>
+    <h4><a href="#top" title="Top" id="jump_top">Jump to top</a></h4>
     <div class="spacer_50"></div>
     <div class="icon_tray">
       <div class="spacer_10"></div>

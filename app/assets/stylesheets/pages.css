@@ -33,6 +33,9 @@
 **  Contact page img overlaps on resize.
 **  Art page overlaps on resize.
 **  Tweak spacer divs scalable sizing.
+**  Make links look more like links...not all are obvious to someone else
+**  Remove filter hover effect on photos...more annoying than cool
+**  Home logo is confusing
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -76,28 +79,36 @@ a.active {text-decoration: underline;}
 
 /* old green: #14CC9A; #80FF80;*/
 /* link color - makes hover and active link colored (used in nav)*/
-.link_green:hover {color: #00C400;}
-.link_green.active {color: #00C400;}
 .link_red:hover {color: #FF8080;}
 .link_red.active {color: #FF8080;}
+.link_green:hover {color: #00C400;}
+.link_green.active {color: #00C400;}
 .link_blue:hover {color: #8080FF;}
 .link_blue.active {color: #8080FF;}
 
+a.inline_link_red {color: #FF8080;}
+a.inline_link_red:hover {color: #FF8080; text-decoration: underline;}
+a.inline_link_red.active {color: #FF8080;}
+a.inline_link_blue {color: #8080FF;}
+a.inline_link_blue:hover {color: #8080FF; text-decoration: underline;}
+a.inline_link_blue.active {color: #8080FF;}
+
 /* colored links - gives links on page background and text color with hover change */
-a.red {color: #FF8080;}
-a.green {color: #00C400;}
-a.blue {color: #8080FF;}
-a.red, .green, .blue {
+a.red {background-color: #FF8080;}
+a.green {background-color: #00C400;}
+a.blue {background-color: #8080FF;} /*rgba(230,230,230,10);*/
+a.red, a.green, a.blue {
+  font-weight: bold;
   padding: 2px 4px;
-  background-color: rgba(230,230,230, .7);
+  color: white;
   -webkit-transition: .25s ease;
   -moz-transition: .25s ease;
   -o-transition: .25s ease;
   transition: .25s ease;
 }
-a.red:hover {background-color: #FF8080; color: white; text-decoration: none;}
-a.green:hover {background-color: #00C400; color: white; text-decoration: none;}
-a.blue:hover {background-color: #8080FF; color: white; text-decoration: none;}
+a.red:hover {background-color: white; color: #FF8080; text-decoration: none;}
+a.green:hover {background-color: white; color: #00C400; text-decoration: none;}
+a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 
 /* bottom border on links */
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
@@ -133,9 +144,10 @@ a.blue:hover {background-color: #8080FF; color: white; text-decoration: none;}
 }
 .topnav > ul {
   display: inline-block;
-  width: auto;
-  min-width: 50%;
-  padding: 1em 4em 1em 4em;
+  width: 50%;
+  min-width: 500px;
+  padding: 1em 10% 1em 10%;
+  margin: 0 auto;
   border-top: medium double #BABABA;
   border-bottom: medium double #BABABA;
   white-space: nowrap;
@@ -144,7 +156,7 @@ a.blue:hover {background-color: #8080FF; color: white; text-decoration: none;}
 
 /*** Subnav on Work ***/
 .sub_topnav {display: block; position: fixed; width: auto;}
-ul.sub_topnav, ul.sub_topnav_hidden {padding: 1.5em 0 2em 2em;}
+ul.sub_topnav, ul.sub_topnav_hidden {padding: 1.5em 0 2em 1em;}
 ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; margin-right: 0;}
 /* subnav hover only on non work pages */
 .topnav li ul.sub_topnav_hidden {
@@ -186,9 +198,7 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; margin-right: 0;}
 .logo img {margin-right: 5px;}
 .logo img{opacity: .5;}
 .logo h4{opacity: .5;}
-.logo img, h4 {
-
-}
+.logo img, h4 {}
 
 a.logo_link:hover {text-decoration: none;}
 a.logo_link:hover img {opacity: 1;}
@@ -199,7 +209,7 @@ a.logo_link:hover h4 {opacity: 1;}
   .logo_link {display: none;}
   .logo {display: none;}
   .topnav {padding-left: 0;}
-  .topnav > ul {min-width: 100%; padding: 1em 0 1em 1em; margin-top: 1em;}
+  .topnav > ul {min-width: 100%; padding: 1em; margin-top: 1em;}
   .topnav li {margin-right: 10%;}
 }
 
@@ -247,9 +257,9 @@ a.logo_link:hover h4 {opacity: 1;}
 .home_navicons_content h3 {padding: 3px;}
 .navicon_link div:hover{opacity: 1; color: white; /* -webkit-filter: grayscale(0%); */}
 
-#work_bkgrd {background: url(home/laptopTableBW.jpg) no-repeat; background-size: cover;}
+#work_bkgrd {background: url(home/laptopLightBW_Copy.jpg) no-repeat; background-size: cover;}
 #about_bkgrd {background: url(james_selfieBW.jpg) no-repeat; background-size: cover;}
-#contact_bkgrd {background: url(home/laptopLightBW.jpg) no-repeat; background-size: cover;}
+#contact_bkgrd {background: url(home/laptopTableBW_Copy.jpg) no-repeat; background-size: cover;}
 
 #work_bkgrd h3 {width: 100%; background-color:rgba(255,128,128,.5);}
 #about_bkgrd h3 {width: 100%; background-color:rgba(128,255,128,.5);}
@@ -399,7 +409,7 @@ div.img_thumb:hover h4.img_text {opacity: 1;}
 .paragraph {margin-bottom: 25px; max-width: 650px; min-width: 325px; text-align: justify;}
 .email_big {margin-top: .5em; margin-bottom: 1.5em;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
-a.jump_top {margin: 15px;}
+#jump_top {padding: .5em; border: 1px solid black;}
 
 /* Indent */
 .indent {margin-left: 15px;}
