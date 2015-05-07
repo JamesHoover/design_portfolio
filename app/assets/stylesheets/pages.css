@@ -12,30 +12,17 @@
 **  Choose what photos to put on site
 **  Make sample webpages
 **  Choose/take pic for contact page
-**  Fix about page image text resizing (try no padding right so it will drop last second)
-**    (if no padding right works apply to photo page)
 **  Create a more professional Tumblr
-**  About page fix drop down on resize
-**  Min sizes on photos
-**  Fix resize on homepage blocking text
-**  Photography Portrait hover text padding top
 **  Open link in new tab
 **  Change 'Work' to Design?
-**  Change font for Navbar?
 **  SEO and Google Analytics
-**  Mess with border-right on text
-**  Mess with fancy break and double border
 **  Remove unnecessary Google font links
-**  Take new Art photos (scan them)
-**  Background diagonal split darker grey...flat shadow look
-**  About page text needs something to make it stand out
 **  Some sort of 'pop out' on the photos page
-**  Contact page img overlaps on resize.
-**  Art page overlaps on resize.
 **  Tweak spacer divs scalable sizing.
 **  Make links look more like links...not all are obvious to someone else
 **  Remove filter hover effect on photos...more annoying than cool
-**  Home logo is confusing
+**  Home logo is action confusing
+**  Resize portrait style photos, too big for page.
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -146,7 +133,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
   display: inline-block;
   width: 50%;
   min-width: 500px;
-  padding: 1em 10% 1em 10%;
+  padding: 1em 10%;
   margin: 0 auto;
   border-top: medium double #BABABA;
   border-bottom: medium double #BABABA;
@@ -287,12 +274,12 @@ a.site_img_link:hover img{outline: 1px solid #FF8080;}
 
 /*** Art ***/
 #art_block_container {}
-.art_block {width: 400px; display: inline-block; margin-right: 25%;}
-.art_block h4 {width: 75%; padding-top: 5px; padding-bottom: 40px;}
+.art_block {width: 100%; display: inline-block; margin-right: 25%;}
+.art_block h4 {width: 75%; padding-top: 5px; padding-bottom: 2em;}
 .art_block img {width: 100%; border: 1px solid #BABABA;}
 a.art_img_link:hover img{ border: 1px solid #FF8080;}
-#art_column_one {float: left; width: 48.5%; min-width: 400px; margin-right: 1em;}
-#art_column_two {float: left; width: 48.5%; min-width: 400px;}
+#art_column_one {float: left; width: 48.5%; min-width: 325px; margin-right: 1em;}
+#art_column_two {float: left; width: 48.5%; min-width: 325px;}
 
 /*** Photography ***/
 .img_container {display: inline-block; height: 100%;}
@@ -302,8 +289,8 @@ div.img_thumb {
   position: relative;
   display: inline-block;
   width: 100%;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 1em;
+  margin-right: 1em;
 }
 .img_thumb img {
   display: inline-block;
