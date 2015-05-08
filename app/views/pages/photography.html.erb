@@ -40,31 +40,99 @@
       </nav>
       <h2 class="work_location bold uppercase">Photography</h2>
       <p class="paragraph">I come from a family of photographers. I upgraded my camera this past year and have been learning everything I can about it. Enjoy some of my favorite shots.<br><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p><br>
+
       <div class="img_container">
+
       	<div id="photo_column_one">
-          <div class="img_thumb"><%= image_tag("photography/tulipsBW.jpg") %><h3 class="img_text center_horizontal_text">Tulips | 2015</h3></div>
-          <div class="img_thumb"><%= image_tag("photography/kelly_closeupBW.jpg") %><h3 class="img_text center_horizontal_text">Kelly | 2015</h3></div>
-          <div class="img_thumb"><%= image_tag("photography/maya_lab.jpg") %><h3 class="img_text center_horizontal_text">Maya | 2015</h3></div>
-          <div class="img_thumb"><%= image_tag("photography/maya_labBW.jpg") %><h3 class="img_text center_horizontal_text">Maya | 2015</h3></div>
-          <div class="img_thumb"><%= image_tag("photography/winnie_frenchie_closeup.jpg") %><h3 class="img_text center_horizontal_text">Winnie | 2015</h3></div>
-          <div class="img_thumb"><%= image_tag("photography/beans_frenchie_closeupBW.jpg") %><h3 class="img_text center_horizontal_text">Beans | 2015</h3></div>
-    	  	<div class="img_thumb"><%= image_tag("photography/kelly_and_horse.jpeg") %><h3 class="img_text center_horizontal_text">Kelly & the horses | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/kelly_profile.jpeg") %><h3 class="img_text center_horizontal_text">Kelly on the beach | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/horse_closeup.jpeg") %><h3 class="img_text center_horizontal_text">The horse | 2014</h3></div>
+
+          <div class="photo_block">
+            <%= link_to image_tag("photography/tulipsBW.jpg"), image_path("photography/tulipsBW.jpg"), class: "photo_img_link",  title: "Tulips" %>
+            <h3 class="photo_text center_horizontal_text">Tulips | 2015</h3>
+          </div>
+          <div class="photo_block">
+            <%= link_to image_tag("photography/kelly_closeupBW.jpg"), image_path("photography/kelly_closeupBW.jpg"), class: "photo_img_link",  title: "Kelly" %>
+            <h3 class="photo_text center_horizontal_text">Kelly | 2015</h3>
+          </div>
+          <div class="photo_block">
+            <%= link_to image_tag("photography/maya_lab.jpg"), image_path("photography/maya_lab.jpg"), class: "photo_img_link",  title: "Maya" %>
+            <h3 class="photo_text center_horizontal_text">Maya | 2015</h3>
+          </div>
+          <div class="photo_block">
+            <%= link_to image_tag("photography/maya_labBW.jpg"), image_path("photography/maya_labBW.jpg"), class: "photo_img_link",  title: "Maya" %>
+            <h3 class="photo_text center_horizontal_text">Maya | 2015</h3>
+          </div>
+          <div class="photo_block">
+            <%= link_to image_tag("photography/winnie_frenchie_closeup.jpg"), image_path("photography/winnie_frenchie_closeup.jpg"), class: "photo_img_link",  title: "Winnie" %>
+            <h3 class="photo_text center_horizontal_text">Winnie | 2015</h3>
+          </div>
+          <div class="photo_block">
+            <%= link_to image_tag("photography/beans_frenchie_closeupBW.jpg"), image_path("photography/beans_frenchie_closeupBW.jpg"), class: "photo_img_link",  title: "Beans" %>
+            <h3 class="photo_text center_horizontal_text">Beans | 2015</h3>
+          </div>
+    	  	<div class="photo_block">
+            <%= link_to image_tag("photography/kelly_and_horse.jpeg"), image_path("photography/kelly_and_horse.jpeg"), class: "photo_img_link",  title: "Kelly & Horse" %>
+            <h3 class="photo_text center_horizontal_text">Kelly & the horses | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/kelly_profile.jpeg"), image_path("photography/kelly_profile.jpeg"), class: "photo_img_link",  title: "Kelly" %>
+            <h3 class="photo_text center_horizontal_text">Kelly on the beach | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/horse_closeup.jpeg"), image_path("photography/horse_closeup.jpeg"), class: "photo_img_link",  title: "Horse" %>
+            <h3 class="photo_text center_horizontal_text">The horse | 2014</h3>
+          </div>
+
         </div>
+
         <div id="photo_column_two">
-    			<div class="img_thumb"><%= image_tag("photography/mia_pink.jpeg") %><h3 class="img_text center_horizontal_text">Mia | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/polar_plunge1.jpeg") %><h3 class="img_text center_horizontal_text">hello | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/polar_plunge2.jpeg") %><h3 class="img_text center_horizontal_text">my | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/polar_plunge3.jpeg") %><h3 class="img_text center_horizontal_text">name | 2014</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/polar_plunge4.jpeg") %><h3 class="img_text center_horizontal_text">jame | 2015</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/polar_plunge5.jpeg") %><h3 class="img_text center_horizontal_text">i | 2015</h3></div>
-    			<div class="img_thumb"><%= image_tag("photography/james_and_kelly.jpeg") %><h3 class="img_text center_horizontal_text">like | 2015</h3></div>
-      		<div class="img_thumb"><%= image_tag("photography/kyle_closeup.jpeg") %><h3 class="img_text center_horizontal_text">thinking | 2015</h3></div>
-      		<div class="img_thumb"><%= image_tag("photography/taylor_james_jack.jpeg") %><h3 class="img_text center_horizontal_text">about | 2015</h3></div>
-      		<div class="img_thumb"><%= image_tag("photography/kelly_beach.jpeg") %><h3 class="img_text center_horizontal_text">the | 2015</h3></div>
-      		<div class="img_thumb"><%= image_tag("photography/fungus_log.jpeg") %><h3 class="img_text center_horizontal_text">unknown | 2015</h3></div>
+
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/mia_pink.jpeg"), image_path("photography/mia_pink.jpeg"), class: "photo_img_link",  title: "Mia" %>
+            <h3 class="photo_text center_horizontal_text">Mia | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/polar_plunge1.jpeg"), image_path("photography/polar_plunge1.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
+            <h3 class="photo_text center_horizontal_text">hello | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/polar_plunge2.jpeg"), image_path("photography/polar_plunge2.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
+            <h3 class="photo_text center_horizontal_text">my | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/polar_plunge3.jpeg"), image_path("photography/polar_plunge3.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
+            <h3 class="photo_text center_horizontal_text">name | 2014</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/polar_plunge4.jpeg"), image_path("photography/polar_plunge4.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
+            <h3 class="photo_text center_horizontal_text">jame | 2015</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/polar_plunge5.jpeg"), image_path("photography/polar_plunge5.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
+            <h3 class="photo_text center_horizontal_text">i | 2015</h3>
+          </div>
+    			<div class="photo_block">
+            <%= link_to image_tag("photography/james_and_kelly.jpeg"), image_path("photography/james_and_kelly.jpeg"), class: "photo_img_link",  title: "James & Kelly" %>
+            <h3 class="photo_text center_horizontal_text">like | 2015</h3>
+          </div>
+      		<div class="photo_block">
+            <%= link_to image_tag("photography/kyle_closeup.jpeg"), image_path("photography/kyle_closeup.jpeg"), class: "photo_img_link",  title: "Kyle" %>
+            <h3 class="photo_text center_horizontal_text">thinking | 2015</h3>
+          </div>
+      		<div class="photo_block">
+            <%= link_to image_tag("photography/taylor_james_jack.jpeg"), image_path("photography/taylor_james_jack.jpeg"), class: "photo_img_link",  title: "James & Taylor & Jack" %>
+            <h3 class="photo_text center_horizontal_text">about | 2015</h3>
+          </div>
+      		<div class="photo_block">
+            <%= link_to image_tag("photography/kelly_beach.jpeg"), image_path("photography/kelly_beach.jpeg"), class: "photo_img_link",  title: "Kelly" %>
+            <h3 class="photo_text center_horizontal_text">the | 2015</h3>
+          </div>
+      		<div class="photo_block">
+            <%= link_to image_tag("photography/fungus_log.jpeg"), image_path("photography/fungus_log.jpeg"), class: "photo_img_link",  title: "Fungus" %>
+            <h3 class="photo_text center_horizontal_text">unknown | 2015</h3>
+          </div>
+
     		</div>
+
       </div>
     </div>
   </div>

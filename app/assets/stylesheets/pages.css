@@ -275,44 +275,35 @@ a.site_img_link:hover img{outline: 1px solid #FF8080;}
 
 /*** Art ***/
 #art_block_container {}
+#art_column_one {float: left; width: 40%; min-width: 325px; margin-right: 1em;}
+#art_column_two {float: left; width: 40%; min-width: 325px;}
 .art_block {width: 100%; display: inline-block; margin-right: 25%;}
 .art_block h4 {width: 75%; padding-top: 5px; padding-bottom: 2em;}
 .art_block img {width: 100%; border: 1px solid #BABABA;}
 a.art_img_link:hover img{border: 1px solid #FF8080;}
-#art_column_one {float: left; width: 40%; min-width: 325px; margin-right: 1em;}
-#art_column_two {float: left; width: 40%; min-width: 325px;}
+
 
 /*** Photography ***/
 .img_container {display: inline-block; height: 100%;}
 #photo_column_one {float: left; width: 48.5%; min-width: 325px; margin-right: 1em;}
 #photo_column_two {float: left; width: 48.5%; min-width: 325px;}
-div.img_thumb {
-  position: relative;
+.photo_block {display: inline-block; width: 100%; margin-bottom: 1em;}
+.photo_block img {width: 100%;}
+.photo_text {
   display: inline-block;
-  width: 100%;
-  margin-bottom: 1em;
-  margin-right: 1em;
-}
-.img_thumb img {
-  display: inline-block;
+
   width: 100%;
   height: 100%;
-}
-.img_text {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
+  color: black;
 
   -webkit-transition: .25s ease;
   -moz-transition: .25s ease;
   -o-transition: .25s ease;
   transition: .25s ease;
-  opacity: 0;
+  opacity: 1;
 }
-div.img_thumb:hover .img_text {opacity: 1;}
+a.photo_img_link:hover img{outline: 1px solid #FF8080;}
+div.photo_thumb:hover .photo_text {opacity: 1;}
 
 /*** About Page ***/
 #about_page {width: 100%; height: 100%;}
@@ -321,8 +312,8 @@ div.img_thumb:hover .img_text {opacity: 1;}
   vertical-align: top;
   width: 30%;
   min-width: 350px;
-  margin-right: 15px;
-  padding-bottom: 15px;
+  margin-right: 1em;
+  padding-bottom: 1em;
 }
 #about_img img {display:inline-block; width: 100%;}
 /*#about_img_text {
@@ -338,7 +329,7 @@ div.img_thumb:hover .img_text {opacity: 1;}
   width: 50%;
   min-width: 325px;
   border-left: 1px solid #BABABA;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 /*** Contact Page ***/
@@ -374,17 +365,15 @@ div.img_thumb:hover .img_text {opacity: 1;}
 /* social media icons */
 #facebook_icon, #flickr_icon, #instagram_icon, #tumblr_icon, #email_icon {display:inline-block; width: 50px; height: 50px;}
 #facebook_icon {background: url(icons/Facebook.svg) no-repeat;}
-
 #flickr_icon {background: url(icons/Flickr.svg) no-repeat;}
-
 #instagram_icon {background: url(icons/Intsagram.svg) no-repeat;}
-
 #tumblr_icon {background: url(icons/Tumblr.svg) no-repeat;}
-
 #email_icon {background: url(icons/Mail.svg) no-repeat;}
 
 
 /*** GENERAL STYLING ***/
+.img_container {display: inline-block; height: 100%;}
+
 .location {
   border-bottom: medium double #BABABA;
   padding-bottom: 5px;
