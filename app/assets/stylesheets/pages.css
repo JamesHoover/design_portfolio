@@ -23,6 +23,7 @@
 **  Remove filter hover effect on photos...more annoying than cool
 **  Home logo is action confusing
 **  Resize portrait style photos, too big for page.
+**  Rename sites -> websites?
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -277,9 +278,9 @@ a.site_img_link:hover img{outline: 1px solid #FF8080;}
 .art_block {width: 100%; display: inline-block; margin-right: 25%;}
 .art_block h4 {width: 75%; padding-top: 5px; padding-bottom: 2em;}
 .art_block img {width: 100%; border: 1px solid #BABABA;}
-a.art_img_link:hover img{ border: 1px solid #FF8080;}
-#art_column_one {float: left; width: 48.5%; min-width: 325px; margin-right: 1em;}
-#art_column_two {float: left; width: 48.5%; min-width: 325px;}
+a.art_img_link:hover img{border: 1px solid #FF8080;}
+#art_column_one {float: left; width: 40%; min-width: 325px; margin-right: 1em;}
+#art_column_two {float: left; width: 40%; min-width: 325px;}
 
 /*** Photography ***/
 .img_container {display: inline-block; height: 100%;}
@@ -366,23 +367,21 @@ div.img_thumb:hover .img_text {opacity: 1;}
 .footer h4 {margin-top: 15px; color: #555555;}
 
 .icon_tray {margin: 0 auto; margin-top: 2em; width: 40%; min-width: 400px; clear: both; border-top: medium double #BABABA;}
-.icon_tray div {transition: opacity .5s ease;}
+.icon_tray div {opacity: .4}
+.icon_tray a {display: inline-block; margin-right: 2%;}
+.icon_tray a:hover div {transition: opacity .3s ease; opacity: 1;}
 
 /* social media icons */
-#facebook_icon {display:inline-block; width: 50px; height: 50px; background: url(icons/Facebook.svg) no-repeat; opacity: .4;}
-#facebook_icon:hover {display:inline-block; width: 50px; height: 50px; background: url(icons/Facebook.svg) no-repeat; opacity: 1;}
+#facebook_icon, #flickr_icon, #instagram_icon, #tumblr_icon, #email_icon {display:inline-block; width: 50px; height: 50px;}
+#facebook_icon {background: url(icons/Facebook.svg) no-repeat;}
 
-#flickr_icon {display:inline-block; width: 50px; height: 50px; background: url(icons/Flickr.svg) no-repeat; opacity: .4;}
-#flickr_icon:hover {display:inline-block; width: 50px; height: 50px; background: url(icons/Flickr.svg) no-repeat; opacity: 1;}
+#flickr_icon {background: url(icons/Flickr.svg) no-repeat;}
 
-#instagram_icon {display:inline-block; width: 50px; height: 50px; background: url(icons/Intsagram.svg) no-repeat; opacity: .4;}
-#instagram_icon:hover {display:inline-block; width: 50px; height: 50px; background: url(icons/Intsagram.svg) no-repeat; opacity: 1;}
+#instagram_icon {background: url(icons/Intsagram.svg) no-repeat;}
 
-#tumblr_icon {display:inline-block; width: 50px; height: 50px; background: url(icons/Tumblr.svg) no-repeat; opacity: .4;}
-#tumblr_icon:hover {display:inline-block; width: 50px; height: 50px; background: url(icons/Tumblr.svg) no-repeat; opacity: 1;}
+#tumblr_icon {background: url(icons/Tumblr.svg) no-repeat;}
 
-#email_icon {margin-left: 35px; display:inline-block; width: 50px; height: 50px; background: url(icons/Mail.svg) no-repeat; opacity: .4;}
-#email_icon:hover {display:inline-block; width: 50px; height: 50px; background: url(icons/Mail.svg) no-repeat; opacity: 1;}
+#email_icon {background: url(icons/Mail.svg) no-repeat;}
 
 
 /*** GENERAL STYLING ***/
@@ -391,6 +390,7 @@ div.img_thumb:hover .img_text {opacity: 1;}
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
+
 .inline_header {margin-bottom: 5px;}
 .paragraph {margin-bottom: 25px; max-width: 650px; min-width: 325px; text-align: justify;}
 .email_big {margin-top: .5em; margin-bottom: 1.5em;}
