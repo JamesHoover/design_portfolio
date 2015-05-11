@@ -145,7 +145,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 /*** Subnav on Work ***/
 .sub_topnav {display: block; position: fixed; width: auto;}
 ul.sub_topnav, ul.sub_topnav_hidden {padding: 1.5em 0 2em 1em;}
-ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; margin-right: 0;}
+ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; margin-right: 0; padding-left: .5em; border-left: 2px solid #FF8080;}
 /* subnav hover only on non work pages */
 .topnav li ul.sub_topnav_hidden {
   display: none;
@@ -369,6 +369,8 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 #instagram_icon {background: url(icons/Intsagram.svg) no-repeat;}
 #tumblr_icon {background: url(icons/Tumblr.svg) no-repeat;}
 #email_icon {background: url(icons/Mail.svg) no-repeat;}
+
+#copy {font-size: .75em; color: black;}
 
 
 /*** GENERAL STYLING ***/
