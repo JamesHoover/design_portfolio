@@ -122,7 +122,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
   left: 0;
   width: 100%;
   height: auto;
-  padding-left: 10%;
+
   background-color: #F7F6F4; /* #EAECEA; */
   border-bottom: 1px solid #BABABA;
   z-index: 1050;
@@ -136,8 +136,8 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
   min-width: 500px;
   padding: 1em 10%;
   margin: 0 auto;
-  border-top: medium double #BABABA;
-  border-bottom: medium double #BABABA;
+  /*border-top: medium double #BABABA;
+  border-bottom: medium double #BABABA;*/
   white-space: nowrap;
 }
 .topnav li {display: inline-block; width: auto; font-size: 1em; margin-right: 10%;}
@@ -392,7 +392,7 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 .indent {margin-left: 15px;}
 
 /* Screen Size Side Padding */
-.container {padding-left: 10%; padding-right: 10%;}
+.container {padding: 0 20% 0 20%;}
 
 .subtext {color: #555555;}
 .uppercase {text-transform: uppercase;}
