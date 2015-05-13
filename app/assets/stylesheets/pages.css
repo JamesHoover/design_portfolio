@@ -63,16 +63,16 @@ a:hover {text-decoration: underline;}
 a:active {}
 
 /* current link in topnav */
-a.active {text-decoration: underline;}
+a.active {text-decoration: none;}
 
 /* old green: #14CC9A; #80FF80;*/
 /* link color - makes hover and active link colored (used in nav)*/
-.link_red:hover {color: #FF8080;}
-.link_red.active {color: #FF8080;}
-.link_green:hover {color: #00C400;}
-.link_green.active {color: #00C400;}
-.link_blue:hover {color: #8080FF;}
-.link_blue.active {color: #8080FF;}
+.link_red:hover {color: #FF8080; text-decoration: none;}
+.link_red.active {color: #FF8080; text-decoration: none;}
+.link_green:hover {color: #00C400; text-decoration: none;}
+.link_green.active {color: #00C400; text-decoration: none;}
+.link_blue:hover {color: #8080FF; text-decoration: none;}
+.link_blue.active {color: #8080FF; text-decoration: none;}
 
 a.inline_link_red {color: #FF8080;}
 a.inline_link_red:hover {color: #FF8080; text-decoration: underline;}
@@ -80,6 +80,9 @@ a.inline_link_red.active {color: #FF8080;}
 a.inline_link_blue {color: #8080FF;}
 a.inline_link_blue:hover {color: #8080FF; text-decoration: underline;}
 a.inline_link_blue.active {color: #8080FF;}
+a.inline_link_green {color: #00C400;}
+a.inline_link_green:hover {color: #00C400; text-decoration: underline;}
+a.inline_link_green.active {color: #00C400;}
 
 /* colored links - gives links on page background and text color with hover change */
 a.red {background-color: #FF8080;}
@@ -116,19 +119,18 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 
 /*** Navigation Bar ***/
 .topnav {
-  display: inline-block;
-  height: auto;
-  background-color: #F7F6F4; /* #EAECEA; */
+  /*
+  background-color: #F7F6F4; #EAECEA;
   z-index: 1050;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
   filter: alpha(opacity=95);
   opacity: .95;
+  */
 }
 .topnav > ul {
   display: inline-block;
-
   width: 400px;
-  padding: 1em 10%;
+  padding: 3em 0 1em 0;
   margin: 0 auto;
   /*border-top: medium double #BABABA;
   border-bottom: medium double #BABABA;*/
@@ -139,7 +141,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 /*** Subnav on Work ***/
 .sub_topnav {display: block; position: absolute; width: auto;}
 ul.sub_topnav, ul.sub_topnav_hidden {padding: .75em 0 2em 1em;}
-ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; border-left: 2px solid #FF8080;}
+ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; margin-bottom: .25em; border-left: 2px solid #BABABA;}
 /* subnav hover only on non work pages */
 .topnav li ul.sub_topnav_hidden {
   display: none;
@@ -148,6 +150,10 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; b
   padding-right: 2em;
 }
 .topnav li:hover ul.sub_topnav_hidden {display: block;}
+
+ul.sub_topnav li:hover, ul.sub_topnav_hidden li:hover {border-left: 2px solid #FF8080; text-decoration: underline;}
+ul.sub_topnav li.active {border-left: 2px solid #FF8080; text-decoration: none;}
+ul.sub_topnav_hidden li.active {border-left: 2px solid #FF8080; text-decoration: none;}
 
 /* topnav spacing on screen resize */ /*
 @media screen and (min-width: 860px) {
@@ -168,22 +174,22 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; b
 .topnav_clear {height: 5em; width: 100%;}
 .nav_spacer {height: 3em; width: 100%; border-bottom: 1px solid #BABABA;}
 
-/*** Logo ***/
-.logo_link {display: inline-block; width: auto;}
+/*** Logo/Site info ***/
+a.logo_link:hover img {opacity: 1;}
+a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
 .logo {
-  display: block;
+  display: inline-block;
   width: auto;
   white-space: nowrap;
   padding-top: .25em;
 }
-.logo_img {float: left; width: 34px; height: 34px; margin-right: .5em;}
 .logo img {opacity: .5;}
-.logo h4 {float: right; vertical-align:bottom; opacity: .5;}
-.logo img, h4 {}
+.logo {line-height: 34px;}
+.logo_img {float: left; width: 34px; height: 34px; margin-right: .5em;}
 
-a.logo_link:hover {text-decoration: none;}
-a.logo_link:hover img {opacity: 1;}
-a.logo_link:hover h4 {opacity: 1;}
+
+
+#site_info {display: inline-block; float: right; text-align: right;}
 
 /* minimize navbar on small screen */
 /*
@@ -239,7 +245,7 @@ a.logo_link:hover h4 {opacity: 1;}
   color: black;
   /* -webkit-filter: grayscale(100%); */
 }
-.home_navicons_content h3 {padding: 3px; text-align: right; font-weight: bold;}
+.home_navicons_content h3 {padding: 3px; font-weight: bold;}
 .navicon_link div:hover{opacity: 1; color: white; /* -webkit-filter: grayscale(0%); */}
 
 #work_bkgrd {background: url(home/laptopLightBW_Copy.jpg) no-repeat; background-size: cover;}
@@ -252,14 +258,11 @@ a.logo_link:hover h4 {opacity: 1;}
 
 /*** Work Pages (Sites, Art, Photography) ***/
 #work_page {}
-#worknav {
-  margin-bottom: 2em;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #BABABA;
-}
+#worknav {margin: 1em 0; padding-bottom: 5px;}
 #worknav ul {display: inline-block; font-size: 1.1em;}
-#worknav li {display: inline-block; margin-right: 25px;}
-.work_location {width: 75%; margin-bottom: 10px; border-bottom: 1px solid #BABABA;}
+#worknav li {display: inline-block; margin-right: 2em;}
+
+.work_location {width: 75%; margin-bottom: .5em; border-bottom: 1px solid #BABABA;}
 
 /*** Sites ***/
 #site_block_container {}
@@ -389,7 +392,7 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 .indent {margin-left: 15px;}
 
 /* Screen Size Side Padding */
-.container {margin: 0 20%; min-width: 750px;}
+.container {margin: 0 20%;}
 
 .subtext {color: #555555;}
 .uppercase {text-transform: uppercase;}
@@ -409,6 +412,7 @@ ul > li.last_element {margin-right: 0;}
 
 /* Positioning/Alignment */
 .float_right {float: right;}
+.float_left {float: left;}
 .bottom {position: absolute; bottom: 10%;}
 .bottom_left {position: absolute; left: 0; bottom: 0;}
 .bottom_right {position: absolute; right: 0; bottom: 0;}

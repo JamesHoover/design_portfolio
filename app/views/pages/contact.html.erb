@@ -3,12 +3,10 @@
   <div class="wrapper">
     <!-- NAVBAR -->
     <nav class="topnav container">
-      <a href="/" class="logo_link">
-        <div class="logo">
-          <img src="/assets/icons/logoCopy.png" class="logo_img">
-          <h4>James Hoover<br><span class="subtext">UX/UI Design</span></h4>
-        </div>
-      </a>
+      <!-- Logo/site info -->
+      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img ">JamesHooverDesign.com</h4></a>
+      <h4 id="site_info" class="subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_blue">jamesfhoover@gmail.com</a></h4><br>
+      <!-- Nav -->
       <ul class="uppercase">
         <li><%= link_to "Home", '/', :class => "black_border" %></li>
         <li><%= link_to "Work\xC2\xA0/", '/work/sites', :class => "link_red red_border" %>
@@ -35,13 +33,12 @@
       </div>
       <div id="contact_img">
         <%= image_tag("photography/tulipsBW.jpg") %>
-        <!--<%= image_tag("http://images.fineartamerica.com/images-medium-large/seattle-skyline-in-black-and-white-twenty-two-north-gallery.jpg") %> -->
       </div>
       <div class="spacer_50"></div>
     </div>
   </div>
   <!-- FOOTER -->
-  <div class="footer push container center_horizontal_text">
+  <div class="footer push center_horizontal_text">
     <h4>Find me on social media.</h4>
     <div class="icon_tray">
       <div class="spacer_10"></div>

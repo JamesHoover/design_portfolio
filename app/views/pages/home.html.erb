@@ -3,23 +3,21 @@
   <div class="wrapper">
     <!-- NAVBAR -->
     <nav class="topnav container">
-      <a href="/" class="logo_link">
-        <div class="logo">
-          <img src="/assets/icons/logoCopy.png" class="logo_img">
-          <h4>James Hoover<br><span class="subtext">UX/UI Design</span></h4>
-        </div>
-      </a>
+      <!-- Logo/site info -->
+      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
+      <h4 id="site_info" class="subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email">jamesfhoover@gmail.com</a></h4><br>
+      <!-- Nav -->
       <ul class="uppercase">
-        <li><%= link_to "Home", '/', :class => "black_border active"%></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', :class => "link_red red_border" %>
+        <li><%= link_to "Home", '/', class: "black_border active", title: "Home" %></li>
+        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border", title: "Work" %>
           <ul class="sub_topnav_hidden">
-            <li class="capitalize"><%= link_to "Websites", '/work/sites', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "Art", '/work/art', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "Photography", '/work/photography', :class => "link_red" %></li>
+            <li class="capitalize"><%= link_to "Websites", '/work/sites', class: "link_red", title: "Websites" %></li><br>
+            <li class="capitalize"><%= link_to "Art", '/work/art', class: "link_red", title: "Art"  %></li><br>
+            <li class="capitalize"><%= link_to "Photography", '/work/photography', class: "link_red", title: "Photography"  %></li>
           </ul>
         </li>
-        <li><%= link_to "About", '/about', :class => "link_green green_border" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
+        <li><%= link_to "About", '/about', class: "link_green green_border", title: "About" %></li>
+        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border", title: "Contact" %></li>
       </ul>
     </nav>
     <!-- SPACERS -->
@@ -33,10 +31,10 @@
           <h4 class="home_subtitle">Designer / Engineer / Artist</h4>
         </div>
 
-        <div id="home_navicons" class="bold">
-          <a class="navicon_link" href="/work/sites"><div id="work_bkgrd" class="home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
-          <a class="navicon_link" href="/about"><div id="about_bkgrd" class="home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
-          <a class="navicon_link" href="/contact"><div id="contact_bkgrd" class="home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
+        <div id="home_navicons">
+          <a class="navicon_link" href="/work/sites" title="Work"><div id="work_bkgrd" class="home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
+          <a class="navicon_link" href="/about" title="About"><div id="about_bkgrd" class="home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
+          <a class="navicon_link" href="/contact" title="Contact"><div id="contact_bkgrd" class="home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
         </div>
       </div>
     </div>
