@@ -3,12 +3,11 @@
   <a name="top"></a>
   <div class="wrapper">
   	<!-- NAVBAR -->
-    <nav class="topnav full_width container">
+    <nav class="topnav container">
       <a href="/" class="logo_link">
         <div class="logo">
           <img src="/assets/icons/logoCopy.png" class="logo_img">
-          <h4>James Hoover</h4>
-          <h4 class="subtext">Design Porfolio</h4>
+          <h4>James Hoover<br><span class="subtext">UX/UI Design</span></h4>
         </div>
       </a>
       <ul class="uppercase">
@@ -23,11 +22,9 @@
         <li><%= link_to "About", '/about', :class => "link_green green_border" %></li>
         <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
       </ul>
-      <div class="nav_spacer"></div>
     </nav>
 		<!-- SPACERS -->
     <div class="topnav_clear"></div>
-    <div class="spacer_50"></div>
     <!-- WORK_PAGE CONTENT - PHOTOGRAPHY -->
     <div class="container" id="work_page">
       <h1 class="location bold">My Work:</h1>
@@ -35,12 +32,13 @@
         <ul class="indent">
         	<li><%= link_to "Websites", '/work/sites', :class => "link_red" %></li>
         	<li><%= link_to "Art", '/work/art', :class => "link_red" %></li>
-          <li><%= link_to "Photography", '/work/photography', :class =>"link_red active" %></li>
+          <li><%= link_to "Photography", '/work/photography', :class => "link_red active" %></li>
         </ul>
       </nav>
       <div class="spacer_25"></div>
       <h2 class="work_location bold uppercase">Photography</h2>
-      <p class="paragraph">I come from a family of photographers. I upgraded my camera this past year and have been learning everything I can about it. Enjoy some of my favorite shots.<br><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p><br>
+      <div class="spacer_25"></div>
+      <!-- <p class="paragraph">I come from a family of photographers. I upgraded my camera this past year and have been learning everything I can about it. Enjoy some of my favorite shots.<br><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p><br> -->
 
       <div class="img_container">
 
@@ -137,6 +135,9 @@
       </div>
     </div>
   </div>
+    <div class="spacer_25"></div>
+  <p class="center_horizontal_text"><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p>
+
   <div class="spacer_50"></div>
   <!-- FOOTER -->
   <div class="footer push center_horizontal_text">
