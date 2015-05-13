@@ -357,7 +357,7 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 .footer, .push {height: 10px;} /* .push must be the same height as .footer */
 .footer h4 {margin-top: 15px; color: #555555;}
 
-.icon_tray {margin: 0 auto; margin-top: 2em; width: 40%; min-width: 400px; clear: both; border-top: medium double #BABABA;}
+.icon_tray {margin: 0 auto; margin-top: 2em; width: 40%; min-width: 400px; clear: both; border-top: 1px solid #BABABA;}
 .icon_tray div {opacity: .4}
 .icon_tray a {display: inline-block; margin-right: 2%;}
 .icon_tray a:hover div {transition: opacity .3s ease; opacity: 1;}
