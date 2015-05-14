@@ -12,9 +12,9 @@
         <li><%= link_to "Home", '/', class: "black_border" %></li>
         <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border active" %>
           <ul class="sub_topnav_hidden">
-            <li class="capitalize active"><%= link_to "Websites", '/work/sites', class: "link_red active" %></li><br>
-            <li class="capitalize"><%= link_to "Art", '/work/art', class: "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "Photography", '/work/photography', class: "link_red" %></li>
+            <a href="/work/sites"><li class="capitalize active">Websites</li></a><br>
+            <a href="/work/art"><li class="capitalize">Art</li></a><br>
+            <a href="/work/photography"><li class="capitalize">Photography</li></a>
           </ul>
         </li>
         <li><%= link_to "About", '/about', class: "link_green green_border" %></li>
@@ -25,7 +25,7 @@
     <div class="topnav_clear"></div>
     <!-- WORK_PAGE CONTENT - SITES -->
     <div class="container" id="work_page">
-      <h1 class="location bold">My Work:</h1>
+      <h1 class="bold">My Work:</h1>
       <nav id="worknav">
         <ul>
         	<li><%= link_to "Websites", '/work/sites', class: "link_red red_border active" %></li>
@@ -35,19 +35,18 @@
       </nav>
       <div class="spacer_25"></div>
       <h2 class="work_location bold uppercase">Websites</h2>
-      <div class="spacer_25"></div>
+      <div class="spacer_10"></div>
 
       <!-- <p class="paragraph">These are websites I designed and/or built. They display my knowledge of design, usability, and front/backend website development.</p> -->
       <div id="site_block_container">
         <div class="site_block">
           <h3 class="site_title bold"><a href="http://www.google.com" title="O&G Magnolia" class="red">O&G MAGNOLIA</a></h3>
           <div class="spacer_10"></div>
-          
-          <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "site_img_link",  title: "O&G Magnolia" %>
           <p class="paragraph">Insurance/liability & asset management experts.
             <br><a href="http://www.google.com/" title="Google" class="inline_link_red">www.google.com</a>
           </p>
-          <div class="spacer_10"></div>
+          <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "site_img_link",  title: "O&G Magnolia" %>
+          <div class="spacer_5"></div>
           <h4>Target Users:</h4><p class="paragraph">Potential/current investors for the company. Those curious about Warren Buffet's and other investing strategies.</p>
           <h4>Site Goal:</h4><p class="paragraph">Inform potential/current investors about company and strategy. Convert users/visitors to sign up/subscribe to the newsletter.</p>
           <h4>My Involvement:</h4><p class="paragraph">Studied targeted userbase. Wireframed/Designed layout&IA for already established content. Frontend implementation using HTML5/CSS3.</p>

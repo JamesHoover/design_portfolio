@@ -12,9 +12,9 @@
         <li><%= link_to "Home", '/', :class => "black_border" %></li>
         <li><%= link_to "Work\xC2\xA0/", '/work/sites', :class => "link_red red_border active" %>
           <ul class="sub_topnav_hidden">
-            <li class="capitalize"><%= link_to "Websites", '/work/sites', :class => "link_red" %></li><br>
-            <li class="capitalize"><%= link_to "Art", '/work/art', :class => "link_red" %></li><br>
-            <li class="capitalize active"><%= link_to "Photography", '/work/photography', :class => "link_red active" %></li>
+            <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
+            <a href="/work/art"><li class="capitalize">Art</li></a><br>
+            <a href="/work/photography"><li class="capitalize active">Photography</li></a>
           </ul>
         </li>
         <li><%= link_to "About", '/about', :class => "link_green green_border" %></li>
@@ -25,7 +25,7 @@
     <div class="topnav_clear"></div>
     <!-- WORK_PAGE CONTENT - PHOTOGRAPHY -->
     <div class="container" id="work_page">
-      <h1 class="location bold">My Work:</h1>
+      <h1 class="bold">My Work:</h1>
       <nav id="worknav">
         <ul>
         	<li><%= link_to "Websites", '/work/sites', :class => "link_red red_border" %></li>

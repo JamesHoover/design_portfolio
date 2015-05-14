@@ -62,18 +62,18 @@ a:active {}
 /* current link in topnav */
 a.active {text-decoration: none;}
 
-/* old green: #14CC9A; #80FF80;*/
+/* old green: #14CC9A; #80FF80; Old Red: #FF8*080;*/
 /* link color - makes hover and active link colored (used in nav)*/
-.link_red:hover {color: #FF8080; text-decoration: none;}
-.link_red.active {color: #FF8080; text-decoration: none;}
+.link_red:hover {color: #CE5043; text-decoration: none;}
+.link_red.active {color: #CE5043; text-decoration: none;}
 .link_green:hover {color: #00C400; text-decoration: none;}
 .link_green.active {color: #00C400; text-decoration: none;}
 .link_blue:hover {color: #8080FF; text-decoration: none;}
 .link_blue.active {color: #8080FF; text-decoration: none;}
 
-a.inline_link_red {color: #FF8080;}
-a.inline_link_red:hover {color: #FF8080; text-decoration: underline;}
-a.inline_link_red.active {color: #FF8080;}
+a.inline_link_red {color: #CE5043;}
+a.inline_link_red:hover {color: #CE5043; text-decoration: underline;}
+a.inline_link_red.active {color: #CE5043;}
 a.inline_link_blue {color: #8080FF;}
 a.inline_link_blue:hover {color: #8080FF; text-decoration: underline;}
 a.inline_link_blue.active {color: #8080FF;}
@@ -82,7 +82,7 @@ a.inline_link_green:hover {color: #00C400; text-decoration: underline;}
 a.inline_link_green.active {color: #00C400;}
 
 /* colored links - gives links on page background and text color with hover change */
-a.red {background-color: #FF8080;}
+a.red {background-color: #CE5043;}
 a.green {background-color: #00C400;}
 a.blue {background-color: #8080FF;} /*rgba(230,230,230,10);*/
 a.red, a.green, a.blue {
@@ -94,15 +94,15 @@ a.red, a.green, a.blue {
   -o-transition: .25s ease;
   transition: .25s ease;
 }
-a.red:hover {background-color: white; color: #FF8080; text-decoration: none;}
+a.red:hover {background-color: white; color: #CE5043; text-decoration: none;}
 a.green:hover {background-color: white; color: #00C400; text-decoration: none;}
 a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 
 /* bottom border on links */
 .black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
 .black_border.active {border-bottom: 3px solid black; text-decoration: none;}
-.red_border:hover {border-bottom: 3px solid #FF8080; text-decoration: none;}
-.red_border.active {border-bottom: 3px solid #FF8080; text-decoration: none;}
+.red_border:hover {border-bottom: 3px solid #CE5043; text-decoration: none;}
+.red_border.active {border-bottom: 3px solid #CE5043; text-decoration: none;}
 .green_border:hover {border-bottom: 3px solid #00C400; text-decoration: none;}
 .green_border.active {border-bottom: 3px solid #00C400; text-decoration: none;}
 .blue_border:hover {border-bottom: 3px solid #8080FF; text-decoration: none;}
@@ -125,20 +125,20 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
   */
 }
 .topnav > ul {
-  display: inline-block;
-  width: 400px;
+  width: auto;
+  min-width: 400px;
   padding: 3em 0 3px 0;
-  margin: 0 auto;
-  /*border-top: medium double #BABABA;*/
   border-bottom: 1px solid #BABABA;
+  /*border-top: medium double #BABABA;*/
   white-space: nowrap;
 }
-.topnav li {display: inline-block; width: auto; font-size: 1em; margin-right: 10%;}
+.topnav li {display: inline-block; font-size: 1em; margin-right: 10%;}
 
 /*** Subnav on Work ***/
 .sub_topnav {display: block; position: absolute; width: auto;}
-ul.sub_topnav, ul.sub_topnav_hidden {padding: .75em 0 2em 1em;}
-ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; border-left: 1px solid #BABABA;}
+ul.sub_topnav, ul.sub_topnav_hidden {padding: .75em 0 1em 1em;}
+ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; width: 7.5em; padding: .1em 3em .1em .5em; border-left: 1px solid #BABABA;}
+
 /* subnav hover only on non work pages */
 .topnav li ul.sub_topnav_hidden {
   display: none;
@@ -148,9 +148,9 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; padding-left: .5em; b
 }
 .topnav li:hover ul.sub_topnav_hidden {display: block;}
 
-ul.sub_topnav li:hover, ul.sub_topnav_hidden li:hover {border-left: 1px solid #FF8080; text-decoration: underline;}
-ul.sub_topnav li.active {border-left: 2px solid #FF8080; text-decoration: none;}
-ul.sub_topnav_hidden li.active {border-left: 1px solid #FF8080; text-decoration: none;}
+ul.sub_topnav_hidden li.active {border-left: 1px solid #CE5043; text-decoration: underline; color: #CE5043; }
+ul.sub_topnav li:hover, ul.sub_topnav_hidden li:hover {border-left: 1px solid #CE5043; background-color: #CE5043; color: white; font-weight: bold;}
+ul.sub_topnav li.active {border-left: 2px solid #CE5043; text-decoration: none;}
 
 /* topnav spacing on screen resize */ /*
 @media screen and (min-width: 860px) {
@@ -200,7 +200,6 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
   .logo_link {display: none;}
   .logo {display: none;}
   .topnav {padding-left: 0;}
-  .topnav > ul {min-width: 100%; padding: 1em; margin-top: 1em;}
   .topnav li {margin-right: 10%;}
 }
 
@@ -234,10 +233,10 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
   margin-right: 60px;
   margin-top: 10px;
 
-  -webkit-transition: opacity 1s ease, color 1s ease;
-  -moz-transition: opacity 1s ease, color 1s ease;
-  -o-transition: opacity 1s ease, color 1s ease;
-  transition: opacity 1s ease, color 1s ease; /* , -webkit-filter 1s ease */
+  -webkit-transition: opacity .5s ease, color .5s ease;
+  -moz-transition: opacity .5s ease, color .5s ease;
+  -o-transition: opacity .5s ease, color .5s ease;
+  transition: opacity .5s ease, color .5s ease; /* , -webkit-filter 1s ease */
   opacity: .65;
   color: black;
   /* -webkit-filter: grayscale(100%); */
@@ -249,22 +248,22 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
 #about_bkgrd {background: url(james_selfieBW.jpg) no-repeat; background-size: cover;}
 #contact_bkgrd {background: url(home/laptopTableBW_Copy.jpg) no-repeat; background-size: cover;}
 
-#work_bkgrd h3 {width: 100%; background-color:rgba(255,128,128,.5);}
+#work_bkgrd h3 {width: 100%; background-color:rgba(242,121,121,.5);}
 #about_bkgrd h3 {width: 100%; background-color:rgba(128,255,128,.5);}
 #contact_bkgrd h3 {width: 100%; background-color:rgba(128,128,255,.5);}
 
 /*** Work Pages (Sites, Art, Photography) ***/
 #work_page {}
 #worknav {margin: 1em 0; padding-bottom: 5px;}
-#worknav ul {display: inline-block; font-size: 1.1em;}
+#worknav ul {font-size: 1.1em; padding-bottom: 3px; border-bottom: 1px solid #BABABA;}
 #worknav li {display: inline-block; margin-right: 2em;}
 
-.work_location {width: 75%; margin-bottom: .5em; border-bottom: 1px solid #BABABA;}
+.work_location {width: 100%; margin-bottom: .5em; border-bottom: 1px solid #BABABA;}
 
 /*** Sites ***/
 #site_block_container {}
-.site_block {border-left: 1px solid #BABABA; padding-left: 15px; padding-top: 4px;}
-.site_block h3 {width: 50%; border-bottom: 1px solid #BABABA;}
+.site_block {margin-top: 1em;}
+
 .site_block h4 {font-weight: bold;}
 .site_block img {width: 50%; min-width: 300px; position: relative;}
 a.site_img_link:hover img{outline: 1px solid #FF8080;}
@@ -374,13 +373,12 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 .img_container {display: inline-block; height: 100%;}
 
 .location {
-  border-bottom: 1px solid #BABABA;
   padding-bottom: .1em;
   margin-bottom: 5px;
 }
-
+.border_bottom {border-bottom: 1px solid #BABABA;}
 .inline_header {margin-bottom: 5px;}
-.paragraph {margin-bottom: 25px; max-width: 650px; min-width: 325px; text-align: justify;}
+.paragraph {margin-bottom: 1.5em; max-width: 650px; min-width: 325px; text-align: justify;}
 .email_big {margin-top: .5em; margin-bottom: 1.5em;}
 .fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
 #jump_top {padding: .5em; border: 1px solid black;}
@@ -400,6 +398,7 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 
 ul > li.last_element {margin-right: 0;}
 
+.spacer_5 {height: .5em; width: 100%;}
 .spacer_10 {height: 1em; width: 100%;}
 .spacer_25 {height: 2em; width: 100%;}
 .spacer_50 {height: 4em; width: 100%;}
