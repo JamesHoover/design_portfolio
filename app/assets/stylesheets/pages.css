@@ -20,6 +20,7 @@
 **  Some sort of 'pop out' on the photos page
 **  Footer on Contact is not default visible
 **  Update rails => 'class:' on navs
+**  The subnav still looks bad
 */
 
 /*** TOP RIGHT BOTTOM LEFT ***/
@@ -218,7 +219,7 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
 #home_page_content h4 {font-size: 25px; color: #999999; padding-left: 20%;}
 .home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
 */
-#home_page_content {margin-top: 2em; margin-bottom: 3em;}
+#home_page_content {margin-bottom: 3em;}
 #home_page_content h2 {color: #999999; padding-top: 10px;}
 #home_page_content h4 {color: #999999; padding-top: 10px; padding-left: 3px;}
 
