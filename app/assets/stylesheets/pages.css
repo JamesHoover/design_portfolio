@@ -150,7 +150,7 @@ ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; width: 7.5em; padding
 }
 .topnav li:hover ul.sub_topnav_hidden {display: block;}
 
-ul.sub_topnav_hidden li.active {border-left: 1px solid #FF0000; text-decoration: underline; color: #FF0000; }
+ul.sub_topnav_hidden li.active {border-left: 1px solid #FF0000; text-decoration: underline; color: #FF0000;}
 ul.sub_topnav li:hover, ul.sub_topnav_hidden li:hover {border-left: 1px solid #FF0000; background-color: #FF0000; color: white; font-weight: bold;}
 ul.sub_topnav li.active {border-left: 2px solid #FF0000; text-decoration: none;}
 
