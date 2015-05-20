@@ -8,7 +8,7 @@ DesignPortfolio::Application.routes.draw do
   root 'pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get '/work' => 'pages#work'
+  get '/work' => 'pages#sites'
   get '/about' => 'pages#about'
   get '/contact' => 'pages#contact'
   get '/work/sites' => 'pages#sites'
