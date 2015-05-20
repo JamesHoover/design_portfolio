@@ -101,14 +101,14 @@ a.green:hover {background-color: white; color: #00C400; text-decoration: none;}
 a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 
 /* bottom border on links */
-.black_border:hover {border-bottom: 3px solid black; text-decoration: none;}
-.black_border.active {border-bottom: 3px solid black; text-decoration: none;}
-.red_border:hover {border-bottom: 3px solid #FF0000; text-decoration: none;}
-.red_border.active {border-bottom: 3px solid #FF0000; text-decoration: none;}
-.green_border:hover {border-bottom: 3px solid #00C400; text-decoration: none;}
-.green_border.active {border-bottom: 3px solid #00C400; text-decoration: none;}
-.blue_border:hover {border-bottom: 3px solid #8080FF; text-decoration: none;}
-.blue_border.active {border-bottom: 3px solid #8080FF; text-decoration: none;}
+.black_border:hover {border-bottom: 3px solid black; text-decoration: none; font-weight: bold;}
+.black_border.active {border-bottom: 3px solid black; text-decoration: none; font-weight: bold;}
+.red_border:hover {border-bottom: 3px solid #FF0000; text-decoration: none; font-weight: bold;}
+.red_border.active {border-bottom: 3px solid #FF0000; text-decoration: none; font-weight: bold;}
+.green_border:hover {border-bottom: 3px solid #00C400; text-decoration: none; font-weight: bold;}
+.green_border.active {border-bottom: 3px solid #00C400; text-decoration: none; font-weight: bold;}
+.blue_border:hover {border-bottom: 3px solid #8080FF; text-decoration: none; font-weight: bold;}
+.blue_border.active {border-bottom: 3px solid #8080FF; text-decoration: none; font-weight: bold;}
 .black_border, .red_border, .green_border, .blue_border {
   -webkit-transition: .25s ease;
   -moz-transition: .25s ease;
@@ -129,7 +129,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 .topnav > ul {
   width: auto;
   min-width: 400px;
-  padding: 3em 0 3px 0;
+  padding: 3em 0px 3px 0px;
   border-bottom: 1px solid #BABABA;
   /*border-top: medium double #BABABA;*/
   white-space: nowrap;
@@ -138,7 +138,7 @@ a.blue:hover {background-color: white; color: #8080FF; text-decoration: none;}
 
 /*** Subnav on Work ***/
 .sub_topnav {display: block; position: absolute; width: auto;}
-ul.sub_topnav, ul.sub_topnav_hidden {padding: .75em 0 1em 1em;}
+ul.sub_topnav, ul.sub_topnav_hidden {padding: .75em 0px 1em 1em;}
 ul.sub_topnav li, ul.sub_topnav_hidden li {font-size: 1em; width: 7.5em; padding: .1em 3em .1em .5em; border-left: 1px solid #BABABA;}
 
 /* subnav hover only on non work pages */
@@ -193,7 +193,7 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
 /* minimize navbar on small screen */
 /*
 @media screen and (min-width: 1000px) {
-  .container {padding: 0 20%; overflow: hidden;}
+  .container {padding: 0px 20%; overflow: hidden;}
 }
 */
 @media screen and (max-width: 999px) {
@@ -218,7 +218,7 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
 #home_page_content h1 {font-size: 90px; text-shadow: 4px 4px 0px #D9D9D9}
 #home_page_content h2 {font-size: 45px; color: #999999; padding-left: 10%;}
 #home_page_content h4 {font-size: 25px; color: #999999; padding-left: 20%;}
-.home_subtitle {text-shadow: 1px 1px 0 #FFFFFF;}
+.home_subtitle {text-shadow: 1px 1px 0px #FFFFFF;}
 */
 #home_page_content {margin-bottom: 3em;}
 #home_page_content h2 {color: #999999; padding-top: 10px;}
@@ -235,16 +235,17 @@ a.logo_link:hover h4 {opacity: 1; text-decoration: underline;}
   margin-right: 60px;
   margin-top: 10px;
 
-  -webkit-transition: opacity .5s ease, color .5s ease;
-  -moz-transition: opacity .5s ease, color .5s ease;
-  -o-transition: opacity .5s ease, color .5s ease;
-  transition: opacity .5s ease, color .5s ease; /* , -webkit-filter 1s ease */
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; /* , -webkit-filter 1s ease */
   opacity: .65;
   color: black;
   /* -webkit-filter: grayscale(100%); */
 }
-.home_navicons_content h3 {padding: 3px; font-weight: bold;}
+.home_navicons_content h3 {padding: 3px;}
 .navicon_link div:hover{opacity: 1; color: white; /* -webkit-filter: grayscale(0%); */}
+.navicon_link div:hover h3 {text-shadow: 1px 1px 1px black; font-weight: bold;}
 
 #work_bkgrd {background: url(home/laptopLightBW_Copy.jpg) no-repeat; background-size: cover;}
 #about_bkgrd {background: url(james_selfieBW.jpg) no-repeat; background-size: cover;}
@@ -351,11 +352,11 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 
 /*** Sticky Footer ***/
 /* wraps inside entire body */
-.wrapper {min-height: 95%; margin: 0 auto -10px;}
+.wrapper {min-height: 95%; margin: 0px auto -10px;}
 .footer, .push {height: 10px;} /* .push must be the same height as .footer */
 .footer h4 {margin-top: 15px; color: #555555;}
 
-.icon_tray {margin: 0 auto; margin-top: 2em; width: 40%; min-width: 400px; clear: both; border-top: 1px solid #BABABA;}
+.icon_tray {margin: 0px auto; margin-top: 2em; width: 40%; min-width: 400px; clear: both; border-top: 1px solid #BABABA;}
 .icon_tray div {opacity: .4}
 .icon_tray a {display: inline-block; margin-right: 2%;}
 .icon_tray a:hover div {transition: opacity .3s ease; opacity: 1;}
@@ -383,14 +384,14 @@ div.photo_thumb:hover .photo_text {opacity: 1;}
 .inline_header {margin-bottom: 5px;}
 .paragraph {margin-bottom: 1.5em; max-width: 650px; min-width: 325px; text-align: justify;}
 .email_big {margin-top: .5em; margin-bottom: 1.5em;}
-.fancy_break {margin: 0 auto; width: 100%; border-top: medium double #BABABA;}
+.fancy_break {margin: 0px auto; width: 100%; border-top: medium double #BABABA;}
 #jump_top {padding: .5em; border: 1px solid black;}
 
 /* Indent */
 .indent {margin-left: 15px;}
 
 /* Screen Size Side Padding */
-.container {margin: 0 20%;}
+.container {margin: 0px 20%;}
 
 .subtext {color: #555555;}
 .uppercase {text-transform: uppercase;}
@@ -417,7 +418,7 @@ ul > li.last_element {margin-right: 0;}
 .bottom_right {position: absolute; right: 0; bottom: 0;}
 .justify {text-align: justify;}
 .center_horizontal_text {text-align: center;}
-.center_horizontal_block {margin: 0 auto;}
+.center_horizontal_block {margin: 0px auto;}
 .center_vertical {
   position: absolute;
   top: 25%;
