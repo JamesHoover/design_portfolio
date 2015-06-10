@@ -5,30 +5,30 @@
     <nav class="topnav container">
       <!-- Logo/site info -->
       <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 id="site_info" class="subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_green">jamesfhoover@gmail.com</a></h4><br>
+      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_green">jamesfhoover@gmail.com</a></h4><br>
       <!-- Nav -->
       <ul class="uppercase">
-        <li><%= link_to "Home", '/', :class => "black_border" %></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', :class => "link_red red_border" %>
+        <li><%= link_to "Home", '/', class: "link_black black_border" %></li>
+        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border" %>
           <ul class="sub_topnav_hidden">
             <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
             <a href="/work/art"><li class="capitalize">Art</li></a><br>
             <a href="/work/photography"><li class="capitalize">Photography</li></a>
           </ul>
         </li>
-        <li><%= link_to "About", '/about', :class => "link_green green_border active" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', :class => "link_blue blue_border" %></li>
+        <li><%= link_to "About", '/about', class: "link_green green_border active" %></li>
+        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border" %></li>
       </ul>
     </nav>
     <!-- SPACERS -->
     <div class="topnav_clear"></div>
     <!-- ABOUT_PAGE CONTENT -->
-    <div class="container" id="about_page">
+    <div class="container about_page">
     	<h1 class="location bold border_bottom">About Me:</h1>
-      <div id="about_img">
+      <div class="about_img">
         <%= image_tag("james_front_copy.jpg") %>
       </div>
-      <div id="about_p">
+      <div class="about_p">
         <h3 class="inline_header bold">My name is James Hoover</h3>
         <p class="paragraph">I am a Seattle native. I achieved a BS in computer science from Gonzaga University. Been a professional software developer for three years. Came across many programs/apps and projects that did not have good experience. Started programming with user in mind. Enjoyed it more than backend programming with no user/experience interaction. Uses more of both sides of my brain half (artistic/creative/subjective) rather than soley (analytical/logical/strategic). The past year+ I read/studied/practiced UX. I am self taught in the field of UX design. Have much more i want to learn. Believe in excelent usability but you don't have to sacrifice all design/beautification elements to acheive that, in fact, aesthetics contribute to the overall positive experience.
         </p>
@@ -54,12 +54,12 @@
   <div class="footer push center_horizontal_text">
     <div class="icon_tray center_horizontal_text">
       <div class="spacer_10"></div>
-      <a href="https://github.com/JamesHoover" title="GitHub"><div id="github_icon"></div><br>Github</a>
-      <a href="http://www.facebook.com/" title="Facebook"><div id="facebook_icon"></div><br>Facebook</a>
-      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div id="flickr_icon"></div><br>Flickr</a>
-      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div id="instagram_icon"></div><br>Instagram</a>
-      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div id="email_icon"></div><br>Email</a>
+      <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
+      <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>
+      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr_icon"></div><br>Flickr</a>
+      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram_icon"></div><br>Instagram</a>
+      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
     </div>
-    <h6 id="copy">&copy;2015 - James Hoover</h6>
+    <h6 class="copy">&copy;2015 - James Hoover</h6>
   </div>
 </body>

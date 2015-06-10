@@ -5,10 +5,10 @@
     <nav class="topnav container">
       <!-- Logo/site info -->
       <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 id="site_info" class="subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email">jamesfhoover@gmail.com</a></h4><br>
+      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email">jamesfhoover@gmail.com</a></h4><br>
       <!-- Nav -->
       <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "black_border active" %></li>
+        <li><%= link_to "Home", '/', class: "link_black black_border active" %></li>
         <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border" %>
           <ul class="sub_topnav_hidden">
             <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
@@ -24,17 +24,17 @@
     <div class="topnav_clear"></div>
     <!-- HOME_PAGE CONTENT -->
     <div class="container">
-      <div id="home_page">
-        <div id="home_page_content">
+      <div class="home_page">
+        <div class="home_page_content">
           <h1 class="uppercase">James Hoover</h1>
           <h2 class="home_subtitle">UX/UI Design Porfolio</h2>
           <h4 class="home_subtitle">Designer / Engineer / Artist</h4>
         </div>
 
-        <div id="home_navicons">
-          <a class="navicon_link" href="/work/sites" title="Work"><div id="work_bkgrd" class="home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
-          <a class="navicon_link" href="/about" title="About"><div id="about_bkgrd" class="home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
-          <a class="navicon_link" href="/contact" title="Contact"><div id="contact_bkgrd" class="home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
+        <div class="home_navicons">
+          <a class="navicon_link" href="/work/sites" title="Work"><div class="work_bkgrd home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
+          <a class="navicon_link" href="/about" title="About"><div class="about_bkgrd home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
+          <a class="navicon_link" href="/contact" title="Contact"><div class="contact_bkgrd home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
         </div>
       </div>
     </div>
@@ -43,6 +43,6 @@
   <!-- FOOTER -->
   <div class="spacer_25"></div>
   <div class="footer push">
-    <h6 id="copy">&copy;2015 - James Hoover</h6>
+    <h6 class="copy">&copy;2015 - James Hoover</h6>
   </div>
 </body>

@@ -5,11 +5,11 @@
   	<!-- NAVBAR -->
     <nav class="topnav container">
       <!-- Logo/site info -->
-      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 id="site_info" class="subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_red">jamesfhoover@gmail.com</a></h4><br>
+      <a href="/" title="Home" class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
+      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_red">jamesfhoover@gmail.com</a></h4><br>
       <!-- Nav -->
       <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "black_border" %></li>
+        <li><%= link_to "Home", '/', class: "link_black black_border" %></li>
         <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border active" %>
           <ul class="sub_topnav_hidden">
             <a href="/work/sites"><li class="capitalize active">Websites</li></a><br>
@@ -24,9 +24,9 @@
     <!-- SPACERS -->
     <div class="topnav_clear"></div>
     <!-- WORK_PAGE CONTENT - SITES -->
-    <div class="container" id="work_page">
+    <div class="container work_page">
       <h1 class="bold">My Work:</h1>
-      <nav id="worknav">
+      <nav class="worknav">
         <ul>
         	<li><%= link_to "Websites", '/work/sites', class: "link_red red_border active" %></li>
         	<li><%= link_to "Art", '/work/art', class: "link_red red_border" %></li>
@@ -39,7 +39,7 @@
       <!-- <p class="paragraph">These are websites I designed and/or built. They display my knowledge of design, usability, and front/backend website development.</p> -->
       <p class="paragraph">I design and build websites! Check out some of my recent projects. <a href="/contact" title="Contact Me" class= "inline_link_red"> Contact me</a> for time/pricing.</p>
       <div class="spacer_25"></div>
-      <div id="site_block_container">
+      <div class="site_block_container">
         <div class="site_block">
           <h3 class="site_title bold"><a href="http://www.google.com" title="O&G Magnolia" class="red">O&G MAGNOLIA</a></h3>
           <div class="spacer_10"></div>
@@ -93,16 +93,16 @@
   <div class="spacer_50"></div>
   <!-- FOOTER -->
   <div class="footer push center_horizontal_text">
-    <h4><a href="#top" title="Top" id="jump_top">Jump to top</a></h4>
+    <h4><a href="#top" title="Top" class="jump_top">Jump to top</a></h4>
     <div class="spacer_50"></div>
     <div class="icon_tray">
       <div class="spacer_10"></div>
-      <a href="https://github.com/JamesHoover" title="GitHub"><div id="github_icon"></div><br>Github</a>
-      <a href="http://www.facebook.com/" title="Facebook"><div id="facebook_icon"></div><br>Facebook</a>
-      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div id="flickr_icon"></div><br>Flickr</a>
-      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div id="instagram_icon"></div><br>Instagram</a>
-      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div id="email_icon"></div><br>Email</a>
+      <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
+      <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>
+      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr_icon"></div><br>Flickr</a>
+      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram_icon"></div><br>Instagram</a>
+      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
     </div>
-  	<h6 id="copy">&copy;2015 - James Hoover</h6>
+  	<h6 class="copy">&copy;2015 - James Hoover</h6>
   </div>
 </body>
