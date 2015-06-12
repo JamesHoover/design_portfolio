@@ -2,98 +2,113 @@
 <body>
   <a name="top"></a>
   <div class="wrapper">
-  	<!-- NAVBAR -->
-    <nav class="topnav container">
+    <!-- HEADER -->
+    <header class="top-nav">
       <!-- Logo/site info -->
-      <a href="/" title="Home" class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_red">jamesfhoover@gmail.com</a></h4><br>
-      <!-- Nav -->
-      <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "link_black black_border" %></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border active" %>
-          <ul class="sub_topnav_hidden">
-            <a href="/work/sites"><li class="capitalize active">Websites</li></a><br>
-            <a href="/work/art"><li class="capitalize">Art</li></a><br>
-            <a href="/work/photography"><li class="capitalize">Photography</li></a>
-          </ul>
-        </li>
-        <li><%= link_to "About", '/about', class: "link_green green_border" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border" %></li>
-      </ul>
-    </nav>
-    <!-- SPACERS -->
-    <div class="topnav_clear"></div>
-    <!-- WORK_PAGE CONTENT - SITES -->
-    <div class="container work_page">
-      <h1 class="bold">My Work:</h1>
-      <nav class="worknav">
-        <ul>
-        	<li><%= link_to "Websites", '/work/sites', class: "link_red red_border active" %></li>
-        	<li><%= link_to "Art", '/work/art', class: "link_red red_border" %></li>
-          <li><%= link_to "Photography", '/work/photography', class: "link_red red_border" %></li>
+      <section class="site-info row">
+        <article class="logo pull first">
+          <a href="/" title="Home" class="logo_link">
+            <h4 class="logo">
+              <img src="/assets/icons/logoCopy.png" class="logo_img">
+              JamesHooverDesign.com
+            </h4>
+          </a>
+        </article>
+        <article class="contact-info push">
+          <h4>James Hoover</h4>
+          <h4>Web Design Portfolio<br></h4>
+          <h4>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
+          </h4>
+        </article>
+      </section>
+      <!-- Nav Links -->
+      <nav class="site-nav row">
+        <ul class="half-width first">
+          <li><%= link_to "Home", '/', class: "nav-black" %></li>
+          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red current" %>
+            <ul class="sub-nav">
+              <a href="/work/sites"><li class="capitalize">Projects</li></a>
+              <a href="/work/art"><li class="capitalize">Art</li></a>
+              <a href="/work/photography"><li class="capitalize">Photography</li></a>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green" %></li>
+          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
       </nav>
-      <div class="spacer_25"></div>
-      <h2 class="work_location bold uppercase">Websites</h2>
-
-      <!-- <p class="paragraph">These are websites I designed and/or built. They display my knowledge of design, usability, and front/backend website development.</p> -->
-      <p class="paragraph">I design and build websites! Check out some of my recent projects. <a href="/contact" title="Contact Me" class= "inline_link_red"> Contact me</a> for time/pricing.</p>
-      <div class="spacer_25"></div>
-      <div class="site_block_container">
-        <div class="site_block">
-          <h3 class="site_title bold"><a href="http://www.google.com" title="O&G Magnolia" class="red">O&G MAGNOLIA</a></h3>
-          <div class="spacer_10"></div>
-          <p class="paragraph">Insurance/liability & asset management experts.
-            <br><a href="http://www.google.com/" title="Google" class="inline_link_red">www.google.com</a>
-          </p>
-          <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "site_img_link",  title: "O&G Magnolia" %>
-          <div class="spacer_5"></div>
-          <h4>Target Users:</h4><p class="paragraph">Potential/current investors for the company. Those curious about Warren Buffet's and other investing strategies.</p>
-          <h4>Site Goal:</h4><p class="paragraph">Inform potential/current investors about company and strategy. Convert users/visitors to sign up/subscribe to the newsletter.</p>
-          <h4>My Involvement:</h4><p class="paragraph">Studied targeted userbase. Wireframed/Designed layout&IA for already established content. Frontend implementation using HTML5/CSS3.</p>
-        </div>
-
-        <div class="spacer_50"></div>
-
-        <div class="site_block">
-          <h3 class="site_title bold"><a href="http://www.awakewomen.net/" title="AWAKE Women" class="red">AWAKE Women</a></h3>
-          <div class="spacer_10"></div>
-          <p class="paragraph">Alliance of Women Achieving Knowledge and Excellence
-            <br><a href="http://www.awakewomen.net/" title="AWAKE Women" class="inline_link_red">www.awakewomen.net</a>
-          </p>
-          <%= link_to image_tag("sites/Purple-Space.jpg"), image_path("sites/Purple-Space.jpg"), class: "site_img_link",  title: "AWAKE Women" %>
-          <div class="spacer_25"></div>
-          <h4>Target Users:</h4><p class="paragraph">Professional women. Non-profit for connecting professional women. Women who are a part of the organization and want to find details of upcoming events. Opportunities to help. Women who want to find out more about the organization and become members.</p>
-          <h4>Site Purpose/Goal:</h4><p class="paragraph">Inform users about non-profit. Show upcoming and past events. Get people to contribute organization, funding, events, work. Get people to sign up as members.</p>
-          <h4>My Involvement:</h4><p class="paragraph">Studied/questioned users. review/investigate already live website. drafted more sensible IA for user goals/needs member and non member. Frontend implementation through WordPress. Make page communicate goal/purpose more clearly. Fit target audience more appropriately. Testing?</p>
-        </div>
-
-        <div class="spacer_50"></div>
-
-        <div class="site_block">
-          <h3 class="site_title bold"><a href="http://www.youtube.com/" title="YouTube" class="red">YouTube</a></h3>
-          <div class="spacer_10"></div>
-          <p class="paragraph">Hosts user-generated videos. Includes network and professional content.
-            <br><a href="http://www.youtube.com/" title="YouTube" class="inline_link_red">www.youtube.com</a>
-          </p>
-          <%= link_to image_tag("sites/youtube_home.png"), image_path("sites/youtube_home.png"), class: "site_img_link",  title: "YouTube" %>
-          <div class="spacer_25"></div>
-          <h4>Target Users:</h4><p class="paragraph">People who want to share and view content.</p>
-          <h4>Site Purpose/Goal:</h4><p class="paragraph">Allows users to upload, view, and share videos, and make use of Adobe Flash Video and HTML5 technology to display a wide variety of user-generated and corporate media video.</p>
-          <h4>My Involvement:</h4><p class="paragraph">Built the whole damn thing.</p>
-        </div>
-
-        <div class="spacer_50"></div>
-
-        <h4 class="center_horizontal_text bold">Check out my <a href="https://github.com/JamesHoover" title="GitHub" class="red">GitHub</a> for more work.</h4>
-
+    </header><!-- END HEADER -->
+    <!-- WORK-NAV -->
+    <nav class="work-nav row">
+      <h1 class="page-title">My Work:</h1>
+        <ul>
+          <li><%= link_to "Projects", '/work/sites', class: "link_red red_border active " %></li>
+          <li><%= link_to "Art", '/work/art', class: "link_red red_border" %></li>
+          <li><%= link_to "Photography", '/work/photography', class: "link_red red_border" %></li>
+        </ul>
+    </nav>
+    <!-- WORK-INFO -->
+    <section class="work-info row">
+      <h2 class="work-title">Projects</h2>
+      <p class="work-desc">I design and build websites! Check out some of my recent projects. <a href="/contact" title="Contact Me" class= "red underlined-red"> Contact me</a> for availabilty/time/pricing.</p>
+    </section>
+    <!-- PROJECT-BLOCK -->
+    <section class="project-block row">
+      <article class="project-title">
+        <h3><a href="http://www.google.com" title="O&G Magnolia" class="prominent-red">O&G MAGNOLIA</a></h3>
+        <p class="paragraph">Insurance/liability & asset management experts.</p>
+        <a href="http://www.google.com/" title="Google" class="red underline-red">www.google.com</a>  
+      </article>
+      <div class="project-img two-thirds first">
+        <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "project_img_link",  title: "O&G Magnolia" %>
       </div>
-    </div>
+      <article class="project-info one-third">
+        <h4>Target Users:</h4><p class="paragraph">Potential/current investors for the company. Those curious about Warren Buffet's and other investing strategies.</p>
+        <h4>Site Goal:</h4><p class="paragraph">Inform potential/current investors about company and strategy. Convert users/visitors to sign up/subscribe to the newsletter.</p>
+        <h4>My Involvement:</h4><p class="paragraph">Studied targeted userbase. Wireframed/Designed layout&IA for already established content. Frontend implementation using HTML5/CSS3.</p>
+      </article>
+    </section>
+    <!-- PROJECT-BLOCK -->
+    <section class="project-block row">
+      <article class="project-title">
+        <h3 class="site_title bold"><a href="http://www.awakewomen.net/" title="AWAKE Women" class="red underline-red">AWAKE Women</a></h3>
+        <p class="paragraph">Alliance of Women Achieving Knowledge and Excellence</p>
+        <a href="http://www.awakewomen.net/" title="AWAKE Women" class="underline-red">www.awakewomen.net</a>
+      </article>
+      <div class="project-img two-thirds first">
+      <%= link_to image_tag("sites/Purple-Space.jpg"), image_path("sites/Purple-Space.jpg"), class: "site_img_link",  title: "AWAKE Women" %>
+      </div>
+      <article class="project-info one-third">
+        <h4>Target Users:</h4><p class="paragraph">Professional women. Non-profit for connecting professional women. Women who are a part of the organization and want to find details of upcoming events. Opportunities to help. Women who want to find out more about the organization and become members.</p>
+        <h4>Site Purpose/Goal:</h4><p class="paragraph">Inform users about non-profit. Show upcoming and past events. Get people to contribute organization, funding, events, work. Get people to sign up as members.</p>
+        <h4>My Involvement:</h4><p class="paragraph">Studied/questioned users. review/investigate already live website. drafted more sensible IA for user goals/needs member and non member. Frontend implementation through WordPress. Make page communicate goal/purpose more clearly. Fit target audience more appropriately. Testing?</p>
+      </article>
+    </section>
+    <!-- PROJECT-BLOCK -->
+    <section class="project-block row">
+      <article class="project-title">
+        <h3><a href="http://www.youtube.com/" title="YouTube" class="red">YouTube</a></h3>
+        <p class="paragraph">Hosts user-generated videos. Includes network and professional content.</p>
+        <a href="http://www.youtube.com/" title="YouTube" class="underline-red">www.youtube.com</a>
+      </article>
+      <div class="project-img two-thirds first">
+        <%= link_to image_tag("sites/youtube_home.png"), image_path("sites/youtube_home.png"), class: "site_img_link",  title: "YouTube" %>
+      </div>
+      <article class="project-info one-third">
+        <h4>Target Users:</h4><p class="paragraph">People who want to share and view content.</p>
+        <h4>Site Purpose/Goal:</h4><p class="paragraph">Allows users to upload, view, and share videos, and make use of Adobe Flash Video and HTML5 technology to display a wide variety of user-generated and corporate media video.</p>
+        <h4>My Involvement:</h4><p class="paragraph">Built the whole damn thing.</p>
+      </article>
+    </section>
+    <aside class="checkout row">
+      <h4 class="align-center">Check out my <a href="https://github.com/JamesHoover" title="GitHub" class="red">GitHub</a> for more work.</h4>
+    </aside>
   </div>
-  <div class="spacer_50"></div>
   <!-- FOOTER -->
-  <div class="footer push center_horizontal_text">
-    <h4><a href="#top" title="Top" class="jump_top">Jump to top</a></h4>
+  <footer class="row footer foot-push">
+    <section class="jump_top align-center">
+      <h4><a href="#top" title="Top">Jump to top</a></h4>
+    </section>
     <div class="spacer_50"></div>
     <div class="icon_tray">
       <div class="spacer_10"></div>
@@ -104,5 +119,5 @@
       <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
     </div>
   	<h6 class="copy">&copy;2015 - James Hoover</h6>
-  </div>
+  </footer>
 </body>

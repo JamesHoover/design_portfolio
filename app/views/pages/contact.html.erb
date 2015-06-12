@@ -1,25 +1,42 @@
 <!-- BODY -->
 <body>
   <div class="wrapper">
-    <!-- NAVBAR -->
-    <nav class="topnav container">
+    <!-- HEADER -->
+    <header class="top-nav">
       <!-- Logo/site info -->
-      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img ">JamesHooverDesign.com</h4></a>
-      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_blue">jamesfhoover@gmail.com</a></h4><br>
-      <!-- Nav -->
-      <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "link_black black_border" %></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border" %>
-          <ul class="sub_topnav_hidden">
-            <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
-            <a href="/work/art"><li class="capitalize">Art</li></a><br>
-            <a href="/work/photography"><li class="capitalize">Photography</li></a>
-          </ul>
-        </li>
-        <li><%= link_to "About", '/about', class: "link_green green_border" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border active"  %></li>
-      </ul>
-    </nav>
+      <section class="site-info row">
+        <article class="logo pull first">
+          <a href="/" title="Home" class="logo_link">
+            <h4 class="logo">
+              <img src="/assets/icons/logoCopy.png" class="logo_img">
+              JamesHooverDesign.com
+            </h4>
+          </a>
+        </article>
+        <article class="contact-info push">
+          <h4>James Hoover</h4>
+          <h4>Web Design Portfolio<br></h4>
+          <h4>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
+          </h4>
+        </article>
+      </section>
+      <!-- Nav Links -->
+      <nav class="site-nav row">
+        <ul class="half-width first">
+          <li><%= link_to "Home", '/', class: "nav-black" %></li>
+          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
+            <ul class="sub-nav">
+              <a href="/work/sites"><li class="capitalize">Projects</li></a>
+              <a href="/work/art"><li class="capitalize">Art</li></a>
+              <a href="/work/photography"><li class="capitalize">Photography</li></a>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green" %></li>
+          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue current" %></li>
+        </ul>
+      </nav>
+    </header><!-- END HEADER -->
     <!-- SPACERS -->
     <div class="topnav_clear"></div>
     <!-- CONTACT_PAGE CONTENT -->
@@ -27,7 +44,7 @@
       <h1 class="location bold border_bottom">Contact Me:</h1>
       <div class="contact_p">
         <h3 class="email_big"><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
-        <p class="paragraph">Thanks for checking out my portfolio! If you're interested in working with me, <a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_blue">email me</a>, and we can talk.<br><br>
+        <p class="paragraph">Thanks for checking out my portfolio! If you're interested in working with me, <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue underlined-blue">email me</a>, and we can talk.<br><br>
           On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.<br><br>Seriously, my work and this site is an ongoing project. I would love to hear what you think. More viewpoints create a better product. 
         </p>
       </div>
@@ -38,7 +55,7 @@
     </div>
   </div>
   <!-- FOOTER -->
-  <div class="footer push center_horizontal_text">
+  <div class="footer foot-push align-center">
     <h4>Find me on social media</h4>
     <div class="icon_tray">
       <div class="spacer_10"></div>

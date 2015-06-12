@@ -1,27 +1,42 @@
 <!-- BODY -->
 <body>
   <div class="wrapper">
-    <!-- NAVBAR -->
-    <nav class="topnav container">
+    <!-- HEADER -->
+    <header class="top-nav">
       <!-- Logo/site info -->
-      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_green">jamesfhoover@gmail.com</a></h4><br>
-      <!-- Nav -->
-      <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "link_black black_border" %></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border" %>
-          <ul class="sub_topnav_hidden">
-            <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
-            <a href="/work/art"><li class="capitalize">Art</li></a><br>
-            <a href="/work/photography"><li class="capitalize">Photography</li></a>
-          </ul>
-        </li>
-        <li><%= link_to "About", '/about', class: "link_green green_border active" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border" %></li>
-      </ul>
-    </nav>
-    <!-- SPACERS -->
-    <div class="topnav_clear"></div>
+      <section class="site-info row">
+        <article class="logo pull first">
+          <a href="/" title="Home" class="logo_link">
+            <h4 class="logo">
+              <img src="/assets/icons/logoCopy.png" class="logo_img">
+              JamesHooverDesign.com
+            </h4>
+          </a>
+        </article>
+        <article class="contact-info push">
+          <h4>James Hoover</h4>
+          <h4>Web Design Portfolio<br></h4>
+          <h4>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
+          </h4>
+        </article>
+      </section>
+      <!-- Nav Links -->
+      <nav class="site-nav row">
+        <ul class="half-width first">
+          <li><%= link_to "Home", '/', class: "nav-black" %></li>
+          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
+            <ul class="sub-nav">
+              <a href="/work/sites"><li class="capitalize">Projects</li></a>
+              <a href="/work/art"><li class="capitalize">Art</li></a>
+              <a href="/work/photography"><li class="capitalize">Photography</li></a>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green current" %></li>
+          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+        </ul>
+      </nav>
+    </header><!-- END HEADER -->
     <!-- ABOUT_PAGE CONTENT -->
     <div class="container about_page">
     	<h1 class="location bold border_bottom">About Me:</h1>
@@ -51,8 +66,8 @@
   </div>
   <div class="spacer_50"></div>
   <!-- FOOTER -->
-  <div class="footer push center_horizontal_text">
-    <div class="icon_tray center_horizontal_text">
+  <div class="footer foot-push align-center">
+    <div class="icon_tray align-center">
       <div class="spacer_10"></div>
       <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
       <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>

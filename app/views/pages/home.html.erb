@@ -1,48 +1,64 @@
 <!-- BODY -->
 <body>
   <div class="wrapper">
-    <!-- NAVBAR -->
-    <nav class="topnav container">
+    <!-- HEADER -->
+    <header class="top-nav">
       <!-- Logo/site info -->
-      <a href="/" title="Home"class="logo_link"><h4 class="logo"><img src="/assets/icons/logoCopy.png" class="logo_img">JamesHooverDesign.com</h4></a>
-      <h4 class="site_info subtext">James Hoover<br>UX/UI Design Portfolio<br><a href="mailto:jamesfhoover@gmail.com" title="Email">jamesfhoover@gmail.com</a></h4><br>
-      <!-- Nav -->
-      <ul class="uppercase">
-        <li><%= link_to "Home", '/', class: "link_black black_border active" %></li>
-        <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "link_red red_border" %>
-          <ul class="sub_topnav_hidden">
-            <a href="/work/sites"><li class="capitalize">Websites</li></a><br>
-            <a href="/work/art"><li class="capitalize">Art</li></a><br>
-            <a href="/work/photography"><li class="capitalize">Photography</li></a>
-          </ul>
-        </li>
-        <li><%= link_to "About", '/about', class: "link_green green_border" %></li>
-        <li class="last_element"><%= link_to "Contact", '/contact', class: "link_blue blue_border" %></li>
-      </ul>
-    </nav>
-    <!-- SPACERS -->
-    <div class="topnav_clear"></div>
-    <!-- HOME_PAGE CONTENT -->
-    <div class="container">
-      <div class="home_page">
-        <div class="home_page_content">
-          <h1 class="uppercase">James Hoover</h1>
-          <h2 class="home_subtitle">UX/UI Design Porfolio</h2>
+      <section class="site-info row">
+        <article class="logo pull first">
+          <a href="/" title="Home" class="logo_link">
+            <h4 class="logo">
+              <img src="/assets/icons/logoCopy.png" class="logo_img">
+              JamesHooverDesign.com
+            </h4>
+          </a>
+        </article>
+        <article class="contact-info push">
+          <h4>James Hoover</h4>
+          <h4>Web Design Portfolio<br></h4>
+          <h4>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_red">jamesfhoover@gmail.com</a>
+          </h4>
+        </article>
+      </section>
+      <!-- NAV -->
+      <nav class="row">
+        <ul class="half-width first uppercase">
+          <li><%= link_to "Home", '/', class: "nav-black current" %></li>
+          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
+            <ul class="sub_topnav_hidden">
+              <a href="/work/sites"><li class="capitalize">Projects</li></a><br>
+              <a href="/work/art"><li class="capitalize">Art</li></a><br>
+              <a href="/work/photography"><li class="capitalize">Photography</li></a>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green" %></li>
+          <li class="last_element"><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+        </ul>
+      </nav>
+    </header><!-- END HEADER -->
+    <!-- SECTION home-content -->
+    <section class="home-content">
+      <div class="row">
+        <article class="pull first">
+          <h1>James Hoover</h1>
+          <h2 class="home_subtitle">Web Design Porfolio</h2>
           <h4 class="home_subtitle">Designer / Engineer / Artist</h4>
-        </div>
-
-        <div class="home_navicons">
+        </article>
+      </div>
+      <div class="row">
+        <article class="home_navicons first">
           <a class="navicon_link" href="/work/sites" title="Work"><div class="work_bkgrd home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
           <a class="navicon_link" href="/about" title="About"><div class="about_bkgrd home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
           <a class="navicon_link" href="/contact" title="Contact"><div class="contact_bkgrd home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   </div>
-  
   <!-- FOOTER -->
-  <div class="spacer_25"></div>
-  <div class="footer push">
-    <h6 class="copy">&copy;2015 - James Hoover</h6>
-  </div>
+  <footer class="row">
+    <section class="footer foot-push">
+      <h6 class="copy">&copy;2015 - James Hoover</h6>
+    </section>
+  </footer>
 </body>
