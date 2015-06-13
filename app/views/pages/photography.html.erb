@@ -8,15 +8,13 @@
       <section class="site-info row">
         <article class="logo pull first">
           <a href="/" title="Home" class="logo-link">
-            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
+            <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
-          <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
-          </h4>
+          <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
@@ -35,119 +33,98 @@
         </ul>
       </nav>
     </header><!-- END HEADER -->
-		<!-- SPACERS -->
-    <div class="topnav_clear"></div>
-    <!-- WORK_PAGE CONTENT - PHOTOGRAPHY -->
-    <div class="container work_page">
-      <h1 class="bold">My Work:</h1>
-      <nav class="work-nav">
+    <!-- WORK-NAV -->
+    <nav class="work-nav row">
+      <h1 class="page-title">my work:</h1>
         <ul>
-        	<li><%= link_to "Projects", '/work/sites', class: "link_red red_border" %></li>
-        	<li><%= link_to "Art", '/work/art', class: "link_red red_border" %></li>
-          <li><%= link_to "Photography", '/work/photography', class: "link_red red_border active" %></li>
+          <li><%= link_to "Projects", '/work/sites', class: "nav-black" %></li>
+          <li><%= link_to "Art", '/work/art', class: "nav-black" %></li>
+          <li><%= link_to "Photography", '/work/photography', class: "nav-black current" %></li>
         </ul>
-      </nav>
-      <div class="spacer_25"></div>
-      <h2 class="work_location bold uppercase">Photography</h2>
-      <div class="spacer_25"></div>
+    </nav>
+    <!-- WORK-INFO -->
+    <section class="work-info row">
+      <h2 class="work-title">photography</h2>
+    </section>
       <!-- <p class="paragraph">I come from a family of photographers. I upgraded my camera this past year and have been learning everything I can about it. Enjoy some of my favorite shots.<br><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p><br> -->
-
-      <div class="img_container">
-
-      	<div class="photo_column_one">
-
-          <div class="photo_block">
-            <%= link_to image_tag("photography/tulipsBW.jpg"), image_path("photography/tulipsBW.jpg"), class: "photo_img_link",  title: "Tulips" %>
-            <h3 class="photo_text align-center">Tulips | 2015</h3>
-          </div>
-          <div class="photo_block">
-            <%= link_to image_tag("photography/kelly_closeupBW.jpg"), image_path("photography/kelly_closeupBW.jpg"), class: "photo_img_link",  title: "Kelly" %>
-            <h3 class="photo_text align-center">Kelly | 2015</h3>
-          </div>
-          <div class="photo_block">
-            <%= link_to image_tag("photography/maya_lab.jpg"), image_path("photography/maya_lab.jpg"), class: "photo_img_link",  title: "Maya" %>
-            <h3 class="photo_text align-center">Maya | 2015</h3>
-          </div>
-          <div class="photo_block">
-            <%= link_to image_tag("photography/maya_labBW.jpg"), image_path("photography/maya_labBW.jpg"), class: "photo_img_link",  title: "Maya" %>
-            <h3 class="photo_text align-center">Maya | 2015</h3>
-          </div>
-          <div class="photo_block">
-            <%= link_to image_tag("photography/winnie_frenchie_closeup.jpg"), image_path("photography/winnie_frenchie_closeup.jpg"), class: "photo_img_link",  title: "Winnie" %>
-            <h3 class="photo_text align-center">Winnie | 2015</h3>
-          </div>
-          <div class="photo_block">
-            <%= link_to image_tag("photography/beans_frenchie_closeupBW.jpg"), image_path("photography/beans_frenchie_closeupBW.jpg"), class: "photo_img_link",  title: "Beans" %>
-            <h3 class="photo_text align-center">Beans | 2015</h3>
-          </div>
-    	  	<div class="photo_block">
-            <%= link_to image_tag("photography/kelly_and_horse.jpeg"), image_path("photography/kelly_and_horse.jpeg"), class: "photo_img_link",  title: "Kelly & Horse" %>
-            <h3 class="photo_text align-center">Kelly & the horses | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/kelly_profile.jpeg"), image_path("photography/kelly_profile.jpeg"), class: "photo_img_link",  title: "Kelly" %>
-            <h3 class="photo_text align-center">Kelly on the beach | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/horse_closeup.jpeg"), image_path("photography/horse_closeup.jpeg"), class: "photo_img_link",  title: "Horse" %>
-            <h3 class="photo_text align-center">The horse | 2014</h3>
-          </div>
-
-        </div>
-
-        <div class="photo_column_two">
-
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/mia_pink.jpeg"), image_path("photography/mia_pink.jpeg"), class: "photo_img_link",  title: "Mia" %>
-            <h3 class="photo_text align-center">Mia | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/polar_plunge1.jpeg"), image_path("photography/polar_plunge1.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
-            <h3 class="photo_text align-center">hello | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/polar_plunge2.jpeg"), image_path("photography/polar_plunge2.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
-            <h3 class="photo_text align-center">my | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/polar_plunge3.jpeg"), image_path("photography/polar_plunge3.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
-            <h3 class="photo_text align-center">name | 2014</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/polar_plunge4.jpeg"), image_path("photography/polar_plunge4.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
-            <h3 class="photo_text align-center">jame | 2015</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/polar_plunge5.jpeg"), image_path("photography/polar_plunge5.jpeg"), class: "photo_img_link",  title: "Polar Plunge" %>
-            <h3 class="photo_text align-center">i | 2015</h3>
-          </div>
-    			<div class="photo_block">
-            <%= link_to image_tag("photography/james_and_kelly.jpeg"), image_path("photography/james_and_kelly.jpeg"), class: "photo_img_link",  title: "James & Kelly" %>
-            <h3 class="photo_text align-center">like | 2015</h3>
-          </div>
-      		<div class="photo_block">
-            <%= link_to image_tag("photography/kyle_closeup.jpeg"), image_path("photography/kyle_closeup.jpeg"), class: "photo_img_link",  title: "Kyle" %>
-            <h3 class="photo_text align-center">thinking | 2015</h3>
-          </div>
-      		<div class="photo_block">
-            <%= link_to image_tag("photography/taylor_james_jack.jpeg"), image_path("photography/taylor_james_jack.jpeg"), class: "photo_img_link",  title: "James & Taylor & Jack" %>
-            <h3 class="photo_text align-center">about | 2015</h3>
-          </div>
-      		<div class="photo_block">
-            <%= link_to image_tag("photography/kelly_beach.jpeg"), image_path("photography/kelly_beach.jpeg"), class: "photo_img_link",  title: "Kelly" %>
-            <h3 class="photo_text align-center">the | 2015</h3>
-          </div>
-      		<div class="photo_block">
-            <%= link_to image_tag("photography/fungus_log.jpeg"), image_path("photography/fungus_log.jpeg"), class: "photo_img_link",  title: "Fungus" %>
-            <h3 class="photo_text align-center">unknown | 2015</h3>
-          </div>
-
-    		</div>
-
-      </div>
-    </div>
-  </div>
-  <h4 class="align-center bold">Check out my <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Flickr</a> for more photos.</h4>
+    <section class="row">
+      <article class="photo-block one-half first">
+        <%= link_to image_tag("photography/tulipsBW.jpg"), image_path("photography/tulipsBW.jpg"), class: "photo-img-link",  title: "Tulips" %>
+        <h5>Tulips | 2015</h5>
+      </article>
+      <article class="photo-block one-half">
+        <%= link_to image_tag("photography/kelly_closeupBW.jpg"), image_path("photography/kelly_closeupBW.jpg"), class: "photo-img-link",  title: "Kelly" %>
+        <h5>Kelly | 2015</h5>
+      </article>
+      <article class="photo-block one-half first">
+        <%= link_to image_tag("photography/maya_lab.jpg"), image_path("photography/maya_lab.jpg"), class: "photo-img-link",  title: "Maya" %>
+        <h5>Maya | 2015</h5>
+      </article>
+      <article class="photo-block one-half">
+        <%= link_to image_tag("photography/maya_labBW.jpg"), image_path("photography/maya_labBW.jpg"), class: "photo-img-link",  title: "Maya" %>
+        <h5>Maya | 2015</h5>
+      </article>
+      <article class="photo-block one-half first">
+        <%= link_to image_tag("photography/winnie_frenchie_closeup.jpg"), image_path("photography/winnie_frenchie_closeup.jpg"), class: "photo-img-link",  title: "Winnie" %>
+        <h5>Winnie | 2015</h5>
+      </article>
+      <article class="photo-block one-half">
+        <%= link_to image_tag("photography/beans_frenchie_closeupBW.jpg"), image_path("photography/beans_frenchie_closeupBW.jpg"), class: "photo-img-link",  title: "Beans" %>
+        <h5>Beans | 2015<h5>
+      </article>
+    	<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/kelly_and_horse.jpeg"), image_path("photography/kelly_and_horse.jpeg"), class: "photo-img-link",  title: "Kelly & Horse" %>
+        <h5>Kelly & the horses | 2014<h5>
+      </article>
+  		<article class="photo-block one-half">
+        <%= link_to image_tag("photography/kelly_profile.jpeg"), image_path("photography/kelly_profile.jpeg"), class: "photo-img-link",  title: "Kelly" %>
+        <h5>Kelly on the beach | 2014<h5>
+      </article>
+  		<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/horse_closeup.jpeg"), image_path("photography/horse_closeup.jpeg"), class: "photo-img-link",  title: "Horse" %>
+        <h5>The horse | 2014<h5>
+      </article>
+			<article class="photo-block one-half">
+        <%= link_to image_tag("photography/mia_pink.jpeg"), image_path("photography/mia_pink.jpeg"), class: "photo-img-link",  title: "Mia" %>
+        <h5>Mia | 2014<h5>
+      </article>
+			<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/polar_plunge1.jpeg"), image_path("photography/polar_plunge1.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <h5>hello | 2014<h5>
+      </article>
+			<article class="photo-block one-half">
+        <%= link_to image_tag("photography/polar_plunge2.jpeg"), image_path("photography/polar_plunge2.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <h5>my | 2014<h5>
+      </article>
+			<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/polar_plunge3.jpeg"), image_path("photography/polar_plunge3.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <h5>name | 2014<h5>
+      </article>
+			<article class="photo-block one-half">
+        <%= link_to image_tag("photography/polar_plunge5.jpeg"), image_path("photography/polar_plunge5.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <h5>i | 2015<h5>
+      </article>
+			<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/james_and_kelly.jpeg"), image_path("photography/james_and_kelly.jpeg"), class: "photo-img-link",  title: "James & Kelly" %>
+        <h5>like | 2015<h5>
+      </article>
+  		<article class="photo-block one-half">
+        <%= link_to image_tag("photography/taylor_james_jack.jpeg"), image_path("photography/taylor_james_jack.jpeg"), class: "photo-img-link",  title: "James & Taylor & Jack" %>
+        <h5>about | 2015<h5>
+      </article>
+  		<article class="photo-block one-half first">
+        <%= link_to image_tag("photography/kelly_beach.jpeg"), image_path("photography/kelly_beach.jpeg"), class: "photo-img-link",  title: "Kelly" %>
+        <h5>the | 2015<h5>
+      </article>
+  		<article class="photo-block one-half">
+        <%= link_to image_tag("photography/fungus_log.jpeg"), image_path("photography/fungus_log.jpeg"), class: "photo-img-link",  title: "Fungus" %>
+        <h5>unknown | 2015<h5>
+      </article>
+    </section>
+    <aside class="checkout row">
+      <h4>Check out my <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Flickr</a> for more photos.</h4>
+    </aside>
+  </div><!-- END DIV wrapper -->
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="jump-top">

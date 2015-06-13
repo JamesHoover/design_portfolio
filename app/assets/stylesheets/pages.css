@@ -7,14 +7,11 @@
 
 /** TODO:
 **  --------------------------------------------------
-**  Document/comment your code
 **  Design a logo
 **  Navicons colored transparent overlay on hover?
 **  Choose what photos to put on site
-**  Make sample webpages/content
 **  Choose/take pic for contact page
 **  New pic for about page
-**  Create a more professional Tumblr
 **  Open link in new tab
 **  Change 'Work' to Projects
 **  SEO and Google Analytics
@@ -47,7 +44,7 @@ p {
   color: #555;
   font-size: 1em;
   line-height: 1.375em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* $UNIQUE PAGE CONTENT 
@@ -64,7 +61,6 @@ a:hover {
   color:  #000;
   cursor: pointer;
   text-decoration: none;
-
 }
 a:hover {text-decoration: underline;}
 
@@ -82,10 +78,10 @@ a.black:hover,
 a.green:hover,
 a.blue:hover {text-decoration: none;}
 /* Nav links - Default: Black no border. Color, bold, border-bottom on hover and .current */
+a.nav-black:hover,
 a.nav-red:hover,
 a.nav-green:hover,
-a.nav-blue:hover,
-a.nav-black:hover   {font-weight: bold; text-decoration: none;}
+a.nav-blue:hover    {font-weight: bold; text-decoration: none;}
 a.nav-red:hover,
 a.nav-red.current   {color: #F00; border-bottom: 2px solid #F00;}
 a.nav-green:hover,
@@ -132,15 +128,11 @@ a.logo-link:hover h4  {text-decoration: underline;}
   height: 34px;
   margin-right: .5em;
 }
-
-.site-info {
-  text-align: right;
-}
+.site-info {text-align: right;}
 
 /* Nav 
 ------------------------- */
 .top-nav > ul {
-
   padding: 3em 0 3px 0;
   border-bottom: 1px solid #BABABA;
   /*border-top: medium double #BABABA;*/
@@ -149,12 +141,12 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .top-nav li {
   display: inline-block;
   font-size: 1em;
-  margin-right: 10%;
+  vertical-align: top;
 }
 
 /* Subnav on Work 
 ------------------------- */
-.sub_topnav {display: block; position: absolute; width: auto;}
+.sub-nav li {float: left;}
 ul.sub_topnav,
 ul.sub_topnav_hidden {padding: .75em 0 1em 1em;}
 ul.sub_topnav li,
@@ -174,18 +166,18 @@ ul.sub_topnav_hidden li {
 }
 .top-nav li:hover ul.sub_topnav_hidden {display: block;}
 
-.sub_topnav_hidden li.active {border-left: 1px solid #FF0000;
+.sub_topnav_hidden li.active {border-left: 1px solid #F00;
   text-decoration:
-  underline; color: #FF0000;
+  underline; color: #F00;
 }
 .sub_topnav li:hover,
 .sub_topnav_hidden li:hover {
-  border-left: 1px solid #FF0000;
-  background-color: #FF0000;
+  border-left: 1px solid #F00;
+  background-color: #F00;
   color: white;
   font-weight: bold;
 }
-.sub_topnav li.active {border-left: 2px solid #FF0000; text-decoration: none;}
+.sub_topnav li.active {border-left: 2px solid #F00; text-decoration: none;}
 
 .nav_spacer {height: 3em; width: 100%; border-bottom: 1px solid #BABABA;}
 
@@ -193,10 +185,7 @@ ul.sub_topnav_hidden li {
 @media screen and (max-width: 999px) {
 }
 @media screen and (max-width: 860px) {
-  .logo-link {display: none;}
-  .logo {display: none;}
-  .topnav {padding-left: 0;}
-  .topnav li {margin-right: 10%;}
+  .logo h4 {display: none;}
 }
 
 /* $PAGES 
@@ -247,9 +236,8 @@ ul.sub_topnav_hidden li {
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
-.work_page {}
-.work_info {}
-.work-nav {margin: 1em 0; padding-bottom: 5px;}
+.page-title {margin-bottom: .5em;}
+.work-nav   {margin: 1em 0; padding-bottom: 5px;}
 .work-nav ul {
   font-size: 1.1em;
   padding-bottom: 3px;
@@ -262,109 +250,42 @@ ul.sub_topnav_hidden li {
   margin-bottom: .5em;
   border-bottom: 1px solid #BABABA;
 }
-.work-title {font-weight: bold; padding-bottom: 3px; border-bottom: 1px solid #BABABA;}
+.work-title {
+  padding-bottom: 3px;
+  margin-bottom: .5em;
+  border-bottom: 1px solid #BABABA;
+}
+.checkout {text-align: center;}
 
 /* $Projects 
 ========================= */
-.project-block {}
-.project-title {}
+.project-title h3 {font-weight: bold;}
 .project-img img {width: 100%}
 .project-img-link:hover img {outline: 1px solid #F00;}
 .project-info h4 {font-weight: ; border-bottom: 1px solid #BABABA;}
 
-.site_block h4 {font-weight: bold;}
-.site_block img {
-  width: 50%;
-  min-width: 300px;
-  position: relative;
-}
-a.site_img_link:hover img{outline: 1px solid #F00;}
-.site_title {min-width: 300px; padding-bottom: 3px;}
-
 /* $Art 
 ========================= */
-.art_column_one,
-.art_column_two {float: left; width: 40%; min-width: 325px;}
-.art_column_one {margin-right: 1em;}
-.art_block {
-  width: 100%;
-  display: inline-block;
-  margin-right: 25%;
-}
-.art_block h4 {
-  width: 75%;
-  padding-top: 5px;
-  padding-bottom: 2em;}
-.art_block img {width: 100%; border: 1px solid #BABABA;}
-a.art_img_link:hover img {border: 1px solid #FF0000;}
+.art-block {}
+.art-block h5 {padding-bottom: 2em;}
+.art-block img {width: 100%; border: 1px solid #BABABA;}
+.art-img-link:hover img {border: 1px solid #F00;}
 
 /* $Photography 
 ========================= */
-.img_container {display: inline-block; height: 100%;}
-.photo_column_one,
-.photo_column_two {
-  float: left;
-  width: 48.5%;
-  min-width: 325px;
-}
-.photo_column_one {margin-right: 1em;}
-
-.photo_block {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 1em;
-}
-.photo_block img {width: 100%;}
-.photo_text {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  color: black;
-}
+.photo-block {}
+.photo-block img {width: 100%;}
+.photo-img-link:hover img {outline: 1px solid #F00;}
+.photo-block h5 {text-align: right;}
 
 /* $ABOUT 
 ================================================== */
-.about_page {height: 100%;}
-.about_img {
-  display:inline-block;
-  vertical-align: top;
-  width: 30%;
-  min-width: 350px;
-  margin-right: 1em;
-  padding-bottom: 1em;
-}
-.about_img img {display: inline-block; width: 100%;}
-.about_p {
-  display: inline-block;
-  width: 50%;
-  min-width: 325px;
-  border-left: 1px solid #BABABA;
-  padding-left: 1em;
-}
+.about-img img {width: 100%;}
 
 /* $CONTACT 
 ================================================== */
-.contact_page {height: 100%;}
-.contact_p {
-  display: inline-block;
-  width: 40%;
-  min-width: 325px;
-  margin-right: 5%;
-}
-.contact_img {
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
-  min-width: 325px;
-}
-.contact_img img {width: 100%; height: 100%;}
-.contact_img_text {
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  padding: 3px;
-}
+.contact-img img {width: 100%;}
+
 
 /* $FOOTER 
 ================================================== */
@@ -384,7 +305,7 @@ a.art_img_link:hover img {border: 1px solid #FF0000;}
 .icon-tray div {opacity: .7}
 .icon-tray a {display: inline-block; margin-right: 2%;}
 .icon-tray a:hover div {opacity: 1;}
-.copyright {color: black; text-align: right;}
+.copyright {color: black; text-align: center;}
 
 /* Social Media Icons
 ------------------------- */
@@ -524,54 +445,26 @@ a.art_img_link:hover img {border: 1px solid #FF0000;}
   .three-fourths, 
   .four-fifths,   
   .five-sixths  {width: 100%}
-
-
   /* 50% width causes two units per line so center the last odd unit */
   .last.third-width, .last.fifth-width {clear:both; width:50%; margin: 0 auto;}
 }
 @media screen and (min-width: 64em){
-
   .last.third-width {clear:none; width: 33.333%;}
   .last.fifth-width {clear:none; width: 20%;}
 }
 
 /* $GENERAL 
 ================================================== */
-.img_container {display: inline-block; height: 100%;}
-.location {
-  padding-bottom: .1em;
-  margin-bottom: 5px;
-}
-.border_bottom {border-bottom: 1px solid #BABABA;}
-.inline_header {margin-bottom: 5px;}
-
-.email_big     {margin-top: .5em; margin-bottom: 1.5em;}
-
-
-/* Indent */
-.indent {margin-left: 15px;}
-
+.location   {padding-bottom: .1em; margin-bottom: 5px;}
+.inline-header {margin-bottom: 5px;}
+.email-lrg  {margin-bottom: 1.5em;}
+/* Typography */
 .bold       {font-weight: bold;}
 .italic     {font-style: italic;}
 .subtext    {color: #555;}
 .uppercase  {text-transform: uppercase;}
 .capitalize {text-transform: capitalize;}
-
 .underline  {text-decoration: underline;}
-
-ul > li.last_element {margin-right: 0;}
-
-.spacer_5,
-.spacer_10,
-.spacer_25,
-.spacer_50 {width: 100%;}
-.spacer_5  {height: .5em;}
-.spacer_10 {height: 1em;}
-.spacer_25 {height: 2em;}
-.spacer_50 {height: 4em;}
-
-.home_spacer {height: 30px; width: 100%;}
-.inline_block {display: inline-block;}
 
 /* Positioning/Alignment */
 .float_right  {float: right;}
@@ -582,9 +475,3 @@ ul > li.last_element {margin-right: 0;}
 .justify      {text-align: justify;}
 .center-align {text-align: center;}
 .center-block  {margin: 0 auto;}
-.center_vertical {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-}

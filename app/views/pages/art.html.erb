@@ -8,15 +8,13 @@
       <section class="site-info row">
         <article class="logo pull first">
           <a href="/" title="Home" class="logo-link">
-            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
+            <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
-          <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a>
-          </h4>
+          <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
@@ -35,87 +33,66 @@
         </ul>
       </nav>
     </header><!-- END HEADER -->
-		<!-- SPACERS -->
-    <div class="topnav_clear"></div>
-    <!-- WORK_PAGE CONTENT - ART -->
-    <div class="container work_page">
-      <h1 class="bold">My Work:</h1>
-      <nav class="work-nav">
+    <!-- WORK-NAV -->
+    <nav class="work-nav row">
+      <h1 class="page-title">my work:</h1>
         <ul>
-        	<li><%= link_to "Projects", '/work/sites', class: "link_red red_border" %></li>
-        	<li><%= link_to "Art", '/work/art', class: "link_red red_border active" %></li>
-          <li><%= link_to "Photography", '/work/photography', class: "link_red red_border" %></li>
+          <li><%= link_to "Projects", '/work/sites', class: "nav-black" %></li>
+          <li><%= link_to "Art", '/work/art', class: "nav-black current" %></li>
+          <li><%= link_to "Photography", '/work/photography', class: "nav-black" %></li>
         </ul>
-      </nav>
-      <div class="spacer_25"></div>
-      <h2 class="work_location bold uppercase">Art</h2>
-      <div class="spacer_25"></div>
-      <!-- <p class="paragraph">I've been drawing and creating art all my life. Here are some recent pieces.</p> -->
-      <div class="img_container">
+    </nav>
+    <!-- WORK-INFO -->
+    <section class="work-info row">
+      <h2 class="work-title">art</h2>
+    </section>
+    <section class="row">
+      <article class="art-block one-third first">
+        <%= link_to image_tag("art/TheWarden.jpg"), image_path("art/TheWarden.jpg"), class: "art-img-link",  title: "The Warden" %>
+        <h5 class="subtext"><span class="italic">The Warden</span> - 2014</h5>
+      </article>
 
-        <div class="art_column_one">
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/Wink.jpg"), image_path("art/Wink.jpg"), class: "art-img-link",  title: "Wink" %>
+        <h5 class="subtext"><span class="italic">Wink</span> - 2014</h5>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/TheWarden.jpg"), image_path("art/TheWarden.jpg"), class: "art_img_link",  title: "The Warden" %>
-            <h4 class="subtext"><span class="italic">The Warden</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/BlackRose.jpg"), image_path("art/BlackRose.jpg"), class: "art-img-link",  title: "Black Rose" %>
+        <h5 class="subtext"><span class="italic">Black Rose</span> - 2014</h5>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/Wink.jpg"), image_path("art/Wink.jpg"), class: "art_img_link",  title: "Wink" %>
-            <h4 class="subtext"><span class="italic">Wink</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
+      <article class="art-block one-third first">
+        <%= link_to image_tag("art/LolaScan.jpg"), image_path("art/LolaScan.jpg"), class: "art-img-link",  title: "Lola" %>
+        <h5 class="subtext"><span class="italic">Lola</span> - 2014</h4>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/BlackRose.jpg"), image_path("art/BlackRose.jpg"), class: "art_img_link",  title: "Black Rose" %>
-            <h4 class="subtext"><span class="italic">Black Rose</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/Doodle2.jpg"), image_path("art/Doodle2.jpg"), class: "art-img-link",  title: "Doodle II" %>
+        <h5 class="subtext"><span class="italic">Doodle II</span> - 2013</h5>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/LolaScan.jpg"), image_path("art/LolaScan.jpg"), class: "art_img_link",  title: "Lola" %>
-            <h4 class="subtext"><span class="italic">Lola</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/MezScan.jpg"), image_path("art/MezScan.jpg"), class: "art-img-link",  title: "Mesmerized" %>
+        <h5 class="subtext"><span class="italic">Mesmerized</span> - 2014</h5>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/Doodle2.jpg"), image_path("art/Doodle2.jpg"), class: "art_img_link",  title: "Doodle II" %>
-            <h4 class="subtext"><span class="italic">Doodle II</span> - 2013</h4>
-            <div class="spacer_50"></div>
-          </div>
+      <article class="art-block one-third first">
+        <%= link_to image_tag("art/LoneWolf.jpg"), image_path("art/LoneWolf.jpg"), class: "art-img-link",  title: "Lone Wolf" %>
+        <h5 class="subtext"><span class="italic">Lone Wolf</span> - 2014</h5>
+      </article>
 
-        </div>
-        <div class="art_column_two">
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/RedRose.jpg"), image_path("art/RedRose.jpg"), class: "art-img-link",  title: "Red Rose" %>
+        <h5 class="subtext"><span class="italic">Red Rose</span> - Unfinished</h5>
+      </article>
 
-          <div class="art_block">
-            <%= link_to image_tag("art/MezScan.jpg"), image_path("art/MezScan.jpg"), class: "art_img_link",  title: "Mesmerized" %>
-            <h4 class="subtext"><span class="italic">Mesmerized</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
-
-          <div class="art_block">
-            <%= link_to image_tag("art/LoneWolf.jpg"), image_path("art/LoneWolf.jpg"), class: "art_img_link",  title: "Lone Wolf" %>
-            <h4 class="subtext"><span class="italic">Lone Wolf</span> - 2014</h4>
-            <div class="spacer_50"></div>
-          </div>
-
-          <div class="art_block">
-            <%= link_to image_tag("art/RedRose.jpg"), image_path("art/RedRose.jpg"), class: "art_img_link",  title: "Red Rose" %>
-            <h4 class="subtext"><span class="italic">Red Rose</span> - Unfinished</h4>
-            <div class="spacer_50"></div>
-          </div>
-
-          <div class="art_block">
-            <%= link_to image_tag("art/Doodle1.jpg"), image_path("art/Doodle1.jpg"), class: "art_img_link",  title: "Doodle I" %>
-            <h4 class="subtext"><span class="italic">Doodle I</span> - 2013</h4>
-            <div class="spacer_50"></div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/Doodle1.jpg"), image_path("art/Doodle1.jpg"), class: "art-img-link",  title: "Doodle I" %>
+        <h5 class="subtext"><span class="italic">Doodle I</span> - 2013</h5>
+      </article>
+    </section>
+  </div><!-- END DIV wrapper -->
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="jump-top">

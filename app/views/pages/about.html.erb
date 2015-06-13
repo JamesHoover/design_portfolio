@@ -8,15 +8,13 @@
       <section class="site-info row">
         <article class="logo pull first">
           <a href="/" title="Home" class="logo-link">
-            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
+            <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
-          <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
-          </h4>
+          <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
@@ -36,33 +34,27 @@
       </nav>
     </header><!-- END HEADER -->
     <!-- ABOUT_PAGE CONTENT -->
-    <div class="container about_page">
-    	<h1 class="location bold border_bottom">About Me:</h1>
-      <div class="about_img">
+    <section class="row">
+      <h1 class="page-title">About Me:</h1>
+      <div class="about-img one-third first">
         <%= image_tag("james_front_copy.jpg") %>
       </div>
-      <div class="about_p">
-        <h3 class="inline_header bold">My name is James Hoover</h3>
-        <p class="paragraph">I am a Seattle native. I achieved a BS in computer science from Gonzaga University. Been a professional software developer for three years. Came across many programs/apps and projects that did not have good experience. Started programming with user in mind. Enjoyed it more than backend programming with no user/experience interaction. Uses more of both sides of my brain half (artistic/creative/subjective) rather than soley (analytical/logical/strategic). The past year+ I read/studied/practiced UX. I am self taught in the field of UX design. Have much more i want to learn. Believe in excelent usability but you don't have to sacrifice all design/beautification elements to acheive that, in fact, aesthetics contribute to the overall positive experience.
+      <article class="about-me two-thirds">
+        <h3>My name is James Hoover</h3>
+        <p>I am a Seattle native. I achieved a BS in computer science from Gonzaga University. Been a professional software developer for three years. Came across many programs/apps and projects that did not have good experience. Started programming with user in mind. Enjoyed it more than backend programming with no user/experience interaction. Uses more of both sides of my brain half (artistic/creative/subjective) rather than soley (analytical/logical/strategic). The past year+ I read/studied/practiced UX. I am self taught in the field of UX design. Have much more i want to learn. Believe in excellent usability but you don't have to sacrifice all design/beautification elements to acheive that, in fact, i can tell you aesthetics contribute to the overall positive experience.
         </p>
-        <h3 class="inline_header bold">My Skills Encompass/Resume</h3>
+        <h3 class="inline_header">My Skills Encompass/Resume</h3>
         <p class="paragraph">Taken 3D Modeling course and Design course. Design. HTML. CSS. Software development. Front and backend web development. Mobile app development. Application/software/interface testing. Photoshop. Illustrator? User Research, IA, Visual Design, Usability Evaluation. Creativity. Searching for and discovering root causes.</p>
-        <h3 class="inline_header bold">I Love</h3>
+        <h3 class="inline_header">I Love</h3>
         <p class="paragraph">Drawing. Photography. Reading. Psychology. Philosophy. Fashion. Architecture. Video Games. Theoretical/Quantum Physics. Woodworking. Painting. Yoga. Running. Innovation. Theoretical methods and ideas.</p>
-        <h3 class="inline_header bold">I am Pursuing</h3>
+        <h3 class="inline_header">I am Pursuing</h3>
         <p class="paragraph">A career in the field of user experience design...My personal experience gives me a shared understanding of the world of engineering and design. This puts me in position to bridge the gap between the two industries.</p>
         <div class="spacer_25"></div>
 
-        <h4 class="bold">My official resume:</h4>
-        <div class="spacer_10"></div>
-        <h4><%= link_to "View in browser", image_path("JamesHooverResume.pdf"), class: "prominent-green" %></h4>
-        <div class="spacer_10"></div>
-        <h4><a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="prominent-green" download>Download PDF</a></h4>
-
-      </div>
-    </div>
-  </div>
-  <div class="spacer_50"></div>
+        <h4>My official resume:</h4>
+        <h4><%= link_to "View in browser", image_path("JamesHooverResume.pdf"), class: "prominent-green" %> / <a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="prominent-green" download>Download PDF</a></h4>
+      </article>
+  </section>
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="icon-tray">
