@@ -7,22 +7,19 @@
       <!-- Logo/site info -->
       <section class="site-info row">
         <article class="logo pull first">
-          <a href="/" title="Home" class="logo_link">
-            <h4 class="logo">
-              <img src="/assets/icons/logoCopy.png" class="logo_img">
-              JamesHooverDesign.com
-            </h4>
+          <a href="/" title="Home" class="logo-link">
+            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
           <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a>
           </h4>
         </article>
       </section>
-      <!-- Nav Links -->
+      <!-- NAV -->
       <nav class="site-nav row">
         <ul class="half-width first">
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
@@ -34,7 +31,7 @@
             </ul>
           </li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
-          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
       </nav>
     </header><!-- END HEADER -->
@@ -49,18 +46,18 @@
     </nav>
     <!-- WORK-INFO -->
     <section class="work-info row">
-      <h2 class="work-title">Projects</h2>
-      <p class="work-desc">I design and build websites! Check out some of my recent projects. <a href="/contact" title="Contact Me" class= "red underlined-red"> Contact me</a> for availabilty/time/pricing.</p>
+      <h2 class="work-title">PROJECTS</h2>
+      <p class="work-desc">I design and build websites! Check out some of my recent projects. <a href="/contact" title="Contact Me" class= "red"> Contact me</a> for availabilty/time/pricing.</p>
     </section>
     <!-- PROJECT-BLOCK -->
     <section class="project-block row">
       <article class="project-title">
-        <h3><a href="http://www.google.com" title="O&G Magnolia" class="prominent-red">O&G MAGNOLIA</a></h3>
+        <h3><a href="http://www.google.com" title="O&G Magnolia" class="red">O&G MAGNOLIA</a></h3>
         <p class="paragraph">Insurance/liability & asset management experts.</p>
-        <a href="http://www.google.com/" title="Google" class="red underline-red">www.google.com</a>  
+        <a href="http://www.google.com/" title="Google" class="red">www.google.com</a>  
       </article>
       <div class="project-img two-thirds first">
-        <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "project_img_link",  title: "O&G Magnolia" %>
+        <%= link_to image_tag("sites/ogmagnolia_home.png"), image_path("sites/ogmagnolia_home.png"), class: "project-img-link",  title: "O&G Magnolia" %>
       </div>
       <article class="project-info one-third">
         <h4>Target Users:</h4><p class="paragraph">Potential/current investors for the company. Those curious about Warren Buffet's and other investing strategies.</p>
@@ -71,12 +68,12 @@
     <!-- PROJECT-BLOCK -->
     <section class="project-block row">
       <article class="project-title">
-        <h3 class="site_title bold"><a href="http://www.awakewomen.net/" title="AWAKE Women" class="red underline-red">AWAKE Women</a></h3>
+        <h3><a href="http://www.awakewomen.net/" title="AWAKE Women" class="red">AWAKE Women</a></h3>
         <p class="paragraph">Alliance of Women Achieving Knowledge and Excellence</p>
-        <a href="http://www.awakewomen.net/" title="AWAKE Women" class="underline-red">www.awakewomen.net</a>
+        <a href="http://www.awakewomen.net/" title="AWAKE Women" class="red">www.awakewomen.net</a>
       </article>
       <div class="project-img two-thirds first">
-      <%= link_to image_tag("sites/Purple-Space.jpg"), image_path("sites/Purple-Space.jpg"), class: "site_img_link",  title: "AWAKE Women" %>
+      <%= link_to image_tag("sites/Purple-Space.jpg"), image_path("sites/Purple-Space.jpg"), class: "project-img-link",  title: "AWAKE Women" %>
       </div>
       <article class="project-info one-third">
         <h4>Target Users:</h4><p class="paragraph">Professional women. Non-profit for connecting professional women. Women who are a part of the organization and want to find details of upcoming events. Opportunities to help. Women who want to find out more about the organization and become members.</p>
@@ -89,10 +86,10 @@
       <article class="project-title">
         <h3><a href="http://www.youtube.com/" title="YouTube" class="red">YouTube</a></h3>
         <p class="paragraph">Hosts user-generated videos. Includes network and professional content.</p>
-        <a href="http://www.youtube.com/" title="YouTube" class="underline-red">www.youtube.com</a>
+        <a href="http://www.youtube.com/" title="YouTube" class="red">www.youtube.com</a>
       </article>
       <div class="project-img two-thirds first">
-        <%= link_to image_tag("sites/youtube_home.png"), image_path("sites/youtube_home.png"), class: "site_img_link",  title: "YouTube" %>
+        <%= link_to image_tag("sites/youtube_home.png"), image_path("sites/youtube_home.png"), class: "project-img-link",  title: "YouTube" %>
       </div>
       <article class="project-info one-third">
         <h4>Target Users:</h4><p class="paragraph">People who want to share and view content.</p>
@@ -101,23 +98,23 @@
       </article>
     </section>
     <aside class="checkout row">
-      <h4 class="align-center">Check out my <a href="https://github.com/JamesHoover" title="GitHub" class="red">GitHub</a> for more work.</h4>
+      <h4 class="center-align">Check out my <a href="https://github.com/JamesHoover" title="GitHub" class="red">GitHub</a> for more work.</h4>
     </aside>
   </div>
   <!-- FOOTER -->
   <footer class="row footer foot-push">
-    <section class="jump_top align-center">
+    <section class="jump-top">
       <h4><a href="#top" title="Top">Jump to top</a></h4>
     </section>
-    <div class="spacer_50"></div>
-    <div class="icon_tray">
-      <div class="spacer_10"></div>
-      <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
-      <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>
-      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr_icon"></div><br>Flickr</a>
-      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram_icon"></div><br>Instagram</a>
-      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
-    </div>
-  	<h6 class="copy">&copy;2015 - James Hoover</h6>
+    <section class="icon-tray">
+      <ul>
+        <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon"></div><br>Github</a></li>
+        <li><a href="http://www.facebook.com/" title="Facebook"><div class="facebook-icon"></div><br>Facebook</a></li>
+        <li><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr-icon"></div><br>Flickr</a></li>
+        <li><a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram-icon"></div><br>Instagram</a></li>
+        <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon"></div><br>Email</a></li>
+      </ul>
+    </section>
+  	<h6 class="copyright">&copy;2015 - James Hoover</h6>
   </footer>
 </body>

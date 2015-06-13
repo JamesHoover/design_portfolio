@@ -6,9 +6,9 @@
       <!-- Logo/site info -->
       <section class="site-info row">
         <article class="logo pull first">
-          <a href="/" title="Home" class="logo_link">
-            <h4 class="logo">
-              <img src="/assets/icons/logoCopy.png" class="logo_img">
+          <a href="/" title="Home" class="logo-link">
+            <h4 class="">
+              <img src="/assets/icons/logoCopy.png" class="logo-img">
               JamesHooverDesign.com
             </h4>
           </a>
@@ -17,23 +17,23 @@
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
           <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="inline_link_red">jamesfhoover@gmail.com</a>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
           </h4>
         </article>
       </section>
       <!-- NAV -->
-      <nav class="row">
-        <ul class="half-width first uppercase">
+      <nav class="site-nav row">
+        <ul class="half-width first">
           <li><%= link_to "Home", '/', class: "nav-black current" %></li>
           <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
-            <ul class="sub_topnav_hidden">
-              <a href="/work/sites"><li class="capitalize">Projects</li></a><br>
-              <a href="/work/art"><li class="capitalize">Art</li></a><br>
+            <ul class="sub-nav">
+              <a href="/work/sites"><li class="capitalize">Projects</li></a>
+              <a href="/work/art"><li class="capitalize">Art</li></a>
               <a href="/work/photography"><li class="capitalize">Photography</li></a>
             </ul>
           </li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
-          <li class="last_element"><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
       </nav>
     </header><!-- END HEADER -->
@@ -58,7 +58,7 @@
   <!-- FOOTER -->
   <footer class="row">
     <section class="footer foot-push">
-      <h6 class="copy">&copy;2015 - James Hoover</h6>
+      <h6 class="copyright">&copy;2015 - James Hoover</h6>
     </section>
   </footer>
 </body>

@@ -1,16 +1,14 @@
 <!-- BODY -->
 <body>
+  <a name="top"></a>
   <div class="wrapper">
     <!-- HEADER -->
     <header class="top-nav">
       <!-- Logo/site info -->
       <section class="site-info row">
         <article class="logo pull first">
-          <a href="/" title="Home" class="logo_link">
-            <h4 class="logo">
-              <img src="/assets/icons/logoCopy.png" class="logo_img">
-              JamesHooverDesign.com
-            </h4>
+          <a href="/" title="Home" class="logo-link">
+            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
@@ -21,7 +19,7 @@
           </h4>
         </article>
       </section>
-      <!-- Nav Links -->
+      <!-- NAV -->
       <nav class="site-nav row">
         <ul class="half-width first">
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
@@ -33,7 +31,7 @@
             </ul>
           </li>
           <li><%= link_to "About", '/about', class: "nav-green current" %></li>
-          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
       </nav>
     </header><!-- END HEADER -->
@@ -57,24 +55,25 @@
 
         <h4 class="bold">My official resume:</h4>
         <div class="spacer_10"></div>
-        <h4><%= link_to "View in browser", image_path("JamesHooverResume.pdf"), class: "green" %></h4>
+        <h4><%= link_to "View in browser", image_path("JamesHooverResume.pdf"), class: "prominent-green" %></h4>
         <div class="spacer_10"></div>
-        <h4><a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="green" download>Download PDF</a></h4>
+        <h4><a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="prominent-green" download>Download PDF</a></h4>
 
       </div>
     </div>
   </div>
   <div class="spacer_50"></div>
   <!-- FOOTER -->
-  <div class="footer foot-push align-center">
-    <div class="icon_tray align-center">
-      <div class="spacer_10"></div>
-      <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
-      <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>
-      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr_icon"></div><br>Flickr</a>
-      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram_icon"></div><br>Instagram</a>
-      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
-    </div>
-    <h6 class="copy">&copy;2015 - James Hoover</h6>
-  </div>
+  <footer class="row footer foot-push">
+    <section class="icon-tray">
+      <ul>
+        <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon"></div><br>Github</a></li>
+        <li><a href="http://www.facebook.com/" title="Facebook"><div class="facebook-icon"></div><br>Facebook</a></li>
+        <li><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr-icon"></div><br>Flickr</a></li>
+        <li><a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram-icon"></div><br>Instagram</a></li>
+        <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon"></div><br>Email</a></li>
+      </ul>
+    </section>
+    <h6 class="copyright">&copy;2015 - James Hoover</h6>
+  </footer>
 </body>

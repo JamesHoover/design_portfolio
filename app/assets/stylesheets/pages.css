@@ -47,8 +47,8 @@ p {
   color: #555;
   font-size: 1em;
   line-height: 1.375em;
+  margin-bottom: 2em;
 }
-
 
 /* $UNIQUE PAGE CONTENT 
 ================================================== */
@@ -69,26 +69,31 @@ a:hover {
 a:hover {text-decoration: underline;}
 
 /* Inline or non-prominent links */
-a.red,
-a.red:hover   {color: #F00;}
-a.blue,
-a.blue:hover  {color: #8080FF;}
-a.green,
-a.green:hover {color: #00C400;}
+a.black {border-bottom: 1px dotted #000;}
+a.red   {color: #F00;    border-bottom: 1px dotted #F00;}
+a.green {color: #00C400; border-bottom: 1px dotted #00C400;}
+a.blue  {color: #8080FF; border-bottom: 1px dotted #8080FF;}
+a.black:hover {border-bottom: 1px solid #000;}
+a.red:hover {border-bottom: 1px solid #F00;}
+a.green:hover {border-bottom: 1px solid #00C400;}
+a.blue:hover {border-bottom: 1px solid #8080FF;}
+a.red:hover,
+a.black:hover,
+a.green:hover,
+a.blue:hover {text-decoration: none;}
 /* Nav links - Default: Black no border. Color, bold, border-bottom on hover and .current */
-
 a.nav-red:hover,
 a.nav-green:hover,
 a.nav-blue:hover,
 a.nav-black:hover   {font-weight: bold; text-decoration: none;}
 a.nav-red:hover,
-a.nav-red.current   {color: #F00; border-bottom: 3px solid #F00;}
+a.nav-red.current   {color: #F00; border-bottom: 2px solid #F00;}
 a.nav-green:hover,
-a.nav-green.current {color: #00C400; border-bottom: 3px solid #00C400;}
+a.nav-green.current {color: #00C400; border-bottom: 2px solid #00C400;}
 a.nav-blue:hover,
-a.nav-blue.current  {color: #8080FF; border-bottom: 3px solid #8080FF;}
+a.nav-blue.current  {color: #8080FF; border-bottom: 2px solid #8080FF;}
 a.nav-black:hover,
-a.nav-black.current {border-bottom: 3px solid #000000;}
+a.nav-black.current {border-bottom: 2px solid #000000;}
 a.current           {font-weight: bold;}
 /* Prominent links - Background color and text color with reverse color on hover */
 a.prominent-red,
@@ -108,34 +113,20 @@ a.prominent-red:hover   {color: #F00;}
 a.prominent-green:hover {color: #00C400;}
 a.prominent-blue:hover  {color: #8080FF;}
 
-a.underline-black {border-bottom: 1px dotted #000;}
-a.underline-red {border-bottom: 1px dotted #F00;}
-a.underline-green {border-bottom: 1px dotted #00C400;}
-a.underline-blue {border-bottom: 1px dotted #8080FF;}
-
-a.underline-black:hover {border-bottom: 1px solid #000;}
-a.underline-red:hover {border-bottom: 2px solid #F00;}
-a.underline-green:hover {border-bottom: 1px solid #00C400;}
-a.underline-blue:hover {border-bottom: 1px solid #8080FF;}
-a.underline-red:hover,
-a.underline-black:hover,
-a.underline-green:hover,
-a.underline-blue:hover {text-decoration: none;}
-
 /* $NAVIGATION 
 ================================================== */
 /* Logo/Site info
 ------------------------- */
-a.logo_link:hover img,
-a.logo_link:hover h4  {opacity: 1;}
-a.logo_link:hover h4  {text-decoration: underline;}
+a.logo-link:hover img,
+a.logo-link:hover h4  {opacity: 1;}
+a.logo-link:hover h4  {text-decoration: underline;}
 .logo {
   white-space: nowrap;
   padding-top: .25em;
 }
 .logo img {opacity: .5;}
 .logo {line-height: 34px;}
-.logo_img {
+.logo-img {
   float: left;
   width: 34px;
   height: 34px;
@@ -202,7 +193,7 @@ ul.sub_topnav_hidden li {
 @media screen and (max-width: 999px) {
 }
 @media screen and (max-width: 860px) {
-  .logo_link {display: none;}
+  .logo-link {display: none;}
   .logo {display: none;}
   .topnav {padding-left: 0;}
   .topnav li {margin-right: 10%;}
@@ -254,7 +245,7 @@ ul.sub_topnav_hidden li {
 .about_bkgrd h3   {background-color:rgba(128,255,128,.5);}
 .contact_bkgrd h3 {background-color:rgba(128,128,255,.5);}
 
-/* $WORK (Sites, Art, Photography) 
+/* $WORK (Projects, Art, Photography) 
 ================================================== */
 .work_page {}
 .work_info {}
@@ -271,13 +262,15 @@ ul.sub_topnav_hidden li {
   margin-bottom: .5em;
   border-bottom: 1px solid #BABABA;
 }
+.work-title {font-weight: bold; padding-bottom: 3px; border-bottom: 1px solid #BABABA;}
 
-/* $Sites 
+/* $Projects 
 ========================= */
 .project-block {}
 .project-title {}
 .project-img img {width: 100%}
-.project-info {}
+.project-img-link:hover img {outline: 1px solid #F00;}
+.project-info h4 {font-weight: ; border-bottom: 1px solid #BABABA;}
 
 .site_block h4 {font-weight: bold;}
 .site_block img {
@@ -285,7 +278,7 @@ ul.sub_topnav_hidden li {
   min-width: 300px;
   position: relative;
 }
-a.site_img_link:hover img{outline: 1px solid #FF0000;}
+a.site_img_link:hover img{outline: 1px solid #F00;}
 .site_title {min-width: 300px; padding-bottom: 3px;}
 
 /* $Art 
@@ -376,37 +369,38 @@ a.art_img_link:hover img {border: 1px solid #FF0000;}
 /* $FOOTER 
 ================================================== */
 /* wraps inside entire body */
-.wrapper {min-height: 95%; margin: 0 auto -10px;}
-.footer,
-.foot-push {height: 10px;} /* .push must be the same height as .footer */
+/*.wrapper {min-height: 95%; margin: 0 auto -10px;}*/
+/*.footer,
+.foot-push {height: 10px;} *//* .push must be the same height as .footer */
 .footer h4 {margin-top: 15px; color: #555555;}
-.icon_tray {
-  margin: 0 auto;
+.jump-top {text-align: center;}
+.jump-top a {padding: 10px; border: 1px solid black;}
+.icon-tray {
   margin-top: 2em;
-  width: 40%;
-  min-width: 400px;
-  clear: both;
   border-top: 1px solid #BABABA;
+  text-align: center;
 }
-.icon_tray div {opacity: .4}
-.icon_tray a {display: inline-block; margin-right: 2%;}
-.icon_tray a:hover div {transition: opacity .3s ease; opacity: 1;}
+.icon-tray li {display: inline-block;}
+.icon-tray div {opacity: .7}
+.icon-tray a {display: inline-block; margin-right: 2%;}
+.icon-tray a:hover div {opacity: 1;}
+.copyright {color: black; text-align: right;}
 
 /* Social Media Icons
 ------------------------- */
-.github_icon,
-.facebook_icon,
-.flickr_icon,
-.instagram_icon,
-.tumblr_icon,
-.email_icon     {display:inline-block; width: 60px; height: 60px;}
-.github_icon    {background: url(icons/flat/Github.svg)   no-repeat;}
-.facebook_icon  {background: url(icons/flat/Facebook.svg) no-repeat;}
-.flickr_icon    {background: url(icons/flat/Flickr.svg)   no-repeat;}
-.instagram_icon {background: url(icons/flat/Instagram.svg)no-repeat;}
-.tumblr_icon    {background: url(icons/flat/Tumblr.svg)   no-repeat;}
-.email_icon     {background: url(icons/flat/Mail.svg)     no-repeat;}
-.copy {color: black; text-align: right;}
+.github-icon,
+.facebook-icon,
+.flickr-icon,
+.instagram-icon,
+.tumblr-icon,
+.email-icon     {display:inline-block; width: 60px; height: 60px;}
+.github-icon    {background: url(icons/flat/Github.svg)   no-repeat;}
+.facebook-icon  {background: url(icons/flat/Facebook.svg) no-repeat;}
+.flickr-icon    {background: url(icons/flat/Flickr.svg)   no-repeat;}
+.instagram-icon {background: url(icons/flat/Instagram.svg)no-repeat;}
+.tumblr-icon    {background: url(icons/flat/Tumblr.svg)   no-repeat;}
+.email-icon     {background: url(icons/flat/Mail.svg)     no-repeat;}
+
 
 /* $GRID
 ================================================== */
@@ -550,9 +544,9 @@ a.art_img_link:hover img {border: 1px solid #FF0000;}
 }
 .border_bottom {border-bottom: 1px solid #BABABA;}
 .inline_header {margin-bottom: 5px;}
-.paragraph     {margin-bottom: 1.5em; max-width: 650px; min-width: 325px; text-align: justify;}
+
 .email_big     {margin-top: .5em; margin-bottom: 1.5em;}
-.jump_top      {padding: .5em; border: 1px solid black;}
+
 
 /* Indent */
 .indent {margin-left: 15px;}
@@ -586,8 +580,8 @@ ul > li.last_element {margin-right: 0;}
 .bottom_left  {position: absolute; left: 0; bottom: 0;}
 .bottom_right {position: absolute; right: 0; bottom: 0;}
 .justify      {text-align: justify;}
-.align-center   {text-align: center;}
-.center_horizontal_block  {margin: 0 auto;}
+.center-align {text-align: center;}
+.center-block  {margin: 0 auto;}
 .center_vertical {
   position: absolute;
   top: 25%;

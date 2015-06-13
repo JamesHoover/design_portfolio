@@ -1,27 +1,25 @@
 <!-- BODY -->
 <body>
+  <a name="top"></a>
   <div class="wrapper">
     <!-- HEADER -->
     <header class="top-nav">
       <!-- Logo/site info -->
       <section class="site-info row">
         <article class="logo pull first">
-          <a href="/" title="Home" class="logo_link">
-            <h4 class="logo">
-              <img src="/assets/icons/logoCopy.png" class="logo_img">
-              JamesHooverDesign.com
-            </h4>
+          <a href="/" title="Home" class="logo-link">
+            <h4><img src="/assets/icons/logoCopy.png" class="logo-img">JamesHooverDesign.com</h4>
           </a>
         </article>
         <article class="contact-info push">
           <h4>James Hoover</h4>
           <h4>Web Design Portfolio<br></h4>
           <h4>
-            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="underline-black">jamesfhoover@gmail.com</a>
+            <a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a>
           </h4>
         </article>
       </section>
-      <!-- Nav Links -->
+      <!-- NAV -->
       <nav class="site-nav row">
         <ul class="half-width first">
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
@@ -33,7 +31,7 @@
             </ul>
           </li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
-          <li class=""><%= link_to "Contact", '/contact', class: "nav-blue current" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue current" %></li>
         </ul>
       </nav>
     </header><!-- END HEADER -->
@@ -43,8 +41,8 @@
     <div class="container contact_page">
       <h1 class="location bold border_bottom">Contact Me:</h1>
       <div class="contact_p">
-        <h3 class="email_big"><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
-        <p class="paragraph">Thanks for checking out my portfolio! If you're interested in working with me, <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue underlined-blue">email me</a>, and we can talk.<br><br>
+        <h3 class="email_big"><a href="mailto:jamesfhoover@gmail.com" title="Email" class="prominent-blue">jamesfhoover@gmail.com</a></h3>
+        <p class="paragraph">Thanks for checking out my portfolio! If you're interested in working with me, <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">email me</a>, and we can talk.<br><br>
           On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.<br><br>Seriously, my work and this site is an ongoing project. I would love to hear what you think. More viewpoints create a better product. 
         </p>
       </div>
@@ -55,17 +53,17 @@
     </div>
   </div>
   <!-- FOOTER -->
-  <div class="footer foot-push align-center">
-    <h4>Find me on social media</h4>
-    <div class="icon_tray">
-      <div class="spacer_10"></div>
-      <div class="spacer_10"></div>
-      <a href="https://github.com/JamesHoover" title="GitHub"><div class="github_icon"></div><br>Github</a>
-      <a href="http://www.facebook.com/" title="Facebook"><div class="facebook_icon"></div><br>Facebook</a>
-      <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr_icon"></div><br>Flickr</a>
-      <a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram_icon"></div><br>Instagram</a>
-      <a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email_icon"></div><br>Email</a>
-    </div>
-    <h6 class="copy">&copy;2015 - James Hoover</h6>
-  </div>
+  <footer class="row footer foot-push">
+    <h4 class="center-align">Find me on social media</h4>
+    <section class="icon-tray">
+      <ul>
+        <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon"></div><br>Github</a></li>
+        <li><a href="http://www.facebook.com/" title="Facebook"><div class="facebook-icon"></div><br>Facebook</a></li>
+        <li><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr-icon"></div><br>Flickr</a></li>
+        <li><a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram-icon"></div><br>Instagram</a></li>
+        <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon"></div><br>Email</a></li>
+      </ul>
+    </section>
+    <h6 class="copyright">&copy;2015 - James Hoover</h6>
+  </footer>
 </body>
