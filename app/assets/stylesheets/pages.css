@@ -132,13 +132,13 @@ a.logo-link:hover h4  {text-decoration: underline;}
 
 /* Nav 
 ------------------------- */
-.top-nav > ul {
+.main-nav > ul {
   padding: 3em 0 3px 0;
   border-bottom: 1px solid #BABABA;
   /*border-top: medium double #BABABA;*/
   white-space: nowrap;
 }
-.top-nav li {
+.main-nav li {
   display: inline-block;
   font-size: 1em;
   vertical-align: top;
@@ -158,13 +158,13 @@ ul.sub_topnav_hidden li {
 }
 
 /* subnav hover only on non work pages */
-.top-nav li ul.sub_topnav_hidden {
+.main-nav li ul.sub_topnav_hidden {
   display: none;
   position: absolute;
   width: auto;
   padding-right: 2em;
 }
-.top-nav li:hover ul.sub_topnav_hidden {display: block;}
+.main-nav li:hover ul.sub_topnav_hidden {display: block;}
 
 .sub_topnav_hidden li.active {border-left: 1px solid #F00;
   text-decoration:
