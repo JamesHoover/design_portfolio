@@ -20,6 +20,8 @@
 **  Footer on Contact is not default visible
 **  The subnav still looks bad
 **  Trying out flat icons. If outline need github outline
+**  Go full minimalistic, you need a unique design that people remember
+**  
 **  -------------------------------------------------- */
 
 /* $HTML ELEMENTS
@@ -96,7 +98,7 @@ a.prominent-red,
 a.prominent-green,
 a.prominent-blue {
   font-weight: bold;
-  padding: 2px 4px;
+  padding: 10px 20px;
   color: white;
 }
 a.prominent-red   {background-color: #F00;}
@@ -108,6 +110,9 @@ a.prominent-blue:hover  {background-color: white;}
 a.prominent-red:hover   {color: #F00;}
 a.prominent-green:hover {color: #00C400;}
 a.prominent-blue:hover  {color: #8080FF;}
+
+a.outline-green {padding: 10px; color: #00C400; border: 1px solid #00C400;}
+
 
 /* $NAVIGATION 
 ================================================== */
@@ -229,10 +234,15 @@ ul.sub_topnav_hidden li {
 .work_bkgrd    {background: url(home/laptopLightBW_Copy.jpg) no-repeat; background-size: cover;}
 .about_bkgrd   {background: url(james_selfieBW.jpg)          no-repeat; background-size: cover;}
 .contact_bkgrd {background: url(home/laptopTableBW_Copy.jpg) no-repeat; background-size: cover;}
-
+/*
 .work_bkgrd h3    {background-color:rgba(254,55,0,.5);}
 .about_bkgrd h3   {background-color:rgba(128,255,128,.5);}
 .contact_bkgrd h3 {background-color:rgba(128,128,255,.5);}
+*/
+
+.work_bkgrd    {color:rgb(254,55,0);}
+.about_bkgrd   {color:rgb(128,255,128);}
+.contact_bkgrd {color:rgb(128,128,255);}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
