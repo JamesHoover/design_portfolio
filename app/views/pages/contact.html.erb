@@ -11,23 +11,16 @@
             <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
-        <article class="contact-info push">
-          <h4>James Hoover</h4>
-          <h4>Web Design Portfolio<br></h4>
+        <article class="main-contact-info push">
+          <h4>James Hoover - Portfolio</h4>
           <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
       <nav class="site-nav row">
-        <ul class="half-width first">
+        <ul>
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
-          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
-            <ul class="sub-nav">
-              <a href="/work/sites"><li class="capitalize">Projects</li></a>
-              <a href="/work/art"><li class="capitalize">Art</li></a>
-              <a href="/work/photography"><li class="capitalize">Photography</li></a>
-            </ul>
-          </li>
+          <li><%= link_to "Work", '/work/sites', class: "nav-red" %></li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
           <li><%= link_to "Contact", '/contact', class: "nav-blue current" %></li>
         </ul>
@@ -37,11 +30,12 @@
     <div class="topnav_clear"></div>
     <!-- CONTACT_PAGE CONTENT -->
     <section class="row">
-      <h1 class="page-title">Contact Me:</h1>
+      <h1 class="page-title">Contact Me</h1>
       <article class="contact-paragraph three-fifths first">
-        <h3 class="">email: <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
-        <h3 class="">mobile: 206 - 555 - 5282</h3>
-
+        <section class="contact-info">
+          <h3>email: <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
+          <h3>mobile: 206 - 555 - 5282</h3>
+        </section>
         <h4>Thanks for checking out my portfolio! </h4>
         <p>If you're interested in working with me <a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">email me</a> with a brief description of your project and we can talk.<br><br>
           On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.<br><br>Seriously, my work and this site is an ongoing project. I would love to hear what you think. More viewpoints create a better product. 

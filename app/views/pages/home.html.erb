@@ -10,23 +10,16 @@
             <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
-        <article class="contact-info push">
-          <h4>James Hoover</h4>
-          <h4>Web Design Portfolio<br></h4>
+        <article class="main-contact-info push">
+          <h4>James Hoover - Portfolio</h4>
           <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
       <nav class="site-nav row">
-        <ul class="half-width first">
+        <ul>
           <li><%= link_to "Home", '/', class: "nav-black current" %></li>
-          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red" %>
-            <ul class="sub-nav">
-              <a href="/work/sites"><li class="capitalize">Projects</li></a>
-              <a href="/work/art"><li class="capitalize">Art</li></a>
-              <a href="/work/photography"><li class="capitalize">Photography</li></a>
-            </ul>
-          </li>
+          <li><%= link_to "Work", '/work/sites', class: "nav-red" %></li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
           <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
@@ -38,16 +31,34 @@
         <article class="pull first">
           <h1>James Hoover</h1>
           <h2 class="home_subtitle">Web Design Porfolio</h2>
-          <h4 class="home_subtitle">Designer / Engineer / Artist</h4>
+          <h4>I design and build websites!</h4>
+          <h4 class="work-desc">
+            <a href="/work/sites" title="View Work" class= "black">View my work</a>, 
+            <a href="/about" title="About Me" class= "black">get to know me</a>, or 
+            <a href="/contact" title="Contact Me" class= "black"> contact me</a> for availability.
+          </h4>
         </article>
       </div>
-      <div class="row">
-        <article class="home_navicons first">
-          <a class="navicon_link" href="/work/sites" title="Work"><div class="work_bkgrd home_navicons_content"><h3 class="bottom_left">My Work</h3></div></a>
-          <a class="navicon_link" href="/about" title="About"><div class="about_bkgrd home_navicons_content"><h3 class="bottom_left">About Me</h3></div></a>
-          <a class="navicon_link" href="/contact" title="Contact"><div class="contact_bkgrd home_navicons_content"><h3 class="bottom_left">Contact Me</h3></div></a>
+      <section class="row">
+
+        <article class="home-navicons first">
+          <a class="navicon-link" href="/work/sites" title="Work">
+            <div class="work-bkgrd home-navicons-content">
+              <h3>My Work</h3>
+            </div>
+          </a>
+          <a class="navicon-link" href="/about" title="About">
+            <div class="about-bkgrd home-navicons-content">
+              <h3>About Me</h3>
+            </div>
+          </a>
+          <a class="navicon-link" href="/contact" title="Contact">
+            <div class="contact-bkgrd home-navicons-content">
+              <h3>Contact Me</h3>
+            </div>
+          </a>
         </article>
-      </div>
+      </section>
     </section>
   </div>
   <!-- FOOTER -->

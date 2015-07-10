@@ -11,23 +11,16 @@
             <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
-        <article class="contact-info push">
-          <h4>James Hoover</h4>
-          <h4>Web Design Portfolio<br></h4>
+        <article class="main-contact-info push">
+          <h4>James Hoover - Portfolio</h4>
           <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
       <nav class="site-nav row">
-        <ul class="half-width first">
+        <ul>
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
-          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red current" %>
-            <ul class="sub-nav">
-              <a href="/work/sites"><li class="capitalize">Projects</li></a>
-              <a href="/work/art"><li class="capitalize">Art</li></a>
-              <a href="/work/photography"><li class="capitalize">Photography</li></a>
-            </ul>
-          </li>
+          <li><%= link_to "Work", '/work/sites', class: "nav-red current" %></li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
           <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
@@ -35,22 +28,28 @@
     </header><!-- END HEADER -->
     <!-- WORK-NAV -->
     <nav class="work-nav row">
-      <h1 class="page-title">my work:</h1>
-        <ul>
-          <li><%= link_to "Projects", '/work/sites', class: "nav-black" %></li>
-          <li><%= link_to "Art", '/work/art', class: "nav-black" %></li>
-          <li><%= link_to "Photography", '/work/photography', class: "nav-black current" %></li>
-        </ul>
+      <h1 class="work-title">My Work</h1>
+      <ul>
+        <li><%= link_to "Projects", '/work/sites', class: "nav-red" %></li>
+        <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
+        <li><%= link_to "Photography", '/work/photography', class: "nav-red current" %></li>
+      </ul>
     </nav>
-    <!-- WORK-INFO -->
-    <section class="work-info row">
-      <h2 class="work-title">photography</h2>
-    </section>
+
       <!-- <p class="paragraph">I come from a family of photographers. I upgraded my camera this past year and have been learning everything I can about it. Enjoy some of my favorite shots.<br><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Check out my Flickr for more.</a></p><br> -->
+    <!-- WORK-CONTENT -->
     <section class="row">
       <article class="photo-block one-half first">
+        <%= link_to image_tag("photography/firework_reflection.jpg"), image_path("photography/firework_reflection.jpg"), class: "photo-img-link",  title: "Firework Reflection" %>
+        <h5>Firework Reflection | 2015<h5>
+      </article>
+      <article class="photo-block one-half">
         <%= link_to image_tag("photography/tulipsBW.jpg"), image_path("photography/tulipsBW.jpg"), class: "photo-img-link",  title: "Tulips" %>
         <h5>Tulips | 2015</h5>
+      </article>
+      <article class="photo-block one-half first">
+        <%= link_to image_tag("photography/firework_shore_launch.jpg"), image_path("photography/firework_shore_launch.jpg"), class: "photo-img-link",  title: "Firework Shore Launch" %>
+        <h5>Firework Launch | 2015<h5>
       </article>
       <article class="photo-block one-half">
         <%= link_to image_tag("photography/kelly_closeupBW.jpg"), image_path("photography/kelly_closeupBW.jpg"), class: "photo-img-link",  title: "Kelly" %>
@@ -97,16 +96,16 @@
         <h5>my | 2014<h5>
       </article>
 			<article class="photo-block one-half first">
-        <%= link_to image_tag("photography/polar_plunge3.jpeg"), image_path("photography/polar_plunge3.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <%= link_to image_tag("photography/polar_plunge4.jpeg"), image_path("photography/polar_plunge3.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
         <h5>name | 2014<h5>
       </article>
-			<article class="photo-block one-half">
-        <%= link_to image_tag("photography/polar_plunge5.jpeg"), image_path("photography/polar_plunge5.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
-        <h5>i | 2015<h5>
+      <article class="photo-block one-half">
+        <%= link_to image_tag("photography/lighthouse.jpg"), image_path("photography/lighthouse.jpg"), class: "photo-img-link",  title: "Lighthouse" %>
+        <h5>Lighthouse | 2015<h5>
       </article>
 			<article class="photo-block one-half first">
-        <%= link_to image_tag("photography/james_and_kelly.jpeg"), image_path("photography/james_and_kelly.jpeg"), class: "photo-img-link",  title: "James & Kelly" %>
-        <h5>like | 2015<h5>
+        <%= link_to image_tag("photography/polar_plunge5.jpeg"), image_path("photography/polar_plunge5.jpeg"), class: "photo-img-link",  title: "Polar Plunge" %>
+        <h5>i | 2015<h5>
       </article>
   		<article class="photo-block one-half">
         <%= link_to image_tag("photography/taylor_james_jack.jpeg"), image_path("photography/taylor_james_jack.jpeg"), class: "photo-img-link",  title: "James & Taylor & Jack" %>
@@ -116,19 +115,19 @@
         <%= link_to image_tag("photography/kelly_beach.jpeg"), image_path("photography/kelly_beach.jpeg"), class: "photo-img-link",  title: "Kelly" %>
         <h5>the | 2015<h5>
       </article>
-  		<article class="photo-block one-half">
-        <%= link_to image_tag("photography/fungus_log.jpeg"), image_path("photography/fungus_log.jpeg"), class: "photo-img-link",  title: "Fungus" %>
-        <h5>unknown | 2015<h5>
+      <article class="photo-block one-half">
+        <%= link_to image_tag("photography/firework_stars.jpg"), image_path("photography/firework_stars.jpg"), class: "photo-img-link",  title: "Firework Stars" %>
+        <h5>Firework Stars | 2015<h5>
       </article>
     </section>
-    <aside class="checkout row">
+    <aside class="see-more row">
       <h4>Check out my <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="red">Flickr</a> for more photos.</h4>
     </aside>
   </div><!-- END DIV wrapper -->
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="jump-top">
-      <h4><a href="#top" title="Top">Jump to top</a></h4>
+      <h4><a href="#top" title="Top" class="outline-black">Jump to top</a></h4>
     </section>
     <section class="icon-tray">
       <ul>

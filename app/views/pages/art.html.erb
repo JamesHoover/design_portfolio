@@ -11,23 +11,16 @@
             <img src="/assets/icons/logoCopy.png" class="logo-img"><h4>JamesHooverDesign.com</h4>
           </a>
         </article>
-        <article class="contact-info push">
-          <h4>James Hoover</h4>
-          <h4>Web Design Portfolio<br></h4>
+        <article class="main-contact-info push">
+          <h4>James Hoover - Portfolio</h4>
           <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
         </article>
       </section>
       <!-- NAV -->
       <nav class="site-nav row">
-        <ul class="half-width first">
+        <ul>
           <li><%= link_to "Home", '/', class: "nav-black" %></li>
-          <li><%= link_to "Work\xC2\xA0/", '/work/sites', class: "nav-red current" %>
-            <ul class="sub-nav">
-              <a href="/work/sites"><li class="capitalize">Projects</li></a>
-              <a href="/work/art"><li class="capitalize">Art</li></a>
-              <a href="/work/photography"><li class="capitalize">Photography</li></a>
-            </ul>
-          </li>
+          <li><%= link_to "Work", '/work/sites', class: "nav-red current" %></li>
           <li><%= link_to "About", '/about', class: "nav-green" %></li>
           <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
         </ul>
@@ -35,21 +28,23 @@
     </header><!-- END HEADER -->
     <!-- WORK-NAV -->
     <nav class="work-nav row">
-      <h1 class="page-title">my work:</h1>
-        <ul>
-          <li><%= link_to "Projects", '/work/sites', class: "nav-black" %></li>
-          <li><%= link_to "Art", '/work/art', class: "nav-black current" %></li>
-          <li><%= link_to "Photography", '/work/photography', class: "nav-black" %></li>
-        </ul>
+      <h1 class="work-title">My Work</h1>
+      <ul>
+        <li><%= link_to "Projects", '/work/sites', class: "nav-red" %></li>
+        <li><%= link_to "Art", '/work/art', class: "nav-red current" %></li>
+        <li><%= link_to "Photography", '/work/photography', class: "nav-red" %></li>
+      </ul>
     </nav>
-    <!-- WORK-INFO -->
-    <section class="work-info row">
-      <h2 class="work-title">art</h2>
-    </section>
+    <!-- WORK-CONTENT -->
     <section class="row">
       <article class="art-block one-third first">
         <%= link_to image_tag("art/TheWarden.jpg"), image_path("art/TheWarden.jpg"), class: "art-img-link",  title: "The Warden" %>
         <h5 class="subtext"><span class="italic">The Warden</span> - 2014</h5>
+      </article>
+
+      <article class="art-block one-third ">
+        <%= link_to image_tag("art/DTLA.jpg"), image_path("art/DTLA.jpg"), class: "art-img-link",  title: "DTLA" %>
+        <h5 class="subtext"><span class="italic">DTLA</span> - 2015</h5>
       </article>
 
       <article class="art-block one-third">
@@ -57,27 +52,27 @@
         <h5 class="subtext"><span class="italic">Wink</span> - 2014</h5>
       </article>
 
-      <article class="art-block one-third">
+      <article class="art-block one-third first">
         <%= link_to image_tag("art/BlackRose.jpg"), image_path("art/BlackRose.jpg"), class: "art-img-link",  title: "Black Rose" %>
         <h5 class="subtext"><span class="italic">Black Rose</span> - 2014</h5>
       </article>
 
-      <article class="art-block one-third first">
-        <%= link_to image_tag("art/LolaScan.jpg"), image_path("art/LolaScan.jpg"), class: "art-img-link",  title: "Lola" %>
+      <article class="art-block one-third">
+        <%= link_to image_tag("art/Lola.jpg"), image_path("art/Lola.jpg"), class: "art-img-link",  title: "Lola" %>
         <h5 class="subtext"><span class="italic">Lola</span> - 2014</h4>
       </article>
 
       <article class="art-block one-third">
-        <%= link_to image_tag("art/Doodle2.jpg"), image_path("art/Doodle2.jpg"), class: "art-img-link",  title: "Doodle II" %>
-        <h5 class="subtext"><span class="italic">Doodle II</span> - 2013</h5>
+        <%= link_to image_tag("art/Doodle1.jpg"), image_path("art/Doodle1.jpg"), class: "art-img-link",  title: "Doodle I" %>
+        <h5 class="subtext"><span class="italic">Doodle I</span> - 2013</h5>
       </article>
 
-      <article class="art-block one-third">
+      <article class="art-block one-third first">
         <%= link_to image_tag("art/MezScan.jpg"), image_path("art/MezScan.jpg"), class: "art-img-link",  title: "Mesmerized" %>
         <h5 class="subtext"><span class="italic">Mesmerized</span> - 2014</h5>
       </article>
 
-      <article class="art-block one-third first">
+      <article class="art-block one-third">
         <%= link_to image_tag("art/LoneWolf.jpg"), image_path("art/LoneWolf.jpg"), class: "art-img-link",  title: "Lone Wolf" %>
         <h5 class="subtext"><span class="italic">Lone Wolf</span> - 2014</h5>
       </article>
@@ -87,16 +82,16 @@
         <h5 class="subtext"><span class="italic">Red Rose</span> - Unfinished</h5>
       </article>
 
-      <article class="art-block one-third">
-        <%= link_to image_tag("art/Doodle1.jpg"), image_path("art/Doodle1.jpg"), class: "art-img-link",  title: "Doodle I" %>
-        <h5 class="subtext"><span class="italic">Doodle I</span> - 2013</h5>
+      <article class="art-block one-third first">
+        <%= link_to image_tag("art/Doodle2.jpg"), image_path("art/Doodle2.jpg"), class: "art-img-link",  title: "Doodle II" %>
+        <h5 class="subtext"><span class="italic">Doodle II</span> - 2013</h5>
       </article>
     </section>
   </div><!-- END DIV wrapper -->
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="jump-top">
-      <h4><a href="#top" title="Top">Jump to top</a></h4>
+      <h4><a href="#top" title="Top" class="outline-black">Jump to top</a></h4>
     </section>
     <section class="icon-tray">
       <ul>
