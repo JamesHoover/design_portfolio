@@ -19,20 +19,26 @@
       <!-- NAV -->
       <nav class="site-nav row">
         <ul>
-          <li><%= link_to "Home", '/', class: "nav-black" %></li>
-          <li><%= link_to "Work", '/work/sites', class: "nav-red current" %></li>
-          <li><%= link_to "About", '/about', class: "nav-green" %></li>
-          <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
+          <li><%= link_to "Home", '/', class: "nav-black sub-link" %></li>
+          <li><%= link_to "Work", '/work/sites', class: "nav-red current" %>
+            <ul class="sub-site-nav">
+              <li><%= link_to "Projects", '/work/sites', class: "nav-red current" %></li>
+              <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
+              <li><%= link_to "Photography", '/work/photography', class: "nav-red" %></li>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green sub-link" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue sub-link" %></li>
         </ul>
       </nav>
     </header><!-- END HEADER -->
     <!-- WORK-NAV -->
     <nav class="work-nav row">
-      <h1 class="work-title">My Work</h1>
+      <h1 class="work-title">My Work: Projects</h1>
       <ul>
         <li><%= link_to "Projects", '/work/sites', class: "nav-red current" %></li>
-        <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
-        <li><%= link_to "Photography", '/work/photography', class: "nav-red" %></li>
+        <li><%= link_to "Art", '/work/art', class: "nav-red sub-link" %></li>
+        <li><%= link_to "Photography", '/work/photography', class: "nav-red sub-link" %></li>
       </ul>
     </nav>
     <!-- WORK-INFO -->

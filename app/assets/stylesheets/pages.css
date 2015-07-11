@@ -80,6 +80,10 @@ a.black:hover,
 a.green:hover,
 a.blue:hover {text-decoration: none;}
 /* Nav links - Default: Black no border. Color, bold, border-bottom on hover and .current */
+a.nav-black,
+a.nav-red,
+a.nav-green,
+a.nav-blue {border-bottom: 1px dotted #000;}
 a.nav-black:hover,
 a.nav-red:hover,
 a.nav-green:hover,
@@ -93,25 +97,8 @@ a.nav-blue.current  {color: #8080FF; border-bottom: 2px solid #8080FF;}
 a.nav-black:hover,
 a.nav-black.current {border-bottom: 2px solid #000000;}
 a.current           {}
-/* Prominent links - Background color and text color with reverse color on hover */
-/*
-a.prominent-red,
-a.prominent-green,
-a.prominent-blue {
-  font-weight: bold;
-  padding: 10px 20px;
-  color: white;
-}
-a.prominent-red   {background-color: #F00;}
-a.prominent-green {background-color: #00C400;}
-a.prominent-blue  {background-color: #8080FF;}
-a.prominent-red:hover,
-a.prominent-green:hover,
-a.prominent-blue:hover  {background-color: white;}
-a.prominent-red:hover   {color: #F00;}
-a.prominent-green:hover {color: #00C400;}
-a.prominent-blue:hover  {color: #8080FF;}
-*/
+a.sub-link {border-bottom: 1px dotted black;}
+/* boxed outline */
 a.outline-black,
 a.outline-red,
 a.outline-green,
@@ -148,14 +135,10 @@ a.logo-link:hover h4  {text-decoration: underline;}
 
 /* $NAVIGATION 
 ================================================== */
-.site-nav {padding-bottom: 50px;}
-.site-nav ul {
-  white-space: nowrap;
-}
-.site-nav li {
+.site-nav {padding-bottom: 50px; text-align: left;}
+.site-nav > ul > li {
   display: inline-block;
   font-size: 1.2em;
-  vertical-align: top;
   padding-right: 15%;
 }
 .site-nav li:last-of-type,
@@ -165,7 +148,6 @@ a.logo-link:hover h4  {text-decoration: underline;}
   margin: 15px 0;
   padding-bottom: 5px;
 }
-.work-nav a {margin-right: 30px;}
 .work-nav ul {
   font-size: 1.2em;
   padding-bottom: 30px;
@@ -174,6 +156,12 @@ a.logo-link:hover h4  {text-decoration: underline;}
 
 /* Sub-nav on site-nav 
 ------------------------- */
+.sub-site-nav {
+  position: absolute;
+  font-size: .8em;
+  padding: 10px 0 0 10px;
+}
+.sub-site-nav li {display: inline; padding-right: 10px;}
 /*
 .sub-nav li {float: left; font-size: .8em;}
 ul.sub_topnav,
@@ -216,13 +204,21 @@ ul.sub_topnav_hidden li {
 
 /* $HOME 
 ================================================== */
-.home-navicons {width: 100%;}
+.hello {}
+.home-info {text-align: center;}
+.home-info h2 {padding-bottom: 30px;}
+.home-info h4 {padding-bottom: 15px;}
+.home-navicons {display: block; width: 100%; margin: 0 auto;}
 .home-navicons-content {
   position: relative;
   display: inline-block;
   height: 300px;
-  width: 185px;
-  background-color: white;
+  width: 100%;
+  max-width: 350px;
+  background-color: #000;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
 
   -webkit-transition: .5s ease;
   -moz-transition:    .5s ease;
@@ -249,9 +245,9 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 .work-bkgrd,
 .about-bkgrd,
 .contact-bkgrd {color: white;}
-.work-bkgrd    {background: url(home/laptopLightBW_Copy.jpg) no-repeat; background-size: cover;}
-.about-bkgrd   {background: url(james_selfieBW.jpg)          no-repeat; background-size: cover;}
-.contact-bkgrd {background: url(home/laptopTableBW_Copy.jpg) no-repeat; background-size: cover;}
+.work-bkgrd    {background: url(home/laptopLightBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
+.about-bkgrd   {background: url(home/james_selfieBW.jpg)          no-repeat; background-size: cover;}
+.contact-bkgrd {background: url(home/laptopTableBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
 
 /*
 .work_bkgrd h3    {background-color:rgba(254,55,0,.5);}
@@ -261,8 +257,8 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
-.work-title {padding-bottom: 15px;}
-.work-desc {padding-bottom: 30px;}
+.work-title,
+.work-desc  {margin-bottom: 30px;}
 .see-more   {text-align: center;}
 
 /* $Projects 
@@ -272,15 +268,26 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 .project-title h3 {padding-bottom: 5px;}
 .project-info     {padding-bottom: 15px;}
 .project-info h4  {font-weight: bold;}
-.project-img img  {width: 100%}
+.project-img img  {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+}
 .project-img-link:hover img {outline: 1px solid #F00;}
 
 
 /* $Art 
 ========================= */
 .art-block {}
-.art-block h5 {padding-bottom: 2em;}
-.art-block img {width: 100%; border: 1px solid #BABABA;}
+.art-block h5 {padding: 10px 0 30px; text-align: right;}
+.art-block img {
+  width: 100%;
+  border: 1px solid #BABABA;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+}
 .art-img-link:hover img {border: 1px solid #F00;}
 
 /* $Photography 
@@ -290,6 +297,9 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
   width: 100%;
   border: 15px solid white;
   border-bottom: 75px solid white;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
 }
 .photo-img-link:hover img {outline: 1px solid #F00;}
 .photo-block h5 {
@@ -301,7 +311,11 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 
 /* $ABOUT 
 ================================================== */
-.about-img img {width: 100%;}
+.about-img img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);}
 
 /* $CONTACT 
 ================================================== */
@@ -309,7 +323,12 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 .contact-info h3 {padding-bottom: 10px;}
 .contact-info h3:last-of-type {padding-bottom: 0;}
 .contact-paragraph h4 {padding-bottom: 1em;}
-.contact-img img {width: 100%;}
+.contact-img img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+}
 
 
 /* $FOOTER 
@@ -422,7 +441,11 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
 @media screen and (min-width: 0) and (max-width: 40.4em){
   /* minimizes navbar on small screen */
   .logo h4 {display: none;}
-  .site-nav li {padding-right: 5%;}
+  .sub-site-nav {display: none;}
+  .site-nav {text-align: center;}
+  .site-nav > ul > li {padding-right: 5%;}
+  .work-nav a {margin-right: 0;}
+
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -448,6 +471,7 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
   }
 }
 @media screen and (min-width: 40.5em) and (max-width: 63.9em){
+  .sub-site-nav {display: none;}
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -472,6 +496,7 @@ a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
   .last.third-width, .last.fifth-width {clear:both; width:50%; margin: 0 auto;}
 }
 @media screen and (min-width: 64em){
+  .work-nav ul {display: none;}
   .last.third-width {clear:none; width: 33.333%;}
   .last.fifth-width {clear:none; width: 20%;}
 }
