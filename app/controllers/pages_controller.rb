@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def contact
   end
 
-	def sites
+	def projects
   end
 
   def photography
