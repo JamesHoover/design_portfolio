@@ -13,7 +13,6 @@
 **  Choose/take pic for contact page
 **  New pic for about page
 **  Open link in new tab
-**  Change 'Work' to Projects
 **  SEO and Google Analytics
 **  Remove unnecessary Google font links
 **  Some sort of 'pop out' on the photos page
@@ -21,6 +20,7 @@
 **  The subnav still looks bad
 **  Trying out flat icons. If outline need github outline
 **  Go full minimalistic, you need a unique design that people remember
+**  Get better quality photography pics. and lower too high res ones.
 **  
 **  -------------------------------------------------- */
 
@@ -103,10 +103,14 @@ a.outline-black,
 a.outline-red,
 a.outline-green,
 a.outline-blue  {display: inline-block;}
-a.outline-black {padding: 10px; color: #000; border: 1px solid #000;}
-a.outline-red   {padding: 10px; color: #F00; border: 1px solid #F00;}
-a.outline-green {padding: 10px; color: #00C400; border: 1px solid #00C400;}
-a.outline-blue  {padding: 10px; color: #8080FF; border: 1px solid #8080FF;}
+a.outline-black {padding: 10px; color: #000; border: 1px dotted #000;}
+a.outline-red   {padding: 10px; color: #F00; border: 1px dotted #F00;}
+a.outline-green {padding: 10px; color: #00C400; border: 1px dotted #00C400;}
+a.outline-blue  {padding: 10px; color: #8080FF; border: 1px dotted #8080FF;}
+a.outline-black:hover {border: 1px solid #000;}
+a.outline-red:hover   {border: 1px solid #F00;}
+a.outline-green:hover {border: 1px solid #00C400;}
+a.outline-blue:hover  {border: 1px solid #8080FF;} 
 
 
 /* $HEADER
@@ -208,13 +212,19 @@ ul.sub_topnav_hidden li {
 .home-info {text-align: center;}
 .home-info h2 {padding-bottom: 30px;}
 .home-info h4 {padding-bottom: 15px;}
-.home-navicons {display: block; width: 100%; margin: 0 auto;}
-.home-navicons-content {
+/* Centers navicon when single on row */
+.navicon-block {text-align: center; padding-bottom: 30px;}
+a.navicon-link {text-decoration: none;}
+a.navicon-link:hover div {opacity: 1; text-shadow: 1px 1px 0px black;}
+a.navicon-link:hover h3 {border: 1px solid white;}
+
+
+.navicon-content {
   position: relative;
-  display: inline-block;
   height: 300px;
   width: 100%;
   max-width: 350px;
+  margin: 0 auto;
   background-color: #000;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
@@ -227,21 +237,14 @@ ul.sub_topnav_hidden li {
   opacity: .65;
   color: black;
 }
-a.navicon-link {text-decoration: none;}
-a.navicon-link:hover div {opacity: 1; text-shadow: 1px 1px 0px black;}
-.home-navicons-content h3 {
+.navicon-content h3 {
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 5px 15px;
-  border: 1px solid white;
+  border: 1px dotted white;
   margin: 3px 3px;
 }
-
-a.navicon-link:hover .work-bkgrd    {color: #F00;}
-a.navicon-link:hover .about-bkgrd   {color: #00C400;}
-a.navicon-link:hover .contact-bkgrd {color: #8080FF;}
-
 .work-bkgrd,
 .about-bkgrd,
 .contact-bkgrd {color: white;}
