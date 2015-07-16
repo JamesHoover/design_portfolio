@@ -21,6 +21,7 @@
 **  Trying out flat icons. If outline need github outline
 **  Go full minimalistic, you need a unique design that people remember
 **  Get better quality photography pics. and lower too high res ones.
+**  About page talks all about UX but homepage says webdesign...
 **  
 **  -------------------------------------------------- */
 
@@ -46,10 +47,15 @@ p {
   color: #555;
   font-size: 1em;
   line-height: 1.375em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+}
+/* Highlight selection */
+*::selection {
+  background-color: #000;
+  color: #fff;
 }
 
-/* $UNIQUE PAGE CONTENT 
+/* $CONTENT 
 ================================================== */
 /* $Links
 ------------------------- */
@@ -65,7 +71,6 @@ a:hover {
   text-decoration: none;
 }
 a:hover {text-decoration: underline;}
-
 /* Inline or non-prominent links */
 a.black {border-bottom: 1px dotted #000;}
 a.red   {color: #F00;    border-bottom: 1px dotted #F00;}
@@ -96,7 +101,6 @@ a.nav-blue:hover,
 a.nav-blue.current  {color: #8080FF; border-bottom: 2px solid #8080FF;}
 a.nav-black:hover,
 a.nav-black.current {border-bottom: 2px solid #000000;}
-a.current           {}
 a.sub-link {border-bottom: 1px dotted black;}
 /* boxed outline */
 a.outline-black,
@@ -134,7 +138,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .site-info {
   text-align: right;
-  padding: 5px 0 50px;
+  padding: 15px 0 50px;
 }
 
 /* $NAVIGATION 
@@ -142,7 +146,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .site-nav {padding-bottom: 50px; text-align: left;}
 .site-nav > ul > li {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding-right: 15%;
 }
 .site-nav li:last-of-type,
@@ -153,8 +157,9 @@ a.logo-link:hover h4  {text-decoration: underline;}
   padding-bottom: 5px;
 }
 .work-nav ul {
-  font-size: 1.2em;
-  padding-bottom: 30px;
+  font-size: 2em;
+  padding: 10px 0 50px 0;
+  text-align: center;
 }
 .work-nav li {display: inline-block; padding-right: 30px;}
 
@@ -163,7 +168,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .sub-site-nav {
   position: absolute;
   font-size: .8em;
-  padding: 10px 0 0 10px;
+  padding: 15px 0 0 10px;
 }
 .sub-site-nav li {display: inline; padding-right: 10px;}
 /*
@@ -204,11 +209,11 @@ ul.sub_topnav_hidden li {
 
 /* $PAGES 
 ================================================== */
-.page-title {padding-bottom: 30px;}
+.page-title {padding-bottom: 50px; text-align: center;}
+.sub-title {padding: 10px 0 50px 0; text-align: center;}
 
 /* $HOME 
 ================================================== */
-.hello {}
 .home-info {text-align: center;}
 .home-info h2 {padding-bottom: 30px;}
 .home-info h4 {padding-bottom: 15px;}
@@ -249,7 +254,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .about-bkgrd,
 .contact-bkgrd {color: white;}
 .work-bkgrd    {background: url(home/laptopLightBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
-.about-bkgrd   {background: url(home/james_selfieBW.jpg)          no-repeat; background-size: cover;}
+.about-bkgrd   {background: url(home/james_selfieBW.jpg) no-repeat; background-size: cover;}
 .contact-bkgrd {background: url(home/laptopTableBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
 
 /*
@@ -260,19 +265,24 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
-.work-title,
+.work-title {margin-top: 25px;}
 .work-desc  {margin-bottom: 30px;}
+.work-title {text-align: center;}
 .see-more   {text-align: center;}
+
 
 /* $Projects 
 ========================= */
 .project-block    {padding-bottom: 75px;}
-.project-title    {padding-bottom: 15px;}
+.project-title    {padding-bottom: 15px; text-align: center;}
 .project-title h3 {padding-bottom: 5px;}
+.project-desc     {padding-bottom: 30px;}
 .project-info     {padding-bottom: 15px;}
 .project-info h4  {font-weight: bold;}
+.project-img-extra img,
 .project-img img  {
   width: 100%;
+  margin-bottom: 15px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
   box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
@@ -314,8 +324,10 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $ABOUT 
 ================================================== */
+.about-me h3 {font-weight: bold;}
 .about-img img {
   width: 100%;
+  margin-bottom: 30px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
   box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);}
@@ -323,15 +335,18 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 /* $CONTACT 
 ================================================== */
 .contact-info {padding-bottom: 30px;}
-.contact-info h3 {padding-bottom: 10px;}
+.contact-info h3 {padding-bottom: 10px; font-weight: bold;}
 .contact-info h3:last-of-type {padding-bottom: 0;}
 .contact-paragraph h4 {padding-bottom: 1em;}
+.contact-img {position: relative;}
 .contact-img img {
   width: 100%;
+  margin-bottom: 30px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
   box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
 }
+.contact-img h3 {position: absolute; bottom: 50px; right: 25px; color: white;}
 
 
 /* $FOOTER 
@@ -340,17 +355,23 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 /*.wrapper {min-height: 95%; margin: 0 auto -10px;}*/
 /*.footer,
 .foot-push {height: 10px;} *//* .push must be the same height as .footer */
-.footer h4 {margin-top: 15px; color: #555555;}
-.jump-top {text-align: center;}
+.footer h4 {margin-top: 15px;}
+.jump-top {text-align: center; padding: 15px 0 50px 0;}
 .icon-tray {
   margin-top: 2em;
   text-align: center;
 }
-.icon-tray li {display: inline-block;}
+.icon-tray li {display: inline-block; margin-right: 50px;}
+.icon-tray li:last-of-type {margin-right: 0;}
 .icon-tray div {opacity: .7}
-.icon-tray a {display: inline-block; margin-right: 2%;}
+.icon-tray h4 {padding-bottom: 15px;}
+.icon-tray a {display: inline-block;}
 .icon-tray a:hover div {opacity: 1;}
-.copyright {color: black; text-align: center;}
+.copyright {
+  color: black;
+  text-align: center;
+  margin: 15px 0;
+}
 
 /* Social Media Icons
 ------------------------- */
@@ -440,15 +461,19 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $MEDIA QUERIES 
 ========================= */
-/* Mobile first. Using relative units */
+/* Mobile first query design. Using max and relative units. */
+/* Mobile size */
 @media screen and (min-width: 0) and (max-width: 40.4em){
-  /* minimizes navbar on small screen */
-  .logo h4 {display: none;}
-  .sub-site-nav {display: none;}
-  .site-nav {text-align: center;}
+  /* minimize navbar on small screen */
+  .logo h4            {display: none;}
+  .sub-site-nav       {display: none;}
+  .sub-title          {display: none;}
+  .project-img-extra  {display: none;}
+  .site-nav           {text-align: center;}
   .site-nav > ul > li {padding-right: 5%;}
-  .work-nav a {margin-right: 0;}
-
+  .work-nav ul {font-size: 1.2em;}
+  .work-nav a  {margin-right: 0;}
+  .icon-tray a {margin-right: 15px;}
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -472,9 +497,13 @@ a.navicon-link:hover h3 {border: 1px solid white;}
     margin: 0;
     width: 100%
   }
+  /* Gives photos bottom spacing on each row */
+  .photo-block {margin-bottom: 30px;}
 }
+/* Tablet size */
 @media screen and (min-width: 40.5em) and (max-width: 63.9em){
   .sub-site-nav {display: none;}
+  .sub-title    {display: none;}
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -494,35 +523,19 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   .four-sixths,   
   .three-fourths, 
   .four-fifths,   
-  .five-sixths  {width: 100%}
-  /* 50% width causes two units per line so center the last odd unit */
-  .last.third-width, .last.fifth-width {clear:both; width:50%; margin: 0 auto;}
+  .five-sixths  {width: 100%;}
+  .project-info {width: 100%; margin-left: 0;}
 }
+/* Laptop/Desktop size and beyond */
 @media screen and (min-width: 64em){
   .work-nav ul {display: none;}
-  .last.third-width {clear:none; width: 33.333%;}
-  .last.fifth-width {clear:none; width: 20%;}
 }
 
 /* $GENERAL 
 ================================================== */
-.location   {padding-bottom: .1em; margin-bottom: 5px;}
-.inline-header {margin-bottom: 5px;}
-.email-lrg  {margin-bottom: 1.5em;}
-/* Typography */
-.bold       {font-weight: bold;}
-.italic     {font-style: italic;}
-.subtext    {color: #555;}
-.uppercase  {text-transform: uppercase;}
-.capitalize {text-transform: capitalize;}
-.underline  {text-decoration: underline;}
-
 /* Positioning/Alignment */
 .float-right  {float: right;}
 .float-left   {float: left;}
 .bottom       {position: absolute; bottom: 10%;}
 .bottom-left  {position: absolute; left: 0; bottom: 0;}
 .bottom-right {position: absolute; right: 0; bottom: 0;}
-.justify      {text-align: justify;}
-.center-align {text-align: center;}
-.center-block  {margin: 0 auto;}
