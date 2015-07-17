@@ -77,9 +77,9 @@ a.red   {color: #F00;    border-bottom: 1px dotted #F00;}
 a.green {color: #00C400; border-bottom: 1px dotted #00C400;}
 a.blue  {color: #8080FF; border-bottom: 1px dotted #8080FF;}
 a.black:hover {border-bottom: 1px solid #000;}
-a.red:hover {border-bottom: 1px solid #F00;}
+a.red:hover   {border-bottom: 1px solid #F00;}
 a.green:hover {border-bottom: 1px solid #00C400;}
-a.blue:hover {border-bottom: 1px solid #8080FF;}
+a.blue:hover  {border-bottom: 1px solid #8080FF;}
 a.red:hover,
 a.black:hover,
 a.green:hover,
@@ -94,7 +94,7 @@ a.nav-red:hover,
 a.nav-green:hover,
 a.nav-blue:hover    {text-decoration: none;}
 a.nav-red:hover,
-a.nav-red.current   {color: #F00; border-bottom: 2px solid #F00;}
+a.nav-red.current   {color: #F00;    border-bottom: 2px solid #F00;}
 a.nav-green:hover,
 a.nav-green.current {color: #00C400; border-bottom: 2px solid #00C400;}
 a.nav-blue:hover,
@@ -107,10 +107,10 @@ a.outline-black,
 a.outline-red,
 a.outline-green,
 a.outline-blue  {display: inline-block;}
-a.outline-black {padding: 10px; color: #000; border: 1px dotted #000;}
-a.outline-red   {padding: 10px; color: #F00; border: 1px dotted #F00;}
-a.outline-green {padding: 10px; color: #00C400; border: 1px dotted #00C400;}
-a.outline-blue  {padding: 10px; color: #8080FF; border: 1px dotted #8080FF;}
+a.outline-black {padding: 10px; color: #000;    border: 1px dotted #000;    background-color: rgba(0,0,0,.1);}
+a.outline-red   {padding: 10px; color: #F00;    border: 1px dotted #F00;    background-color: rgba(255,0,0,.1);}
+a.outline-green {padding: 10px; color: #00C400; border: 1px dotted #00C400; background-color: rgba(0,196,0,.1);}
+a.outline-blue  {padding: 10px; color: #8080FF; border: 1px dotted #8080FF; background-color: rgba(128,128,255,.1);}
 a.outline-black:hover {border: 1px solid #000;}
 a.outline-red:hover   {border: 1px solid #F00;}
 a.outline-green:hover {border: 1px solid #00C400;}
@@ -249,6 +249,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   padding: 5px 15px;
   border: 1px dotted white;
   margin: 3px 3px;
+  background-color: rgba(255,255,255,.2);
 }
 .work-bkgrd,
 .about-bkgrd,
