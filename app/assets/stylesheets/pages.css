@@ -8,7 +8,6 @@
 /** TODO:
 **  --------------------------------------------------
 **  Design a logo
-**  Navicons colored transparent overlay on hover?
 **  Choose what photos to put on site
 **  Choose/take pic for contact page
 **  New pic for about page
@@ -30,7 +29,7 @@
 /* Typography
 ------------------------- */
 html { 
-  font-family: 'Quicksand', Sans-Serif, 'Karla', 'Dosis', 'Open Sans', 'Poiret One', futura; /* remove most of these */
+  font-family: 'Quicksand', Sans-Serif;
   font-size: 100%;
   background-color: #F7F6F4;
 }
@@ -43,7 +42,7 @@ h4 {font-size: 1.1em;}
 h5 {font-size: 1em;}
 h6 {font-size: .75em;}
 p {
-  font-family: 'Open Sans', Sans-Serif, 'Karla';
+  font-family: 'Open Sans', Sans-Serif;
   color: #555;
   font-size: 1em;
   line-height: 1.375em;
@@ -275,7 +274,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 /* $Projects 
 ========================= */
 .project-block    {padding-bottom: 75px;}
-.project-title    {padding-bottom: 15px; text-align: center;}
+.project-title    {padding-bottom: 20px; text-align: center;}
 .project-title h3 {padding-bottom: 5px;}
 .project-desc     {padding-bottom: 30px;}
 .project-info     {padding-bottom: 15px;}
