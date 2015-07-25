@@ -43,7 +43,7 @@
       </ul>
     </nav>
     <!-- WORK-CONTENT -->
-    <section class="row">
+    <section class="row art">
       <article class="art-block one-third first">
         <%= link_to image_tag("art/TheWarden.jpg"), image_path("art/TheWarden.jpg"), class: "art-img-link",  title: "The Warden" %>
         <h5 class="subtext"><span class="italic">The Warden</span> - 2014</h5>
@@ -105,4 +105,14 @@
     </section>
     <h6 class="copyright">&copy;2015 - James Hoover</h6>
   </footer>
+  <script type="text/javascript">
+    $('.art').magnificPopup({
+      delegate: 'a', // child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+        // options for gallery
+        enabled: true
+      }
+    });
+  </script>
 </body>

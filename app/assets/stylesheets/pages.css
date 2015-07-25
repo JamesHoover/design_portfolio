@@ -210,6 +210,8 @@ ul.sub_topnav_hidden li {
 ================================================== */
 .page-title {padding-bottom: 50px; text-align: center;}
 .sub-title {padding: 10px 0 50px 0; text-align: center;}
+.stand-out {font-weight: bold;}
+
 
 /* $HOME 
 ================================================== */
@@ -220,16 +222,15 @@ ul.sub_topnav_hidden li {
 .navicon-block {text-align: center; padding-bottom: 30px;}
 a.navicon-link {text-decoration: none;}
 a.navicon-link:hover div {opacity: 1; text-shadow: 1px 1px 0px black;}
-a.navicon-link:hover h3 {border: 1px solid white;}
-
+a.navicon-link:hover h3 {border: 1px solid white; color: white; background-color: rgba(255,255,255,0);}
 
 .navicon-content {
   position: relative;
   height: 300px;
   width: 100%;
   max-width: 350px;
-  margin: 0 auto;
   background-color: #000;
+  margin: 0 auto;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
   box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
@@ -239,7 +240,6 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   -o-transition:      .5s ease;
   transition:         .5s ease;
   opacity: .65;
-  color: black;
 }
 .navicon-content h3 {
   position: absolute;
@@ -248,7 +248,8 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   padding: 5px 15px;
   border: 1px dotted white;
   margin: 3px 3px;
-  background-color: rgba(255,255,255,.2);
+  color: black;
+  background-color: rgba(255,255,255,.3);
 }
 .work-bkgrd,
 .about-bkgrd,
@@ -324,7 +325,8 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $ABOUT 
 ================================================== */
-.about-me h3 {font-weight: bold;}
+.about-me h3,
+.about-me h4 {font-weight: bold;}
 .about-img img {
   width: 100%;
   margin-bottom: 30px;
@@ -356,9 +358,9 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 /*.footer,
 .foot-push {height: 10px;} *//* .push must be the same height as .footer */
 .footer h4 {margin-top: 15px;}
-.jump-top {text-align: center; padding: 15px 0 50px 0;}
+.jump-top {text-align: center; padding: 50px 0 15px;}
 .icon-tray {
-  margin-top: 2em;
+  margin-top: 100px;
   text-align: center;
 }
 .icon-tray li {display: inline-block; margin-right: 50px;}

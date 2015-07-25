@@ -32,18 +32,29 @@
       <div class="about-img one-third first">
         <%= image_tag("james_front_copy.jpg") %>
       </div>
-      <article class="about-me two-thirds">
-        <h3>Hello! My name is James</h3>
-        <p>I design and build websites! Born and raised in Seattle. I graduated in 2012 with my BS in computer science from Gonzaga University, and have been a professional software developer since.<br>In my life around computers and technology I come across countless programs/apps/websites and projects that do not have an intuitive interface and overall poor user experience. It is something I cannot look past as I have always programmed/designed with the user in mind. In the past year+ I decided to dive deeper into UX and started reading and studying UX practices. I Love how it challenges both sides of the brain; right (artistic/creative/subjective) vs left (analytical/logical/strategic). I am fascinated by everthing I have learned so far and how applicable it is to virtually everything in life but there is much more I want to learn and accomplish. I Believe in excellent usability without sacrificing all design/beautification elements to achieve that. aesthetics contribute to the overall positive experience. Balance beauty with functionality. Minimalist -- less is more.
-        </p>
-        <h3 class="inline_header">My Skills Encompass/Resume</h3>
-        <p class="paragraph">Taken 3D Modeling course and Design course. Design. HTML5. CSS3. JavaScript. Ruby. Rails. Python. Software development. Front and backend web development. Mobile app development. Application/software/interface testing. Photoshop. Illustrator. User Research, IA, Visual Design, Usability Evaluation. Creativity. Innovation. Searching for and discovering root causes.</p>
-        <h3 class="inline_header">I Love</h3>
-        <p class="paragraph">Drawing. Photography. Reading. Psychology. Philosophy. Fashion. Architecture. Video Games. Theoretical/Quantum Physics. Woodworking. Painting. Dogs. Yoga. Running. Recent favorite movies: Interstellar and Ex Machina. Favorite book. Show. Some of these things are so broad, specify some of them. More relatable. but make it unique.</p>
-        <h3 class="inline_header">I am Pursuing</h3>
-        <p class="paragraph">A career in the industry of user experience design...I am looking for a company that can utilize my current experience and knowledge while challenging me to be better and more efficient. I am in a unique position of knowing the engineering needs/requirements/restrictions and having a developed understanding of designing for humans/users. This shared knowledge puts me in position to bridge the gap between the two industries of engineering and design.</p>
-        <h4 class="see-more"><%= link_to "View Resumé", image_path("JamesHooverResume.pdf"), class: "outline-green" %> <a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="outline-green" download>Download Resumé</a></h4>
-      </article>
+      <section class="about-me two-thirds">
+        <article class="first">
+          <h3>Hello! My name is James</h3>
+          <p>I have been a software developer in Seattle for three years while building websites part-time. Now I build websites full-time! My favorite part of the process is desiging the visual look and feel of the site. I stress a positive user experience, achieved through a beautiful interface with great usability. You'll find that most of my work is a healthy blend of these things.</p>
+        </article>
+        <article class="one-half first">
+          <h4>Skills/Experience</h4>
+          <p>Front and backend web development. Courses in art and design. Software development. Application/user testing. Mobile development. Research. Information architecture. Usability. Unique design.</p>
+          <h4>Languages/Programs</h4>
+          <p>HTML5. CSS3. JavaScript/jQuery. Ruby/Rails. Photoshop. Illustrator.</p>
+        </article>
+        <article class="one-half">
+          <h4>Love</h4>
+          <p>Dogs. Psychology. Philosophy. Gonzaga Bulldogs. Fashion. Architecture. Music. Theoretical/Quantum Physics. <a href="https://en.wikipedia.org/wiki/Ex_Machina_(film)" title="Ex Machina Wiki" class="green">Ex Machina.</a> Interstellar. <a href="http://righteousmind.com/" title="RighteousMind.com" class="green">The Righteous Mind.</a> Cosmos.</p>
+          <h4>Hobbies</h4>
+          <p>Photography. Reading. Video Games. Drawing. Woodworking. Yoga. Running. Painting.</p>
+        </article>
+        <article class="first">
+          <h3>Need a Site?</h3>
+          <p>If you need a gallery, porfolio, bio, business page, or something of the sorts, <%= link_to "contact me", '/contact', class: "green" %>, and we can discuss it. Also, if you want me to draw something or take some photos send me your idea and we can see what is possible.</p>
+        <h4 class="see-more"><%= link_to "View Resumé PDF", image_path("JamesHooverResume.pdf"), class: "outline-green" %> <a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="outline-green" download>Download Resumé PDF</a></h4>
+        </article>
+      </section>
   </section>
   <!-- FOOTER -->
   <footer class="row footer foot-push">
