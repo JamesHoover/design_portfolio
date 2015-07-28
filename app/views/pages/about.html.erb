@@ -30,29 +30,28 @@
     <section class="row">
       <h1 class="page-title">About Me</h1>
       <div class="about-img one-third first">
-        <%= image_tag("james_front_copy.jpg") %>
+        <%= image_tag("james_front_circle.png", class: "about-img-small") %>
+        <%= image_tag("james_front_copy.jpg", class: "about-img-large") %>
       </div>
       <section class="about-me two-thirds">
         <article class="first">
           <h3>Hello! My name is James</h3>
-          <p>I have been a software developer in Seattle for three years while building websites part-time. Now I build websites full-time! My favorite part of the process is desiging the visual look and feel of the site. I stress a positive user experience, achieved through a beautiful interface with great usability. You'll find that most of my work is a healthy blend of these things.</p>
+          <p>I have been a software developer in Seattle for three years while building websites part-time. Now I build websites full-time! My favorite part of the building process is designing the look and feel of the site. I stress a positive user experience, achieved through a beautiful interface with great usability. You'll find that most of my work is a healthy blend of these things.</p>
         </article>
         <article class="one-half first">
           <h4>Skills/Experience</h4>
-          <p>Front and backend web development. Courses in art and design. Software development. Application/user testing. Mobile development. Research. Information architecture. Usability. Unique design.</p>
+          <p>Front and backend web development. BS in computer science with courses in art and design. Software development. Application/user testing. Mobile development. Research. Information architecture. Usability. Unique design ideas.</p>
           <h4>Languages/Programs</h4>
-          <p>HTML5. CSS3. JavaScript/jQuery. Ruby/Rails. Photoshop. Illustrator.</p>
+          <p>HTML5. CSS3. JavaScript/jQuery. Ruby/Rails. GIT/SVN. Photoshop. Illustrator.</p>
         </article>
         <article class="one-half">
-          <h4>Love</h4>
-          <p>Dogs. Psychology. Philosophy. Gonzaga Bulldogs. Fashion. Architecture. Music. Theoretical/Quantum Physics. <a href="https://en.wikipedia.org/wiki/Ex_Machina_(film)" title="Ex Machina Wiki" class="green">Ex Machina.</a> Interstellar. <a href="http://righteousmind.com/" title="RighteousMind.com" class="green">The Righteous Mind.</a> Cosmos.</p>
-          <h4>Hobbies</h4>
+          <h4>Things I Love</h4>
+          <p>Dogs. Psychology. Philosophy. Gonzaga Bulldogs. Fashion. Architecture. Music. Theoretical/Quantum Physics. <a href="https://en.wikipedia.org/wiki/Ex_Machina_(film)" title="Ex Machina Wiki" class="green">Ex Machina</a>. Interstellar. <a href="http://righteousmind.com/" title="RighteousMind.com" class="green">The Righteous Mind</a>. Cosmos.</p>
+          <h4>My Hobbies</h4>
           <p>Photography. Reading. Video Games. Drawing. Woodworking. Yoga. Running. Painting.</p>
         </article>
         <article class="first">
-          <h3>Need a Site?</h3>
-          <p>If you need a website, a porfolio, gallery, bio, business page, or something of the sorts, <%= link_to "contact me", '/contact', class: "green" %>, and we can discuss it.<br>If you are looking for a company logo, invitations, print, or some photos -- send me your requirements and we can see what is possible.</p>
-        <h4 class="see-more"><%= link_to "View Resumé PDF", image_path("JamesHooverResume.pdf"), class: "outline-green" %> <a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="outline-green" download>Download Resumé PDF</a></h4>
+          <h5 class="resume-btns"><%= link_to "View Resumé.pdf", image_path("JamesHooverResume.pdf"), class: "outline-green" %> <a href="/assets/JamesHooverResume.pdf" title="Download Resume" class="outline-green" download>Download Resumé.pdf</a></h5>
         </article>
       </section>
   </section>
@@ -66,6 +65,6 @@
         <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon"></div><br>Email</a></li>
       </ul>
     </section>
-    <h6 class="copyright">&copy;2015 - James Hoover</h6>
+    <h6 class="copyright">Designed and Built by James Hoover - &copy;2015</h6>
   </footer>
 </body>
