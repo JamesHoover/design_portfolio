@@ -146,10 +146,10 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .site-nav > ul > li {
   display: inline-block;
   font-size: 1.3em;
-  padding-right: 15%;
+  margin-right: 15%;
 }
 .site-nav li:last-of-type,
-.work-nav li:last-of-type {padding-right: 0;}
+.work-nav li:last-of-type {margin-right: 0;}
 
 .work-nav {
   margin: 15px 0;
@@ -162,48 +162,17 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .work-nav li {display: inline-block; padding-right: 30px;}
 
-/* Sub-nav on site-nav 
+/* sub-nav on site-nav 
 ------------------------- */
-.sub-site-nav {
+.sub-site-nav,
+.sub-site-nav-hidden {
   position: absolute;
   font-size: .8em;
   padding: 15px 0 0 10px;
 }
-.sub-site-nav li {display: inline; padding-right: 10px;}
-/*
-ul.sub_topnav,
-ul.sub_topnav_hidden {padding: .75em 0 1em 1em;}
-ul.sub_topnav li,
-ul.sub_topnav_hidden li {
-  font-size: .5em;
-  width: 7.5em;
-  padding: .1em 3em .1em .5em;
-  border-left: 1px solid #BABABA;
-}
-*/
-/* subnav hover only on non work pages */
-/*
-.main-nav li ul.sub_topnav_hidden {
-  display: none;
-  position: absolute;
-  width: auto;
-  padding-right: 2em;
-}
-.main-nav li:hover ul.sub_topnav_hidden {display: block;}
-
-.sub_topnav_hidden li.active {border-left: 1px solid #F00;
-  text-decoration:
-  underline; color: #F00;
-}
-.sub_topnav li:hover,
-.sub_topnav_hidden li:hover {
-  border-left: 1px solid #F00;
-  background-color: #F00;
-  color: white;
-  font-weight: bold;
-}
-.sub_topnav li.active {border-left: 2px solid #F00; text-decoration: none;}
-*/
+.sub-site-nav li,
+.sub-site-nav-hidden li {display: inline; padding-right: 10px;}
+.sub-site-nav-hidden    {display: none;}
 
 /* $PAGES 
 ================================================== */
@@ -254,12 +223,6 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .work-bkgrd    {background: url(home/laptopLightBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
 .about-bkgrd   {background: url(home/james_selfieBW.jpg) no-repeat; background-size: cover;}
 .contact-bkgrd {background: url(home/laptopTableBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
-
-/*
-.work_bkgrd h3    {background-color:rgba(254,55,0,.5);}
-.about_bkgrd h3   {background-color:rgba(128,255,128,.5);}
-.contact_bkgrd h3 {background-color:rgba(128,128,255,.5);}
-*/
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
@@ -376,7 +339,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .icon-tray li:last-of-type {margin-right: 0;}
 .icon-tray div {opacity: .7}
 .icon-tray h4 {padding-bottom: 15px;}
-.icon-tray a {display: inline-block;}
+.icon-tray a {display: inline-block; margin-right: 15px;}
 .icon-tray a:hover div {opacity: 1;}
 .copyright {
   color: black;
@@ -482,10 +445,10 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   .project-img-extra  {display: none;}
   .about-img-large    {display: none;}
   .site-nav           {text-align: center;}
-  .site-nav > ul > li {padding-right: 5%;}
-  .work-nav ul {font-size: 1.2em;}
-  .work-nav a  {margin-right: 0;}
-  .icon-tray a {margin-right: 15px;}
+  .site-nav > ul > li {margin-right: 5%;}
+  .work-nav ul  {font-size: 1.2em;}
+  .work-nav a   {margin-right: 0;}
+  .icon-tray li {margin-right: 0;}
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -525,7 +488,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
     padding-right: 5%;
   }
   .one-sixth,
-  .one-fifth,`
+  .one-fifth,
   .one-fourth,
   .one-third,
   .two-sixths,
@@ -551,4 +514,6 @@ a.navicon-link:hover h3 {border: 1px solid white;}
     padding-left: 1%;
     padding-right: 1%;
   }
+  /* Display sub-nav on large screens */
+  .has-sub-nav:hover .sub-site-nav-hidden {display: inline; padding-bottom: 25px;}
 }
