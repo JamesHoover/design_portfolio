@@ -180,8 +180,8 @@ a.logo-link:hover h4  {text-decoration: underline;}
 /* $HOME 
 ================================================== */
 .home-info {text-align: center;}
-.home-info h2 {padding-bottom: 30px;}
 .home-info h1,
+.home-info h2,
 .home-info h4 {padding-bottom: 15px;}
 /* Centers navicon when single on row */
 .navicon-block {text-align: center; padding-bottom: 30px;}
@@ -198,7 +198,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   margin: 0 auto;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 
   -webkit-transition: .5s ease;
   -moz-transition:    .5s ease;
@@ -231,13 +231,19 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $Projects 
 ========================= */
-.project-block    {padding-bottom: 75px;}
-.project-title    {padding-bottom: 20px; text-align: center;}
+.project-block    {margin-bottom: 75px!important;}
+.project-title    {padding: 30px 0; text-align: center;}
 .project-title h2,
 .project-title h4 {padding-bottom: 10px;}
 .project-title h3 {padding-bottom: 5px;}
 .project-desc     {padding-bottom: 30px;}
-.project-info     {padding-bottom: 15px;}
+.project-info {
+  padding: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
+}
 .project-info h4  {font-weight: bold; margin-bottom: 10px;}
 .project-img-extra img,
 .project-img img  {
@@ -245,7 +251,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   margin-bottom: 15px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
 .portrait {text-align: center;}
 .portrait img {width: 50%;}
@@ -258,12 +264,11 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .art-block h5 {padding: 10px 0 30px; text-align: right;}
 .art-block img {
   width: 100%;
-  border: 1px solid #BABABA;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
-.art-img-link:hover img {border: 1px solid #F00;}
+.art-img-link:hover img {outline: 1px solid #F00;}
 
 /* $Photography 
 ========================= */
@@ -274,7 +279,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   border-bottom: 75px solid white;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
 .photo-img-link:hover img {outline: 1px solid #F00;}
 .photo-block h5 {
@@ -286,6 +291,13 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $ABOUT 
 ================================================== */
+.about-me {
+  padding: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
+}
 .about-me h3,
 .about-me h4 {font-weight: bold; padding-bottom: 10px; word-wrap: break-word;}
 .about-img {text-align: center;}
@@ -297,13 +309,21 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .about-img-large {
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
 .resume-btns  {text-align: center;}
-.resume-btns a {margin-bottom: 30px;}
+.resume-btns a {margin-bottom: 30px; margin-right: 15px;}
 
 /* $CONTACT 
 ================================================== */
+.contact-paragraph {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
+}
 .contact-info {padding-bottom: 50px; text-align: center;}
 .contact-info h3 {padding-bottom: 10px; font-weight: bold;}
 .contact-info h3:last-of-type {padding-bottom: 0;}
@@ -312,10 +332,10 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .contact-img img {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
-  box-shadow:         10px 10px 10px 0px rgba(204,204,204,1);
+  box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
 
 /* $FOOTER 
@@ -469,8 +489,8 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   }
   /* Gives photos bottom spacing on each row */
   .photo-block {margin-bottom: 30px;}
-  .about-img {width: 100%;}
-  .contact-img {margin-left: 0; width: 100%;}
+  .about-img   {width: 100%;}
+  .contact-img {width: 100%; margin-top: 20px; margin-left: 0;}
 }
 /* Tablet size */
 @media screen and (min-width: 40.5em) and (max-width: 63.999em){
@@ -487,11 +507,11 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   .four-sixths,   
   .three-fourths, 
   .four-fifths,   
-  .five-sixths   {width: 100%;}
+  .five-sixths {width: 100%;}
   .project-info,
   .about-me,
-  .contact-img   {width: 100%; margin-left: 0;}
-  .about-img     {width: 100%;}
+  .contact-img {width: 100%; margin-top: 20px; margin-left: 0;}
+  .about-img   {width: 100%;}
 }
 /* Laptop/Desktop size and beyond */
 @media screen and (min-width: 64em){
