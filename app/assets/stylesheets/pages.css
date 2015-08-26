@@ -290,7 +290,6 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   position: absolute;
   right: 10px;
   bottom: 10px;
-
 }
 
 /* $ABOUT 
@@ -387,14 +386,16 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .row {
   zoom: 1;
   max-width: 1080px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* row that takes full width of page */
 .full-row {
   zoom:   1;
   width:  100%;
   padding: 0 2%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Row Clearing
 ------------------------- */
