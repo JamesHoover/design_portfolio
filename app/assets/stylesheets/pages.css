@@ -502,7 +502,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
   }
   /* Gives photos bottom spacing on each row */
   .photo-block   {margin-bottom: 30px;}
-  .about-me {width: 100%;}
+  .about-me      {width: 100%;}
   .about-img img {width: 75%;}
   .contact-img   {width: 100%; margin-top: 20px; margin-left: 0;}
 }

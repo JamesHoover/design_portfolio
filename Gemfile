@@ -45,3 +45,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'magnific-popup-rails'
+
+gem 'mail_form'
+gem 'simple_form'

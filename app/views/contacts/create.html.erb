@@ -37,6 +37,7 @@
     <!-- CONTACT_PAGE CONTENT -->
     <section class="row">
       <h1 class="page-title">Contact Me</h1>
+
       <article class="contact-paragraph three-fifths first">
         <section class="contact-info">
           <h3><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
@@ -48,10 +49,32 @@
         <p>Seriously, my work and this site is an ongoing project. I would love to hear what you think. The more viewpoints the better.</p>
       </article>
       <div class="contact-img two-fifths">
+	      <div>
+	  			<% flash.each do |key, value| %>
+	    		<div>
+	      		<a href="#" data-dismiss="alert"></a>
+	        	<%= value %>
+	    		</div>
+	  			<% end %>
+				</div>
       <h2>Fill out this here form:</h2>
-
 <div align="center">
   <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
+<div align="center">
 
   
 

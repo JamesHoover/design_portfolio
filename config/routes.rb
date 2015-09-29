@@ -10,7 +10,12 @@ DesignPortfolio::Application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   get '/work' => 'pages#projects'
   get '/about' => 'pages#about'
-  get '/contact' => 'pages#contact'
+
+  resources "contacts", only: [:new, :create]
+  get 'contact', to: 'contacts#new', as: 'contact'
+  post 'contact', to: 'contacts#create'
+
+
   get '/work/projects' => 'pages#projects'
   get '/work/art' => 'pages#art'
   get '/work/photography' => 'pages#photography'
