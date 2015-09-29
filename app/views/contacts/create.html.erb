@@ -37,7 +37,12 @@
     <!-- CONTACT_PAGE CONTENT -->
     <section class="row">
       <h1 class="page-title">Contact Me</h1>
-
+    	<% flash.each do |key, value| %>
+  			<div class="thank-you">
+    			<a href="#" data-dismiss="alert"></a>
+      		<%= value %>
+				</div>
+			<% end %>
       <article class="contact-paragraph three-fifths first">
         <section class="contact-info">
           <h3><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
@@ -48,36 +53,20 @@
         <p>On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.</p>
         <p>Seriously, my work and this site is an ongoing project. I would love to hear what you think. The more viewpoints the better.</p>
       </article>
-      <div class="contact-img two-fifths">
-	      <div>
-	  			<% flash.each do |key, value| %>
-	    		<div>
-	      		<a href="#" data-dismiss="alert"></a>
-	        	<%= value %>
-	    		</div>
-	  			<% end %>
-				</div>
-      <h2>Fill out this here form:</h2>
-<div align="center">
-  <h3>Send A message to Us</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
-</div>
-<div align="center">
-
-  
-
+      <section class="contact-form two-fifths">
+      	<h3>Send me a Quick Message</h3>
+			  <%= simple_form_for @contact do |f| %>
+			    <%= f.input :name, :required => true %>
+			    <%= f.input :email, :required => true %>
+			    <%= f.input :message, :as => :text, :required => true %>
+			    <article class= "hidden">
+			      <%= f.input :nickname, :hint => 'Leave this field blank! (Human Test)' %>
+			    </article>
+			    <div>
+			      <%= f.button :submit, 'Send Message', :class=> "send-btn" %>
+			    </div>
+			  <% end %>
+			</section>
     </section>
   </div>
   <!-- FOOTER -->
