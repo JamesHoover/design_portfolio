@@ -219,10 +219,11 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
-.work-title {margin-top: 25px;}
+.work-title {margin-top: 30px; margin-bottom: 50px;}
 .work-desc  {margin-bottom: 30px;}
 .work-title,
 .see-more   {text-align: center;}
+.sub-work-title {}
 
 
 /* $Projects 
@@ -343,8 +344,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 }*/
 /* $CONTACT FORM
 ------------------------- */
-.contact-form {}
-.contact-form h3 {text-align: left; padding-bottom: 25px;}
+.contact-form h3  {text-align: left; padding-bottom: 25px;}
 .contact-form div {display: inline-block; margin-bottom: 25px; width: 100%;}
 .contact-form label {
   width: 100%;
@@ -379,9 +379,14 @@ input.btn  {
   background-color: #F7F6F4;
 }
 input.btn:hover {border: 1px solid black; text-decoration: underline; cursor: pointer;}
-.form-group {width: 100%;}
-.hidden {display: none!important;}
+.form-group     {width: 100%;}
+.hidden         {display: none!important;}
+/* Flash Message */
 div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center; padding-bottom: 50px;}
+.alert-error   {color: #F00;}
+.alert-alert   {color: #F00;}
+.alert-success {color: #00C400;}
+.alert-notice  {color: #00C400;}
 
 /* $FOOTER 
 ================================================== */
