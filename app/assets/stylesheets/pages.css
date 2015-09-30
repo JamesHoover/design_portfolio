@@ -66,6 +66,7 @@ a:hover {
   color:  #000;
   cursor: pointer;
   text-decoration: none;
+  font-size: 100%;
 }
 a:hover {text-decoration: underline;}
 /* Inline or non-prominent links */
@@ -234,7 +235,7 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 
 /* $Projects 
 ========================= */
-.project-block    {margin-bottom: 100px!important;}
+.project-block    {margin-bottom: 10%;}
 .project-title    {padding-bottom: 30px; text-align: center;}
 .project-title h2 {font-weight: bold;}
 .project-title h2,
