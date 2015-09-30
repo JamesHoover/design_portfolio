@@ -172,7 +172,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .sub-site-nav li,
 .sub-site-nav-hidden li {display: inline; padding-right: 10px;}
-.sub-site-nav-hidden    {display: ;}
+.sub-site-nav-hidden    {display: none;}
 
 /* $PAGES 
 ================================================== */
@@ -184,9 +184,8 @@ a.logo-link:hover h4  {text-decoration: underline;}
 /* $HOME 
 ================================================== */
 .home-info {text-align: center;}
-.home-info h1,
-.home-info h2,
-.home-info h4 {padding-bottom: 15px;}
+.home-info h1 {padding-bottom: 5px;}
+.home-info h2 {padding-bottom: 75px;}
 /* Centers navicon when single on row */
 .navicon-block {text-align: center; padding-bottom: 30px;}
 a.navicon-link {text-decoration: none;}
@@ -578,5 +577,5 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
     padding-right: 1%;
   }
   /* Display sub-nav on large screens */
-  .has-sub-nav:hover .sub-site-nav-hidden {display: inline; padding-bottom: 25px;}
+  .has-sub-nav:hover .sub-site-nav-hidden {display: block; padding-bottom: 25px;}
 }
