@@ -141,7 +141,8 @@ a.logo-link:hover h4  {text-decoration: underline;}
 
 /* $NAVIGATION 
 ================================================== */
-.site-nav {padding-bottom: 50px; text-align: center;}
+.site-nav {padding-bottom: 50px;}
+.site-nav >   ul {text-align: center;}
 .site-nav > ul > li {
   display: inline-block;
   font-size: 1.3em;
@@ -171,7 +172,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .sub-site-nav li,
 .sub-site-nav-hidden li {display: inline; padding-right: 10px;}
-.sub-site-nav-hidden    {display: none;}
+.sub-site-nav-hidden    {display: ;}
 
 /* $PAGES 
 ================================================== */
