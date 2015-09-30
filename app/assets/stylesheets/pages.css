@@ -66,7 +66,6 @@ a:hover {
   color:  #000;
   cursor: pointer;
   text-decoration: none;
-  font-size: 100%;
 }
 a:hover {text-decoration: underline;}
 /* Inline or non-prominent links */
@@ -221,9 +220,9 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 .work-bkgrd,
 .about-bkgrd,
 .contact-bkgrd {color: white;}
-.work-bkgrd    {background: url(home/laptopLightBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
-.about-bkgrd   {background: url(home/james_selfieBW.jpg) no-repeat; background-size: cover;}
-.contact-bkgrd {background: url(home/laptopTableBW_Copy2.jpg) no-repeat bottom; background-size: cover;}
+.work-bkgrd    {background: url("home/laptopLightBW_Copy2.jpg") no-repeat bottom; background-size: cover;}
+.about-bkgrd   {background: url("home/james_selfieBW.jpg") no-repeat; background-size: cover;}
+.contact-bkgrd {background: url("home/laptopTableBW_Copy2.jpg") no-repeat bottom; background-size: cover;}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
@@ -422,11 +421,11 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
 .instagram-icon,
 .tumblr-icon,
 .email-icon     {display:inline-block; width: 60px; height: 60px;}
-.github-icon    {background: url(icons/flat/Github.svg)   no-repeat;}
-.flickr-icon    {background: url(icons/flat/Flickr.svg)   no-repeat;}
-.instagram-icon {background: url(icons/flat/Instagram.svg)no-repeat;}
-.tumblr-icon    {background: url(icons/flat/Tumblr.svg)   no-repeat;}
-.email-icon     {background: url(icons/flat/Mail.svg)     no-repeat;}
+.github-icon    {background: url("icons/flat/Github.svg")   no-repeat;}
+.flickr-icon    {background: url("icons/flat/Flickr.svg")   no-repeat;}
+.instagram-icon {background: url("icons/flat/Instagram.svg")no-repeat;}
+.tumblr-icon    {background: url("icons/flat/Tumblr.svg")   no-repeat;}
+.email-icon     {background: url("icons/flat/Mail.svg")     no-repeat;}
 
 
 /* $GRID
