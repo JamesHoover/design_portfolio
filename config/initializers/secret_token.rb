@@ -1,0 +1,2 @@
+DesignPortfolio::Application.config.secret_key_base = 'bf4ad0ef0d445a66d0adc0712b3eefa2b7932f2170378e5654fc97003b92e6eb2fbde38742edf620f0899a4880ae7c35a744bc60c55e2315cebcdc0153fc5723'
+
