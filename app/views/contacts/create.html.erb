@@ -37,24 +37,22 @@
     <!-- CONTACT_PAGE CONTENT -->
     <section class="row">
       <h1 class="page-title">Contact Me</h1>
-    	<% flash.each do |key, value| %>
-  			<div class="thank-you">
-    			<a href="#" data-dismiss="alert"></a>
-      		<%= value %>
-				</div>
-			<% end %>
-      <article class="contact-paragraph three-fifths first">
+      <% flash.each do |key, value| %>
+        <div class="thank-you">
+          <a href="#" data-dismiss="alert"></a>
+          <%= value %>
+        </div>
+      <% end %>
+      <article class="contact-paragraph one-half first">
         <section class="contact-info">
           <h3><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
-          <h3>206 - 555 - 5282</h3>
         </section>
-        <h4>Thanks for checking out my portfolio!</h4>
-        <p>If you need someone for freelance work--email, text, or call me with a brief description of your dreams and I'll make it happen.</p>
-        <p>On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.</p>
+        <p>If you need help on a project -- email me.</p>
+        <p>On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), send me a message.</p>
         <p>Seriously, my work and this site is an ongoing project. I would love to hear what you think. The more viewpoints the better.</p>
       </article>
-      <section class="contact-form two-fifths">
-      	<h3>Send me a Quick Message</h3>
+      <section class="contact-form one-half">
+      	<h3>Send a Quick Message</h3>
 			  <%= simple_form_for @contact do |f| %>
 			    <%= f.input :name, :required => true %>
 			    <%= f.input :email, :required => true %>
@@ -72,6 +70,7 @@
   <!-- FOOTER -->
   <footer class="row footer foot-push">
     <section class="icon-tray">
+    	<h3>Thanks for checking out my portfolio!</h3>
       <h4 class="see-more">Find me on social media</h4>
       <ul>
         <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon grayscale"></div><br>GitHub</a></li>

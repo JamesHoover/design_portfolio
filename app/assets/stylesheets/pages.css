@@ -311,7 +311,6 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 }
 .about-me h3,
 .about-me h4 {
-  
   padding-bottom: 10px;
   word-wrap: break-word;
 }
@@ -333,14 +332,14 @@ a.navicon-link:hover h3 {border: 1px solid white;}
 ================================================== */
 .contact-paragraph {
   padding: 30px 45px;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
   background-color: #fff;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(204,204,204,1);
   -moz-box-shadow:    10px 10px 10px 0px rgba(204,204,204,1);
   box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
 }
 .contact-info {padding-bottom: 50px; text-align: center;}
-.contact-info h3 {padding-bottom: 10px; font-weight: bold;}
+.contact-info h3 {padding-bottom: 10px; font-weight: bold; word-wrap: break-word;}
 .contact-info h3:last-of-type {padding-bottom: 0;}
 .contact-paragraph h4 {padding-bottom: 1em;}
 /*.contact-img {text-align: center;}
@@ -487,7 +486,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   float: left;
   margin-left: 4.1666666666667%;
 }
-.push {float: right;} /* float a single object RIGHT */
+.push           {float: right;} /* float a single object RIGHT */
 .full-row .push {margin-right:  4.1666666666667%;}
 
 .one-sixth     {width: 13.194444444444%;}
@@ -548,7 +547,8 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .three-fourths, 
   .four-fifths,   
   .five-sixths {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%
   }
   /* Gives photos bottom spacing on each row */
@@ -580,7 +580,6 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .contact-img   {width: 100%; margin-top: 20px; margin-left: 0;}
   .about-img img {width: 50%;}
   .portrait img  {width: 60%;}
-
 }
 /* Laptop/Desktop size and beyond */
 @media screen and (min-width: 64em){
