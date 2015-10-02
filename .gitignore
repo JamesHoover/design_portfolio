@@ -49,3 +49,7 @@ pickle-email-*.html
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+# Hide sensitive mail server info
+*.env
+Procfile
