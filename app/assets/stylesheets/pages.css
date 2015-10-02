@@ -172,7 +172,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .about-img-large,
 .contact-paragraph,
 .project-img-full img,
-.project-img-mobile img, { 
+.project-img-mobile img { 
   -webkit-box-shadow: 1px 1px 10px 1px rgba(204,204,204,1);
   -moz-box-shadow:    1px 1px 10px 1px rgba(204,204,204,1);
   box-shadow:         1px 1px 10px 1px rgba(204,204,204,1);
