@@ -37,7 +37,7 @@ DesignPortfolio::Application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["MAIL_USERNAME"],
-  password: ENV["MAIL_USERNAME"]
+  password: ENV["MAIL_PASSWORD"]
   }
 
 end

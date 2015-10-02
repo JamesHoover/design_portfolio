@@ -54,6 +54,4 @@ group :production do
   gem 'puma'
 end
 
-group :development, :test do
-  gem 'foreman'
-end
+gem 'dotenv-rails', :groups => [:development, :test]
