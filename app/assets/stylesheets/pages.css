@@ -461,9 +461,11 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .project-img-extra  {display: none;}
   .site-nav           {text-align: center;}
   .site-nav > ul > li {font-size: 1.5em; margin-right: 3%;}
+  .work-nav     {margin-top: 0;}
   .work-nav ul  {font-size: 1.5em;}
   .work-nav li  {padding-right: 3%;}
   .work-nav a   {margin-right: 0;}
+  .work-title   {margin-top: 0;}
   .icon-tray li {margin-right: 5%;}
   .row {
     max-width: 100%;
@@ -501,6 +503,8 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .sub-site-nav,
   .sub-title,
   .project-img-full {display: none;}
+  .work-title,
+  .work-nav {margin-top: 0;}
   .site-nav > ul > li {font-size: 2em; margin-right: 9%;}
   .row {
     max-width: 100%;
