@@ -136,6 +136,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .site-nav li:last-of-type,
 .work-nav li:last-of-type {margin-right: 0;}
+/* .work-nav displays on non-large screens only as standalone nav */
 .work-nav {
   margin: 15px 0;
   padding-bottom: 5px;
@@ -147,8 +148,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 }
 .work-nav li {display: inline-block; padding-right: 30px;}
 
-/* sub-nav on site-nav 
-------------------------- */
+/* sub-nav on site-nav for work pages. Permanent on Work hover on other pages */
 .sub-site-nav,
 .sub-site-nav-hidden {
   position: absolute;
@@ -188,14 +188,6 @@ a.logo-link:hover h4  {text-decoration: underline;}
 a.navicon-link {text-decoration: none;}
 a.navicon-link:hover div {opacity: 1;}
 a.navicon-link:hover h3  {border: 1px solid white;}
-.grayscale {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-}
-.grayscale:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
-}
 .navicon-content {
   position: relative;
   height: 300px;
@@ -222,6 +214,14 @@ a.navicon-link:hover h3  {border: 1px solid white;}
 .work-bkgrd    {background: url("home/laptopLightColor.jpg") no-repeat bottom; background-size: cover;}
 .about-bkgrd   {background: url("james_selfie.jpg") no-repeat; background-size: cover;}
 .contact-bkgrd {background: url("home/laptopTableColor.jpg") no-repeat bottom; background-size: cover;}
+.grayscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+}
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
@@ -384,7 +384,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   margin-left: auto;
   margin-right: auto;
 }
-/* row that takes full width of page */
+/* Row that takes full width of page */
 .full-row {
   zoom:   1;
   width:  100%;
@@ -392,7 +392,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   margin-left: auto;
   margin-right: auto;
 }
-/* Row Clearing
+/* Row Clearing 
 ------------------------- */
 .row:before, .full-row:before {
   content: "";
@@ -405,6 +405,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
 }
 /* Column
 ------------------------- */
+/* Default all blocks left */
 .pull, /* float a single object LEFT */
 .one-sixth,
 .one-fifth,
@@ -426,7 +427,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
 }
 .push           {float: right;} /* float a single object RIGHT */
 .full-row .push {margin-right:  4.1666666666667%;}
-
+/* Set width for all blocks */
 .one-sixth     {width: 13.194444444444%;}
 .one-fifth     {width: 16.666666666667%;}
 .one-fourth    {width: 21.875%;}
@@ -442,6 +443,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
 .three-fourths {width: 73.958333333333%;}
 .four-fifths   {width: 79.166666666667%;}
 .five-sixths   {width: 82.638888888889%;} 
+/* Set on first block of every row. Clears and removes margin. */
 .first {
   clear: both;
   margin-left: 0;
@@ -450,23 +452,23 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
 /* $MEDIA QUERIES 
 ========================= */
 /* Mobile first query design. Using max and relative units. */
-/* Mobile size */
+/* MOBILE size */
 @media screen and (min-width: 0) and (max-width: 40.4em){
-  /* minimize navbar on small screen */
+  /* Hide extra content on mobile */
   .logo h4,
   .sub-site-nav,
   .sub-title,
   .project-img,
   .project-img-full,
   .project-img-extra  {display: none;}
-  .site-nav           {text-align: center;}
-  .site-nav > ul > li {font-size: 1.5em; margin-right: 3%;}
+  /* Fit content spacing for mobile */
   .work-nav     {margin-top: 0;}
   .work-nav ul  {font-size: 1.5em;}
   .work-nav li  {padding-right: 3%;}
-  .work-nav a   {margin-right: 0;}
   .work-title   {margin-top: 0;}
   .icon-tray li {margin-right: 5%;}
+  .site-nav > ul > li {font-size: 1.5em; margin-right: 3%;}
+  /* Full width rows and all grid blocks */
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -491,21 +493,26 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
     margin-right: 0;
     width: 100%
   }
-  /* Gives photos bottom spacing on each row */
+  /* Photos need bottom buffer when one per row */
   .photo-block   {margin-bottom: 30px;}
+  /* Fit content size for mobile */
   .about-me,
   .portrait img  {width: 100%;}
   .about-img img {width: 75%;}
   .contact-img   {width: 100%; margin-top: 20px; margin-left: 0;}
 }
-/* Tablet size */
+/* TABLET size */
 @media screen and (min-width: 40.5em) and (max-width: 63.999em){
+  /* Minimalizes content on small screens */
   .sub-site-nav,
   .sub-title,
   .project-img-full {display: none;}
+  /* Removes buffer off work title for subnav */
   .work-title,
   .work-nav {margin-top: 0;}
+  /* Increase font size of nav on small screens */
   .site-nav > ul > li {font-size: 2em; margin-right: 9%;}
+  /* Full width rows and grid blocks greater than 50% */
   .row {
     max-width: 100%;
     padding-left: 5%;
@@ -517,13 +524,14 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .three-fourths, 
   .four-fifths,   
   .five-sixths   {width: 100%;}
-  .project-info,
-  .contact-img   {width: 100%; margin-top: 20px; margin-left: 0;}
+  /* Fit content width for tablet */
+  .project-info  {width: 100%; margin-top: 20px; margin-left: 0;}
   .about-img img {width: 50%;}
   .portrait img  {width: 60%;}
 }
-/* Laptop/Desktop size and beyond */
+/* LAPTOP/DESKTOP size and beyond */
 @media screen and (min-width: 64em){
+  /* Remove mobile/tablet specific content */
   .work-nav ul,
   .project-img-mobile {display: none;}
   .row {
