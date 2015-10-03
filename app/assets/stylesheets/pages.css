@@ -131,7 +131,7 @@ a.logo-link:hover h4  {text-decoration: underline;}
 .site-nav > ul {text-align: center;}
 .site-nav > ul > li {
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-right: 15%;
 }
 .site-nav li:last-of-type,
@@ -460,8 +460,9 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .project-img-full,
   .project-img-extra  {display: none;}
   .site-nav           {text-align: center;}
-  .site-nav > ul > li {margin-right: 5%;}
-  .work-nav ul  {font-size: 1.2em;}
+  .site-nav > ul > li {font-size: 1.5em; margin-right: 3%;}
+  .work-nav ul  {font-size: 1.5em;}
+  .work-nav li  {padding-right: 3%;}
   .work-nav a   {margin-right: 0;}
   .icon-tray li {margin-right: 5%;}
   .row {
@@ -500,6 +501,7 @@ div.thank-you:last-of-type {font-size: 1.5em; color: #00C400; text-align: center
   .sub-site-nav,
   .sub-title,
   .project-img-full {display: none;}
+  .site-nav > ul > li {font-size: 2em; margin-right: 9%;}
   .row {
     max-width: 100%;
     padding-left: 5%;
