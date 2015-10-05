@@ -212,7 +212,7 @@ a.navicon-link:hover h3  {border: 1px solid white;}
 .about-bkgrd,
 .contact-bkgrd {color: white;}
 .work-bkgrd    {background: url("home/laptopLightColor.jpg") no-repeat bottom; background-size: cover;}
-.about-bkgrd   {background: url("james_selfie.jpg") no-repeat; background-size: cover;}
+.about-bkgrd   {background: url("home/james_selfie.jpg") no-repeat; background-size: cover;}
 .contact-bkgrd {background: url("home/laptopTableColor.jpg") no-repeat bottom; background-size: cover;}
 .grayscale {
   filter: gray; /* IE6-9 */
