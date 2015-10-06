@@ -113,6 +113,53 @@
         <h5 class="see-more"><a href="https://github.com/JamesHoover/206tutoring" title="GitHub" class="red">View the code</a></h5>
       </article>
     </section>
+
+
+
+    <!-- PROJECT-BLOCK -->
+    <section class="project-block row">
+      <section class="project-img-full two-thirds first">
+        <%= link_to image_tag("projects/legacy_music.png"), image_path("projects/legacy_music.png"), class: "project-img-link", title: "Andre Legacy" %>
+        <div class="project-img-extra one-third first">
+          <%= link_to image_tag("projects/legacy_merch.png"), image_path("projects/legacy_merch.png"), class: "project-img-link", title: "Andre Legacy" %>
+        </div>
+        <div class="project-img-extra one-third">
+          <%= link_to image_tag("projects/legacy_bio.png"), image_path("projects/legacy_bio.png"), class: "project-img-link", title: "Andre Legacy" %>
+        </div>
+        <div class="project-img-extra one-third">
+          <%= link_to image_tag("projects/legacy_disco.png"), image_path("projects/legacy_disco.png"), class: "project-img-link", title: "Andre Legacy" %>
+        </div>
+      </section>
+      <article class="project-info one-third">
+        <article class="project-title">
+          <h2>Andre Legacy</h2>
+          <a href="http://www.andrelegacy.com/" title="Andre Legacy" class="red">www.AndreLegacy.com</a>
+        </article>
+        <section class="project-img-mobile two-thirds first">
+          <%= link_to image_tag("projects/legacy_music.png"), image_path("projects/legacy_music.png"), class: "project-img-link", title: "Andre Legacy" %>
+          <div class="project-img-extra one-third first">
+            <%= link_to image_tag("projects/legacy_merch.png"), image_path("projects/legacy_merch.png"), class: "project-img-link", title: "Andre Legacy" %>
+          </div>
+          <div class="project-img-extra one-third">
+            <%= link_to image_tag("projects/legacy_bio.png"), image_path("projects/legacy_bio.png"), class: "project-img-link", title: "Andre Legacy" %>
+          </div>
+          <div class="project-img-extra one-third">
+            <%= link_to image_tag("projects/legacy_disco.png"), image_path("projects/legacy_disco.png"), class: "project-img-link", title: "Andre Legacy" %>
+          </div>
+        </section>
+        <h3 class="project-desc">Website Design & Development</h3>
+        <h3>The Challenge:</h3>
+        <p>Retire dated wordpress site and build a more professional and clean site to spread music and bring in purchases.</p>
+        <h3>The Users:</h3>
+        <p>Current/potential fans of Andre Legacy.</p>
+        <h3>The Process:</h3>
+        <p>Researched market. Designed mock-ups. Built site with HTML and CSS.</p>
+        <h5 class="see-more"><a href="https://github.com/JamesHoover/andre_legacy" title="GitHub" class="red">View the code</a></h5>
+      </article>
+    </section>
+
+
+
     <!-- PROJECT-BLOCK -->
     <section class="project-block row">
       <div class="project-img-full two-thirds first">
@@ -124,8 +171,8 @@
           <a href="http://denimocracyusa.com/" title="DenimocracyUSA" class="red">DenimocracyUSA.com</a>
         </article>
         <div class="project-img-mobile two-thirds first">
-        <%= link_to image_tag("projects/DTLA.jpg"), image_path("projects/DTLA.jpg"), class: "project-img-link", title: "DTLA" %>
-      </div>
+          <%= link_to image_tag("projects/DTLA.jpg"), image_path("projects/DTLA.jpg"), class: "project-img-link", title: "DTLA" %>
+        </div>
         <h3 class="project-desc">Logo Design</h3>
         <h3>The Challenge:</h3>
         <p>Create an appealing and stylish print for demin gift bags in the logo 'DTLA' (Downtown Los Angeles). Simple shading and no color to keep printing costs down.</p>
@@ -137,24 +184,34 @@
     </section>
     <!-- PROJECT-BLOCK -->
     <section class="project-block row">
-      <div class="project-img-full two-thirds portrait first">
-        <%= link_to image_tag("projects/RDNC-SaveTheDate.png"), image_path("projects/RDNC-SaveTheDate.png"), class: "project-img-link", title: "RDNC" %>
-      </div>
+      <section class="project-img-full two-thirds first">
+        <div class="project-img-full one-half first">
+          <%= link_to image_tag("projects/RDNC-SaveTheDate.png"), image_path("projects/RDNC-SaveTheDate.png"), class: "project-img-link", title: "RDNC" %>
+        </div>
+        <div class="project-img-full one-half">
+          <%= link_to image_tag("projects/RDNC-invite.jpeg"), image_path("projects/RDNC-invite.jpeg"), class: "project-img-link", title: "RDNC" %>
+        </div>
+      </section>
       <article class="project-info one-third">
         <article class="project-title">
           <h2>Richmond District Neighborhood Center</h2>
           <a href="http://rdnc.org/" title="RDNC" class="red">www.RDNC.org</a>
         </article>
-        <div class="project-img-mobile two-thirds portrait first">
-        <%= link_to image_tag("projects/RDNC-SaveTheDate.png"), image_path("projects/RDNC-SaveTheDate.png"), class: "project-img-link", title: "RDNC" %>
-      </div>
+        <section class="project-img-mobile">
+        <div class="project-img-extra one-half first">
+            <%= link_to image_tag("projects/RDNC-SaveTheDate.png"), image_path("projects/RDNC-SaveTheDate.png"), class: "project-img-link", title: "RDNC" %>
+          </div>
+          <div class="one-half">
+            <%= link_to image_tag("projects/RDNC-invite.jpeg"), image_path("projects/RDNC-invite.jpeg"), class: "project-img-link", title: "RDNC" %>
+          </div>
+        </section>
         <h3 class="project-desc">Invitation Design</h3>
         <h3>The Challenge:</h3>
-        <p>Create a 'Save the Date' card to be sent to guests of the 35th annual RDNC fundraising dinner.</p>
+        <p>Create a 'save the date' and formal invitation to be sent to guests of the 35th annual RDNC fundraising dinner.</p>
         <h3>The Users:</h3>
         <p>Employees, friends, and family invited to the RDNC event.</p>
         <h3>The Process:</h3>
-        <p>Worked with client to gather information on RDNC, the event, and style constraints. Collected media--photos, logos, and invitations from previous years. Brainstormed designs. Mocked-up multiple versions in Photoshop. Chose most fitting design and finalized it.</p>
+        <p>Gathered information on RDNC, the event, and style constraints. Worked with client to develop designs. Created 'Save the Date' with photoshop. Consulted/guided client for creation of the formal invitation.</p>
       </article>
     </section>
   </div>

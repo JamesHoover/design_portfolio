@@ -327,7 +327,7 @@ input.btn  {
   font-size: .75em;
   width: 50%;
   height: 3.5em;
-  float: left!important;
+  float: left;
   border: 1px dotted black;
   background-color: #F7F6F4;
 }
