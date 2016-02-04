@@ -1,0 +1,25 @@
+    <section class="row">
+      <h1 class="page-title">Contact Me</h1>
+      <article class="contact-paragraph one-half first">
+        <section class="contact-info">
+          <h3><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
+        </section>
+        <p>If you need help on a project -- email me.</p>
+        <p>On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), send me a message.</p>
+        <p>Seriously, my work and this site is an ongoing project. I would love to hear what you think. The more viewpoints the better.</p>
+      </article>
+      <section class="contact-form one-half">
+      	<h3>Send a Quick Message</h3>
+			  <%= simple_form_for @contact do |f| %>
+			    <%= f.input :name, :required => true %>
+			    <%= f.input :email, :required => true %>
+			    <%= f.input :message, :as => :text, :required => true %>
+			    <article class= "hidden">
+			      <%= f.input :nickname, :hint => 'Leave this field blank! (Human Test)' %>
+			    </article>
+			    <div>
+			      <%= f.button :submit, 'Send Message', :class=> "send-btn" %>
+			    </div>
+			  <% end %>
+			</section>
+    </section>
