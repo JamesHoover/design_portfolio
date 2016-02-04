@@ -222,6 +222,9 @@ a.navicon-link:hover h3  {border: 1px solid white;}
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+.view-all {text-align: center; margin-bottom: 50px;}
+.home-email {text-align: center;}
+
 
 /* $WORK (Projects, Art, Photography) 
 ================================================== */
@@ -238,6 +241,7 @@ a.navicon-link:hover h3  {border: 1px solid white;}
 .project-desc     {padding-bottom: 30px; font-style: italic;}
 .project-info     {padding: 15px 30px; background-color: #fff;}
 .project-info       h3  {margin-bottom: 5px;}
+.project-img-front img {width: 100%;}
 .project-img-full   img,
 .project-img-extra  img,
 .project-img-mobile img {width: 100%; margin-bottom: 15px;}
