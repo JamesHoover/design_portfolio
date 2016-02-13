@@ -1,13 +1,13 @@
 /* --------------------------------------------------
 ** style.css
-** Stylesheet for www..com
+** Stylesheet for www.jameshooverdesign.com
 ** Author: James Hoover (jamesfhoover@gmail.com)
 ** Copyright: 2016
 ** -------------------------------------------------- */
 
 /* TODO:
 --------------------------------------------------
-**
+** Remove <br>'s from HTML about section
 **
 -------------------------------------------------- */
 
@@ -37,7 +37,7 @@ p {
   font-family: 'Lato'; /* change font to something normal */
 	font-size: 		1em;
   line-height: 	1.5em;
-  padding-bottom: .75em;
+  padding-bottom: 1em;
 }
 img {width: 100%;}
 /* Links
@@ -55,9 +55,14 @@ a:hover {
   -o-transition:      all .3s ease-out;
   transition:         all .3s ease-out;
 }
-a:hover {
-  color: #3EACA8;
-}
+a:hover            {color: #3EACA8;}
+.border            {border-bottom: 1px dotted #fff;}
+.border:hover      {border-bottom: none;}
+.box               {border: 1px dotted #fff;}
+.border:hover      {border-bottom: none;}
+.background        {padding: 5px 10px;}
+.background:hover  {background-color: #fff; color: #3EACA8; border-radius: 5px;}
+
 /* Highlight selection */
 *::selection {background-color: #000; color: #fff;}
 
@@ -66,7 +71,6 @@ a:hover {
 nav {
   top: 0;
   left: 0;
-  z-index: 9999;
   width: 100%;
   height: 10vh;
   padding: 25px 0;
@@ -81,21 +85,54 @@ nav li {
   display: inline;
 }
 nav li:last-of-type {padding-right: 0;}
-a.nav-link {padding: 5px 10px;}
-a.nav-link:hover {background-color: #fff; text-shadow: none;}
-.site-info {text-align: left;}
+a.nav-link          {padding: 5px 10px;}
+.site-info          {text-align: left;}
 
-.jump {height: 10vh;}
+/* $GENERAL STYLING
+================================================== */
+.about,
+.projects,
+.contact  {padding: 50px 0;}
+.gradient {
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #E5EEC1, 
+      #A2D4AB 20%, 
+      #3EACA8 40%, 
+      #547A82 60%,
+      #5A5050 80%
+    );
+}
+.section-title {
+  padding-bottom: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.merch img,
+.bio   img,
+.disco img   {width: 100%;}
+.more        {padding-top: 50px;}
+.huge-font   {font-size: 9em;}
+.center      {text-align: center;}
+.row-1       {display: inline-block; margin-bottom: 50px;}
+.strong-text {font-size: 150%;}
+.margin-bot  {margin-bottom: 50px;}
 
+.svg-test {width: 100%;}
+
+/* $WELCOME
+------------------------- */
 .welcome {min-height: 90vh; padding-bottom: 50px;}
 .welcome-title {
   padding: 50px 0;
   text-align: center;
-  font-size: 175%;
+  font-size: 100%;
   font-weight: 400;
   color: #fff;
 }
 .welcome-img {width: 300px; margin: 0 auto;}
+
 .otto {
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -111,85 +148,52 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
                0 20px 20px rgba(0,0,0,.15);
 }
 
-/* $PAGES
-================================================== */
-.about, .projects, .contact {padding: 50px 0;}
-.projects, .contact {
-  min-height: 75vh;
-}
-.gradient {
-  background-image:
-    linear-gradient(
-      to bottom, 
-      #E5EEC1, 
-      #A2D4AB 20%, 
-      #3EACA8 40%, 
-      #547A82 60%,
-      #5A5050 80%
-    );
-    /* sherbert - YES
-      #ACDBC9, 
-      #DBEBC2 20%, 
-      #FDD2B5 40%, 
-      #F7A7A6 60%,
-      #F48B94 80%
-    */
-    /* INVERTED SHERBERT -YES
-      #EF4566, 
-      #F69A9A 20%, 
-      #F9CDAE 40%, 
-      #C8C8A9 60%,
-      #83AE9B 80%
-    */
-    /* DUSK - YES
-      #F8B195, 
-      #F67280 20%, 
-      #C06C84 40%, 
-      #6C5B7B 60%,
-      #355C7D 80%
-      */
-      /* UNDERWATER - YES
-      #E5EEC1, 
-      #A2D4AB 20%, 
-      #3EACA8 40%, 
-      #547A82 60%,
-      #5A5050 80%
-      */
-      /* CITRUS - YES
-      #E1F5C4, 
-      #ECE473 20%, 
-      #F9D423 40%, 
-      #F6903D 60%,
-      #F05053 80%
-      */
-}
-.section-title {
-  color: #fff;
-  padding-bottom: 50px;
-  font-weight: 700;
-  text-align: center;
-}
-.merch img,
-.bio img,
-.disco img {width: 100%;}
-.more {padding-top: 50px;}
-.huge-font {font-size: 9em;}
-.center {text-align: center;}
-.row-1 {display: inline-block; margin-bottom: 50px;}
-.strong-text {font-size: 150%;}
-/* $WELCOME
-------------------------- */
-
 /* $ABOUT
 ------------------------- */
-.about {background-color: #E5EEC1; text-align: center;}
+.about                    {background-color: #E5EEC1; text-align: center;}
+.about .row:first-of-type {margin-bottom: 50px;}
+.about-info,
+.about-subinfo,
+.about .section-title {color: #333333;}
+.about-info,
+.about-subinfo        {font-size: 1.25em; display: block;}
+.about-info           {font-size: 2em; padding-bottom: 5px;}
+.about-img            {width: 75%; display: block; margin: 0 auto;}
+
+
+
 
 /* $PROJECTS
 ------------------------- */
 .projects,
-.projects-page {background-color: #3EACA8;}
-.project-img {width: 100%; margin-bottom: 25px;}
-.project-link:hover img {outline: 3px solid #FFF;}
+.projects-page  {background-color: #3EACA8;}
+.project-thumb  {font-size: 1.5em;}
+img.project-img {
+  margin-bottom: 15px;
+  box-shadow: 7px 7px 15px rgba(74, 74, 74, 1);
+  padding: 0;
+}
+.project-link                {display: inline-block;}
+.projects .row:first-of-type {margin-bottom: 75px;}
+/* Projects Details Page */
+.project-details  {padding: 50px 0;}
+.project-title,
+.project-subtitle {display: block;}
+.project-title    {font-size: 3.5em; margin-bottom: 10px;}
+.project-subtitle {font-size: 2.125em; margin: 5px 0;}
+.phone,
+.phone-border     {position: relative;}
+.phone-screen {
+  position: absolute;
+  left:   5%;
+  right:  0;
+  top:    8.5%;
+  bottom: 0;
+}
+.phone-screen img {width: 95%;}
+
+
+
 
 /* $CONTACT 
 ------------------------- */
@@ -198,9 +202,10 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
   background-color: #5A5050;
   text-align: center; 
 }
-.email {font-size: 2.5em; margin-bottom: 50px;}
+.email           {font-size: 2.5em; margin-bottom: 50px; word-wrap: break-word;}
+.social-icon     {display: inline-block; padding: 0 5%;}
 .social-icon img {width: 50px;}
-.social-icon a {font-size: 1.25em;}
+.social-icon a   {font-size: 1.25em;}
 
 /* $BUTTONS
 ================================================== */
@@ -212,7 +217,7 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
 /* Makes row on page centered of specified width */
 .row {
   zoom: 1;
-  max-width: 900px;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -274,10 +279,7 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
 .three-fourths {width: 73.958333333333%;}
 .four-fifths   {width: 79.166666666667%;}
 .five-sixths   {width: 82.638888888889%;} 
-.first {
-  clear: both;
-  margin-left: 0;
-}
+.first         {clear: both; margin-left: 0;}
 
 /* $MEDIA QUERIES 
 ========================= */
@@ -308,6 +310,8 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
     margin: 0;
     width: 100%
   }
+  .about-img        {width: 100%;}
+  .email {font-size: 2em;}
 }
 /* TABLET */
 @media screen and (min-width: 40.5em) and (max-width: 63.9em){
@@ -334,3 +338,39 @@ a.nav-link:hover {background-color: #fff; text-shadow: none;}
 }
 /* COMPUTER */
 @media screen and (min-width: 64em){}
+
+    /* sherbert - YES
+      #ACDBC9, 
+      #DBEBC2 20%, 
+      #FDD2B5 40%, 
+      #F7A7A6 60%,
+      #F48B94 80%
+    */
+    /* INVERTED SHERBERT -YES
+      #EF4566, 
+      #F69A9A 20%, 
+      #F9CDAE 40%, 
+      #C8C8A9 60%,
+      #83AE9B 80%
+    */
+    /* DUSK - YES
+      #F8B195, 
+      #F67280 20%, 
+      #C06C84 40%, 
+      #6C5B7B 60%,
+      #355C7D 80%
+      */
+      /* UNDERWATER - YES
+      #E5EEC1, 
+      #A2D4AB 20%, 
+      #3EACA8 40%, 
+      #547A82 60%,
+      #5A5050 80%
+      */
+      /* CITRUS - YES
+      #E1F5C4, 
+      #ECE473 20%, 
+      #F9D423 40%, 
+      #F6903D 60%,
+      #F05053 80%
+      */
