@@ -6,32 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="publisher" content="James Hoover"/>
 	<!-- LINK stylesheets -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="file:///Users/james/Documents/Web/portfolio_mockups/abc-reset.css">
 	<link rel="stylesheet" type="text/css" href="file:///Users/james/Documents/Web/portfolio_mockups/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" type="image/svg+xml" href="file:///Users/james/Documents/Web/portfolio_mockups/assets/james_selfie_sketch3.svg"/>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<title>James Hoover</title>
 </head>
 <body>
 	<header class="gradient welcome">
 		<nav class="row">
 			<ul class="">
-				<li class="site-info one-half first"><a href="">jameshooverdesign.com</a></li>
+				<li class="site-url one-half first"><a href="">jameshooverdesign.com</a></li>
 				<div class="one-half">
-				<li><a href="#about" class="nav-link border background">About</a></li>
-				<li><a href="#projects" class="nav-link border background">Projects</a></li>
-				<li><a href="#contact" class="nav-link border background">Contact</a></li>
+				<li><a href="#about" class="nav-link button">About</a></li>
+				<li><a href="#projects" class="nav-link button">Projects</a></li>
+				<li><a href="#contact" class="nav-link button">Contact</a></li>
 				</div>
 			</ul>
 		</nav>
-		<div class="welcome-title">
-			<h1 class="">James Hoover</h1>
-			<h2 class="">UX Designer</h2>
-		</div>
 		<div class="welcome-img">
 			<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/james_selfie_sketch3.svg">
 		</div>
+		<div class="welcome-title">
+			<h1 class="">James Hoover</h1>
+			<h6 class="subtitle">Software Developer</h6>
+			<h6 class="subtitle">turned</h6>
+			<h2 class="">UX Designer</h2>
+		</div>
+
 	</header>
 	<!-- START SECTION - $ABOUT -->
 	<a name="about" class="jump"></a>
@@ -40,36 +46,40 @@
 		<div class="row">
 			<div class="one-third first about-icon">
 				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/james-ring.svg" class="about-img">
-				<span class="about-info">Hey, I'm James</span>
-				<span class="about-subinfo">Seattle native</span>
+				<h2 class="about-info">Hey, I'm James</h2>
+				<h6 class="about-subinfo">Seattle native</h6>
 			</div>
 			<div class="one-third about-icon">
 				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/threeone-years.svg" class="about-img">
-				<span class="about-info">Experience</span>
-				<span class="about-subinfo">3 years software dev.</span>
-				<span class="about-subinfo">1 year design.</span>
-			</div>
-			<div class="one-third about-icon">
-				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/philosophy-ring.svg" class="about-img">
-				<span class="about-info">Philosophy</span>
-				<span class="about-subinfo">Usable products that align the root goals of the user and the business.</span>
-			</div>
-		</div>
-		<div class="row">
-			<div class="one-third first about-icon">
-				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/tools-ring.svg" class="about-img">
-				<span class="about-info">Tools</span>
-				<span class="about-subinfo">Sketch, Invision, Photoshop, Illustrator, HTML, CSS, JavaScript, Ruby on Rails, PHP, GIT, & Google Analytics.</span>
-			</div>
-			<div class="one-third about-icon">
-				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/grad-ring.svg" class="about-img">
-				<span class="about-info">UX Design</span><span class="about-subinfo">General Assembly</span><br>
-				<span class="about-info">BS in Comp Sci</span><span class="about-subinfo">Gonzaga University</span>
+				<h2 class="about-info">Experience</h2>
+				<h6 class="about-subinfo">3 years software dev.</h6>
+				<h6 class="about-subinfo">1 year design.</h6>
 			</div>
 			<div class="one-third about-icon">
 				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/heart-ring.svg" class="about-img">
-				<span class="about-info">I love</span><span class="about-subinfo"> psychology, physics, photography, and video games.</span>
-			</div>			
+				<h2 class="about-info">I love</h2>
+				<h6 class="about-subinfo"> psychology, physics, photography, and video games.</h6>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="one-third first about-icon">
+				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/grad-ring.svg" class="about-img">
+				<h2 class="about-info">UX Design</h2>
+				<h6 class="about-subinfo">General Assembly</h6><br>
+				<h2 class="about-info">BS in Comp Sci</h2>
+				<h6 class="about-subinfo">Gonzaga University</h6>
+			</div>
+			<div class="one-third about-icon">
+				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/philosophy-ring.svg" class="about-img">
+				<h2 class="about-info">Philosophy</h2>
+				<h6 class="about-subinfo">Usable products that align the root goals of the user and the business.</h6>
+			</div>
+			<div class="one-third  about-icon">
+				<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/tools-ring.svg" class="about-img">
+				<h2 class="about-info">Tools</h2>
+				<h6 class="about-subinfo">Sketch, Invision, Photoshop, Illustrator, HTML, CSS, JavaScript, Ruby on Rails, PHP, GIT, & Google Analytics.</h6>
+			</div>
 		</div>
 	</section>
 	<!-- START SECTION - $PROJECTS -->
@@ -78,21 +88,35 @@
 		<h1 class="section-title">What have I made?</h1>
 		<div class="row">
 			<div class="project-thumb one-fourth first">
-				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_template.html" class="project-link background">
-					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template1.png" class="project-img"><span class="border">Voting App</span></a>
+				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_vote.html" class="project-link background">
+					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template1.png" class="project-img"><span class="">Project Vote</span></a>
 				</div>
 			<div class="project-thumb one-fourth">
-				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_template.html" class="project-link background">
-					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template2.png" class="project-img"><span class="border">Food App</span></a>
+				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_food.html" class="project-link background no-border">
+					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template2.png" class="project-img"><span class="">Food App</span></a>
 			</div>
 			<div class="project-thumb one-fourth">
-				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_template.html" class="project-link background">
-					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template3.png" class="project-img"><span class="border">Scramblr App</span></a>
+				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_scramblr.html" class="project-link background">
+					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template3.png" class="project-img"><span class="">Scramblr</span></a>
 			</div>
 			<div class="project-thumb one-fourth">
-				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_template.html" class="project-link background">
-					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template4.png" class="project-img"><span class="border">Run App</span></a>
+				<a href="file:///Users/james/Documents/Web/portfolio_mockups/project_run.html" class="project-link background">
+					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template4.png" class="project-img"><span class="">Run App</span></a>
+				<!-- <a href="file:///Users/james/Documents/Web/portfolio_mockups/project_template.html" class="project-link background">
+					<img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template4.png" class="project-img"><span class="border">Run App</span></a> -->
 			</div>
+<!-- 	<div class="one-fourth first">
+				<figure class="snip1387">
+				  <img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/template3.png" alt="sample54" />
+				  <figcaption>
+				    <div>
+				      <h4>Project</h4>
+				      <h4>Vote</h4>
+				    </div>
+				  </figcaption>
+				  <a href="#"></a>
+				</figure>
+			</div> -->
 		</div>
 	</section>
 	<!-- START SECTION - $CONTACT -->
@@ -101,17 +125,33 @@
 		<h1 class="section-title">Contact Me.</h1>
 		<div class="row">
 	    <div class="email">
-	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="border">jamesfhoover@gmail.com</a>
+	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="border"><!-- <i class="fa fa-envelope-o"></i> -->jamesfhoover@gmail.com</a>
 	    </div>
 	    <div class="social-icon">
-	    	<a href=""><img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/Instagram.svg" class="svg"><br>Instagram</a>
+	    	<a href=""><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
 	  	</div>
 	  	<div class="social-icon">
-	  		<a href=""><img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/Flickr.svg" class="svg"><br>Flicker</a>
+	  		<a href=""><i class="fa fa-flickr fa-2x"></i><br>Flicker</a>
 	    </div>
 	    <div class="social-icon">
-	    	<a href=""><img src="file:///Users/james/Documents/Web/portfolio_mockups/assets/LinkedIn.svg" class="svg"><br>LinkedIn</a>
+	    	<a href=""><i class="fa fa-linkedin-square fa-2x"></i><br>LinkedIn</a>
 	    </div>
 	  </div>
 	</section>
 </body>
+<script type="text/javascript">
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+</script>
