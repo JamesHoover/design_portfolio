@@ -1,0 +1,182 @@
+<body>
+	<a name="top"></a>
+	<!-- START HEADER -->
+	<header class="projects-page-header">
+		<nav class="row">
+			<ul>
+				<li class="site-url"><a href="/">jameshooverdesign.com</a></li>
+				<li><a href="/#projects" class="back"><i class="fa fa-arrow-left"></i>Back to Projects List</a></li>
+			</ul>
+		</nav>
+		<div class="row">
+			<h1 class="project-name">GOVote</h1>
+		</div>
+	</header>
+	<section class="projects-page">
+		<div class="row">
+			<div class="project-details two-thirds first">
+				<p class="bold">For this project I set out to redesign the U.S. voting process with the goal to increase voter turnout. After some initial research I discovered that the turnout for young voters (age 18-29) is far less than the rest of the population, so I chose them as my target audience.</p>
+				<h2 class="project-header">Research Insights</h2>
+				<p class="project-subheader">After interviewing users in the demographic I developed some key insights as to why they don't vote</p>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-square"></i>They feel the current voting process is too complicated and time-consuming for the amount of impact that their vote carries.</li>
+					<li><i class="fa-li fa fa-square"></i>They feel overwhelmed by the information available on current issues and candidates, keeping them from staying informed.</li>
+					<li><i class="fa-li fa fa-square"></i>They do not know about or keep track of important dates leading up to and regarding elections.</li>
+				</ul>
+				<h2 class="project-header">Problem Statement</h2>
+				<p class="project-subheader">From my research insights I uncovered the root problem</p>
+				<p>Young adult voters (age 18-29) need a way to vote efficiently and effectively because the current voting system is too complex for them to invest their time.</p>
+				<h2 class="project-header">High Level Objectives</h2>
+				<p class="project-subheader">These goals are how I will solve my problem statement</p>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-square"></i>Allow the user to vote for the candidate of their choice.</li>
+					<li><i class="fa-li fa fa-square"></i>Allow for the user to become well informed on the current issues and candidates.</li>
+					<li><i class="fa-li fa fa-square"></i>Allow the user to view important dates regarding elections.</li>
+					<li><i class="fa-li fa fa-square"></i>Allow the user to register to vote.</li>
+				</ul>
+			</div>
+			<div class="one-third">
+				<div class="phone">
+					<div class="phone-screen">
+						<%= image_tag "projects/govote/get_started.png" %>
+					</div>
+						<%= image_tag "projects/google-nexus-5.svg", class: "phone-border" %>
+				</div>
+			</div>
+		</div>
+		<div class="personas row">
+			<h2 class="project-header">Personas</h2>
+			<p class="project-subheader">My personas were developed after organizing my interview insights into an affinity map</p>
+			<div class="one-half first">
+				<%= image_tag "projects/govote/persona_sam.png" %>
+				<p><span class="strong-text">Sam is a 21 year old stylist.</span> She wants to vote but is overwhelmed and stressed out by the process. Sam needs a way to become informed and cast her vote without getting anxiety.</p>
+			</div>
+			<div class="one-half">
+				<%= image_tag "projects/govote/persona_tim.png" %>
+				<p><span class="strong-text">Tim is an 18 year old student.</span> He has never voted and has little idea what to expect. He is excited but feels like he is not making his own choice, just the choice of his parents. Tim needs a way to research his ballot and vote on those items free of parental influence.</p>
+			</div>
+		</div>
+		<div class="personas row">
+			<div class="one-half first">
+				<%= image_tag "projects/govote/persona_fred.png" %>
+				<p><span class="strong-text">Fred is a 25 year old developer.</span> He thinks voting is pointless because the time commitment does not outweigh his vote's impact. Fred needs a way to cast his ballot as fast as he tweets.</p>
+			</div>
+			<div class="one-half">
+				<%= image_tag "projects/govote/persona_jay.png" %>
+				<p><span class="strong-text">Dan is a 29 year old sales rep.</span> He stays informed but is losing faith in the current system. He is only motivated to dedicate the time to vote when it is something big. Dan needs a quick way to vote so that his voice is not lost.</p>
+			</div>
+		</div>
+		<div class="row">
+			<h2 class="project-header">Competitive Analysis</h2>
+			<p class="project-subheader">My assessment of the strengths and weaknessess of the competition</p>
+			<%= image_tag "projects/govote/comp_analysis.png", class: "one-half first" %>
+			<p class="one-half">Through competitive analysis I saw an electronic solution was necessary. The only way to register or cast a ballot is through the government's process. This requires the user to travel, fill out government designed forms, and mail documents. An electronic solution will end traveling, mailing, and static forms.</p>
+		</div>
+		<div class="row">
+			<h2 class="project-header">User Flows</h2>
+			<p class="project-subheader">This is a flow for the sign up & registration process, it shows the path the user can take to get started.</p>
+			<%= image_tag "projects/govote/user_flow1.png" %>
+			<p>This flow needs to be simple to get users onboard. The problem is it requires a lot of personal information. I first tried to design an easy to use form but later developed a better method. My solution is to have the user submit a picture of their photo ID. This inputs all the necessary information and eliminates the form. The only info a user has to input is a picture and their email.</p>
+		</div>
+		<div class="row">
+			<h2 class="project-header">Information Architecture</h2>
+			<p class="project-subheader">The information architecture is the organization of the navigation and content. This setup was decided after testing users through card sorting</p>
+			<%= image_tag "projects/govote/IA.png" %>
+			<p>I found three main navigation elements worked best. Three elements does not overwhelm users with information and functionality. The names were chosen because they communicate their role and are straightforward. For example, I used 'More Info' instead of 'Research' because I saw in user testing that 'Research' caused a higher cognitive load.</p>
+		</div>
+		<div class="row screens">
+			<h2 class="project-header">Sketches</h2>
+			<p class="project-subheader">I used the sketches to test layouts and genernal concepts</p>
+			<%= link_to image_tag("projects/govote/sketch1.png"), image_path("projects/govote/sketch1.png"), class: "one-sixth first project-img" %>
+			<%= link_to image_tag("projects/govote/sketch2.png"), image_path("projects/govote/sketch2.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/sketch3.png"), image_path("projects/govote/sketch3.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/sketch4.png"), image_path("projects/govote/sketch4.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/sketch5.png"), image_path("projects/govote/sketch5.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/sketch6.png"), image_path("projects/govote/sketch6.png"), class: "one-sixth project-img" %>
+			<p class="first">For the sketches I spent the most time designing and testing the flow of filling out and casting a ballot. This is the main user goal and needed to be a smooth process. The decision to be a mobile app was made because mobile is the highest usage device for the target audience. Mobile also allows the app to use features like the camera, and later on, the fingerprint scanner.</p>
+		</div>
+		<div class="row screens">
+			<h2 class="project-header">Wireframes</h2>
+			<p class="project-subheader">After testing multiple sketches and paper prototypes I finalized the design into wireframes</p>
+			<%= link_to image_tag("projects/govote/Ballot_Home.png"), image_path("projects/govote/Ballot_Home.png"), class: "one-sixth first project-img" %>
+			<%= link_to image_tag("projects/govote/Ballot_President.png"), image_path("projects/govote/Ballot_President.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/Learn_Item.png"), image_path("projects/govote/Learn_Item.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/Learn.png"), image_path("projects/govote/Learn.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/Learn_Expanded.png"), image_path("projects/govote/Learn_Expanded.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/Dates.png"), image_path("projects/govote/Dates.png"), class: "one-sixth project-img" %>
+			<p class="first">I decided to use Google's Material Design because of its high usability and professional feel. It also allows the use of familiar conventions. These aspects help build the user's trust, increase usability, and improve the experience. </p>
+		</div>
+		<div class="row screens">
+			<h2 class="project-header">Prototype</h2>
+			<p class="project-subheader">The prototype, built based on all of the research and testing</p>
+			<%= link_to image_tag("projects/govote/prototype/Ballot_Home.png"), image_path("projects/govote/prototype/Ballot_Home.png"), class: "one-sixth first project-img" %>
+			<%= link_to image_tag("projects/govote/prototype/Ballot_President.png"), image_path("projects/govote/prototype/Ballot_President.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/prototype/Learn_Item.png"), image_path("projects/govote/prototype/Learn_Item.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/prototype/Learn.png"), image_path("projects/govote/prototype/Learn.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/prototype/Learn_Expanded.png"), image_path("projects/govote/prototype/Learn_Expanded.png"), class: "one-sixth project-img" %>
+			<%= link_to image_tag("projects/govote/prototype/Dates.png"), image_path("projects/govote/prototype/Dates.png"), class: "one-sixth project-img" %>
+			<p class="first">I designed the prototype to present an impactful and patriotic feel. It is clean, functionality is obvious, and information is easy to understand. Users trust the app based on initial judgments and are enticed to explore.</p>
+		</div>
+		<div class="row">
+			<h2 class="project-header">Clickable Prototype</h2>
+			<p class="project-subheader">The prototype, built based on all of the research and testing</p>
+			<div class="one-half first">
+				<iframe width="424" height="916" src="https://invis.io/Q567O8ZUA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="one-half prototype-p">
+				<p>The app has tested well. The users can complete the given tasks with ease and have positive reviews for the experience. Users feel good after submitting a ballot because of the warm dialog. It makes them feel proud to have participated.</p>
+				<p>Try it out!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="one-half first">
+				<h2 class="project-header">Next Steps</h2>
+				<p class="project-subheader">To further increase the user experience I have made a list of the next features</p>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-square"></i>Add interactions and animations to increase user satisfaction</li>
+					<li><i class="fa-li fa fa-square"></i>Add functionality for user to input views and get matched with the best fit candidate</li>
+					<li><i class="fa-li fa fa-square"></i>More info for continued research</li>
+					<li><i class="fa-li fa fa-square"></i>More info about the voting process e.g. the electoral college, caucuses and primaries, and the national conventions</li>
+					<li><i class="fa-li fa fa-square"></i>Notification system so users do not miss ballots and elections</li>
+					<li><i class="fa-li fa fa-square"></i>Web version to capture a wider audience</li>
+				</ul>
+			</div>
+			<div class="one-half">
+				<h2 class="project-header">Conclusion</h2>
+				<p class="project-subheader">After all the research and development, my final thoughts</p>
+				<p>At the start I had made some simple assumptions. Users did not like traveling to physical voting locations. They hated waiting in line. Ballots are ugly and confusing.</p>
+				<p>After researching I found that my assumptions were correct but only told part of the story. The other part? Users just do not believe anymore. They are growing disillusioned with the political system. And feel their vote has little to no impact. </p>
+				<p>The truth is, their vote does still carry weight. This is why I continued to work on redesigning the current process and not completely uprooting it. I want to make the users into the best form of themselves, not let the disillusionment make them passive.</p>
+				<p>Overall, I enjoyed this project and feel confident that my solution solves the original problem.</p>
+			</div>
+		</div>
+	</section>
+	<section class="contact full-row">
+		<h1 class="section-title">Contact Me.</h1>
+		<div class="row">
+	    <div class="email">
+	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="">jamesfhoover@gmail.com</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.instagram.com/lovejamas/"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
+	  	</div>
+	  	<div class="social-icon">
+	  		<a href="https://www.flickr.com/photos/130235786@N06/"><i class="fa fa-flickr fa-2x"></i><br>Flicker</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.linkedin.com/in/james-hoover-93265629"><i class="fa fa-linkedin-square fa-2x"></i><br>LinkedIn</a>
+	    </div>
+	  </div>
+		<a href="#top" class="jump"><i class="fa fa-arrow-up"></i> Back to top</a>
+	</section>
+	<script type="text/javascript">
+    $('.screens').magnificPopup({
+      delegate: 'a', // child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+        // options for gallery
+        enabled: true
+      }
+    });
+  </script>
+</body><!-- END BODY -->

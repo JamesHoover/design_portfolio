@@ -5,20 +5,25 @@ DesignPortfolio::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   #root 'application#hello'
-  root 'pages#home'
+  root 'pages#main'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get '/work' => 'pages#projects'
-  get '/about' => 'pages#about'
 
-  resources "contacts", only: [:new, :create]
-  get 'contact', to: 'contacts#new', as: 'contact'
-  post 'contact', to: 'contacts#create'
+  get '/projects/govote' => 'pages#govote'
+  get '/projects/privacy' => 'pages#privacy'
+  get '/projects/others' => 'pages#others'
+
+  # get '/work' => 'pages#projects'
+  # get '/about' => 'pages#about'
+
+  # resources "contacts", only: [:new, :create]
+  # get 'contact', to: 'contacts#new', as: 'contact'
+  # post 'contact', to: 'contacts#create'
 
 
-  get '/work/projects' => 'pages#projects'
-  get '/work/art' => 'pages#art'
-  get '/work/photography' => 'pages#photography'
+  # get '/work/projects' => 'pages#projects'
+  # get '/work/art' => 'pages#art'
+  # get '/work/photography' => 'pages#photography'
 
   
 

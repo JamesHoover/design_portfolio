@@ -1,0 +1,69 @@
+<body>
+	<a name="top"></a>
+	<header class="welcome gradient">
+		<nav class="row">
+			<ul>
+				<li class="site-url one-half first"><a href="/">jameshooverdesign.com</a></li>
+				<div class="one-half nav-link-list">
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="#projects" class="nav-link">Projects</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
+				</div>
+			</ul>
+		</nav>
+		<div class="welcome-img">
+			<%= image_tag "james_selfie_sketch.svg" %>
+		</div>
+		<div class="welcome-title">
+			<h1 class="">James Hoover</h1>
+			<h6 class="subtitle">Software Developer</h6>
+			<h6 class="subtitle">turned</h6>
+			<h2 class="">UX Designer</h2>
+		</div>
+	</header>
+	<!-- START SECTION - $ABOUT -->
+	<a name="about" class="jump"></a>
+	<section class="about full-row">
+		<h1 class="section-title">Who am I?</h1>
+		<%= image_tag "about/james-tree2.svg", class: "about-img-big" %>
+	</section>
+	<!-- START SECTION - $PROJECTS -->
+	<a name="projects" class="jump"></a>
+	<section class="projects full-row">
+		<h1 class="section-title">What have I made?</h1>
+		<div class="row centered-row">
+			<div class="project-thumb">
+				<a href="/projects/govote" class="project-link background">
+					<%= image_tag "projects/govote/flag_sky.jpeg", class: "project-img", title: "GOVote" %>GOVote</a>
+				</div>
+				<div class="project-thumb">
+				<a href="projects/privacy" class="project-link background">
+					<%= image_tag "projects/ruler.jpeg", class: "project-img" %>Privacy App (In Progress)</a>
+			</div>
+			<div class="project-thumb">
+				<a href="projects/others" class="project-link background">
+					<%= image_tag "projects/books.jpg", class: "project-img" %>The Others</a>
+			</div>
+		</div>
+	</section>
+	<!-- START SECTION - $CONTACT -->
+	<a name="contact" class="jump"></a>
+	<section class="contact full-row">
+		<h1 class="section-title">Contact Me.</h1>
+		<div class="row">
+	    <div class="email">
+	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="">jamesfhoover@gmail.com</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.instagram.com/lovejamas/"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
+	  	</div>
+	  	<div class="social-icon">
+	  		<a href="https://www.flickr.com/photos/130235786@N06/"><i class="fa fa-flickr fa-2x"></i><br>Flicker</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.linkedin.com/in/james-hoover-93265629"><i class="fa fa-linkedin-square fa-2x"></i><br>LinkedIn</a>
+	    </div>
+	  </div>
+		<a href="#top" class="jump"><i class="fa fa-arrow-up"></i> Back to top</a>
+	</section>
+</body>
