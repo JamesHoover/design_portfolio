@@ -7,7 +7,7 @@
 
 /* TODO:
 --------------------------------------------------
-** Put alt's in img tags
+*
 -------------------------------------------------- */
 
 /* $HTML ELEMENTS
@@ -85,9 +85,8 @@ a:hover            {color: #FFE100;}
   -o-transition:      all 0s ease-out;
   transition:         all 0s ease-out;
 }
-a.inline-link {color: #000; text-decoration: underline;}
+a.inline-link       {color: #000; text-decoration: underline;}
 a.inline-link:hover {color: #FFE100; text-decoration: underline;}
-
 /* Highlight selection */
 *::selection {background-color: #000; color: #fff;}
 
@@ -99,7 +98,6 @@ nav {
   width: 100%;
   min-height: 10vh;
   padding: 25px 0;
-  /* text-shadow: 1px 1px 5px #5A5050; */
 }
 nav ul {display: inline-block; width: 100%; text-align: right;}
 nav li {
@@ -137,18 +135,6 @@ nav li:last-of-type   {padding-right: 0;}
       #5A5050 80%
     );
 }
-
-.gradient-two {
-  background-image:
-    linear-gradient(
-      to bottom,  
-      #FF7473,
-      #FFC952 25%,
-      #47B8E0 50%,
-      #34314C 75%
-    );
-}
-
 .one   {background-color: #E5EEC1;}
 .two   {background-color: #A2D4AB;}
 .three {background-color: #3EACA8;}
@@ -184,7 +170,7 @@ nav li:last-of-type   {padding-right: 0;}
 
 /* $ABOUT
 ------------------------- */
-.about         {background-color: #A2D4AB;   color: #000; text-align: left;} /*#FFC952*/
+.about         {background-color: #A2D4AB;   color: #000; text-align: left;}
 .about .row    {margin-bottom: 100px;}
 .about-info    {padding-bottom: 5px; font-weight: bold; color: rgba(0,0,0,.87);}
 .about-subinfo {width: 75%; color: rgba(0,0,0,.54);}
@@ -194,7 +180,6 @@ nav li:last-of-type   {padding-right: 0;}
 /* $PROJECTS
 ------------------------- */
 .projects    {background-color: #3EACA8;}
-/*.yellow         {color: #FFE100;}*/
 .project-img {
   margin-bottom: 15px;
   box-shadow: 7px 7px 15px rgba(74, 74, 74, 1);
@@ -204,7 +189,6 @@ nav li:last-of-type   {padding-right: 0;}
 .projects .row   {margin-bottom: 50px;}
 .project-thumb   {padding: 23px 0 100px 0; width: 50%; margin: 0 auto;}
 .project-thumb a {font-size: 2.25em;}
-
 
 /* Projects Page */
 .projects-page-header {
@@ -225,13 +209,13 @@ nav li:last-of-type   {padding-right: 0;}
 }
 .other              {border-bottom: 5px solid #FFE100;}
 .project-header     {font-weight: 400; color: #3E50B4;}
-.project-header     {margin-bottom: 5px;}
-.project-subheader  {color: #3E50B4; margin-bottom: 5px!important;}
+.project-header     {margin-bottom: 5px; margin-top: 15px;}
 .personas,
 .project-details p,
-.project-details ul {margin-bottom: 25px!important; padding-bottom: 0;}
+.project-details ul {margin-bottom: 25px; padding-bottom: 0;}
 .project-details ul {margin-left: 2em;}
-/*.project-details ul:last-of-type {margin-bottom: 0;}*/
+.projects-page .project-details {margin-bottom: 0;}
+.project-subheader  {color: #3E50B4; margin-bottom: 5px!important; padding-bottom: 0;}
 .project-details li,
 .fa-ul li {
   font-size: 1.25em;
@@ -276,9 +260,6 @@ nav li:last-of-type   {padding-right: 0;}
   margin-right: 25px;
   font-size: 1.1em;
 }
-
-/* $BUTTONS
-================================================== */
 
 /* $GRID
 ================================================== */
