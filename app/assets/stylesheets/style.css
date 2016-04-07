@@ -61,12 +61,15 @@ a:hover            {color: #FFE100;}
 .border:hover      {border-bottom: 2px solid #FF7473;}
 .background        {padding: 5px 10px; border-bottom: 2px solid #FFF;}
 .background:hover  {
-  background-color: #fff;
   color: #FFE100;
-  border-bottom: none;
+  border-bottom: 2px solid #FFE100;
   border-radius: 2px;
-/*  box-shadow: 0 0 0 2px #FF5C62;*/
+  -webkit-transition: all 0s ease-out;
+  -moz-transition:    all 0s ease-out;
+  -o-transition:      all 0s ease-out;
+  transition:         all 0s ease-out;
 }
+.project-thumb a:hover img {outline: 5px solid #FFE100;}
 .button {
   font-size: .75em;
   padding: 5px 16px;
@@ -197,12 +200,11 @@ nav li:last-of-type   {padding-right: 0;}
   box-shadow: 7px 7px 15px rgba(74, 74, 74, 1);
   padding: 0;
 }
-.project-link  {display: inline-block;}
-.projects .row {margin-bottom: 50px;}
-.project-thumb {padding: 23px 0 100px 0; width: 50%; margin: 0 auto;}
-.project-thumb a,
-.project-thumb-current a {font-size: 2.25em;}
-.project-thumb-current   {padding-top: none;}
+.project-link    {display: inline-block;}
+.projects .row   {margin-bottom: 50px;}
+.project-thumb   {padding: 23px 0 100px 0; width: 50%; margin: 0 auto;}
+.project-thumb a {font-size: 2.25em;}
+
 
 /* Projects Page */
 .projects-page-header {
