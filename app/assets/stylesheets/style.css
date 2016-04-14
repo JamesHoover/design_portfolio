@@ -163,14 +163,19 @@ nav li:last-of-type   {padding-right: 0;}
 ------------------------- */
 .welcome {min-height: 90vh; padding-bottom: 50px; background-color: #FF7473;}
 .welcome-title {
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
   font-size: 100%;
   font-weight: 100;
   color: #fff;
 }
 .welcome-img {width: 350px; margin: 0 auto; margin-top: 50px;}
-
+.welcome-message {
+  text-align: center;
+  font-size: 100%;
+  font-weight: 100;
+  color: #fff;
+}
 /* $ABOUT
 ------------------------- */
 .about         {background-color: #A2D4AB;   color: #000; text-align: left;}
@@ -190,7 +195,7 @@ nav li:last-of-type   {padding-right: 0;}
 }
 .project-link    {display: inline-block;}
 .projects .row   {margin-bottom: 50px;}
-.project-thumb   {padding: 23px 0 100px 0; width: 50%; margin: 0 auto;}
+.project-thumb   {padding: 23px 0 25px 0; width: 50%; margin: 0 auto;}
 .project-thumb a {font-size: 2.25em;}
 
 /* Projects Page */
@@ -263,6 +268,12 @@ nav li:last-of-type   {padding-right: 0;}
   right: 10px;
   margin-right: 25px;
   font-size: 1.1em;
+}
+.credits {
+  font-size: 1em;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
 }
 
 /* $GRID
