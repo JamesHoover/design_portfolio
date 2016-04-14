@@ -24,7 +24,7 @@ html, body {
 	height: 	 100%;
   font-size: 100%;
 }
-h1, h2, h3, h4, h5, h6 {font-weight: 300;}
+h1, h2, h3, h4, h5, h6 {}
 h1 {font-size: 3.5em;}
 h2 {font-size: 2.5em;}
 h3 {font-size: 2.125em;}
@@ -57,9 +57,9 @@ a:hover {
   transition:         all .3s ease-out;
 }
 a:hover            {color: #FFE100;}
-.border            {border-bottom: 2px solid #FF7473;}
+.border,
 .border:hover      {border-bottom: 2px solid #FF7473;}
-.background        {padding: 5px 10px; border-bottom: 2px solid #FFF;}
+.background        {border-bottom: 2px solid #FFF;}
 .background:hover  {
   color: #FFE100;
   border-bottom: 2px solid #FFE100;
@@ -69,7 +69,7 @@ a:hover            {color: #FFE100;}
   -o-transition:      all 0s ease-out;
   transition:         all 0s ease-out;
 }
-.no-border {border-bottom: none;}
+.no-border       {border-bottom: none;}
 .no-border:hover {border-bottom: none;}
 
 .project-thumb a:hover img {outline: 5px solid #FFE100;}
@@ -382,7 +382,7 @@ nav li:last-of-type   {padding-right: 0;}
   .about-img     {width: 100%;}
   .email         {font-size: 2em;}
   .about-img-big {width: 100%; padding: 0 2%;}
-  .project-thumb {padding: 23px 0 100px 0; width: 100%; margin: 0 auto;}
+  .project-thumb {padding: 23px 0 50px 0; width: 100%; margin: 0 auto;}
   .jump          {padding-top: 40px;}
   .phone         {display: none;}
   .project-img   {margin-bottom: 15px;}
@@ -417,7 +417,7 @@ nav li:last-of-type   {padding-right: 0;}
   .four-fifths,   
   .five-sixths   {width: 100%}
 
-  .project-thumb {padding: 23px 0 100px 0; width: 75%; margin: 0 auto;}
+  .project-thumb {padding: 23px 0 50px 0; width: 75%; margin: 0 auto;}
   .nav-link-list {font-size: 75%;}
   .phone         {display: none;}
   .screens a     {width: 30.555555555556%;}
