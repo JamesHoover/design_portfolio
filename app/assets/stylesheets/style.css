@@ -69,6 +69,9 @@ a:hover            {color: #FFE100;}
   -o-transition:      all 0s ease-out;
   transition:         all 0s ease-out;
 }
+.no-border {border-bottom: none;}
+.no-border:hover {border-bottom: none;}
+
 .project-thumb a:hover img {outline: 5px solid #FFE100;}
 .button {
   font-size: .75em;
@@ -237,6 +240,7 @@ nav li:last-of-type   {padding-right: 0;}
 .yellow           {color: #FFE100;}
 .projects-extra   {background-color: #3EACA8;}
 
+.photos img {margin: 5% 0;}
 
 /* $CONTACT 
 ------------------------- */

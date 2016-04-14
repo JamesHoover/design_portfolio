@@ -1,137 +1,69 @@
-<!-- BODY -->
 <body>
   <a name="top"></a>
-  <div class="wrapper">
-    <!-- HEADER -->
-    <header class="main-nav">
-      <!-- Logo/site info -->
-      <section class="site-info row">
-        <article class="logo pull first">
-          <a href="/" title="Home" class="logo-link">
-            <img src="/assets/icons/logo.png" class="logo-img" alt="logo"><h4>JamesHooverDesign.com</h4>
-          </a>
-        </article>
-        <article class="main-contact-info push">
-          <h4>James Hoover | Portfolio</h4>
-          <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
-        </article>
-      </section>
-      <!-- NAV -->
-      <nav class="site-nav row">
-        <ul>
-          <li><%= link_to "Home", '/', class: "nav-black" %></li>
-          <li><%= link_to "Work", '/work/projects', class: "nav-red current" %>
-            <ul class="sub-site-nav">
-              <li><%= link_to "Projects", '/work/projects', class: "nav-red" %></li>
-              <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
-              <li><%= link_to "Photography", '/work/photography', class: "nav-red current" %></li>
-            </ul>
-          </li>
-          <li><%= link_to "About", '/about', class: "nav-green" %></li>
-          <li><%= link_to "Contact", '/contact', class: "nav-blue" %></li>
-        </ul>
-      </nav>
-    </header><!-- END HEADER -->
-    <!-- WORK-NAV -->
-    <nav class="work-nav row">
-      <h1 class="work-title">My Work</h1>
-      <h2 class="sub-title">Photography</h2>
+  <!-- START HEADER -->
+  <header class="projects-page-header">
+    <nav class="row">
       <ul>
-        <li><%= link_to "Projects", '/work/projects', class: "nav-red" %></li>
-        <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
-        <li><%= link_to "Photography", '/work/photography', class: "nav-red current" %></li>
+        <li class="site-url"><a href="/">jameshooverdesign.com</a></li>
+        <li><a href="/#projects" class="back"><i class="fa fa-arrow-left"></i>Back</a></li>
       </ul>
     </nav>
-    <!-- WORK-CONTENT -->
-    <section class="row photos">
-      <article class="photo-block one-half first">
-        <%= link_to image_tag("photography/firework_reflection.jpg"), image_path("photography/firework_reflection.jpg"), class: "photo-img-link",  title: "Firework Reflection" %>
-        <h5>Firework Reflection | 2015</h5>
-      </article>
-      <article class="photo-block one-half">
-        <%= link_to image_tag("photography/polar_plunge.jpg"), image_path("photography/polar_plunge.jpg"), class: "photo-img-link",  title: "Polar Plunge" %>
-        <h5>Polar Plunge | 2014</h5>
-      </article>
-
-      <article class="photo-block one-half first">
-        <%= link_to image_tag("photography/cloudy_seattle.jpg"), image_path("photography/cloudy_seattle.jpg"), class: "photo-img-link",  title: "Seattle" %>
-        <h5>Seattle | 2015</h5>
-      </article>
-      <article class="photo-block one-half">
-        <%= link_to image_tag("photography/taillight_streaks.jpg"), image_path("photography/taillight_streaks.jpg"), class: "photo-img-link",  title: "Taillights" %>
-        <h5>Taillights | 2015</h5>
-      </article>
-
-      <article class="photo-block one-third first">
-        <%= link_to image_tag("photography/big_sur.jpg"), image_path("photography/big_sur.jpg"), class: "photo-img-link",  title: "Big Sur" %>
-        <h5>Big Sur | 2015</h5>
-      </article>
-      <article class="photo-block one-third">
-        <%= link_to image_tag("photography/foggy_rocks.jpg"), image_path("photography/foggy_rocks.jpg"), class: "photo-img-link",  title: "Foggy Rocks" %>
-        <h5>Foggy Rocks | 2015</h5>
-      </article>
-      <article class="photo-block one-third">
-        <%= link_to image_tag("photography/lighthouse.jpg"), image_path("photography/lighthouse.jpg"), class: "photo-img-link",  title: "Lighthouse" %>
-        <h5>Lighthouse | 2015</h5>
-      </article>
-
-      <article class="photo-block one-half first">
-        <%= link_to image_tag("photography/horse_monument.jpg"), image_path("photography/horse_monument.jpg"), class: "photo-img-link",  title: "Wild Horse Monument" %>
-        <h5>Wild Horse Monument | 2015</h5>
-      </article>
-      <article class="photo-block one-half">
-        <%= link_to image_tag("photography/santa_barbara.jpg"), image_path("photography/santa_barbara.jpg"), class: "photo-img-link",  title: "Santa Barbara" %>
-        <h5>Santa Barbara | 2015</h5>
-      </article>
-
-      <article class="photo-block one-half first">
-        <%= link_to image_tag("photography/firework_launch.jpg"), image_path("photography/firework_launch.jpg"), class: "photo-img-link",  title: "Firework Launch" %>
-        <h5>Firework Launch | 2015</h5>
-      </article>
-      <article class="photo-block one-half">
-        <%= link_to image_tag("photography/firework_stars.jpg"), image_path("photography/firework_stars.jpg"), class: "photo-img-link",  title: "Firework Stars" %>
-        <h5>Firework Stars | 2015</h5>
-      </article>
-
-      <article class="photo-block one-third first">
-        <%= link_to image_tag("photography/black_frenchie.jpg"), image_path("photography/black_frenchie.jpg"), class: "photo-img-link",  title: "Beans" %>
-        <h5>Beans | 2015</h5>
-      </article>      
-      <article class="photo-block one-third">
-        <%= link_to image_tag("photography/yellow_lab.jpg"), image_path("photography/yellow_lab.jpg"), class: "photo-img-link",  title: "Maya" %>
-        <h5>Maya | 2015</h5>
-      </article>
-      <article class="photo-block one-third">
-        <%= link_to image_tag("photography/white_frenchie.jpg"), image_path("photography/white_frenchie.jpg"), class: "photo-img-link",  title: "Winnie" %>
-        <h5>Winnie | 2015</h5>
-      </article>
-
-    	<article class="photo-block one-half first">
-        <%= link_to image_tag("photography/kelly_and_horse.jpg"), image_path("photography/kelly_and_horse.jpg"), class: "photo-img-link",  title: "Kelly & Horse" %>
-        <h5>Kelly & the horses | 2014</h5>
-      </article>
-  		<article class="photo-block one-half">
-        <%= link_to image_tag("photography/horse_closeup.jpg"), image_path("photography/horse_closeup.jpg"), class: "photo-img-link",  title: "Horse" %>
-        <h5>Zack | 2014</h5>
-      </article>
+    <div class="row">
+      <h1 class="project-name">Photography</h1>
+    </div>
+  </header>
+  <div class="row photos">
+    <section class="row one-third first">
+      <%= link_to image_tag("photography/photo19.jpg"), image_path("photography/photo19.jpg"), class: "photo-img-link",  title: "Seattle" %>
+      <%= link_to image_tag("photography/photo01.jpg"), image_path("photography/photo01.jpg"), class: "photo-img-link",  title: "Horse" %>
+      <%= link_to image_tag("photography/photo16.jpg"), image_path("photography/photo16.jpg"), class: "photo-img-link",  title: "Fireworks" %>
+      <%= link_to image_tag("photography/photo04.jpg"), image_path("photography/photo04.jpg"), class: "photo-img-link",  title: "Swim" %>
+      <%= link_to image_tag("photography/photo03.jpg"), image_path("photography/photo03.jpg"), class: "photo-img-link",  title: "Swim" %>
+      <%= link_to image_tag("photography/photo06.jpg"), image_path("photography/photo06.jpg"), class: "photo-img-link",  title: "FLowers" %>
+      <%= link_to image_tag("photography/photo07.jpg"), image_path("photography/photo07.jpg"), class: "photo-img-link",  title: "Dog" %>
+      <%= link_to image_tag("photography/photo10.jpg"), image_path("photography/photo10.jpg"), class: "photo-img-link",  title: "Rocks" %>
     </section>
-  </div><!-- END DIV wrapper -->
-  <!-- FOOTER -->
-  <footer class="row footer foot-push">
-    <section class="jump-top">
-      <h4><a href="#top" title="Top" class="outline-black">Jump to top</a></h4>
+    <section class="row one-third">
+      <%= link_to image_tag("photography/photo28.jpg"), image_path("photography/photo28.jpg"), class: "photo-img-link",  title: "Hawaii" %>
+      <%= link_to image_tag("photography/photo23.jpg"), image_path("photography/photo23.jpg"), class: "photo-img-link",  title: "City Lights" %>
+      <%= link_to image_tag("photography/photo11.jpg"), image_path("photography/photo11.jpg"), class: "photo-img-link",  title: "Statue" %>
+      <%= link_to image_tag("photography/photo18.jpg"), image_path("photography/photo18.jpg"), class: "photo-img-link",  title: "Car Lights" %>
+      <%= link_to image_tag("photography/photo02.jpg"), image_path("photography/photo02.jpg"), class: "photo-img-link",  title: "Horse" %>
+      <%= link_to image_tag("photography/photo12.jpg"), image_path("photography/photo12.jpg"), class: "photo-img-link",  title: "River" %>
+      <%= link_to image_tag("photography/photo13.jpg"), image_path("photography/photo13.jpg"), class: "photo-img-link",  title: "Fireworks" %>
+      <%= link_to image_tag("photography/photo15.jpg"), image_path("photography/photo15.jpg"), class: "photo-img-link",  title: "Fireworks" %>
+      <%= link_to image_tag("photography/photo09.jpg"), image_path("photography/photo09.jpg"), class: "photo-img-link",  title: "Dog" %>
+      <%= link_to image_tag("photography/photo14.jpg"), image_path("photography/photo14.jpg"), class: "photo-img-link",  title: "Fireworks" %>
     </section>
-    <section class="icon-tray">
-      <h4 class="see-more">Visit my <a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr" class="black">Flickr</a> for more photos.</h4>
-      <ul>
-        <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon grayscale"></div><br>GitHub</a></li>
-        <li><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr-icon grayscale"></div><br>Flickr</a></li>
-        <li><a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram-icon grayscale"></div><br>Instagram</a></li>
-        <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon grayscale"></div><br>Email</a></li>
-      </ul>
+    <section class="row one-third">
+      <%= link_to image_tag("photography/photo24.jpg"), image_path("photography/photo24.jpg"), class: "photo-img-link",  title: "City Light" %>
+      <%= link_to image_tag("photography/photo08.jpg"), image_path("photography/photo08.jpg"), class: "photo-img-link",  title: "Dog" %>
+      <%= link_to image_tag("photography/photo22.jpg"), image_path("photography/photo22.jpg"), class: "photo-img-link",  title: "Car" %>
+      <%= link_to image_tag("photography/photo20.jpg"), image_path("photography/photo20.jpg"), class: "photo-img-link",  title: "Cali" %>
+      <%= link_to image_tag("photography/photo25.jpg"), image_path("photography/photo25.jpg"), class: "photo-img-link",  title: "City Lights" %>
+      <%= link_to image_tag("photography/photo26.jpg"), image_path("photography/photo26.jpg"), class: "photo-img-link",  title: "Hawaii" %>
+      <%= link_to image_tag("photography/photo27.jpg"), image_path("photography/photo27.jpg"), class: "photo-img-link",  title: "Hawaii" %>
+      <%= link_to image_tag("photography/photo21.jpg"), image_path("photography/photo21.jpg"), class: "photo-img-link",  title: "Big Sur" %>
     </section>
-    <h6 class="copyright">Designed and built by James - &copy; 2016</h6>
-  </footer>
+  </div>
+  <section class="contact full-row">
+    <h1 class="section-title">Contact Me.</h1>
+    <div class="row">
+      <div class="email">
+        <a href="mailto:jamesfhoover@gmail.com" title="Email" class="">jamesfhoover@gmail.com</a>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.instagram.com/lovejamas/"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.flickr.com/photos/130235786@N06/"><i class="fa fa-flickr fa-2x"></i><br>Flicker</a>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.linkedin.com/in/james-hoover-93265629"><i class="fa fa-linkedin-square fa-2x"></i><br>LinkedIn</a>
+      </div>
+    </div>
+    <a href="#top" class="jump"><i class="fa fa-arrow-up"></i> Back to top</a>
+  </section>
   <script type="text/javascript">
     $('.photos').magnificPopup({
       delegate: 'a', // child items selector, by clicking on it popup will open
