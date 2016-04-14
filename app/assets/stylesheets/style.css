@@ -24,7 +24,7 @@ html, body {
 	height: 	 100%;
   font-size: 100%;
 }
-h1, h2, h3, h4, h5, h6 {}
+h1, h2, h3, h4, h5, h6 {font-weight: 300;}
 h1 {font-size: 3.5em;}
 h2 {font-size: 2.5em;}
 h3 {font-size: 2.125em;}
@@ -145,7 +145,7 @@ nav li:last-of-type   {padding-right: 0;}
 .five  {background-color: #5A5050;}
 .section-title {
   padding-bottom: 50px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -166,7 +166,7 @@ nav li:last-of-type   {padding-right: 0;}
   padding-top: 50px;
   text-align: center;
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 100;
   color: #fff;
 }
 .welcome-img {width: 350px; margin: 0 auto; margin-top: 50px;}
@@ -206,7 +206,7 @@ nav li:last-of-type   {padding-right: 0;}
 .project-name-other {
   border-bottom: 5px solid #F72828;
   color: #FFF;
-  font-weight: 400;
+  font-weight: 300;
   margin: 25px 0;
   display: inline;
 }
