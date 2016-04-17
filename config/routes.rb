@@ -12,6 +12,7 @@ DesignPortfolio::Application.routes.draw do
   get '/projects/govote' => 'pages#govote'
   get '/projects/privacy' => 'pages#privacy'
   get '/projects/freelance' => 'pages#freelance'
+  get '/projects/dealtapp' => 'pages#dealtapp'
   get '/photography/' => 'pages#photography'
 
   # get '/work' => 'pages#projects'

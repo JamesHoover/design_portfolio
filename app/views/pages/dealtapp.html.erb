@@ -1,0 +1,91 @@
+<body>
+	<a name="top"></a>
+	<!-- START HEADER -->
+	<header class="projects-page-header">
+		<nav class="row">
+			<ul>
+				<li class="site-url"><a href="/">jameshooverdesign.com</a></li>
+				<li><a href="/#projects" class="back"><i class="fa fa-arrow-left"></i>Back</a></li>
+			</ul>
+		</nav>
+		<div class="row">
+			<h1 class="project-name">DealTapp</h1>
+		</div>
+	</header>
+	<section class="projects-page">
+		<div class="row project-details">
+			<div class="two-thirds first">
+				<p class="bold">DealTapp is an application to find Seattle's hottest dining, cafes, and entertainment. I was recently brought onto the DealTapp team as the Lead UX Designer. My main goal is to take the current state of the app and increase the usability and user satisfaction.</p>
+				<p class="bold">DealTapp is already built and in production so I have tweaked my design process to fit the situation.</p>
+				<h2 class="project-header">The Goals of the Business</h2>
+				<p class="project-subheader">I sat down with the founders to figure out their main goals.</p>
+				<ul class="fa-ul">
+					<li><i class="fa-li fa fa-square"></i>Support local businesses by increasing their visibility and driving business to them.</li>
+					<li><i class="fa-li fa fa-square"></i>Give business users control over deals. (e.g. product count, discount amount, expiration date).</li>
+					<li><i class="fa-li fa fa-square"></i>Allow the consumer users to find deals, claim them with tokens, and redeem the deals.</li>
+					<li><i class="fa-li fa fa-square"></i>Allow the consumer users to purchase tokens.</li>
+				</ul>
+			</div>
+			<div class="one-third">
+				<div class="phone">
+					<div class="phone-screen">
+						<%= image_tag "projects/dealtapp/landing.png" %>
+					</div>
+						<%= image_tag "projects/google-nexus-5.svg", class: "phone-border" %>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h2 class="project-header">Current State of DealTapp</h2>
+			<p class="project-subheader">Analyzing the state of DealTapp when I joined</p>
+			<p>I am the first designer for DealTapp. Because of this there is no documentation about the current design of the application. I need documents to refer to and revise during testing and research. It is unrealistic to design the app from the ground up so I set out to document the current structure of the app. I made user flows and diagramed the information architecture.</p>
+		</div>
+		<div class="row">
+			<h2 class="project-header">Competitive Analysis</h2>
+			<p class="project-subheader">Next I researched the competition to see their solutions</p>
+			<p>Groupon and Living Social are the top competitors. Running through Groupon's application I found that it has a similar structure to DealTapp. I made use of this by creating slides comparing the screens of DealTapp and Groupon. This makes it easy to see how the two solve similar usability issues. I plan on consulting the slides after usability testing to see how Groupon solves issues that DealTapp faces.</p>
+		</div>
+		<div class="row">
+			<h2 class="project-header">User Testing</h2>
+			<p class="project-subheader">After some research and documentation I have started user tests to uncover usability issues</p>
+			<p>Jakob Nielsen of the Nielsen Norman Group recommends running a lot of small user tests to save resources. He says testing no more than 5 users and running as many small tests as possible will uncover all usability issues. <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" class="inline-link">Source.</a> Given the limited resources at hand I decided that this 5 user method would be best.</p>
+			<p>Testing the present app I've seen that the biggest usability issues are signing up, checking claimed deals, and redeeming deals.</p>
+		</div>
+		<div class="row screens">
+			<h2 class="project-header">Where I am now</h2>
+			<p class="project-subheader">Now I am using the insights from usability testing to create paper prototypes.</p>
+			<p>I plan to use the paper prototypes to test and validate fixes I am creating to solve the current usability issues.</p>
+			<p>Some examples, I am working to make signing up more visible and adding helpful dialog to guide the user along the process. Changing the menu icon from a gear to a hamburger icon to better follow convention. And adding more info about the functionality of the app and how the entire process works from claiming a deal to redeeming it in store. This will provide a clear conceptual model for the users and prevent confusion.</p>
+			<p>I will have more updates soon! (April 2016)</p>
+		</div>
+	</section>
+	<section class="contact full-row">
+		<h1 class="section-title">Contact Me.</h1>
+		<div class="row">
+	    <div class="email">
+	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="">jamesfhoover@gmail.com</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.instagram.com/lovejamas/"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
+	  	</div>
+	  	<div class="social-icon">
+	  		<a href="https://www.flickr.com/photos/130235786@N06/"><i class="fa fa-flickr fa-2x"></i><br>Flicker</a>
+	    </div>
+	    <div class="social-icon">
+	    	<a href="https://www.linkedin.com/in/james-hoover-93265629"><i class="fa fa-linkedin-square fa-2x"></i><br>LinkedIn</a>
+	    </div>
+	  </div>
+		<a href="#top" class="jump"><i class="fa fa-arrow-up"></i> Back to top</a>
+		<h6 class="credits">Designed and built by James. 2016.</h6>
+	</section>
+	<script type="text/javascript">
+    $('.screens').magnificPopup({
+      delegate: 'a', // child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+        // options for gallery
+        enabled: true
+      }
+    });
+  </script>
+</body><!-- END BODY -->
