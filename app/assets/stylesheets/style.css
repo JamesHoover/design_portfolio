@@ -90,6 +90,8 @@ a:hover            {color: #FFE100;}
 }
 a.inline-link       {color: #3E50B4; text-decoration: underline;}
 a.inline-link:hover {color: #FFE100; text-decoration: underline;}
+a.underline         {text-decoration: underline;}
+
 /* Highlight selection */
 *::selection {background-color: #000; color: #fff;}
 
@@ -196,7 +198,7 @@ nav li:last-of-type   {padding-right: 0;}
 .project-link    {display: inline-block;}
 .projects .row   {margin-bottom: 50px;}
 .project-thumb   {padding: 23px 0 25px 0; width: 50%; margin: 0 auto;}
-.project-thumb a {font-size: 2.25em;}
+.project-thumb a {font-size: 1.8em;}
 
 /* Projects Page */
 .projects-page-header {

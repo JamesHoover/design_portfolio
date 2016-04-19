@@ -55,14 +55,16 @@
 		<a name="photography"></a>
 		<div class="row">
 			<h2>Photography</h2>
-			<div class="project-thumb one-half first">
-				<a href="photography" class="project-link background no-border">
-					<%= image_tag "photography/photo19.jpg", class: "project-img" %></a>
-			</div>
-			<div class="project-thumb one-half">
-				<a href="photography" class="project-link background no-border">
-					<%= image_tag "photography/photo28.jpg", class: "project-img" %></a>
-			</div>
+					<div class="project-thumb one-third first photography">
+						<%= link_to image_tag("photography/photo19.jpg"), image_path("photography/photo19.jpg"), class: "photo-img-link",  title: "Seattle" %>
+					</div>
+					<div class="project-thumb one-third photography">
+						<%= link_to image_tag("photography/photo28.jpg"), image_path("photography/photo28.jpg"), class: "photo-img-link",  title: "Hawaii" %>
+					</div>
+					<div class="project-thumb one-third photography">
+						<%= link_to image_tag("photography/photo16.jpg"), image_path("photography/photo16.jpg"), class: "photo-img-link",  title: "Fireworks" %>
+					</div>
+			<h6 class="first"><a href="photography" class="underline">View them all</a></h6>
 		</div>
 <!-- 		<a name="art"></a>
 		<div class="row">
@@ -94,4 +96,14 @@
 		<a href="#top" class="jump"><i class="fa fa-arrow-up"></i> Back to top</a>
 		<h6 class="credits">Designed and built by James. 2016.</h6>
 	</section>
+	<script type="text/javascript">
+    $('.photography').magnificPopup({
+      delegate: 'a', // child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+        // options for gallery
+        enabled: true
+      }
+    });
+  </script>
 </body>
