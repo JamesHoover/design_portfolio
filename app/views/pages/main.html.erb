@@ -1,14 +1,16 @@
 <body>
 	<a name="top"></a>
-	<header class="welcome gradient">
+	<header class="welcome">
 		<nav class="row">
-			<ul>
+			<ul class="paint-box">
 				<li class="site-url one-half first"><a href="/">jameshooverdesign.com</a></li>
+					<%= image_tag "SprayPaint1.svg", class: "paint-splat"%>
 				<div class="one-half nav-link-list">
 					<li><a href="#about" class="nav-link">About</a></li>
 					<li><a href="#projects" class="nav-link">Projects</a></li>
 					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</div>
+
 			</ul>
 		</nav>
 		<div class="welcome-title">
@@ -23,41 +25,45 @@
 	<a name="about"></a>
 	<section class="about full-row">
 		<h1 class="section-title">Who am I?</h1>
-		<%= image_tag "about/james-tree2.svg", class: "about-img-big" %>
+		<%= image_tag "about/james-tree-color2.svg", class: "about-img-big" %>
 	</section>
 	<!-- START SECTION - $PROJECTS -->
 	<a name="projects"></a>
 	<section class="projects full-row">
 		<h1 class="section-title">What have I made?</h1>
 		<div class="row">
-			<h2 class="green-text">Websites, Applications, etc.</h2>
+			<h2>Websites, Applications, etc.</h2>
 			<div class="project-thumb one-half first">
  				<a href="projects/govote" class="project-link background">
  					<%= image_tag "projects/govote/flag_sky.jpeg", class: "project-img",  title: "GOVote" %>
  					<h4 class="project-text">GOVote</h4>
+ 					<%= image_tag "SprayPaintOpa2.svg", class: "paint-splat-projects"%>
  				</a>
 				</div>
 			<div class="project-thumb one-half">
 				<a href="projects/privacy" class="project-link background">
  					<%= image_tag "projects/ruler.jpeg", class: "project-img",  title: "Privacy App" %>
  					<h4 class="project-text">Privacy App<br><span class="subtext">(In progress)</span></h4>
+ 					<%= image_tag "SprayPaintOpa2.svg", class: "paint-splat-projects"%>
 			</div>
 			<div class="project-thumb one-half first">
  				<a href="projects/dealtapp" class="project-link background">
 					<%= image_tag "projects/dealtapp.png", class: "project-img back-fill" %>
   				<h4 class="project-text">DealTapp<br><span class="subtext">(In progress)</span></h4>
+  				<%= image_tag "SprayPaintOpa2.svg", class: "paint-splat-projects"%>
   			</a>
 			</div>
 			<div class="project-thumb one-half">
 				<a href="projects/freelance" class="project-link background">
  					<%= image_tag "projects/books.jpg", class: "project-img",  title: "Freelance Work" %>
  					<h5 class="project-text">Freelance Work</h5>
+ 					<%= image_tag "SprayPaintOpa2.svg", class: "paint-splat-projects"%>
  				</a>
 			</div>
 		</div>
 		<a name="photography"></a>
 		<div class="row">
-			<h2 class="green-text">Photography</h2>
+			<h2>Photography</h2>
 					<div class="project-thumb one-third first photography">
 						<%= link_to image_tag("photography/photo19.jpg"), image_path("photography/photo19.jpg"), class: "photo-img-link",  title: "Seattle" %>
 					</div>
@@ -86,8 +92,13 @@
 	    <div class="email">
 	    	<a href="mailto:jamesfhoover@gmail.com" title="Email" class="">jamesfhoover@gmail.com</a>
 	    </div>
-	    <div class="row resume">
-	    	<h6><a href="/assets/JamesHooverResume.pdf" title="Download" class="underline" download>Download Resumé</a><span class="or">or</span><%= link_to "View Resumé", image_path("JamesHooverResume.pdf"), class: "underline" %></h6>
+	    <div class="row">
+	    	<div class="resume-icon">
+	    		<a href="/assets/JamesHooverResume.pdf" title="Download" download><i class="fa fa-download fa-2x"></i><br>Download Resumé</a>
+	    	</div>
+	    	<div class="resume-icon">
+	    		<a href="/assets/JamesHooverResume.pdf"><i class="fa fa-eye fa-2x"></i><br>View Resumé</a>
+	    	</div>
 	    </div>
 	    <div class="row">
 		    <div class="social-icon">
