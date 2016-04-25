@@ -421,12 +421,10 @@ nav li:last-of-type   {padding-right: 0;}
   .no-mobile     {display: none;}
   .paint-splat {
     position: absolute;
-    top: -75px;
-    left:0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+    top: -10px;
+    right: 25%;
+
+    width: 200px;
     z-index: 0;
   }
   .paint-splat-projects {
@@ -471,6 +469,13 @@ nav li:last-of-type   {padding-right: 0;}
   .screens a:nth-of-type(4n) {clear: both; margin-left: 0!important;}
   .prototype-p   {width: 80%;}
   .no-mobile     {display: none;}
+  .paint-splat {
+    position: absolute;
+    top: -50px;
+    right: 2%;
+    width: 200px;
+    z-index: 0;
+  }
   .paint-splat-projects {
     position: absolute;
     left: 0;

@@ -1,0 +1,68 @@
+<!-- BODY -->
+<body>
+  <a name="top"></a>
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header class="main-nav">
+      <!-- Logo/site info -->
+      <section class="site-info row">
+        <article class="logo pull first">
+          <a href="/" title="Home" class="logo-link">
+            <img src="/assets/icons/logo.png" class="logo-img" alt="logo"><h4>JamesHooverDesign.com</h4>
+          </a>
+        </article>
+        <article class="main-contact-info push">
+          <h4>James Hoover | Portfolio</h4>
+          <h4><a href="mailto:jamesfhoover@gmail.com" title="Email" class="black">jamesfhoover@gmail.com</a></h4>
+        </article>
+      </section>
+      <!-- NAV -->
+      <nav class="site-nav row">
+        <ul>
+          <li><%= link_to "Home", '/', class: "nav-black" %></li>
+          <li class="has-sub-nav"><%= link_to "Work", '/work/projects', class: "nav-red" %>
+            <ul class="sub-site-nav-hidden">
+              <li><%= link_to "Projects", '/work/projects', class: "nav-red " %></li>
+              <li><%= link_to "Art", '/work/art', class: "nav-red" %></li>
+              <li><%= link_to "Photography", '/work/photography', class: "nav-red" %></li>
+            </ul>
+          </li>
+          <li><%= link_to "About", '/about', class: "nav-green" %></li>
+          <li><%= link_to "Contact", '/contact', class: "nav-blue current" %></li>
+        </ul>
+      </nav>
+    </header><!-- END HEADER -->
+    <!-- SPACERS -->
+    <div class="topnav_clear"></div>
+    <!-- CONTACT_PAGE CONTENT -->
+    <section class="row">
+      <h1 class="page-title">Contact Me</h1>
+      <article class="contact-paragraph three-fifths first">
+        <section class="contact-info">
+          <h3><a href="mailto:jamesfhoover@gmail.com" title="Email" class="blue">jamesfhoover@gmail.com</a></h3>
+          <h3>206 - 555 - 5282</h3>
+        </section>
+        <h4>Thanks for checking out my portfolio!</h4>
+        <p>If you need someone for freelance work--email, text, or call me with a brief description of your dreams and I'll make it happen.</p>
+        <p>On the other hand, if you just want to say 'hi', find out more about me, or dish out some opinions (constructive criticism is always welcome), the best way to do that is through email.</p>
+        <p>Seriously, my work and this site is an ongoing project. I would love to hear what you think. The more viewpoints the better.</p>
+      </article>
+      <div class="contact-img two-fifths">
+      <h2>Fill out this here form:</h2>
+
+    </section>
+  </div>
+  <!-- FOOTER -->
+  <footer class="row footer foot-push">
+    <section class="icon-tray">
+      <h4 class="see-more">Find me on social media</h4>
+      <ul>
+        <li><a href="https://github.com/JamesHoover" title="GitHub"><div class="github-icon grayscale"></div><br>GitHub</a></li>
+        <li><a href="https://www.flickr.com/photos/130235786@N06/" title="Flickr"><div class="flickr-icon grayscale"></div><br>Flickr</a></li>
+        <li><a href="https://instagram.com/hey_its_jamas/" title="Instagram"><div class="instagram-icon grayscale"></div><br>Instagram</a></li>
+        <li><a href="mailto:jamesfhoover@gmail.com" title="Email"><div class="email-icon grayscale"></div><br>Email</a></li>
+      </ul>
+    </section>
+    <h6 class="copyright">Designed and built by James - &copy; 2015</h6>
+  </footer>
+</body>
