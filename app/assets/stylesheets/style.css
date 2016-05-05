@@ -499,6 +499,7 @@ nav li:last-of-type   {padding-right: 0;}
   .project-text {top: 30%;}
   .welcome {min-height: 100vh;}
   .wrap-slide > .wrap-text {display: block; padding: 5px 5px;}
+  nav li {padding-right: 15px;}
 }
 /* TABLET */
 @media screen and (min-width: 40.5em) and (max-width: 63.9em){
