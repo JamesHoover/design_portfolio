@@ -5,11 +5,6 @@
 ** Copyright: 2016
 ** -------------------------------------------------- */
 
-/* TODO:
---------------------------------------------------
-*
--------------------------------------------------- */
-
 /* $HTML ELEMENTS
 ================================================== */
 /* Typography
@@ -51,18 +46,19 @@ a:hover {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: all .3s ease-out;
+/*  -webkit-transition: all .3s ease-out;
   -moz-transition:    all .3s ease-out;
   -o-transition:      all .3s ease-out;
-  transition:         all .3s ease-out;
+  transition:         all .3s ease-out;*/
 }
 a:hover          {color: #FFE100;}
 .border,
 .border:hover    {border-bottom: 2px solid #FF7473;}
 .no-border       {border-bottom: none;}
 .no-border:hover {border-bottom: none;}
-
-.project-thumb a:hover img:first-of-type {outline: 5px solid #FFE100;}
+.project-thumb a:hover img:first-of-type,
+.project-img:hover,
+a.photo-img-link:hover img {outline: 5px solid #FFE100;}
 a.inline-link       {color: #3E50B4; text-decoration: underline;}
 a.inline-link:hover {color: #FFE100; text-decoration: underline;}
 a.underline         {text-decoration: underline;}
@@ -99,12 +95,10 @@ nav li:last-of-type   {padding-right: 0;}
   text-align: left;
   z-index: 100;
 }
-.site-url a:hover     {text-decoration: underline;}
 .site-url             {display: block;}
 .back                 {display: inline-block; text-align: left; margin: 35px 0 25px 0;}
 .back:hover           {color: #FFE100;}
 .fa-arrow-left        {margin-right: 5px;}
-
 .nav-link-list        {position: relative;}
 
 /* $GENERAL STYLING
@@ -131,7 +125,6 @@ nav li:last-of-type   {padding-right: 0;}
   text-align: center;
 }
 .section-title-light {color: #fff;}
-
 .more        {padding-top: 50px;}
 .huge-font   {font-size: 9em;}
 .center      {text-align: center;}
@@ -143,7 +136,7 @@ nav li:last-of-type   {padding-right: 0;}
 .paint-splat {
   position: absolute;
   top: -100px;
-  right: 2%;
+  right: 8%;
   width: 300px;
   z-index: 0;
 }
@@ -157,7 +150,6 @@ nav li:last-of-type   {padding-right: 0;}
   width: 150px;
   z-index: 0;
 }
-
 
 /* $WELCOME
 ------------------------- */
@@ -294,6 +286,76 @@ nav li:last-of-type   {padding-right: 0;}
   left: 15px;
 }
 
+/* MICRO INTERACTIONS */
+.project-thumb img:first-of-type,
+.zoom img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.project-thumb a:hover img:first-of-type,
+.zoom div:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.under-text a {position: relative; text-decoration: none;}
+.under-text a:before, .under-text a:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+.under-text a, .under-text a > .wrap-text {position: relative; text-decoration: none;}
+.under-text a:before, .under-text a:after, .under-text a > .wrap-text:before, .under-text a > .wrap-text:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+.under-slide:before {
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  background: #FFE100;
+  transform: scaleX(0);
+}
+.under-slide:hover:before {transform: scaleX(1);}
+.wrap-slide {display: inline-block; overflow: hidden;}
+.wrap-slide:before, .wrap-slide:after {
+  right: 0;
+  bottom: 0;
+  background: #FFE100;
+}
+.wrap-slide:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.wrap-slide:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.wrap-slide > .wrap-text {display: block; padding: 8px 20px;}
+.wrap-slide > .wrap-text:before, .wrap-slide > .wrap-text:after {
+  left: 0;
+  top: 0;
+  background: #FFE100;
+}
+.wrap-slide > .wrap-text:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+.wrap-slide > .wrap-text:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.wrap-slide:hover:before, .wrap-slide:hover:after, .wrap-slide:hover > .wrap-text:before, .wrap-slide:hover > .wrap-text:after {
+  transform: translate(0, 0);
+}
+
 /* $GRID
 ================================================== */
 /* Row
@@ -415,7 +477,7 @@ nav li:last-of-type   {padding-right: 0;}
   .no-mobile     {display: none;}
   .paint-splat {
     position: absolute;
-    top: -50px;
+    top: -25px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -436,6 +498,7 @@ nav li:last-of-type   {padding-right: 0;}
   .welcome-message {padding: 2%}
   .project-text {top: 30%;}
   .welcome {min-height: 100vh;}
+  .wrap-slide > .wrap-text {display: block; padding: 5px 5px;}
 }
 /* TABLET */
 @media screen and (min-width: 40.5em) and (max-width: 63.9em){
@@ -470,8 +533,8 @@ nav li:last-of-type   {padding-right: 0;}
   .project-text {top: 35%;}
   .paint-splat {
     position: absolute;
-    top: -75px;
-    right: 5%;
+    top: -50px;
+    right: 8%;
     width: 200px;
     z-index: 0;
   }

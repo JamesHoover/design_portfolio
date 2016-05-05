@@ -3,12 +3,12 @@
 	<header class="welcome">
 		<nav class="row">
 			<ul class="paint-box">
-				<li class="site-url one-half first"><a href="/">jameshooverdesign.com</a></li>
+				<li class="site-url one-third under-text first"><a href="/" class="under-slide">jameshooverdesign.com</a></li>
 					<%= image_tag "blackSplat.svg", class: "paint-splat"%>
-				<div class="one-half nav-link-list">
-					<li><a href="#about" class="nav-link">About</a></li>
-					<li><a href="#projects" class="nav-link">Projects</a></li>
-					<li><a href="#contact" class="nav-link">Contact</a></li>
+				<div class="two-thirds nav-link-list">
+					<li class="under-text"><a href="#about" class="nav-link wrap-slide"><span class="wrap-text">About</span></a></li>
+					<li class="under-text"><a href="#projects" class="nav-link wrap-slide"><span class="wrap-text">Projects</span></a></li>
+					<li class="under-text"><a href="#contact" class="nav-link wrap-slide"><span class="wrap-text">Contact</span></a></li>
 				</div>
 			</ul>
 		</nav>
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		<a name="photography"></a>
-		<div class="row">
+		<div class="row zoom">
 			<h2>Photography</h2>
 					<div class="project-thumb one-third first photography">
 						<%= link_to image_tag("photography/photo19.jpg"), image_path("photography/photo19.jpg"), class: "photo-img-link",  title: "Seattle" %>
@@ -81,7 +81,7 @@
 						<%= link_to image_tag("photography/photo16.jpg"), image_path("photography/photo16.jpg"), class: "photo-img-link",  title: "Fireworks" %>
 					</div>
 			<h6 class="first"><a href="photography" class="inline-link">Check out more photos</a></h6>
-		</div>
+
 <!-- 		<a name="art"></a>
 		<div class="row">
 			<h2>Artwork</h2>
