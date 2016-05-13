@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require magnific-popup
+//= require jquery.min
+//= require skel.min
 //= require turbolinks
 //= require_tree .
-

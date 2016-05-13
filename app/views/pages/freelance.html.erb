@@ -1,100 +1,126 @@
-<body>
-	<a name="top"></a>
-	<!-- START HEADER -->
-	<header class="projects-page-header">
-		<nav class="row">
-			<ul>
-				<li class="site-url under-text"><a href="/" class="under-slide">jameshooverdesign.com</a></li>
-				<li><a href="/#projects" class="back"><i class="fa fa-arrow-left"></i>Back</a></li>
-			</ul>
-		</nav>
-		<div class="row">
-			<h1 class="project-name other">Freelance Work</h1>
-		</div>
-	</header>
-	<section class="projects-page">
-		<div class="row project-details">
-			<div class="two-thirds first">
-				<p class="bold">I love to design and build things. Here are some samples of my work.</p>
-			</div>
-		</div>
-		<!-- 		TODO: add desk. Bottle opener. Looms. -->
-			<div class="row">
-			<h2 class="project-header">Nemo Homes LLC</h2>
-			<p class="project-subheader">Nemo Homes buys houses and property around Seattle, fixes them up, and sells them.</p>
-			<%= link_to image_tag("projects/other/nemo-home.png"), image_path("projects/other/nemo-home.png"), class: "one-half first project-img",  title: "Nemo Homes" %>
-			<div class="one-half">
-			  <h5 class="project-subheader">The Challenge:</h5>
-        <p>Build a low cost site to inform users about the company's current and past projects. Provide contact information.</p>
-        <h5 class="project-subheader">The Users:</h5>
-        <p>Potential and current clients and investors. People interested in the company and its projects.</p>
-        <h5 class="project-subheader">The Process:</h5>
-        <p>Met with client to discover needs and goals. Researched competition. Sketched then wireframed layout. Developed using HTML/CSS.</p>
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="project-header">206 Tutoring</h2>
-			<p class="project-subheader">206 Tutoring is a private tutoring agency in Seattle.</p>
-			<%= link_to image_tag("projects/other/206tutoring_1.png"), image_path("projects/other/206tutoring_1.png"), class: "one-half first project-img",  title: "206 Tutoring" %>
-			<div class="one-half">
-			  <h5 class="project-subheader">The Challenge:</h5>
-        <p>Refresh dated site to give a more professional look, ease of use, and ultimately bring in more clients.</p>
-        <h5 class="project-subheader">The Users:</h5>
-        <p>Parents and students looking to hire a private tutor in Seattle.</p>
-        <h5 class="project-subheader">The Process:</h5>
-        <p>Worked with senior designer to create high-fidelity mockups. Developed with HTML, CSS, and Javascript.</p>
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="project-header">Andre Legacy</h2>
-			<p class="project-subheader">Musician from Los Angeles</p>
-			<%= link_to image_tag("projects/other/legacy_music.png"), image_path("projects/other/legacy_music.png"), class: "one-half first project-img",  title: "Andre Legacy" %>
-			<div class="one-half">
-			  <h5 class="project-subheader">The Challenge:</h5>
-        <p>Retire dated wordpress site and build a more professional and clean site to spread music and bring in purchases.</p>
-        <h5 class="project-subheader">The Users:</h5>
-        <p>Current/potential fans of Andre Legacy.</p>
-        <h5 class="project-subheader">The Process:</h5>
-        <p>Gathered info from client. Researched market. Sketched designs and turned into wireframes. Built site with HTML and CSS.</p>
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="project-header">DTLA</h2>
-			<p class="project-subheader">Denimocracy USA</p>
-			<%= link_to image_tag("projects/other/DTLA.jpg"), image_path("projects/other/DTLA.jpg"), class: "one-half first project-img",  title: "DTLA" %>
-			<div class="one-half">
-			  <h5 class="project-subheader">The Challenge:</h5>
-        <p>Create an appealing and stylish print for demin gift bags in the logo 'DTLA' (Downtown Los Angeles). Simple shading and no color to keep printing costs down.</p>
-        <h5 class="project-subheader">The Users:</h5>
-        <p>Celebrities, buyers, media, etc. associated with Denimocracy USA.</p>
-        <h5 class="project-subheader">The Process:</h5>
-        <p>Worked with client to get general concept, constraints, and pieces for inspiration. Sketched up designs. Chose best design and hand drew in Illustrator.</p>
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="project-header">RDNC</h2>
-			<p class="project-subheader">Richmond District Neighborhood Center</p>
-			<%= link_to image_tag("projects/other/RDNC-SaveTheDate.png"), image_path("projects/other/RDNC-SaveTheDate.png"), class: "one-fourth first project-img",  title: "RDNC" %>
-			<%= link_to image_tag("projects/other/RDNC-invite.jpeg"), image_path("projects/other/RDNC-invite.jpeg"), class: "one-fourth project-img",  title: "RDNC" %>
-			<div class="one-half">
-			  <h5 class="project-subheader">The Challenge:</h5>
-        <p>Create a 'save the date' and formal invitation to be sent to guests of the 35th annual RDNC fundraising dinner.</p>
-        <h5 class="project-subheader">The Users:</h5>
-        <p>Employees, friends, and family invited to the RDNC event.</p>
-        <h5 class="project-subheader">The Process:</h5>
-        <p>Gathered information on RDNC, the event, and style constraints. Worked with client to develop designs. Created 'Save the Date' with photoshop. Consulted/guided client for creation of the formal invitation.</p>
-			</div>
+<!-- Header -->
+	<section id="header" class="">
+		<div class="inner">
+			<h1>Freelance Work</h1>
+			<h3>Designing solutions<br />for a diverse set of problems</h3>
 		</div>
 	</section>
-	<%= render template: "pages/contact" %>
-	<script type="text/javascript">
-    $('.projects-page').magnificPopup({
-      delegate: 'a', // child items selector, by clicking on it popup will open
-      type: 'image',
-      gallery: {
-        // options for gallery
-        enabled: false
-      }
-    });
-  </script>
-</body><!-- END BODY -->
+
+<!-- One -->
+	<section class="main style1">
+		<div class="container">
+			<header class="major special">
+				<h2>Background</h2>
+			</header>
+			<section>
+				<header>
+					<h3><strong>Why Freelance?</strong></h3>
+					<p>Utilizing my strengths while gaining experience</p>
+				</header>
+				<div class="8u 12u$(medium)">
+					<p>Freelancing lets me work on a variety of projects. I have gained tons of great experience because every project is so different and requires a unique solution. I am never just going through the motions. Freelancing has also allowed me to develop my own best methods and forces me to take full responsibility and solve every problem on my own.</p>
+				</div>
+			</section>
+			<header class="major special">
+				<h2>Projects</h2>
+			</header>
+
+			<section>
+				<header>
+					<h3><strong>Nemo Homes LLC</strong></h3>
+					<p>Nemo Homes buys houses and property around Seattle, fixes them up, and sells them.</p>
+				</header>
+				<div class="row">
+					<div class="6u 12u$(medium)"><span class="image fit shadow"><%= image_tag "freelance/nemo-home.png" %></span></div>
+					<div class="6u 12u$(medium)">
+						<h4>The Challenge:</h4>
+        		<p>Build a low cost site to inform users about the company's current and past projects. Provide contact information.</p>
+        		<h4>The Users:</h4>
+        		<p>Potential and current clients and investors. People interested in the company and its projects.</p>
+        		<h4>The Process:</h4>
+        		<p>Met with client to discover needs and goals. Researched competition. Sketched then wireframed layout. Developed using HTML/CSS.</p>
+					</div>
+				</div>
+
+				<header>
+					<h3><strong>206 Tutoring</strong></h3>
+					<p>Private tutoring agency in Seattle.</p>
+				</header>
+				<div class="row">
+					<div class="6u 12u$(medium)"><span class="image fit shadow"><%= image_tag "freelance/206tutoring.png" %></span></div>
+					<div class="6u 12u$(medium)">
+						<h4>The Challenge:</h4>
+		        <p>Refresh dated site to give a more professional look, ease of use, and ultimately bring in more clients.</p>
+		        <h4>The Users:</h4>
+		        <p>Parents and students looking to hire a private tutor in Seattle.</p>
+		        <h4>The Process:</h4>
+		        <p>Worked with senior designer to create high-fidelity mockups. Developed with HTML, CSS, and Javascript.</p>
+					</div>
+				</div>
+
+				<header>
+					<h3><strong>Andre Legacy</strong></h3>
+					<p>Musician from Los Angeles</p>
+				</header>
+				<div class="row">
+					<div class="6u 12u$(medium)"><span class="image fit shadow"><%= image_tag "freelance/legacy.png" %></span></div>
+					<div class="6u 12u$(medium)">
+						<h4>The Challenge:</h4>
+        		<p>Retire dated wordpress site and build a more professional and clean site to spread music and bring in purchases.</p>
+		        <h4>The Users:</h4>
+        		<p>Current/potential fans of Andre Legacy.</p>
+		        <h4>The Process:</h4>
+        		<p>Gathered info from client. Researched market. Sketched designs and turned into wireframes. Built site with HTML and CSS.</p>
+					</div>
+				</div>
+
+				<header>
+					<h3><strong>DTLA</strong></h3>
+					<p>Denimocracy USA</p>
+				</header>
+				<div class="row">
+					<div class="6u 12u$(medium)"><span class="image fit shadow"><%= image_tag "freelance/dtla.jpg" %></span></div>
+					<div class="6u 12u$(medium)">
+						<h4>The Challenge:</h4>
+        		<p>Create an appealing and stylish print for demin gift bags in the logo 'DTLA' (Downtown Los Angeles). Simple shading and no color to keep printing costs down.</p>
+		        <h4>The Users:</h4>
+        		<p>Celebrities, buyers, media, etc. associated with Denimocracy USA.</p>
+		        <h4>The Process:</h4>
+        		<p>Worked with client to get general concept, constraints, and pieces for inspiration. Sketched up designs. Chose best design and hand drew in Illustrator.</p>
+					</div>
+				</div>
+
+				<header>
+					<h3><strong>RDNC</strong></h3>
+					<p>Richmond District Neighborhood Center</p>
+				</header>
+				<div class="row">
+					<div class="3u 6u(medium)"><span class="image fit shadow"><%= image_tag "freelance/rdnc01.png" %></span></div>
+					<div class="3u 6u(medium)"><span class="image fit shadow"><%= image_tag "freelance/rdnc02.jpeg" %></span></div>
+					<div class="6u 12u$(medium)">
+						<h4>The Challenge:</h4>
+       		  <p>Create a 'save the date' and formal invitation to be sent to guests of the 35th annual RDNC fundraising dinner.</p>
+		        <h4>The Users:</h4>
+        		<p>Employees, friends, and family invited to the RDNC event.</p>
+		        <h4>The Process:</h4>
+        		<p>Gathered information on RDNC, the event, and style constraints. Worked with client to develop designs. Created 'Save the Date' with photoshop. Consulted/guided client for creation of the formal invitation.</p>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<section id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon alt fa-flickr"><span class="label">Flickr</span></a></li>
+			<li><a href="#" class="icon alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+			<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; James Hoover</li><li><a href="">jamesfhoover@gmail.com</a></li>
+		</ul>
+	</section>

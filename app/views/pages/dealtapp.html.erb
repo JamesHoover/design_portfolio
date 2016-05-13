@@ -1,76 +1,174 @@
-<body>
-	<a name="top"></a>
-	<!-- START HEADER -->
-	<header class="projects-page-header">
-		<nav class="row">
-			<ul>
-				<li class="site-url under-text"><a href="/" class="under-slide">jameshooverdesign.com</a></li>
-				<li><a href="/#projects" class="back"><i class="fa fa-arrow-left"></i>Back</a></li>
-			</ul>
-		</nav>
-		<div class="row">
-			<h1 class="project-name">DealTapp</h1>
-		</div>
-	</header>
-	<section class="projects-page">
-		<div class="row project-details">
-			<div class="two-thirds first">
-				<p class="bold">DealTapp is an application to find Seattle's hottest dining, cafes, and entertainment. I was recently brought onto the DealTapp team as the Lead UX Designer. My main goal is to take the current state of the app and increase the usability and user satisfaction.</p>
-				<p class="bold">DealTapp is already built and in production so I have tweaked my design process to fit the situation.</p>
-				<h2 class="project-header">The Goals of the Business</h2>
-				<p class="project-subheader">I sat down with the founders to figure out their main goals.</p>
-				<ul class="fa-ul">
-					<li><i class="fa-li fa fa-square"></i>Support local businesses by increasing their visibility and driving business to them.</li>
-					<li><i class="fa-li fa fa-square"></i>Give business users control over deals. (e.g. product count, discount amount, expiration date).</li>
-					<li><i class="fa-li fa fa-square"></i>Allow the consumer users to find deals, claim them with tokens, and redeem the deals.</li>
-					<li><i class="fa-li fa fa-square"></i>Allow the consumer users to purchase tokens.</li>
-				</ul>
-				<h2 class="project-header">Current State of DealTapp</h2>
-				<p class="project-subheader">Analyzing the state of DealTapp when I joined</p>
-				<p>I am the first designer for DealTapp. Because of this there is no documentation about the current app design. I set out to document the current user flows and information architecture. Now I will have something to refer to and revise during testing and research.</p>
-			</div>
-			<div class="one-third">
-				<div class="phone">
-					<div class="phone-screen">
-						<%= image_tag "projects/dealtapp/landing.png" %>
-					</div>
-						<%= image_tag "projects/google-nexus-5.svg", class: "phone-border" %>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<h2 class="project-header">Competitive Analysis</h2>
-			<p class="project-subheader">Next, I researched the competition to see their solutions</p>
-			<p>Groupon and Living Social are the top competitors. Running through Groupon's application I found that it has a similar structure to DealTapp. I made use of this by creating slides comparing the screens of DealTapp and Groupon. This makes it easy to see how the two solve similar usability issues. I plan on consulting the slides after usability testing to see how Groupon solves issues that DealTapp faces.</p>
-		</div>
-		<div class="row">
-			<h2 class="project-header">User Testing</h2>
-			<p class="project-subheader">After some research and documentation I have started user tests to uncover usability issues</p>
-			<p>Jakob Nielsen of the Nielsen Norman Group recommends running a lot of small user tests to save resources. He says testing no more than 5 users and running as many small tests as possible will uncover all usability issues. <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" class="inline-link">Source.</a> Given the limited resources at hand I decided that this 5 user method would be best.</p>
-			<p>Testing the present app I've seen that the biggest usability issues are signing up, checking claimed deals, and redeeming deals. Users are also having trouble understanding the purpose and main functionality of the application. These are my priority issues that I am focusing to fix.</p>
-		</div>
-		<div class="row screens">
-			<h2 class="project-header">Where I am now</h2>
-			<p class="project-subheader">Now I am using the insights from usability testing to create paper prototypes.</p>
-			<p>I will use the paper prototypes to test and validate my proposed design solutions.</p>
-			<p>Some examples of proposed solutions:</p>
-			<ul class="fa-ul">
-					<li><i class="fa-li fa fa-square"></i>I am working to make signing up more visible and adding helpful dialog to guide the user along the process.</li>
-					<li><i class="fa-li fa fa-square"></i>Changing the menu icon from a gear to a hamburger icon to better follow convention.</li>
-					<li><i class="fa-li fa fa-square"></i>Adding more info about the functionality of the app and how the entire process works to give users a clear conceptual model.</li>
-				</ul>
-			<p>I will have more updates soon! (April 2016)</p>
+<!-- Header -->
+	<section id="header" class="">
+		<div class="inner">
+			<h1>DealTapp</h1>
+			<h3>Seattle's hottest dining, cafes,<br /> and entertainment at your fingertips.</h3>
 		</div>
 	</section>
-	<%= render template: "pages/contact" %>
-	<script type="text/javascript">
-    $('.screens').magnificPopup({
-      delegate: 'a', // child items selector, by clicking on it popup will open
-      type: 'image',
-      gallery: {
-        // options for gallery
-        enabled: true
-      }
-    });
-  </script>
-</body><!-- END BODY -->
+
+<!-- One -->
+	<section class="main style1">
+		<div class="container">
+			<header class="major special">
+				<h2>Background</h2>
+			</header>
+			<section>
+				<header>
+					<h3><strong>DealTapp</strong></h3>
+					<p>Connecting users with local businesses</p>
+				</header>
+				<div class="8u 12u$(medium)">
+					<p>DealTapp is an app that lets users to find the best deals at local restaurants, cafes, and entertainment venues.</p>
+					<p>The app gives power to small and local shops by giving them control over the deals they offer. It also makes it easy for users to claim these deals. Deals range from a discounted coffee to free event tickets.</p>
+				</div>
+				<header>
+					<h3><strong>Building a Company</strong></h3>
+					</header>
+					<div class="8u 12u$(medium)">
+						<p>DealTapp is a new app with tons of potential. This makes for a really exciting culture. As the only designer for DealTapp, I have huge influence over the direction of the app and I get to wear many hats. Aside from my responsibilites as a UX Designer, I discuss decisions with the founders, take photographs, test the software, meet with newspaper reporters, and interview potential employees.</p>
+						<p>I love being a part of this enviroment. Every time we meet I am able to work on something new and gain new experiences. I've seen how I must adapt my methods to fit the resources of the company. I enjoy the highs and learn from the lows.</p>
+					</div>
+			</section>
+			<header class="major special">
+				<h2>Step One</h2>
+			</header>
+
+			<section>
+				<header>
+					<h3><strong>Building a Design Culture</strong></h3>
+					<p>Being the lead UX Designer</p>
+				</header>
+				<div class="row">
+					<div class="8u$ 12u$(medium)">
+						<p>The first thing I did as a designer was document everything. This helps me get to know the app and understand the reasons behind decisions.</p>
+						<p>At DealTapp I want to take responsibility for all design decisions. I also want to show the value of design to the founders. In order to build a design culture I need to get them on board by showing them something concrete. After documenting everything, I did an initial round of user testing. I wanted to uncover the main usability issues so that I could fix them. Doing this will give me concrete examples of problems and solutions to present to the founders.</p>
+					</div>
+				</div>
+<!-- 
+				<header>
+					<h3><strong>Objectives</strong></h3>
+					<p>Uncover the goals of DealTapp</p>
+				</header>
+				<div class="8u 12u$(medium)">
+					<ul>
+						<li>Support local businesses by increasing their visibility and driving business to them.</li>
+						<li>Give businesses control over deals. (e.g. product count, discount amount, expiration date).</li>
+						<li>Allow users to find deals, claim them with tokens, and redeem the deals.</li>
+						<li>Allow users to purchase tokens.</li>
+					</ul>
+				</div>
+				<header>
+					<h3><strong>User Flows</strong></h3>
+					<p>Uncover the goals of DealTapp</p>
+				</header>
+								<header>
+					<h3><strong>IA</strong></h3>
+					<p>Uncover the goals of DealTapp</p>
+				</header>
+			</section>
+ -->
+			<header class="major special">
+				<h2>Step Two</h2>
+			</header>
+			<section>
+				<header>
+					<h3><strong>User Testing</strong></h3>
+					<p>Uncovering the top usuability issues</p>
+				</header>
+				<div class="8u 12u$(medium)">
+					<p>I started out by testing the recommended five users. <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" class="inline-link">Source.</a> This helped maximize the budget by uncovering the top usuability issues without using too many resources.</p>
+					<p>The main issues I found were:</p>
+					<ul>
+						<li>The location of the sign up/sign in feature was not intuituve.</li>
+						<li>The overall purpose of the app was not clear enough.</li>
+						<li>Redeeming a deal was a pain point.</li>
+						<li>The menu icon was not conventional.</li>
+					</ul>
+				</div>
+			</section>
+
+			<header class="major special">
+				<h2>Result</h2>
+			</header>
+
+			<section>
+				<header>
+					<h3><strong>Founder Meeting</strong></h3>
+					<p>I setup a meeting with the founders to discuss the look and usability of the interface</p>
+				</header>
+				<div class="8u 12u$(medium)">
+					<p>I took the initial screens and applied my user research to mockup some designs to show how we can clean up the current interface.</p>
+				</div>
+				<h4><strong>Original Screens</strong></h4>
+				<div class="box">
+					<div class="row uniform 50%">
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original01.png" %></span><caption>Landing Page</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original02.png" %></span><caption>Item</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original03.png" %></span><caption>Item</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original04.png" %></span><caption>Search</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original05.png" %></span><caption>Menu</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original06.png" %></span><caption>Map</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original07.png" %></span><caption>Sign In</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/original08.png" %></span><caption>Sign Up</caption></div>
+					</div>
+				</div>
+				<h4><strong>My Solutions</strong></h4>
+				<div class="box">
+					<div class="row uniform 50%">
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup02.png" %></span><caption>Landing Page</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup03.png" %></span><caption>Item</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup04.png" %></span><caption>Item</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup06.png" %></span><caption>Search</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup07.png" %></span><caption>Menu</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup08.png" %></span><caption>Map</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup09.png" %></span><caption>Sign In</caption></div>
+						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup10.png" %></span><caption>Sign Up</caption></div>
+					</div>
+				</div>
+				<h4>Main areas of focus</h4>
+				<div class="8u 12u$(medium)">
+					<ul>
+						<li>Updating the navigation bar</li>
+						<li>Creating a dedicated page for signing up and logging in without distractions</li>
+						<li>Making the discount, price, and number remaining more prominent</li>
+						<li>Adding a full menu with more functionality</li>
+						<li>Removing the Account page</li>
+						<li>Combining the search and map features</li>
+						<li>Adding recommendations to empty search screen</li>
+					</ul>
+				</div>
+				<h4><strong>Bonus screens</strong></h4>
+				<div class="box">
+					<div class="row uniform 50%">
+						<div class="4u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup11.png" %></span><caption>Menu</caption></div>
+						<div class="4u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup12.png" %></span><caption>Menu</caption></div>
+						<div class="4u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup13.png" %></span><caption>Menu</caption></div>
+					</div>
+				</div>
+				<div class="8u$ 12u$(medium)">
+					<p>I toyed with the idea of making the main color red to fit with the app's impulsive nature. I also used icons for navigation rather than words. These will be used in user testing to validate (or invalidate) the current designs.</p>
+				</div>
+			</section>
+			<h4><strong>As it currently stands</strong></h4>
+			<div class="8u 12u$(medium)">
+				<p>I impressed the founders with my designs. They are on board to run more rounds of user testing. I am currently putting together a working prototype so we can get to testing.</p>
+			</div>
+
+		<h4><strong>Bonus!</strong></h4>
+		<p>An <a href="http://www.dailyuw.com/features/article_9884de00-05e4-11e6-a8c4-7be60332f7c9.html">Article</a> about DealTapp featuring yours truly.</p>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<section id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon alt fa-flickr"><span class="label">Flickr</span></a></li>
+			<li><a href="#" class="icon alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+			<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; James Hoover</li><li><a href="">jamesfhoover@gmail.com</a></li>
+		</ul>
+	</section>

@@ -1,33 +1,17 @@
-DesignPortfolio::Application.routes.draw do
+Rails.application.routes.draw do
+  root 'pages#index'
+
+  get 'projects/govote' => 'pages#govote'
+  get 'projects/dealtapp' => 'pages#dealtapp'
+  get 'projects/freelance' => 'pages#freelance'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-  #root 'application#hello'
-  root 'pages#main'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
-  get '/projects/govote' => 'pages#govote'
-  get '/projects/privacy' => 'pages#privacy'
-  get '/projects/freelance' => 'pages#freelance'
-  get '/projects/dealtapp' => 'pages#dealtapp'
-  get '/photography/' => 'pages#photography'
-
-  # get '/work' => 'pages#projects'
-  # get '/about' => 'pages#about'
-
-  # resources "contacts", only: [:new, :create]
-  # get 'contact', to: 'contacts#new', as: 'contact'
-  # post 'contact', to: 'contacts#create'
-
-
-  # get '/work/projects' => 'pages#projects'
-  # get '/work/art' => 'pages#art'
-  # get '/work/photography' => 'pages#photography'
-
-  
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
