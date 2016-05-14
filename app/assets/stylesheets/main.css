@@ -2700,7 +2700,7 @@
 			cursor: default;
 			opacity: 0.25;
 		}
-
+		.back {position: absolute; top: 1em; left: 1em; z-index: 100;}
 /* Main */
 
 	.main {
