@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   get 'projects/govote' => 'pages#govote'
   get 'projects/dealtapp' => 'pages#dealtapp'
   get 'projects/freelance' => 'pages#freelance'
+  get 'projects/dealtapp_logo' => 'pages#dealtapplogo'
+  get 'projects/photography' => 'pages#photography'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

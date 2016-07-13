@@ -1948,6 +1948,9 @@
 		text-align: right;
 	}
 
+	.italic {font-style: italic;}
+	.pad-bot {padding-bottom: 5em;}
+
 /* Section/Article */
 
 	section.special, article.special {
