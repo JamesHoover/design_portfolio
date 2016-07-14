@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'projects/dealtapp' => 'pages#dealtapp'
   get 'projects/freelance' => 'pages#freelance'
   get 'projects/dealtapp_logo' => 'pages#dealtapplogo'
-  get 'projects/photography' => 'pages#photography'
+  #get 'projects/photography' => 'pages#photography'
 
 
 
