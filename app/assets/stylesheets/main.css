@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 
 /*
 	Photon by HTML5 UP
@@ -2335,6 +2335,11 @@
 				width: 100%;
 			}
 
+			.image.kinda img {
+				width: 80%;
+				padding-left: 20%;
+			}
+
 			.image.shadow img {
 				box-shadow: 1px 1px 10px #888888;
 			}
@@ -2703,7 +2708,13 @@
 			cursor: default;
 			opacity: 0.25;
 		}
-		.back {position: absolute; top: 1em; left: 1em; z-index: 100;}
+		.back {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			z-index: 100;
+			box-shadow: inset 0 0 0 1px rgba(0,0,0,.2)!important;
+		}
 /* Main */
 
 	.main {
