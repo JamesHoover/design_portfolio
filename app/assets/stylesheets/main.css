@@ -2913,8 +2913,11 @@
 
 		#header .icon.major {
 			color: #ffffff;
+			width: 100px;
 		}
-
+		#header .icon.major img {
+			width: 100%;
+		}
 		#header h1 {
 			margin: 0;
 		}
@@ -3203,6 +3206,17 @@
 
 	@media screen and (max-width: 980px) {
 
+	.no-mobile{display: none;}
+
+		body {
+			font-size: 200%!important;
+		}
+		h1, h2, h3 {
+			font-size: 200%!important;
+		}
+		h4, h5, h6 {
+			font-size: 100%!important;
+		}
 		/* List */
 
 			ul.major-icons li {
@@ -3224,7 +3238,7 @@
 		/* Header */
 
 			#header {
-				padding: 8em 3em 8em 3em ;
+				padding: 6em 3em 6em 3em ;
 			}
 
 		/* Footer */
@@ -3244,12 +3258,17 @@
 			#two {
 				text-align: center;
 			}
+			#header .icon.major {width: 200px;}
+
+			#footer li {font-size: 2em;}
 
 	}
 
 /* Small */
 
 	@media screen and (max-width: 736px) {
+
+		.no-mobile{display: none;}
 
 		/* Basic */
 
@@ -3333,6 +3352,8 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+
+		.no-mobile{display: none;}
 
 		/* List */
 
@@ -3419,6 +3440,8 @@
 /* XXSmall */
 
 	@media screen and (max-width: 320px) {
+
+	.no-mobile{display: none;}
 
 		/* Basic */
 
