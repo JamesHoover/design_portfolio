@@ -36,7 +36,7 @@
 				</header>
 				<div class="8u 12u$(medium)">
 					<p>A startup like DealTapp requires a lean approach to design. To maximize budget and minimize redundancy, I started out by testing 5 users. This is recommended by <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" class="inline-link">Jakob Nielsen</a> and uncovers nearly all usability issues without blowing the budget.</p>
-					<p>I sat users down with the DealTapp app. I had them run through tasks such as 'creating an account' and 'claiming a deal.' I also asked them open ended questions about the purpose of the app and what they thought of it. Testing users revealed many usability issues. Below is a list of the major ones.</p>
+					<p>I sat users down with the original DealTapp app. I had them run through tasks such as 'creating an account' and 'claiming a deal.' I also asked them open ended questions about the purpose of the app and what they thought of it. Testing users revealed many usability issues. Below is a list of the major ones.</p>
 					<ul>
 						<li>The overall purpose of the app was not clear enough.</li>
 						<li>The location of the sign up/sign in feature was not intuitive.</li>
@@ -50,11 +50,38 @@
 			</section>
 
 			<header class="major special">
-				<h2>Creating Solutions</h2>
+				<h2>Mocking up Solutions</h2>
 			</header>
 			<section>
-<!-- 				<p>After brainstorming and sketching ideas I jumped into Sketch to start modifying screens.</p>
- -->		<header>
+				<header>
+					<h4><strong>Sketching Ideas</strong></h4>
+				</header>
+					<div class="row uniform 50%">
+						<div class="6u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/sketchTop.jpg" %></span></div>
+						<div class="6u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/sketchBottom.jpg" %></span></div>
+					</div>
+					<p class="8u 12u$(medium)">These are rough ideas on how to fix the problems found from the first round of user testing.</p>
+			</section>
+
+			<section>
+				<header>
+					<h4><strong>High Fidelity</strong></h4>
+				</header>
+					<div class="row uniform 50%">
+						<div class="6u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/wireframeTop.jpg" %></span></div>
+						<div class="6u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/wireframeBottom.jpg" %></span></div>
+					</div>
+					<p class="8u 12u$(medium)">After working through and testing some of the sketched ideas I refined them into higher fidelity mockups.</p>
+			</section>
+
+
+
+			<header class="major special">
+				<h2>Design, Round: 1</h2>
+				<p>Using my reseach and mockups to create prototypes</p>
+			</header>
+			<section>
+				<header>
 					<h4><strong>Landing Page</strong></h4>
 					<p>The first page users see when entering the app</p>
 				</header>
@@ -95,6 +122,80 @@
 					</div>
 					<p class="8u 12u$(medium)">Gaining new users is important to Dealtapp as any user based business. Creating an account needs to be straightforward to gain users. I removed the main navigation because it distracts from that goal. I also added our logo because it's friendly and helps increase credibility.</p>
 				</div>
+			</section>
+
+
+			<header class="major special">
+				<h2>Mistakes were made :(</h2>
+			</header>
+			<section>
+				<header>
+					<h4><strong>The Big Mistake</strong></h4>
+					<p>I was over ambitious</p>
+				</header>
+				<p class="8u 12u$(medium)">I jumped into Material Design and reworked the main screens. It looked great and tested well. Lets toss it to the developers! Nope. This ended up being the mistake. I failed to understand the allocation of resources and the situation with the developers. Long story short, we cannot have the development team entirely rework the interface. This is disappointing news but fortunately the designs are still valid and I will hang onto them for the future.</p>
+			</section>
+
+			<section>
+				<header>
+					<h4><strong>The Pivot</strong></h4>
+					<p>Working within the newfound requirements</p>
+				</header>
+				<p class="8u 12u$(medium)">Now it's time to learn from the mistake. I need to pivot and redesign within the limits of what we can get the developers to change. My plan is to find the changes that will add the most value at the lowest cost. I need to take the top priority issues and fix them in a way that the developers and our budget can handle. For example, changing text and colors, or moving things from one corner to another.</p>
+			</section>
+
+
+			<header class="major special">
+				<h2>Design, Round: 2</h2>
+			</header>
+			<section>
+				<header>
+					<h4><strong>Landing Page</strong></h4>
+					<p>The first page users see when entering the app</p>
+				</header>
+				<div class="">
+					<div class="row uniform 50%">
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/original01.png" %></span><caption class="italic">Before</caption></div>
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/finalLanding.png" %></span><caption>After</caption></div>
+					</div>
+					<p class="8u 12u$(medium)">At the top, I changed the menu icon to be more conventional, updated the logo, and added a 'sign up/in' link.</p>
+					<p class="8u 12u$(medium)">For the deal preview, I moved the discount to the top left to make it more visible as well as changed '$0.00' to say 'Free'. Then I reorganized the deal information to make it easier to read and comprehend. I added the final price, and changed the overlay to white so that it better fits the style.</p>
+					<p class="8u 12u$(medium)">Finally, I updated the bottom nav to better fit the theme of the app. Also, made the home icon more conventional.</p>
+					<p class="8u 12u$(medium)">These changes are all relatively simple for a developer to make but provide a large increase to the usability and overall experience of the app.</p>
+
+				</div>
+				<header>
+					<h4><strong>Item Page</strong></h4>
+					<p>When you click on a deal you see additional information and have the ability to claim that deal.</p>
+				</header>
+				<div class="">
+					<div class="row uniform 50%">
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/original02.png" %></span><caption>Before</caption></div>
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/finalItem.png" %></span><caption>After</caption></div>
+					</div>
+					<p class="8u 12u$(medium)">The main changes here are prioritzing text so that information is easier to pick up.</p>
+				</div>
+				<header>
+					<h4><strong>Menu</strong></h4>
+				</header>
+				<div class="">
+					<div class="row uniform 50%">
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/original05.png" %></span><caption>Before</caption></div>
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/finalMenu.png" %></span><caption>After</caption></div>
+					</div>
+					<p class="8u 12u$(medium)">A more conventional menu icon with options that a user expects.</p>
+				</div>
+				<h4><strong>Creating an Account</strong></h4>
+				<div class="">
+					<div class="row uniform 50%">
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/original08.png" %></span><caption>Before</caption></div>
+						<div class="3u 6u(medium)"><span class="image fit"><%= image_tag "dealtapp/finalSignup.png" %></span><caption>After</caption></div>
+					</div>
+					<p class="8u 12u$(medium)">I moved the Facebook signup to the top so that this option is presented before a user unnecessarily fills out the form. I split up 'Full Name' to 'First' and 'Last' because it's less confusing for users. Put the labels above the text boxes because research shows this is best for usability. And finally, removed the bottom nav so users are less likely to be distracted or navigate away.</p>
+				</div>
+			</section>
+
+
 				<!-- <h4><strong>Original Screens</strong></h4>
 				<div class="box">
 					<div class="row uniform 50%">
@@ -119,7 +220,7 @@
 						<div class="3u 6u(small)"><span class="image fit"><%= image_tag "dealtapp/mockup10.png" %></span><caption>Sign Up</caption></div>
 					</div>
 				</div> -->
-				<h4><strong>Experimentation</strong></h4>
+<!-- 				<h4><strong>Experimentation</strong></h4>
 				<div class="">
 					<div class="row uniform 50%">
 						<div class="3u 4u(medium)"><span class="image fit"><%= image_tag "dealtapp/mockup11.png" %></span><caption>Landing</caption></div>
@@ -131,16 +232,21 @@
 					<p>A good researcher will use experimentation to validate or invalidate designs. I have been curious about the color of DealTapp so I changed the main color to red. Red might better suit the app's implusive nature.<br />
 					I also used icons for navigation rather than words. Icons have their pros and cons over text so I am interested to see what works better for DealTapp.</p>
 				</div>
-			</section>
+			</section> -->
 
 			<header class="major special">
-				<h2>Result</h2>
+				<h2>Results</h2>
 			</header>
 			<section>
-				<h4><strong>Founder Meeting</strong></h4>
+<!-- 				<h4><strong>Founder Meeting</strong></h4>
 				<div class="8u 12u$(medium)">
 					<p>I setup a meeting with the founders to discuss the results from the first round of testing. I told them what I found and showed them my proposed solutions. They were impressed and saw the value of my work. I convinced them to jump on board to allow more rounds of user testing. Now, I am  putting together a working prototype so we can test my solutions and further improve the experience.</p>
-				</div>
+				</div> -->
+				<h4><strong>Signs of Improvement :)</strong></h4>
+				<p class="8u 12u$(medium)">
+					It has been a slow process of working with development to have the updates made, but early signs are looking good. After a few changes have been made the data has shown an increase in download rate to account creation!
+				</p>
+				<p class="8u 12u$(medium)">Additionally, I am trying to gain access to the code so that I can utilize my own software development experience and make the changes myself.</p>
 			</section>
 
 		</div>
