@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'projects/freelance' => 'pages#freelance'
   get 'projects/dealtapp_logo' => 'pages#dealtapplogo'
   #get 'projects/photography' => 'pages#photography'
+  get '/interaction_examples' => 'pages#interaction_examples'
 
 
 
