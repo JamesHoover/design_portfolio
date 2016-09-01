@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   #get 'projects/dealowner' => 'pages#dealowner'
   #get 'projects/photography' => 'pages#photography'
   #get '/interaction_examples' => 'pages#interaction_examples'
+  get 'art' => 'pages#art'
 
 
 
