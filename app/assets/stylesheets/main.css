@@ -3026,11 +3026,11 @@
 		padding: 6em 0 6em 0 ;
 		background-color: #126480; /*#4686a0;*/
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
+/*		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("octo.svg");
 		background-position: bottom center,						center center,					center center;
 		background-size: auto,							cover,							cover;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat;*/
 		text-align: center;
 	}
 /*	, url("overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);*/
