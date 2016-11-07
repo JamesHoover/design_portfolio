@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  get 'projects/govote' => 'pages#govote'
-  get 'projects/dealtapp' => 'pages#dealtapp'
-  get 'projects/freelance' => 'pages#freelance'
-  get 'projects/dealtapp_logo' => 'pages#dealtapplogo'
+  #get 'projects/govote' => 'pages#govote'
+  #get 'projects/dealtapp' => 'pages#dealtapp'
+  #get 'projects/freelance' => 'pages#freelance'
+  #get 'projects/dealtapp_logo' => 'pages#dealtapplogo'
   #get 'projects/dealowner' => 'pages#dealowner'
-  #get 'projects/photography' => 'pages#photography'
-  #get '/interaction_examples' => 'pages#interaction_examples'
-  get 'art' => 'pages#art'
+    #get 'projects/photography' => 'pages#photography'
+    #get '/interaction_examples' => 'pages#interaction_examples'
+  #get 'art' => 'pages#art'
 
 
 
