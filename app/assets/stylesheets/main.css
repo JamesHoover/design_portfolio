@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700,900');
-
 /*
 	James Hoover
 	jameshooverdesign.com
 */
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700,900');
 
-/* Reset */
+/* RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
 acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
 sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
@@ -18,19 +17,16 @@ footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, a
 	font: inherit;
 	vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
 	line-height: 1;
+	-webkit-text-size-adjust: none;
 }
-
 ol, ul {
 	list-style: none;
 }
-
 blockquote, q {
 	quotes: none;
 }
@@ -39,30 +35,26 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
 /* Box Model */
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+/*SELECTION*/
 ::-moz-selection { /* Code for Firefox */
-    background: red;
+	color: #FFF;
+  background: #222;
 }
-
 ::selection { 
-    background: red;
+	color: #FFF;
+  background: #222;
 }
-
+/*ELEMENTS*/
 body {
 	font-size: 16px;
 	font-family: 'Libre Franklin', sans-serif;
@@ -72,6 +64,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6,li,p {
 	line-height: 1.5;
+	font-size: 1.125rem;
 }
 h1 {
 	font-size: 1.5rem;
@@ -79,30 +72,38 @@ h1 {
 	margin-bottom: 4rem;
 }
 p {
-	font-size: 1.75rem;
 	margin-bottom: 2.25rem;
   letter-spacing: 1.3px;
   line-height: 1.5;
 }
-ul {
-	
-}
 li {
-	font-size: 1.125rem;
+	font-size: .75rem;
 	letter-spacing: 1px;
 	display: inline-block;
+	padding: 0 .5em;
+}
+li:first-child {
+	padding-left: 0;
 }
 a {
-	
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  /*border-bottom: 3px solid #b4e7f8;*/
+  -webkit-box-shadow: inset 0 -4px 0 #b4e7f8;
+  box-shadow: inset 0 -4px 0 #b4e7f8;
 }
 a:hover {
-	text-decoration: none;
+	background-color: #b4e7f8;
+  color: #000;
 }
 a:focus {}
 a:visited {
 	color: inherit;
 }
-
+/*CUSTOM*/
 .container {
   position: relative;
   max-width: 1080px;
@@ -117,14 +118,12 @@ a:visited {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .home__image {
 	height: 100vh;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
 	left: 0;
 	top: 0;
 }
@@ -141,17 +140,44 @@ a:visited {
 .home__image--img {
 	width: 100%;
   height: auto;
+  opacity: .7;
 }
 
 .home__text {
 	max-width: 680px;
   position: relative;
+  /*background-color: rgba(255,255,255,.8);*/
+  padding: 1.5rem;
 }
-
-
+.social-info {
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.colored__helper {
+	font-size: .75rem;
+	padding: .25rem;
+	color: #222;
+	background-color: #fff;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+.colored__helper:hover {
+	background-color: #222;
+	color: #fff;
+}
+/*UTILITIES*/
+.action {
+	cursor: pointer;
+}
 .strike-through {
-text-decoration: line-through;
+	text-decoration: line-through;
 }
+
+/*RESPONSIVE*/
 /* XXSmall */
 @media screen and (min-width: 320px) {}
 /* XSmall */
@@ -169,6 +195,9 @@ text-decoration: line-through;
   	right: 0;
   	left: auto;
   }
+	h1,p {
+		font-size: 1.5rem;
+	}
 }
 /* Medium */
 @media screen and (min-width: 980px) {}
@@ -176,10 +205,3 @@ text-decoration: line-through;
 @media screen and (min-width: 1140px) {}
 /* XLarge */
 @media screen and (min-width: 1680px) {}
-
-
-
-
-
-
-

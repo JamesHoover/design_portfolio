@@ -1,48 +1,44 @@
 /*
-	Photon by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	James Hoover
+	jameshooverdesign.com
 */
 
-(function($) {
+// Set colors on load
+$(document).ready(function(){
+	randomize();
+});
 
-	skel.breakpoints({
-		xlarge: '(max-width: 1680px)',
-		large: '(max-width: 1140px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)',
-		xxsmall: '(max-width: 320px)'
-	});
+// Radomize text/bg colors
+function randomize() {
+	var x = randomColors();
+	document.getElementById('colored__text').style.color = x;
+	document.getElementById('colored__link').style.boxShadow = "inset 0 -4px 0 " + x;
+	document.getElementById('colored__bg').style.backgroundColor = randomColors();
+}
+// random colors - taken from here:
+// http://www.paulirish.com/2009/random-hex-color-code-snippets/
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+//displays email on click
+function showEmail() {
+    var x = document.getElementById('showEmail');
+    if (x.style.display === 'inline-block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'inline-block';
+    }
+}
+//no socials, sucker
+function socialDisplay() {
+	document.getElementById('socialDisplay').innerHTML = 'Fred Flinstone';
+}
 
-	$(function() {
-
-		var	$window = $(window),
-			$body = $('body');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 250);
-			});
-
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
-				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
-				);
-			});
-
-		// Scrolly.
-			$('.scrolly').scrolly();
-
-	});
-
-})(jQuery);
+function showFB() {
+    var x = document.getElementById('showFB');
+    if (x.style.display === 'inline-block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'inline-block';
+    }
+}
