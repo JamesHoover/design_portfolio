@@ -154,7 +154,7 @@ a:visited {
 	color: #222;
 	background-color: #fff;
 	position: absolute;
-	bottom: 2rem;
+	bottom: 4rem;
 	right: 1rem;
 	cursor: pointer;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
@@ -201,6 +201,9 @@ a:visited {
   }
 	h1,p {
 		font-size: 1.5rem;
+	}
+	.colored__helper {
+		bottom: 2rem;
 	}
 }
 /* Medium */
