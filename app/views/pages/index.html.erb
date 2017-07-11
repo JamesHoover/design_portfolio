@@ -2,21 +2,20 @@
 <div class="container">
 	<div class="home__image">
 		<div class="home__image--container">
-			<%= image_tag "image.jpg", class: 'home__image--img' %>
+			<%= image_tag "image.jpg", class: 'home__image--img', :onclick=>"showName()" %>
+			<span id="showName">sweet little winnie :)</span>
 		</div>
 	</div>
 	<div id="colored__text" class="home__text">
-		<h1>James Hoover <br>Product Designer</h1>
-		<p>I’m a self-taught designer living in Seattle. Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
+		<!-- <h1>James Hoover <br>Product Designer</h1> -->
+		<h1>Hello, World</h1>
+		<p>I’m a self-taught designer from Seattle. Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
 		<ul>
-			<li><span onClick="showFB()" class="strike-through">Facebook</span></li> &#x2219;
+			<li><span class="strike-through">Facebook</span></li> &#x2219;
 			<li><span class="strike-through">Instagram</span></li> &#x2219;
 			<li><span class="strike-through">Twitter</span></li> &#x2219;
 			<li onClick="showEmail()" class="action">Email</li>
 		</ul>
-		<span id="showFB" class="social-info"><br>sry, dont do FB</span>
-		<span id="showInsta" class="social-info"><br>nope, no insta</span>
-		<span id="showTwitter" class="social-info"><br>yeah...dont have a twitter</span>
 		<span id="showEmail" class="social-info"><br>jamesfhoover@gmail.com</span>
 	</div>
 	<span onClick="randomize()" class="colored__helper">trouble reading?</span>
