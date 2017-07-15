@@ -38,3 +38,6 @@ function showName() {
       name.style.display = 'inline-block';
   }
 }
+
+//show color
+function showColor() {}
