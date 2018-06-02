@@ -10,8 +10,11 @@ $(document).ready(function(){
 
 // Radomize text/bg colors
 function randomize() {
-	document.getElementById('colored__text').style.color = randomColors();
-	document.getElementById('colored__bg').style.backgroundColor = randomColors();
+	var x = document.getElementById('colored__text');
+	if (x !== null) { //Stop its from running on non homepage
+		document.getElementById('colored__text').style.color = randomColors();
+		document.getElementById('colored__bg').style.backgroundColor = randomColors();
+	}
 }
 // random colors - taken from here:
 // http://www.paulirish.com/2009/random-hex-color-code-snippets/
@@ -21,7 +24,7 @@ function randomColors() {
 
 //displays email on click
 function showEmail() {
-  var email = document.getElementById('showEmail');
+  var email = document.getElementById('showEmail'); //Show email
   if (email.style.display === 'inline-block') {
       email.style.display = 'none';
   } else {
@@ -38,6 +41,3 @@ function showName() {
       name.style.display = 'inline-block';
   }
 }
-
-//show color
-function showColor() {}
