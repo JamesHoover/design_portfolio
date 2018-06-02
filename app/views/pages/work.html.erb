@@ -1,0 +1,27 @@
+<section class="container">
+  <div class="work">
+    <h1 class="title">Selected Work</h1>
+    <ul class="list">
+      <li><a href="/work/productdesign">/product design</a></li>
+      <li><a href="/work/photography">/photography</a></li>
+      <li><a href="/work/art">/art</a></li>
+      <li><a href="/work/misc">/misc</a></li>
+    </ul>
+  </div>
+</section>
+<a href="/" class="back-button subtle">&#8592; home</a>
+
+<script type="text/javascript">
+$(function showImage() {
+  $(".gallery__photo").click(function() {
+  	var close = document.getElementById('close-button');
+  	if ($(".gallery__photo").hasClass("active-view")) {
+			$(this).removeClass("active-view");
+			close.style.display = 'none';
+ 		} else {
+    	$(this).addClass("active-view");
+      close.style.display = 'inline-block';
+  	}
+  });
+});
+</script>

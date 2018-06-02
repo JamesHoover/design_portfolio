@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="gallery__image">
+    <div class="gallery__image--container">
+      <%= image_tag "work/tmoneypizza.jpg", class: 'gallery__image--img'%>
+    </div>
+  </div>
+  <div class="gallery__text">
+    <h1>T$ Pizza</h1>
+    <p>My father's retirement hobby <br>needed a fresh logo.</p>
+    <p><small>And pizza box stamp ;)</small></p>
+  </div>
+</div>
+
+<a href="/work" class="back-button">&#8592; selected work</a>
+
+<script type="text/javascript">
+$(function showImage() {
+  $(".gallery__photo").click(function() {
+    var close = document.getElementById('close-button');
+    if ($(".gallery__photo").hasClass("active-view")) {
+      $(this).removeClass("active-view");
+      close.style.display = 'none';
+    } else {
+      $(this).addClass("active-view");
+      close.style.display = 'inline-block';
+    }
+  });
+});
+</script>
