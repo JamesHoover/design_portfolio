@@ -2,7 +2,7 @@
 	James Hoover
 	jameshooverdesign.com
 */
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,700');
 /* RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
 acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
@@ -57,6 +57,7 @@ body {
 	font-size: 16px;
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: lighter;
+	color: rgba(0,0,0,.87);
 }
 h1,h2,h3,h4,h5,h6,li,p {
 	line-height: 1.5;
@@ -71,13 +72,13 @@ p {
 	margin-bottom: 2.25rem;
   letter-spacing: 1.3px;
 }
-li {
+.inline-list li {
 	font-size: .75rem;
 	letter-spacing: 1px;
 	display: inline-block;
 	padding: 0 .5em;
 }
-li:first-child {
+.inline-list li:first-child {
 	padding-left: 0;
 }
 a {
@@ -105,7 +106,8 @@ a:visited {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.home__image {
+.home__image,
+.gallery__image {
 	height: 100vh;
   position: absolute;
   display: -webkit-box;
@@ -114,18 +116,24 @@ a:visited {
 	left: 0;
 	top: 0;
 }
-.home__image--container {
+.home__image--container,
+.gallery__image--container {
   position: relative;
   width: 100%;
   height: auto;
 }
-.home__image--container {
+.home__image--container,
+.gallery__image--container {
 	right: auto;
 }
-.home__image--img {
+.home__image--img,
+.gallery__image--img {
 	width: 100%;
   height: auto;
   opacity: .7;
+}
+.gallery__image--img {
+	opacity: 1;
 }
 #showName {
 	color: #FFF;
@@ -135,10 +143,15 @@ a:visited {
 	right: .5rem;
 	display: none;
 }
-.home__text {
+.home__text,
+.gallery__text {
 	max-width: 680px;
   position: relative;
   padding: 1.5rem;
+}
+.home__text ul,
+.gallery__text ul {
+	padding-top: 2rem;
 }
 .social-info {
 	position: absolute;
@@ -147,7 +160,7 @@ a:visited {
 }
 .colored__helper {
 	font-size: .75rem;
-	padding: .25rem;
+	padding: .5rem 1.5rem;
 	color: #222;
 	background-color: #fff;
 	position: absolute;
@@ -160,29 +173,51 @@ a:visited {
 	background-color: #222;
 	color: #fff;
 }
-
+/*WORK*/
+.work {
+	padding: 1.5rem;
+}
+.work .title {
+	flex-basis: 100%;
+}
+.work .list {
+	flex-basis: 100%;
+}
+.work .list li {
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+li .action-arrow {
+	margin-left: 1rem;
+	opacity: 0;
+	-webkit-transition: all .2s; /* Safari */
+  transition: all .2s;
+}
+.work .list li:hover .action-arrow {
+	opacity: 1;
+	-webkit-transition: all .2s; /* Safari */
+  transition: all .2s;
+}
 /*PHOTOGRAPHY*/
-.gallery {
+/*.gallery {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 .gallery__photo {
-	flex-basis: 100%;
+	flex-basis: 67%;
 	max-height: 67vh;
 }
-.gallery__photo img {
+.gallery__photo--img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-.gallery__photo img:hover {
-  -webkit-filter: none; /* Safari 6.0 - 9.0 */
-  filter: none;
-}
-.photography-container {
+  cursor: pointer;
+}*/
+/*.gallery__photo--img:hover {}*/
+.work-container {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -191,8 +226,27 @@ a:visited {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+}
+.active-view {
+	position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  z-index: 998;
+  cursor: zoom-out;
+  background-color: rgba(0,0,0,.87);
+  text-align: center;
+}
+.active-view .gallery__photo--img {
+	height: 100%;
+	width: auto;
+	/* Removes b&w filter */
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
 }
 /*UTILITIES*/
 .action {
@@ -210,7 +264,7 @@ a:visited {
 	opacity: .8;
 }
 .back-button {
-	/*position: fixed;*/
+	position: fixed;
 	top: 1rem;
 	left: 1rem;
 	font-size: .75rem;
@@ -219,6 +273,17 @@ a:visited {
 	background-color: #fff;
 	cursor: pointer;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+.back-button:hover {
+	background-color: #222;
+	color: #fff;
+	text-decoration: none;
+}
+.back-button.subtle {
+	box-shadow: none;
+}
+small {
+	font-size: .75rem;
 }
 .strike-through {
 	text-decoration: line-through;
@@ -230,10 +295,13 @@ a:visited {
 @media screen and (min-width: 480px) {}
 /* Small */
 @media screen and (min-width: 736px) {
-	.home__image--container {
+
+	.home__image--container,
+	.gallery__image--container {
 		right: 1rem;
 	}
-	.home__image {
+	.home__image,
+	.gallery__image {
 	  max-width: 520px;
   	-webkit-box-align: center;
   	-ms-flex-align: center;
@@ -241,25 +309,30 @@ a:visited {
   	right: 0;
   	left: auto;
   }
-	h1,p {
+	h1, p {
 		font-size: 1.5rem;
 	}
 	.colored__helper {
 		bottom: 2rem;
 	}
-	/*PHOTOGRAPHY*/
-	.gallery__photo {
+	/*WORK*/
+	/*.gallery__photo {
 		flex-basis: 50%;
-	}
+	}*/
 }
 /* Medium */
-@media screen and (min-width: 980px) {}
+@media screen and (min-width: 980px) {
+	/*WORK*/
+	/*.gallery__photo {
+		flex-basis: calc(100% / 3);
+	}*/
+}
 /* Large */
 @media screen and (min-width: 1140px) {}
 /* XLarge */
 @media screen and (min-width: 1680px) {
-	/*PHOTOGRAPHY*/
-	.gallery__photo {
-		flex-basis: calc(100% / 3);
-	}
+	/*WORK*/
+	/*.gallery__photo {
+		flex-basis: 25%;
+	}*/
 }
