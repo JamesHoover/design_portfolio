@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  
   root 'pages#index'
-  get '/photography' => 'pages#photography'
+
+  get '/work' => 'pages#work'
+  get '/work/productdesign' => 'pages#product_design'
+  get '/work/photography' => 'pages#photography'
+  get '/work/art' => 'pages#art'
+  get '/work/misc' => 'pages#misc'
 
   #get 'projects/govote' => 'pages#govote'
   #get 'projects/dealtapp' => 'pages#dealtapp'
