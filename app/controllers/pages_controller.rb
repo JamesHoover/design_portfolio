@@ -9,10 +9,16 @@ class PagesController < ApplicationController
   def product_design
   end
 
-  def art
+  def illustration
   end
-  
+
+  def generative_art
+  end
+
   def misc
+  end
+
+  def about
   end
   
 end
