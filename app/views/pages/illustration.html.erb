@@ -1,0 +1,49 @@
+<div class="breadcrumbs">
+  <a href="/">home</a> / <a href="/work">selected work</a> / <span class="active"> illustration</span>
+</div>
+
+<div class="gallery-right">
+
+<div class="gallery-container">
+  <div class="gallery__image">
+    <div class="gallery__image--container">
+      <%= image_tag "work/rhino_hey.svg", class: 'gallery__image--img'%>
+    </div>
+  </div>
+</div>
+
+
+<div class="gallery-container">
+  <div class="gallery__image">
+    <%= image_tag "work/queen_agnes.png", class: 'gallery__image--img'%>
+    <h2>Agnes, queen of the dog park
+      <br><small>(and our home)</small></h2>
+  </div>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery__image">
+    <div class="gallery__image--container">
+      <%= image_tag "work/tmoneypizza.jpg", class: 'gallery__image--img'%>
+      <h2>My father's retirement hobby needed a logo.
+      <br><small>(and a cool stamp for his pizza boxes)</small></h2>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+$(function showImage() {
+  $(".gallery__photo").click(function() {
+    var close = document.getElementById('close-button');
+    if ($(".gallery__photo").hasClass("active-view")) {
+      $(this).removeClass("active-view");
+      close.style.display = 'none';
+    } else {
+      $(this).addClass("active-view");
+      close.style.display = 'inline-block';
+    }
+  });
+});
+</script>

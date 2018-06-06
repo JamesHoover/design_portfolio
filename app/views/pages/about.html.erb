@@ -1,0 +1,32 @@
+<div class="breadcrumbs">
+  <a href="/">home</a> / <span class="active"> about</span>
+</div>
+
+<section class="container">
+  <div class="about">
+    <h1 class="title">A brief summary</h1>
+    <p></p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="about">
+    <h1 class="title">My Philosohy</h1>
+    <p>Dieter believes effective designers should cut away the fat of a object until all that’s left is its function. Dieter believes ornamentation (design for designs sake) isn’t aesthetic because it doesn’t lend itself to the function of the object.</p>
+  </div>
+</section>
+
+<script type="text/javascript">
+$(function showImage() {
+  $(".gallery__photo").click(function() {
+  	var close = document.getElementById('close-button');
+  	if ($(".gallery__photo").hasClass("active-view")) {
+			$(this).removeClass("active-view");
+			close.style.display = 'none';
+ 		} else {
+    	$(this).addClass("active-view");
+      close.style.display = 'inline-block';
+  	}
+  });
+});
+</script>

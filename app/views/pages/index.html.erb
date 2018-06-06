@@ -1,15 +1,20 @@
 <div class="container">
 	<div class="home__image">
 		<div class="home__image--container">
-			<%= image_tag "image.jpg", class: 'home__image--img', :onclick=>"showName()" %>
+			<%= image_tag "winnie.jpg", class: 'home__image--img', :onclick=>"showName()" %>
 			<span id="showName">sweet little winnie :)</span>
 		</div>
 	</div>
 	<div id="colored__text" class="home__text">
 		<!-- <h1>James Hoover <br>Product Designer</h1> -->
 		<h1>Hello, World.</h1>
-		<p>I’m James, a self-taught designer from Seattle. Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
-		<p><small><a href="/work">Please enjoy my selected work &#8594;</a></small></p>
+		<p>I’m James, a designer from Seattle.<br>Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
+		<!-- self-taught -->
+		<!-- <p><small><a href="/work">Please enjoy my selected work &#8594;</a></small></p> -->
+		<ul class="inline-list large">
+			<li><a href="/work">Selected work</a></li> &#x2219;
+			<li><a href="/about">About me</a></li>
+		</ul>
 		<ul class="inline-list">
 			<li><span class="strike-through">Facebook</span></li> &#x2219;
 			<li><span class="strike-through">Instagram</span></li> &#x2219;
@@ -26,3 +31,6 @@ $(document).ready(function(){
 	randomize();
 });
 </script>
+
+<!-- SOME GOOD COLOR COMBOS -->
+<!-- rgb(228, 125, 168), rgb(253, 205, 9) -->
