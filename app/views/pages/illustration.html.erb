@@ -1,27 +1,20 @@
-<div class="breadcrumbs">
-  <a href="/">home</a> / <a href="/work">selected work</a> / <span class="active"> illustration</span>
-</div>
+<div class="container right">
 
-<div class="gallery-right">
+  <nav>
+    <a href="/">home</a> / <a href="/work" class="active">work</a> / <a href="/about">about</a> / <a href="/contact">contact</a>
+  </nav>
 
-<div class="gallery-container">
   <div class="gallery__image">
-    <div class="gallery__image--container">
-      <%= image_tag "work/rhino_hey.svg", class: 'gallery__image--img'%>
-    </div>
+    <%= image_tag "work/rhino_hey.svg", class: 'gallery__image--img'%>
   </div>
-</div>
 
-
-<div class="gallery-container">
   <div class="gallery__image">
     <%= image_tag "work/queen_agnes.png", class: 'gallery__image--img'%>
-    <h2>Agnes, queen of the dog park
-      <br><small>(and our home)</small></h2>
+    <h2>Agnes, queen of the dog park<br><small>(and our home)</small></h2>
   </div>
-</div>
 
-<div class="gallery-container">
+
+
   <div class="gallery__image">
     <div class="gallery__image--container">
       <%= image_tag "work/tmoneypizza.jpg", class: 'gallery__image--img'%>
@@ -29,7 +22,7 @@
       <br><small>(and a cool stamp for his pizza boxes)</small></h2>
     </div>
   </div>
-</div>
+
 
 </div>
 

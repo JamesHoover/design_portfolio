@@ -2,14 +2,15 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get '/work' => 'pages#work'
-  get '/work/productdesign' => 'pages#product_design'
-  get '/work/photography' => 'pages#photography'
-  get '/work/illustration' => 'pages#illustration'
-  get '/work/generative_art' => 'pages#generative_art'
-  get '/work/misc' => 'pages#misc'
+  # get '/work' => 'pages#work'
+  # get '/work/productdesign' => 'pages#product_design'
+  # get '/work/photography' => 'pages#photography'
+  # get '/work/illustration' => 'pages#illustration'
+  # get '/work/generative_art' => 'pages#generative_art'
+  # get '/work/misc' => 'pages#misc'
 
-  get '/about' => 'pages#about'
+  # get '/about' => 'pages#about'
+  # get '/contact' => 'pages#contact'
   #get 'projects/govote' => 'pages#govote'
   #get 'projects/dealtapp' => 'pages#dealtapp'
   #get 'projects/freelance' => 'pages#freelance'

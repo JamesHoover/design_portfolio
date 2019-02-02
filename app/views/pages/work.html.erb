@@ -1,31 +1,30 @@
-<div class="breadcrumbs">
-  <a href="/">home</a> / <span class="active"> selected work</span>
-</div>
-
 <section class="container">
-  <div class="work">
-    <h1 class="title">Selected Work</h1>
+  <nav>
+    <a href="/">home</a> / <a href="/work" class="active">work</a> / <a href="/about">about</a> / <a href="/contact">contact</a>
+  </nav>
+
+  <div class="home__image">
+    <div class="home__image--container">
+      <%= image_tag "work/agnes_held.jpg", class: 'home__image--img'%>
+    </div>
+  </div>
+
+  <div class="work text__container">
+    <h1 class="title display">Selected Work</h1>
     <ul class="list">
-      <li><a href="/work/productdesign">/product design</a></li>
-      <li><a href="/work/photography">/photography</a></li>
-      <li><a href="/work/illustration">/illustration</a></li>
-      <li><a href="/work/generative_art">/generative art</a></li>
-      <li><a href="/work/misc">/misc</a></li>
+      <li><a href="/work/productdesign" onmouseover="showProductdesign()" onmouseout="hideProductdesign()">/product design</a></li>
+      <li><a href="/work/photography" onmouseover="showPhotography()" onmouseout="hidePhotography()">/photography</a></li>
+      <li><a href="/work/illustration" onmouseover="showIllustration()" onmouseout="hideIllustration()">/illustration</a></li>
+      <li><a href="/work/generative_art" onmouseover="showGenerativeart()" onmouseout="hideGenerativeart()">/generative art</a></li>
+      <li><a href="/work/misc" onmouseover="showMisc()" onmouseout="hideMisc()">/misc</a></li>
     </ul>
   </div>
-</section>
 
-<script type="text/javascript">
-$(function showImage() {
-  $(".gallery__photo").click(function() {
-  	var close = document.getElementById('close-button');
-  	if ($(".gallery__photo").hasClass("active-view")) {
-			$(this).removeClass("active-view");
-			close.style.display = 'none';
- 		} else {
-    	$(this).addClass("active-view");
-      close.style.display = 'inline-block';
-  	}
-  });
-});
-</script>
+<!--   <div class="work__image" >
+    <%= image_tag "work/agnes_held.jpg", class: 'work__image--img', id: 'showProductdesign' %>
+    <%= image_tag "work/hawaii.jpg", class: 'work__image--img', id: 'showPhotography' %>
+    <%= image_tag "work/rhino_hey.svg", class: 'work__image--img', id: 'showIllustration' %>
+    <%= image_tag "work/generative_art/art_1.png", class: 'work__image--img', id: 'showGenerativeart' %>
+    <%= image_tag "work/generative_art/art_21.png", class: 'work__image--img', id: 'showMisc' %>
+  </div> -->
+</section>
